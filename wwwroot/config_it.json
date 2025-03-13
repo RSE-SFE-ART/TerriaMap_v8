@@ -7,6 +7,7 @@
     "it_consumi",
     "it_stime_energetiche",
     "it_aree_idonee",
+    "it_recupero_calore",
     "it"],
   "parameters": {
     "tabbedCatalog": true,

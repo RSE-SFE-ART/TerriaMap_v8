@@ -5,7 +5,8 @@ var terriaOptions = {
 };
 
 import { runInAction } from "mobx";
-
+//mil
+//import WebMapServiceCatalogItem from 'terriajs/lib/Models/WebMapServiceCatalogItem';
 // checkBrowserCompatibility('ui');
 import ConsoleAnalytics from 'terriajs/lib/Core/ConsoleAnalytics';
 import GoogleAnalytics from 'terriajs/lib/Core/GoogleAnalytics';
@@ -24,6 +25,9 @@ import BingMapsSearchProviderViewModel from 'terriajs/lib/Models/SearchProviders
 import render from './lib/Views/render';
 import registerCatalogMembers from 'terriajs/lib/Models/Catalog/registerCatalogMembers';
 import defined from 'terriajs-cesium/Source/Core/defined';
+
+
+
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
@@ -50,7 +54,56 @@ const viewState = new ViewState({
     terria: terria
 });
 
-registerCatalogMembers();
+
+
+/* document.getElementById('addWmsLayerButton').addEventListener('click', function() {
+    var wmsLayer = {
+      "type": "wms",
+      "url": "http://gis2.rse-web.it/geoserver/wms",
+      "layers": "aeolian:regioni_2021",
+      "parameters": {
+        "transparent": "true",
+        "format": "image/png"
+      }
+    };
+    terria.catalog.add(wmsLayer);
+    terria.workbench.add(wmsLayer);
+  }); */
+
+  registerCatalogMembers();
+/* document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('addLayerButton').addEventListener('click', () => {
+        const newWmsLayer = new WebMapServiceCatalogItem(terria, {
+            name: 'pippo',
+            url: 'http://gis2.rse-web.it/geoserver/wms',
+            layers: 'aeolian:regioni_2021'
+        });
+ 
+        terria.workbench.add(newWmsLayer);
+    });
+}); */
+/* document.getElementById('addLayerButton').addEventListener('click', () => {
+    const newWmsLayer = new WebMapServiceCatalogItem(terria, {
+        name: 'mio_Layer',
+        url: 'http://gis2.rse-web.it/geoserver/wms',
+    layers: 'aeolian:regioni_2021',
+    parameters: {
+             "CQL_FILTER": "cod_reg='9'"
+        }
+    });
+ 
+    terria.workbench.add(newWmsLayer);
+}); */
+/* const newWmsLayer = new WebMapServiceCatalogItem(terria, {
+    name: 'Mio Layer',
+    url: 'http://gis2.rse-web.it/geoserver/wms',
+    layers: 'aeolian:regioni_2021',
+    parameters: {
+             "CQL_FILTER": "cod_reg='9'"
+    },
+}); 
+ 
+terria.workbench.add(newWmsLayer);*/
 
 if (process.env.NODE_ENV === "development") {
     window.viewState = viewState;
@@ -65,9 +118,12 @@ if (process.env.NODE_ENV !== "production" && module.hot) {
 var userLang = navigator.language || navigator.userLanguage;
 //console.log("The language is: " + userLang);
 var language_config = 'config.json';
+var path_cookies = 'https://www.rse-web.it/EN/cookie/';
 if (userLang === "it-IT" || userLang === "it") {
   language_config= 'config_it.json';
+  path_cookies = 'https://www.rse-web.it/cookie/';
 }
+
 
 module.exports = terria.start({
     // If you don't want the user to be able to control catalog loading via the URL, remove the applicationUrl property below

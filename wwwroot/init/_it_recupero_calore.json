@@ -13,7 +13,7 @@
           "name": "Stima del Calore di scarto ad Alta Temperatura - T > 300°C (MWh)",
           "description": "<p align=\"justify\">Mappa della stima del calore di scarto ad alta temperatura (HT - T> 300°C) disponibile per le industrie italiane iscritte al registro ETS (<a href=\"https://ariet.isprambiente.it/ArietWeb/\">ARIET</a>). I siti sono tematizzati in base alla quantità stimata di calore di scarto disponibile, calcolato a partire dai dati di emissione di CO<sub>2</sub> e da alcuni coefficienti di letteratura legati alla tipologia di industria ed alla temperatura del calore di scarto.<b> Il valore riportato si riferisce alla energia disponibile per la stagione termica (6 mesi)</b>.</p><p align=\"justify\">Cliccando sul punto è possibile avere informazioni aggiuntive come la stima della quantità di calore di scarto disponibile (MWh), il comune etc.</p><p align=\"justify\">Elaborazioni RSE-PoliMI a partire dai dati del <a href=\"https://union-registry-data.ec.europa.eu/report/eu-registry-operator-holding-accounts\">Registro per l'Emission Trading</a>.</p><p align=\"justify\">Per ulteriori dettagli consultare i rapporti di Ricerca di Sistema XXX (DA LINKARE QUANDO SARA' PUBBLICATO), 23012308, 20010734, 21010223 e il seguente documento redatto dal Politecnico di Milano</p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p>",
           //"url": "http://gis2.rse-web.it/geoserver/wms",
-          "url": "https://gis3.rse-web.it/geoserver/wms",
+          "url": "http://gis3.rse-web.it/geoserver/wms",
           
           "featureInfoTemplate": {
             "template": "<p>Energia di recupero [MWh] <b>{{energia_rec}}</b> di un impianto situato nel comune di {{comune}}, provincia di {{provincia}}.</p><br><br>"
@@ -28,7 +28,7 @@
           "type": "wms",
           "name": "Stima del Calore di scarto a Media Temperatura - 80°C ≤ T ≤ 300°C (MWh)",
           "description": "<p align=\"justify\">Mappa della stima del calore di scarto a media temperatura (MT - 80°C ≤ T ≤ 300°C) disponibile per le industrie italiane iscritte al registro ETS (<a href=\"https://ariet.isprambiente.it/ArietWeb/\">ARIET</a>). I siti sono tematizzati in base alla quantità stimata di calore di scarto disponibile, calcolato a partire dai dati di emissione di CO<sub>2</sub> e da alcuni coefficienti di letteratura legati alla tipologia di industria ed alla temperatura del calore di scarto.<b> Il valore riportato si riferisce alla energia disponibile per la stagione termica (6 mesi)</b>.</p><p align=\"justify\">Cliccando sul punto è possibile avere informazioni aggiuntive come la stima della quantità di calore di scarto disponibile (MWh), il comune etc.</p><p align=\"justify\">Elaborazioni RSE-PoliMI a partire dai dati del <a href=\"https://union-registry-data.ec.europa.eu/report/eu-registry-operator-holding-accounts\">Registro per l'Emission Trading</a>.</p><p align=\"justify\">Per ulteriori dettagli consultare i rapporti di Ricerca di Sistema XXX (DA LINKARE QUANDO SARA' PUBBLICATO), 23012308, 20010734, 21010223 e il seguente documento redatto dal Politecnico di Milano</p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p>",
-          "url": "https://gis3.rse-web.it/geoserver/wms",
+          "url": "http://gis3.rse-web.it/geoserver/wms",
           
           "featureInfoTemplate": {
             "template": "<p>Energia di recupero [MWh] <b>{{energia_rec}}</b> di un impianto situato nel comune di {{comune}}, provincia di {{provincia}}.</p><br><br>"
@@ -44,7 +44,7 @@
           "name": "Stima del Calore di scarto a Bassa Temperatura - T < 80°C (MWh)",
           "description": "<p align=\"justify\">Mappa della stima del calore di scarto a bassa temperatura (LT - T < 80°C) disponibile per le industrie italiane iscritte al registro ETS (<a href=\"https://ariet.isprambiente.it/ArietWeb/\">ARIET</a>). I siti sono tematizzati in base alla quantità stimata di calore di scarto disponibile, calcolato a partire dai dati di emissione di CO<sub>2</sub> e da alcuni coefficienti di letteratura legati alla tipologia di industria ed alla temperatura del calore di scarto.<b> Il valore riportato si riferisce alla energia disponibile per la stagione termica (6 mesi)</b>.</p><p align=\"justify\">Cliccando sul punto è possibile avere informazioni aggiuntive come la stima della quantità di calore di scarto disponibile (MWh), il comune etc.</p><p align=\"justify\">Elaborazioni RSE-PoliMI a partire dai dati del <a href=\"https://union-registry-data.ec.europa.eu/report/eu-registry-operator-holding-accounts\">Registro per l'Emission Trading</a>.</p><p align=\"justify\">Per ulteriori dettagli consultare i rapporti di Ricerca di Sistema XXX (DA LINKARE QUANDO SARA' PUBBLICATO), 23012308, 20010734, 21010223 e il seguente documento redatto dal Politecnico di Milano</p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p>",
           //"url": "http://gis2.rse-web.it/geoserver/wms",
-          "url": "https://gis3.rse-web.it/geoserver/wms",
+          "url": "http://gis3.rse-web.it/geoserver/wms",
          
           "featureInfoTemplate": {
             "template": "<p>Energia di recupero [MWh] <b>{{energia_rec}}</b> di un impianto situato nel comune di {{comune}}, provincia di {{provincia}}.</p><br>"
@@ -91,7 +91,7 @@
           "type": "wms",
           "name": "Impianti di teleriscaldamento (MWh/anno)",
           "description": "<p align=\"justify\">Mappa degli impianti di teleriscaldamento presenti sul territorio nazionale iscritti al  <a href=\"https://ariet.isprambiente.it/ArietWeb/\">registro ETS (ARIET)</a>.</p><p>Cliccando sul punto è possibile avere informazioni aggiuntive come la quantità di calore disponibile (MWh), il comune etc.</p><p>Fonte/elaborazione PoliMI a partire dai dati del <a href=\"https://www.isprambiente.gov.it/it/servizi/registro-italiano-emission-trading/Registro-Italiano-Emission-Trading\">Registro Italiano per l'Emission Trading</a> di ISPRA.</p>",
-          "url": "https://gis3.rse-web.it/geoserver/wms",
+          "url": "http://gis3.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Energia di recupero [MWh] <b>{{energia_rec}}</b>  del comune di {{comune}}, provincia di {{provincia}}</p><p>Latitudine: {{lat}} - Longitudine: {{long}}</p><br><br>"
           },

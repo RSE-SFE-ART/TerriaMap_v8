@@ -18,7 +18,7 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 50 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 50 m a.g.l. expressed in m/s",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_50}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -36,7 +36,7 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 75 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 75 m a.g.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_75}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -52,7 +52,7 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 100 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 100 m a.g.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_100}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -68,7 +68,7 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 125 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 125 m a.g.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_125}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -84,7 +84,7 @@
               "type": "wms",
               "name": "Average annual onshore wind speed at 150 m a.g.l. ",
               "description": "Average annual onshore wind speed at an altitude of 150 m a.g.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_150}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -109,7 +109,7 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 50 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 50 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_50}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -125,7 +125,7 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 75 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 75 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_75}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -141,7 +141,7 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 100 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 100 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_100}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -157,7 +157,7 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 125 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 125 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_125}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -173,7 +173,7 @@
               "type": "wms",
               "name": "Average annual offshore wind speed at 150 m a.s.l. ",
               "description": "Average annual offshore wind speed at an altitude of 150 m a.s.l. expressed in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The wind speed is equal to <b>{{vento_150}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },

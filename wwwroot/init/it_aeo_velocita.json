@@ -20,7 +20,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento onshore a 10 m s.l.t. ",
               "description": "Velocità media annua del vento onshore alla quota di 10 m s.l.t. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_10}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -38,7 +38,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento onshore a 50 m s.l.t. ",
               "description": "Velocità media annua del vento onshore alla quota di 50 m s.l.t. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_50}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -56,7 +56,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento onshore a 75 m s.l.t. ",
               "description": "Velocità media annua del vento onshore alla quota di 75 m s.l.t. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_75}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -72,7 +72,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento onshore a 100 m s.l.t. ",
               "description": "Velocità media annua del vento onshore alla quota di 100 m s.l.t. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_100}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -88,7 +88,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento onshore a 125 m s.l.t. ",
               "description": "Velocità media annua del vento onshore alla quota di 125 m s.l.t. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_125}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -104,7 +104,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento onshore a 150 m s.l.t. ",
               "description": "Velocità media annua del vento onshore alla quota di 150 m s.l.t. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_150}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=on&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -129,7 +129,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento offshore a 10 m s.l.m. ",
               "description": "Velocità media annua del vento offshore alla quota di 10 m s.l.m. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_10}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -145,7 +145,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento offshore a 50 m s.l.m. ",
               "description": "Velocità media annua del vento offshore alla quota di 50 m s.l.m. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_50}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -161,7 +161,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento offshore a 75 m s.l.m.",
               "description": "Velocità media annua del vento offshore alla quota di 75 m s.l.m. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_75}}</b> m/s </p><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -177,7 +177,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento offshore a 100 m s.l.m. ",
               "description": "Velocità media annua del vento offshore alla quota di 100 m s.l.m. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_100}}</b> m/s </p> <br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -193,7 +193,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento offshore a 125 m s.l.m. ",
               "description": "Velocità media annua del vento offshore alla quota di 125 m s.l.m. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_125}}</b> m/s </p> <br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },
@@ -209,7 +209,7 @@
               "type": "wms",
               "name": "Velocità media annua del vento offshore a 150 m s.l.m. ",
               "description": "Velocità media annua del vento offshore alla quota di 150 m s.l.m. espressa in m/s.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La velocità del vento è pari a <b>{{vento_150}}</b> m/s </p> <br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ae_connessione_db_dati_grafico.php?id_cella={{id_cella}}&titolo=off&lingua=IT\"><font color='#FFFFFF'>Visualizza grafico</a></font></td></tr></table>"
               },

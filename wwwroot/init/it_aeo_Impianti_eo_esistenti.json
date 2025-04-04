@@ -11,7 +11,7 @@
           "type": "wms",
           "name": "Database degli aerogeneratori",
           "description": "Mappa degli aerogeneratori presenti sul territorio nazionale (anno di riferimento 2019) classificati per classi di potenza (200-1000 kW, 1000–2000 kW, 2000-3000 kW, >3000 kW). </br> Elaborazione di RSE a partire da dati diversi database (Atlaimpianti, ANEV, The Wind Power e immagini satellitari Sentinel-2). </br>Per ulteriori dettagli consultare l'articolo <a href=\"https://www.yumpu.com/it/document/read/66750544/geomedia-1-2022\"> Mapping onshore wind turbine generators in Italy from Sentinel-2 data.</a>",
-          "url": "http://gis2.rse-web.it/geoserver/wms",
+          "url": "https://gis3.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Classe di potenza <b>{{classe_pot}}</b></p>"
           },

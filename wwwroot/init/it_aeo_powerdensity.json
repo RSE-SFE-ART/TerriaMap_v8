@@ -19,7 +19,7 @@
               "type": "wms",
               "name": "Densità di potenza eolica onshore a 50 m s.l.t.",
               "description": "Densità di potenza eolica onshore a 50 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La densità di potenza eolica è pari a <b>{{dens_50}}</b> W/m<sup>2</sup> </p><br><br>"
               },
@@ -35,7 +35,7 @@
               "type": "wms",
               "name": "Densità di potenza eolica onshore a 75 m s.l.t.",
               "description": "Densità di potenza eolica onshore a 75 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La densità di potenza eolica è pari a <b>{{dens_75}}</b> W/m<sup>2</sup> </p><br><br>"
               },
@@ -51,7 +51,7 @@
               "type": "wms",
               "name": "Densità di potenza eolica onshore a 100 m s.l.t.",
               "description": "Densità di potenza eolica onshore a 100 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La densità di potenza eolica è pari a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
               },
@@ -67,7 +67,7 @@
               "type": "wms",
               "name": "Densità di potenza eolica onshore a 125 m s.l.t.",
               "description": "Densità di potenza eolica onshore a 125 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La densità di potenza eolica è pari a <b>{{dens_125}}</b> W/m<sup>2</sup> </p><br><br>"
               },
@@ -83,7 +83,7 @@
               "type": "wms",
               "name": "Densità di potenza eolica onshore a 150 m s.l.t.",
               "description": "Densità di potenza eolica onshore a 150 m s.l.t. espressa in W/m<sup>2</sup>. <br>",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La densità di potenza eolica è pari a <b>{{dens_150}}</b> W/m<sup>2</sup> </p><br><br>"
               },
@@ -109,7 +109,7 @@
               "type": "wms",
               "name": "Densità di potenza eolica offshore a 50 m s.l.m.",
               "description": "Densità di potenza eolica offshore a 50 m s.l.m. espressa in W/m<sup>2</sup>.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La densità di potenza eolica è pari a <b>{{dens_50}}</b> W/m<sup>2</sup> </p><br><br>"
               },
@@ -125,7 +125,7 @@
               "type": "wms",
               "name": "Densità di potenza eolica offshore a 75 m s.l.m.",
               "description": "Densità di potenza eolica offshore a 75 m s.l.m. espressa in W/m<sup>2</sup>.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La densità di potenza eolica è pari a <b>{{dens_75}}</b> W/m<sup>2</sup> </p><br><br>"
               },
@@ -141,7 +141,7 @@
               "type": "wms",
               "name": "Densità di potenza eolica offshore a 100 m s.l.m.",
               "description": "Densità di potenza eolica offshore a 100 m s.l.m. espressa in W/m<sup>2</sup>.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La densità di potenza eolica è pari a <b>{{dens_100}}</b> W/m<sup>2</sup> </p><br><br>"
               },
@@ -157,7 +157,7 @@
               "type": "wms",
               "name": "Densità di potenza eolica offshore a 125 m s.l.m.",
               "description": "Densità di potenza eolica offshore a 125 m s.l.m. espressa in W/m<sup>2</sup>.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La densità di potenza eolica è pari a <b>{{dens_125}}</b> W/m<sup>2</sup> </p><br><br>"
               },
@@ -173,7 +173,7 @@
               "type": "wms",
               "name": "Densità di potenza eolica offshore a 150 m s.l.m.",
               "description": "Densità di potenza eolica offshore a 150 m s.l.m. espressa in W/m<sup>2</sup>.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La densità di potenza eolica è pari a <b>{{dens_150}}</b> W/m<sup>2</sup> </p><br><br>"
               },

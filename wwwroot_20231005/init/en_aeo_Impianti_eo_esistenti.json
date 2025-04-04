@@ -11,7 +11,7 @@
           "type": "wms",
           "name": "Database of Wind Turbine Generators",
           "description": "Map of the wind turbine generators present on the national territory (reference year 2019), derived from an elaboration by Research on the Energy System - RSE S.p.A. starting from GSE data, The Wind Power and Sentinel-2 satellite images. A power class is associated with each wind turbine.",
-          "url": "http://gis2.rse-web.it/geoserver/wms",
+          "url": "https://gis3.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Power class <b>{{classe_pot}}</b></p>"
           },

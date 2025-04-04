@@ -20,7 +20,7 @@
               "type": "wms",
               "name": "Temperatura a 2 m s.l.t./s.l.m.",
               "description": "Temperatura a 2 m s.l.t./s.l.m. espressa in °C.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>La temperatura a 2 m s.l.t./s.l.m. è pari a <b>{{temp_2}}</b> °C. </p><br>"
               },

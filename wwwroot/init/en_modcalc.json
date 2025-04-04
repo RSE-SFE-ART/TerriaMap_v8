@@ -8,7 +8,7 @@
         {
           "type": "wms",
           "name": "calculation module",
-          "url": "http://gis2.rse-web.it/geoserver/wms",
+          "url": "https://gis3.rse-web.it/geoserver/wms",
           "layers": "dbeta:Grid_nazionale_20240221_limiti_amministrativi", 
           "styles": "polygon",
           "opacity": 0.5,

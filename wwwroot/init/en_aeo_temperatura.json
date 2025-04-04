@@ -20,7 +20,7 @@
               "type": "wms",
               "name": "Temperature at 2 m a.g.l./a.s.l.",
               "description": "Temperature at 2 m a.g.l./a.s.l. expressed in °C.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>The temperature at 2 m a.g.l./a.s.l. above sea level is equal to <b>{{temp_2}}</b> °C. </p><br>"
               },

@@ -19,7 +19,7 @@
               "type": "wms",
               "name": "Onshore FLH at 50 m a.g.l.",
               "description": "Onshore FLH at 50 m a.g.l. expressed in MWh/MW. <br> A Riva Calzoni ATB 500.54 wind turbine with a rotor diameter of 54 m and a nominal power of 500 kW was used to calculate the FLH value. ",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>FLH is equal to <b>{{prod_50}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -35,7 +35,7 @@
               "type": "wms",
               "name": "Onshore FLH at 75 m a.g.l.",
               "description": "Onshore FLH at 75 m a.g.l. expressed in MWh/MW. <br> The map shows for each cell the maximum FLH value among those obtained using the following wind turbines: Leitwind LTW [nominal power: 2 MW], Enercon E92 [nominal power: 2.3 MW], Vestas V90 [nominal power: 2MW] e Vestas V110 [nominal power: 2MW].",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>FLH is equal to <b>{{prod_75}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -51,7 +51,7 @@
               "type": "wms",
               "name": "Onshore FLH at 100 m a.g.l.",
               "description": "Onshore FLH at 75 m a.g.l. expressed in MWh/MW. <br> The map shows for each cell the maximum FLH value among those obtained using the following wind turbines: Nordex N131 [nominal power: 3.6 MW], Nordex N117 [nominal power: 3.6 MW], Enercon E115 [nominal power: 3 MW], Vestas V117 [nominal power: 3.4 MW] e Vestas V136 [nominal power: 3.4MW].",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>FLH is equal to <b>{{prod_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -77,7 +77,7 @@
               "type": "wms",
               "name": "Offshore FLH at 100 m a.s.l.",
               "description": "Offshore FLH at 100 m a.s.l. expressed in MWh/MW. <br> An NREL_Reference wind turbine with a rotor diameter of 155 m and nominal power of 6 MW was used to calculate the FLH value.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>FLH is equal to <b>{{prod_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -93,7 +93,7 @@
               "type": "wms",
               "name": "Offshore FLH at 125 m a.s.l.",
               "description": "Offshore FLH at 125 m a.s.l. expressed in MWh/MW. <br> An IEA_10MW_RTW wind turbine with a rotor diameter of 198 m and nominal power of 10 MW was used to calculate the FLH value.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>FLH is equal to <b>{{prod_125}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },
@@ -109,7 +109,7 @@
               "type": "wms",
               "name": "Offshore FLH at 150 m a.s.l.",
               "description": "Offshore FLH at 150 m a.s.l. expressed in MWh/MW. <br> An IEA_15MW_RTW wind turbine with a rotor diameter of 240 m and nominal power of 15 MW was used to calculate the FLH value.",
-              "url": "http://gis2.rse-web.it/geoserver/wms",
+              "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>FLH is equal to <b>{{prod_150}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=off&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"
               },

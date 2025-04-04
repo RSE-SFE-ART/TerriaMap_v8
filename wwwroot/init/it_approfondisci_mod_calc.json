@@ -8,7 +8,7 @@
         {
           "type": "wms",
           "name": "modulo calcolo",
-          "url": "http://gis2.rse-web.it/geoserver/wms",
+          "url": "https://gis3.rse-web.it/geoserver/wms",
           "layers": "aeolian:Grid_nazionale_07112022_limiti_amministrativi", 
           "styles": "polygon",
           "opacity": 0.5,

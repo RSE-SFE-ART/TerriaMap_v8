@@ -8,7 +8,7 @@
         {
           "type": "wms",
           "name": "it_dati_storici_prova",
-          "url": "http://gis2.rse-web.it/geoserver/wms",
+          "url": "https://gis3.rse-web.it/geoserver/wms",
           "layers": "atlante_integrato:reticolo_tiles_3857",
           "opacity": 0.5,
           "featureInfoTemplate": {

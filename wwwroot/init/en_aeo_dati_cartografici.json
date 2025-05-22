@@ -79,7 +79,7 @@
            {
             "type": "wms",
             "name": "Bathymetry",
-            "description": " Data relating to the average depth of the seabed. \n<br>RSE elaborations of 2018 with reclassification in 5 classes with increasing depth, starting from the data of the European Marine Observation and Data Network (EMODnet):\n https://www.emodnet-bathymetry.eu/metadata-data ",
+            "description": " Data relating to the average depth of the seabed. \n<br>RSE elaborations of 2018 with reclassification in 5 classes with increasing depth, starting from the data of the European Marine Observation and Data Network (EMODnet):\n https://www.emodnet-bathymetry.eu/metadata-data</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='right' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=205&lingua=EN&descrizione=Bathymetry\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>  ",
             "url": "https://gis3.rse-web.it/geoserver/wms",
             //a"featureInfoTemplate": {
             //  "template": "<p>Provincia <b>{{den_uts}}</b> , visualizzazione anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=109&anno={{anno}}\">link al metadato </a> </p>"
@@ -95,7 +95,7 @@
           {
             "type": "wms",
             "name": "Exclusive Economic Zone",
-            "description": " Exclusive economic zone of Italy. \n<br>Data distributed by Flanders Marine Institute https://www.marineregions.org/.",
+            "description": " Exclusive economic zone of Italy. \n<br>Data distributed by Flanders Marine Institute https://www.marineregions.org/.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='right' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=171&lingua=EN&descrizione=Exclusive Economic Zone\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
             "url": "https://gis3.rse-web.it/geoserver/wms",
             "featureInfoTemplate": {
               "template": "<p>Province <b>{{den_uts}}</b> , view year {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=109&anno={{anno}}\">metadata link </a> </p>"

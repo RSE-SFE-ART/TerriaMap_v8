@@ -10,7 +10,7 @@
         {
           "type": "wms",
           "name": "Database degli aerogeneratori",
-          "description": "Mappa degli aerogeneratori presenti sul territorio nazionale (anno di riferimento 2019) classificati per classi di potenza (200-1000 kW, 1000–2000 kW, 2000-3000 kW, >3000 kW). </br> Elaborazione di RSE a partire da dati diversi database (Atlaimpianti, ANEV, The Wind Power e immagini satellitari Sentinel-2). </br>Per ulteriori dettagli consultare l'articolo <a href=\"https://www.yumpu.com/it/document/read/66750544/geomedia-1-2022\"> Mapping onshore wind turbine generators in Italy from Sentinel-2 data.</a>",
+          "description": "Mappa degli aerogeneratori presenti sul territorio nazionale (anno di riferimento 2019) classificati per classi di potenza (200-1000 kW, 1000–2000 kW, 2000-3000 kW, >3000 kW). </br> Elaborazione di RSE a partire da dati diversi database (Atlaimpianti, ANEV, The Wind Power e immagini satellitari Sentinel-2). </br>Per ulteriori dettagli consultare l'articolo <a href=\"https://www.yumpu.com/it/document/read/66750544/geomedia-1-2022\"> Mapping onshore wind turbine generators in Italy from Sentinel-2 data.</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='right' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=229&lingua=IT&descrizione=Eolici - Aerogeneratori\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
           "url": "https://gis3.rse-web.it/geoserver/wms",
           "featureInfoTemplate": {
             "template": "<p>Classe di potenza <b>{{classe_pot}}</b></p>"

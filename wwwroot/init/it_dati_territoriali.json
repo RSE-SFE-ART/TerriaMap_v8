@@ -97,15 +97,19 @@
           "members": [
             {
               "type": "wms",
-              "name": "Classificazione sismica dei comuni italiani al 2023",
-              "description": "Classificazione sismica dei comuni italiani aggiornata ad aprile 2023. Fonte: <a href=\"https://rischi.protezionecivile.gov.it/it/sismico/attivita/classificazione-sismica\"><br>Protezione civile</p></a>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:class_sismica_2023",
+              "name": "Classificazione sismica dei comuni italiani al 2024",
+              "description": "Classificazione sismica dei comuni italiani aggiornata ad aprile 2024. Fonte: <a href=\"https://rischi.protezionecivile.gov.it/it/sismico/attivita/classificazione-sismica\"><br>Protezione civile</p></a>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:v_class_sismica_all",
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=288"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=124"
               }],
               "styles":"new_atlante_integrato:sism_23",
-              "layers": "new_atlante_integrato:class_sismica_2023",
+              "layers": "new_atlante_integrato:v_class_sismica_all",
+              "parameters": {
+              "cql_filter": "anno='2024'"
+          },
+
               "id": "sisma23"
             }
           ]

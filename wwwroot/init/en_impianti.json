@@ -1455,7 +1455,7 @@
                 {
                   "type": "wms",
                   "name": "Thermoelectric - Plants",
-                  "description": "Map of the distribution of thermoelectric plants in operation by 2020 with associated data on: installed capacity, main fuel and conversion technology.\n\n RSE elaborations from the Global Power Plant Database\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=207&lingua=EN&descrizione=Thermoelectric - Plants\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
+                  "description": "Map of the distribution of thermoelectric plants in operation by 2020 with associated data on: installed capacity, main fuel and conversion technology.\n\n RSE elaboration of data from the Environmental Declarations of Italian thermoelectric power plants registered with EMAS and from the Global Power Plant Database\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=207&lingua=EN&descrizione=Thermoelectric - Plants\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_imp_termoel",
                   "layers": "new_atlante_integrato:v_imp_termoel",
                   "metadataUrls":[{

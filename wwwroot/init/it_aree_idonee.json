@@ -25,7 +25,7 @@
               "type": "wms",
               "name": "Edificato derivante da CTR o DBT",
               "description": "Percentuale di area edificata rispetto alla superficie comunale derivata dalle Carte Tecniche Regionali o dai Database Topografici Regionali.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Edificato derivante da CTR o DBT\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
@@ -41,7 +41,7 @@
               "type": "wms",
               "name": "Edificato derivante da dati Copernicus",
               "description": "Percentuale di area edificata rispetto alla superficie comunale derivata dalla Carta Nazionale di Uso dei Suoli (risoluzione spaziale 20 m) elaborata da ISPRA e prodotta nell'ambito del programma Copernicus. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Edificato derivante da dati Copernicus\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
@@ -66,7 +66,7 @@
               "type": "wms",
               "name": "Aree estrattive",
               "description": "Percentuale di area estrattiva (classe Corine Land Cover 131) rispetto alla superficie comunale.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Aree estrattive\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
@@ -82,7 +82,7 @@
               "type": "wms",
               "name": "Discariche",
               "description": "Percentuale di area adibita a discarica (classe Corine Land Cover 132) rispetto alla superficie comunale.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Discariche\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
@@ -98,7 +98,7 @@
               "type": "wms",
               "name": "Aree industriali, commerciali e dei servizi pubblici e privati",
               "description": "Percentuale di area industriale, commerciale e dei servizi pubblici e privati (classe Corine Land Cover 121) rispetto alla superficie comunale.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Aree industriali, commerciali e dei servizi pubblici e privati\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
@@ -114,7 +114,7 @@
               "type": "wms",
               "name": "Superfici agricole utilizzate",
               "description": "Percentuale di superfici agricole utilizzate (classe Corine Land Cover 2, escluse le risaie - classe 213) rispetto alla superficie comunale. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Superfici agricole utilizzate\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
@@ -130,7 +130,7 @@
               "type": "wms",
               "name": "Superfici agricole utilizzate al netto dei vincoli",
               "description": "Percentuale di superfici agricole utilizzate (classe Corine Land Cover 2, escluse le risaie - classe 213) al netto dei vincoli ambientali e paesaggistici rispetto alla superficie comunale. Il dettaglio sui dati utilizzati per la stima e le relative fonti è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a> </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Superfici agricole utilizzate al netto dei vincoli\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
@@ -146,7 +146,7 @@
               "type": "wms",
               "name": "Seminativi in aree non irrigue al netto dei vincoli",
               "description": "Percentuale di superfici agricole utilizzate (classe Corine Land Cover 211) al netto dei vincoli ambientali e paesaggistici rispetto alla superficie comunale. Il dettaglio sui dati utilizzati per la stima e le relative fonti è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a> </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Seminativi in aree non irrigue al netto dei vincoli\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
@@ -161,8 +161,8 @@
             {
               "type": "wms",
               "name": "Aree agricole abbandonate al netto dei vincoli",
-              "description": "Percentuale di area agricola abbandonata rispetto alla superficie comunale. Il dettaglio sulla metodologia utilizzati per la stima è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a> </br></br> All'interno del Geoportale Energia e Territorio è inoltre disponibile una <a href=\"https://geoportale.rse-web.it/#/geostory/shared/1026\"  target=\"_blank\">  geostoria </a> di approfondimento sul tema delle aree agricole abbandonate come potenziale per lo sviluppo del fotovoltaico e sulla metodologia utilizzata per la stima.</br> </br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Seminativi in aree non irrigue al netto dei vincoli\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee_aal",
+              "description": "Percentuale di area agricola abbandonata rispetto alla superficie comunale. Il dettaglio sulla metodologia utilizzati per la stima è disponibile nel <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a> Per ulteriori informazioni sulla metodologia utilizzata per stimare le aree agricole abbandonate consultare il rapporto di Ricerca di Sistema <a href=\"http://dbeta.rse-web.it/documenti/SFE 2.5 LA2.06 24011099.pdf\"  target=\"_blank\"> 24011099</a>. </br></br> All'interno del Geoportale Energia e Territorio è inoltre disponibile una <a href=\"https://geoportale.rse-web.it/#/geostory/shared/1026\"  target=\"_blank\">  geostoria </a> di approfondimento sul tema delle aree agricole abbandonate come potenziale per lo sviluppo del fotovoltaico e sulla metodologia utilizzata per la stima.</br> </br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=261&lingua=IT&descrizione=Seminativi in aree non irrigue al netto dei vincoli\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee_aal",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=261"
@@ -196,7 +196,7 @@
                   "type": "wms",
                   "name": "Aree disponibili per l'eolico onshore per range di producibilità",
                   "description": "Mappa delle aree idonee per nuove installazioni eoliche onshore, suddivisa per fasce di producibilità specifica annua teorica. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=280&lingua=IT&descrizione=Aree disponibili per l'eolico onshore per range di producibilità\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_onshore",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_onshore",
                   "metadataUrls":[{
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=280"
@@ -221,7 +221,7 @@
                   "type": "wms",
                   "name": "Aree disponibili per l'eolico offshore nella fascia 0-50 km dalla costa",
                   "description": "Mappa delle aree idonee per nuove installazioni eoliche offshore classificata per fascia batimetrica e range di producibilità nella fascia 0-50 km dalla costa. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=268&lingua=IT&descrizione=Aree disponibili per l'eolico offshore nella fascia 0-50 km dalla costa\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_offshore_0_50km",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_offshore_0_50km",
                   "metadataUrls":[{
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=268"
@@ -237,7 +237,7 @@
                   "type": "wms",
                   "name": "Aree disponibili per l'eolico offshore nella fascia 50-100 km dalla costa",
                   "description": "Mappa delle aree idonee per nuove installazioni eoliche offshore classificata per fascia batimetrica e range di producibilità nella fascia 50-100 km dalla costa. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=269&lingua=IT&descrizione=Aree disponibili per l'eolico offshore nella fascia 50-100 km dalla costa\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_offshore_50_100km",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_offshore_50_100km",
                   "metadataUrls":[{
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=269"
@@ -253,7 +253,7 @@
                   "type": "wms",
                   "name": "Aree disponibili per l'eolico offshore nella fascia oltre 100 km dalla costa",
                   "description": "Mappa delle aree idonee per nuove installazioni eoliche offshore classificata per fascia batimetrica e range di producibilità nella fascia oltre 100 km dalla costa. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=270&lingua=IT&descrizione=Aree disponibili per l'eolico offshore nella fascia oltre 100 km dalla costa\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_offshore_oltre100km",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_offshore_oltre100km",
                   "metadataUrls":[{
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=270"

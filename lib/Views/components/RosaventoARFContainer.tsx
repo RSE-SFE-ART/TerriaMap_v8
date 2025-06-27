@@ -15,11 +15,21 @@ const RosaventoContainer = (props: any) => {
   // console.log("props.position",props.position);
   // console.log("props.catalogItem",props.catalogItem);
   // console.log("props.feature._data",props.feature._data);
-  // console.log("id idcella", props.feature._data.id, props.feature._data.properties.id_cella);
+  console.log(
+    "id idcella",
+    props.feature._data.id,
+    props.feature._data.properties.id_cella
+  );
+  console.log(
+    "id id_wrf",
+    props.feature._data.id,
+    props.feature._data.properties.id_wrf
+  );
 
   const { t } = useTranslation();
 
-  let numidRosa = Number(props.feature._data.properties.id_cella);
+  // let numidRosa = Number(props.feature._data.properties.id_cella);
+  let numidRosa = Number(props.feature._data.properties.id_wrf);
   const lat = props.feature._data.properties.lat;
   const long = props.feature._data.properties.long;
   const quota = props.feature._data.properties.quota;

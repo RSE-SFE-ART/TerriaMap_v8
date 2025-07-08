@@ -7,6 +7,93 @@
       "description":"<p align=\"justify\">This collection includes information of various kinds complementary to those specifically related to energy. In particular, it contains information on the resident population (at different levels of spatial aggregation, over the years), on risk assessment aspects (seismic risk) as well as information on environmental constraints, particularly useful for analyzing potential territorial limitations to the exploitation and development of RES. These data can be valid inputs to models for the energy planning of the territory.\n </p><a title=\"Tesla Delacroix, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Isel_near_Clarah%C3%BCtte.jpg\"><img width=\"640\" alt=\"Isel near Clarahütte\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Isel_near_Clarah%C3%BCtte.jpg/512px-Isel_near_Clarah%C3%BCtte.jpg\"></a>",
       "isOpen": false,
       "members": [
+                {
+          "id": "popol",
+          "type": "group",
+          "name": "Resident population",
+          "description": "This collection includes information relating to the population of the Italian territory.",
+          "isOpen": false,
+          "members": [
+            {
+              "type": "wms",
+              "name": "Resident population at regional level",
+              "description": "Map of the resident population at regional level which is calculated on December 31st of each year and shared on January 1st of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
+              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+              "featureInfoTemplate": {
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
+              },
+              "metadataUrls":[{
+                "title":"metadata link",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=88&anno=2020"
+              }],
+              "layers": "new_atlante_integrato:v_regioni_t",
+              "parameters": {
+                "cql_filter": "var_id=88"
+              },
+              /* "initialMessage": {
+                "title": "Layer view:",
+                "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
+                "key": "88",
+                "confirmation": true,
+                "confirmText": "I understand"
+              }, */
+              "id": "88",
+			        "styles":"popolazione_regionale"
+            },
+            {
+              "type": "wms",
+              "name": "Resident population at provincial level",
+              "description": "<p align=\"justify\">Map of the resident population at the provincial level which is calculated on 31st December of each year and shared on 1st January of the following year. <br><br>RSE elaborations on data from the National Institute of Statistics - ISTAT</p>",
+              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+              "featureInfoTemplate": {
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
+              },
+              "metadataUrls":[{
+                "title":"metadata link",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=87&anno=2020"
+              }],
+              "layers": "new_atlante_integrato:v_province_t",
+              "parameters": {
+                "cql_filter": "var_id=87"
+              },
+              // "initialMessage": {
+               // "title": "Layer view:",
+               // "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
+               // "key": "87",
+               // "confirmation": true,
+               // "confirmText": "I understand"
+              //},
+              "id": "87",
+              "styles":"popolazione_provinciale"
+            },
+            {
+              "type": "wms",
+              "name": "Resident population at municipal level",
+              "description": "<p align=\"justify\">Map of the resident population at the municipal level which is calculated on 31st December of each year and shared on 1st January of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
+              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+              "featureInfoTemplate": {
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
+              },
+              "metadataUrls":[{
+                "title":"metadata link",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=65&anno=2020"
+              }],
+              "layers": "new_atlante_integrato:v_comuni_t",
+              "parameters": {
+                "cql_filter": "var_id=65"
+              },
+              /* "initialMessage": {
+                "title": "Layer view:",
+                "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
+                "key": "65",
+                "confirmation": true,
+                "confirmText": "I understand"
+              }, */
+              "id": "65",
+              "styles":"popolazione_comunale"
+            }
+          ]
+        },
         {
           "id": "vincoli",
           "type": "group",
@@ -93,7 +180,7 @@
           "type": "group",
           "name": "Risk assessment aspects",
           "description": "This collection includes information on the seismicity of the area.",
-          "isOpen": true,
+          "isOpen": false,
           "members": [
             {
               "type": "wms",
@@ -110,90 +197,51 @@
             }
           ]
         },
-        {
-          "id": "popol",
+       {
+          "id": "usi mare completo",
           "type": "group",
-          "name": "Resident population",
-          "description": "This collection includes information relating to the population of the Italian territory.",
-          "isOpen": true,
+          "name": "Sea uses",
+          "description": "This collection provides a representation of the main current and planned uses of the sea that may interact with or interfere with the development of offshore wind energy. The data presented include, in particular, the Maritime Spatial Plans developed at the national level, shipping routes, fishing areas, military zones, marine protected areas, and other regulatory or functional constraints. The information, collected from official sources and harmonized on a geographic basis, highlights potential overlaps with areas eligible for offshore wind installations, contributing to a more integrated and sustainable assessment of maritime space use. </br> The objective is to provide a support tool for planning and permitting processes, promoting a coordinated approach between the evaluation of offshore wind potential and other uses and constraints of the sea, in line with shared marine spatial management strategies.",
+          "isOpen": false,
           "members": [
             {
               "type": "wms",
-              "name": "Resident population at regional level",
-              "description": "Map of the resident population at regional level which is calculated on December 31st of each year and shared on January 1st of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
-              "featureInfoTemplate": {
-                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
-              },
+              "name": "Maritime spatial planning",
+              "description": "The map shows the division of the sea into Planning Units (UP), each associated with one or more prevailing uses (priority, reserved, limited, or general), as defined by the Maritime Spatial Plans. The data come from the SID platform – Il portale del mare (https://www.sid.mit.gov.it/) and reflect the official designated uses identified by the Ministry of Infrastructure and Transport (MIT), in accordance with European Directive 2014/89/EU.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=298&lingua=EN&descrizione=Maritime spatial planning\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:msp",
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=88&anno=2020"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=298"
               }],
-              "layers": "new_atlante_integrato:v_regioni_t",
-              "parameters": {
-                "cql_filter": "var_id=88"
-              },
-              /* "initialMessage": {
-                "title": "Layer view:",
-                "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
-                "key": "88",
-                "confirmation": true,
-                "confirmText": "I understand"
-              }, */
-              "id": "88",
-			        "styles":"popolazione_regionale"
+              "styles":"new_atlante_integrato:msp",
+              "layers": "new_atlante_integrato:msp",
+              "id": "msp_tot"
             },
             {
               "type": "wms",
-              "name": "Resident population at provincial level",
-              "description": "<p align=\"justify\">Map of the resident population at the provincial level which is calculated on 31st December of each year and shared on 1st January of the following year. <br><br>RSE elaborations on data from the National Institute of Statistics - ISTAT</p>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
-              "featureInfoTemplate": {
-                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
-              },
+              "name": "Maritime traffic corridors",
+              "description": "The map shows the main maritime traffic corridors, in terms of route density (number of routes per km²). The data used are sourced from the EMODnet catalog (https://emodnet.ec.europa.eu/geoviewer/), under the “Human Activities” category, specifically from the “Route Density” data layer, produced by the European Maritime Safety Agency (EMSA). The “Route Density” indicator is based on data from the Automatic Identification System (AIS), has a spatial resolution of approximately 1,100 meters, and is available from 2019 onwards with monthly or annual temporal aggregation. The reference year for the data presented here is 2023.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=297&lingua=EN&descrizione=Maritime traffic corridors\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:routedensity2023",
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=87&anno=2020"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=297"
               }],
-              "layers": "new_atlante_integrato:v_province_t",
-              "parameters": {
-                "cql_filter": "var_id=87"
-              },
-              // "initialMessage": {
-               // "title": "Layer view:",
-               // "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
-               // "key": "87",
-               // "confirmation": true,
-               // "confirmText": "I understand"
-              //},
-              "id": "87",
-              "styles":"popolazione_provinciale"
-            },
+              "styles":"new_atlante_integrato:route_density",
+              "layers": "new_atlante_integrato:routedensity2023",
+              "id": "route_density"
+            },   
             {
               "type": "wms",
-              "name": "Resident population at municipal level",
-              "description": "<p align=\"justify\">Map of the resident population at the municipal level which is calculated on 31st December of each year and shared on 1st January of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
-              "featureInfoTemplate": {
-                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
-              },
+              "name": "Fishing activities",
+              "description": "The map represents the intensity of fishing activities in Italian waters, based on the average annual fishing effort (expressed in hours/km². This parameter is calculated by combining various factors, including the number of vessels operating in an area, time spent fishing, vessel capacity, and the characteristics of the fishing gear used. The data come from the SID platform – Il portale del mare (https://www.sid.mit.gov.it/) and were processed by the Ministry of Agriculture, Food Sovereignty and Forests (MASAF). They represent, on a regular 3 km grid, the average number of hours spent on fishing activities during the years 2006–2018, filtered and classified to isolate positions corresponding to actual fishing activity (excluding those related to navigation or time spent in port).</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=296&lingua=EN&descrizione=Fishing activities\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:sforzo_pesca",
               "metadataUrls":[{
                 "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=65&anno=2020"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=296"
               }],
-              "layers": "new_atlante_integrato:v_comuni_t",
-              "parameters": {
-                "cql_filter": "var_id=65"
-              },
-              /* "initialMessage": {
-                "title": "Layer view:",
-                "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
-                "key": "65",
-                "confirmation": true,
-                "confirmText": "I understand"
-              }, */
-              "id": "65",
-              "styles":"popolazione_comunale"
+              "styles":"new_atlante_integrato:sforzo_pesca",
+              "layers": "new_atlante_integrato:sforzo_pesca",
+              "id": "pesca"
             }
           ]
         }

@@ -228,6 +228,9 @@
               }],
               "styles":"new_atlante_integrato:route_density",
               "layers": "new_atlante_integrato:routedensity2023",
+               "featureInfoTemplate": {
+                "template": "<p>In this area, the route density for the year 2023 is <b>{{GRAY_INDEX}}</b>routes/km²</p>"
+              },
               "id": "route_density"
             },   
             {
@@ -241,6 +244,9 @@
               }],
               "styles":"new_atlante_integrato:sforzo_pesca",
               "layers": "new_atlante_integrato:sforzo_pesca",
+              "featureInfoTemplate": {
+                "template": "<p>In this area the annual average fishing activity effort is <b>{{sforzoanno}}</b></p>"
+              },
               "id": "pesca"
             }
           ]

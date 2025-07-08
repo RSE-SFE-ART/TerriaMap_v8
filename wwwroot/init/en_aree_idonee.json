@@ -4,7 +4,7 @@
       "id": "available_areas",
       "type": "group",
       "name": "2030 RES targets",
-      "description": "<p style='text-align:justify;'> The achievement of the challenging renewable energy development targets for 2030 set out in the PNIEC (National Integrated Energy and Climate Plan), and driven by the REPowerEU program and the Fit for 55 package, relies primarily on the contribution of photovoltaic and wind power sources. The availability of suitable areas for installations is a key differentiating factor among different territories and may highlight potential limitations to the development itself. </br></br> This section presents spatially-based information that fits within the framework of territorial energy planning and the monitoring of regional targets assigned under the “Suitable Areas” decree. Alongside the progress toward these targets, for each of the main categories of plants considered in this section (photovoltaic, onshore wind, and offshore wind), estimates are provided for different types of areas potentially available for new installations (eligible areas), along with information on the status of projects currently undergoing authorization. It should be noted that the results regarding eligible areas shown on these maps are derived from studies based on specific assumptions and should be understood as purely indicative information on land availability.\n\n <div><img src=\"/public/img/Energie Rinnovabili-iStock-586163548.jpg\" style=\"width:640px;height:427px;\"></br></br></div> </p>",
+      "description": "<p style='text-align:justify;'> The achievement of the challenging renewable energy development targets for 2030 set out in the PNIEC (National Integrated Energy and Climate Plan), and driven by the REPowerEU program and the Fit for 55 package, relies primarily on the contribution of photovoltaic and wind power sources. The availability of suitable areas for installations is a key differentiating factor among different territories and may highlight potential limitations to the development itself. </br></br> This section presents spatially-based information that fits within the framework of territorial energy planning and the monitoring of regional targets assigned under the “Suitable Areas” decree (DM 21 giugno 2024). Alongside the progress toward these targets, for each of the main categories of plants considered in this section (photovoltaic, onshore wind, and offshore wind), estimates are provided for different types of areas potentially available for new installations (eligible areas), along with information on the status of projects currently undergoing authorization. It should be noted that the results regarding eligible areas shown on these maps are derived from studies based on specific assumptions and should be understood as purely indicative information on land availability.\n\n <div><img src=\"/public/img/Energie Rinnovabili-iStock-586163548.jpg\" style=\"width:640px;height:427px;\"></br></br></div> </p>",
       "isOpen": false,
       "members": [
         {
@@ -26,7 +26,7 @@
         {
           "type": "wms",
           "name": "Progress toward the target",
-          "description": "This map shows the regional progress toward the targets assigned by the “Suitable Areas” decree, expressed as a percentage of each region's objective. The regional figure is calculated by summing the renewable energy capacity (all types) installed since 2021, net of decommissioned plants. The absolute values are provided in the attributes of the layer.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=295&lingua=EN&descrizione=Progress toward the target\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
+          "description": "This map shows the progress of each region or autonomous province toward the targets assigned by the Aree idonee decree, expressed as a percentage of the regional target. The percentage is calculated as the ratio between the total installed renewable energy capacity (all types) since 2021, net of decommissioning, and the regional target.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=295&lingua=EN&descrizione=Progress toward the target\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
           "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3obiettivi_2030",
           "metadataUrls":[{
             "title":"metadata link",
@@ -42,7 +42,7 @@
         {
           "id": "Fotovoltaico",
           "type": "group",
-          "name": "Solar",
+          "name": "Photovoltaic",
           "description": "This collection includes information on the extent of certain types of areas available for new photovoltaic installations (both ground-mounted and rooftop), as well as on the presence of proposed projects subject to Environmental Impact Assessment (EIA). These data are useful for assessing progress toward the 2030 renewable energy target. </br>The results shown in these maps are based on studies that rely on specific assumptions and should be understood as a guide for identifying areas potentially available for new photovoltaic installations. They provide planners with preliminary indications of the areas with the highest potential. </br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a> \n\n <div><img src=\"/public/img/Fotolia_53185812_Subscription_Monthly_XXL.jpg\" style=\"width:640px;height:427px;\"></div> ",
           "isOpen": false,
           "members": [
@@ -262,13 +262,13 @@
           "id": "aree_eo_onshore",
           "type": "group",
           "name": "Areas available for onshore wind power installations",
-          "description": "This collection includes the map of suitable areas for new onshore wind power installations, obtained from areas with wind energy production at 100 m higher than 2250 MWh/MW and excluding urban areas and areas subject to environmental and cultural constrains. </br> The wind energy production map derives from the new anemological database provided by RSE and available from the <a href=\"http://aeolian.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a></br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>",
+          "description": "This collection includes the map of available areas for new onshore wind power installations, obtained from areas with wind energy production at 100 m higher than 2250 MWh/MW and excluding urban areas and areas subject to environmental and cultural constrains. </br> The wind energy production map derives from the new anemological database provided by RSE and available from the <a href=\"http://aeolian.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a></br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
               "name": "Areas available for onshore wind power installations by wind energy production range",
-              "description": "This collection includes the map of suitable areas for new onshore wind power installations by wind energy production ranges.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=280&lingua=EN&descrizione=Areas available for onshore wind power installations by wind energy production range\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "description": "This collection includes the map of available areas for new onshore wind power installations by wind energy production ranges.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=280&lingua=EN&descrizione=Areas available for onshore wind power installations by wind energy production range\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
               "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_onshore",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -286,7 +286,7 @@
          {
           "id": "imp_eo_onshore",
           "type": "group",
-          "name": "Onshore wind planned plants",
+          "name": "Planned onshore wind power installations",
           "description": "This collection includes proposed onshore wind projects subject to Environmental Impact Assessment (EIA), collected and published by the Ministry of the Environment and Energy Security (MASE) on the portal https://va.mite.gov.it/it-IT and aggregated at the provincial level. These are large-scale plants (>30 MW) that fall within the scope of National Recovery and Resilience Plan (NRRP) funding, with applications submitted from 2021 onward.",
           "isOpen": false,
           "members": [
@@ -337,13 +337,13 @@
           "id": "aree_eo_offshore",
           "type": "group",
           "name": "Areas available for offshore wind power installations",
-          "description": "This collection includes maps of areas potentially suitable for new offshore wind installations, classified by distance from the coast, depth range, and production range. The areas were identified by integrating the Mediterranean Sea bathymetry map, generated and released by the European Marine Observation and Data Network (EMODnet), with maps of theoretical annual specific producibility (calculated at a height of 150 m above sea level). The producibility maps derive from the new Italian anemological database produced by RSE and are available at <a href=\"https://aeolian.rse-web.it/\"  target=\"_blank\"> AEOLIAN - Atlante EOLico ItaliANo.</a>   </br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>",
+          "description": "This collection includes maps of areas potentially available for new offshore wind installations, classified by distance from the coast, depth range, and production range. The areas were identified by integrating the Mediterranean Sea bathymetry map, generated and released by the European Marine Observation and Data Network (EMODnet), with maps of theoretical annual specific producibility (calculated at a height of 150 m above sea level). The producibility maps derive from the new Italian anemological database produced by RSE and are available at <a href=\"https://aeolian.rse-web.it/\"  target=\"_blank\"> AEOLIAN - Atlante EOLico ItaliANo.</a>   </br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>",
           "isOpen": false,
           "members": [
             {
               "type": "wms",
               "name": "Areas available for offshore wind power installations in the section 0-50 km from coastline",
-              "description": "Map of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges in the section 0-50 km from coastline. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=268&lingua=EN&descrizione=Areas available for offshore wind power installations in the section 0-50 km from coastline\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "description": "Map of available areas for new offshore wind power installations for bathymetric and wind energy production ranges in the section 0-50 km from coastline. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=268&lingua=EN&descrizione=Areas available for offshore wind power installations in the section 0-50 km from coastline\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
               "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_offshore_0_50km",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -359,7 +359,7 @@
             {
               "type": "wms",
               "name": "Areas available for offshore wind power installations in the section 50-100 km from coastline",
-              "description": "Map of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges in the section 50-100 km from coastline. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=269&lingua=EN&descrizione=Areas available for offshore wind power installations in the section 50-100 km from coastline\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "description": "Map of available areas for new offshore wind power installations for bathymetric and wind energy production ranges in the section 50-100 km from coastline. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=269&lingua=EN&descrizione=Areas available for offshore wind power installations in the section 50-100 km from coastline\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
               "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_offshore_50_100km",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -375,7 +375,7 @@
             {
               "type": "wms",
               "name": "Areas available for offshore wind power installations beyond 100 km from coastline",
-              "description": "Map of suitable areas for new offshore wind power installations for bathymetric and wind energy production ranges in the section beyon 100 km from coastline.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=270&lingua=EN&descrizione=Areas available for offshore wind power installations beyond 100 km from coastline\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "description": "Map of available areas for new offshore wind power installations for bathymetric and wind energy production ranges in the section beyon 100 km from coastline.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=270&lingua=EN&descrizione=Areas available for offshore wind power installations beyond 100 km from coastline\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
               "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eolico_offshore_oltre100km",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -393,7 +393,7 @@
          {
           "id": "imp_eo_offshore",
           "type": "group",
-          "name": "Offshore wind planned plants",
+          "name": "Planned offshore wind power installations",
           "description": "This collection includes proposed offshore wind projects subject to Environmental Impact Assessment (EIA), collected and published by the Ministry of the Environment and Energy Security (MASE) on the portal https://va.mite.gov.it/it-IT. These are medium- and large-scale plants that fall within the scope of National Recovery and Resilience Plan (NRRP) funding, with applications submitted starting from 2019.</br>",
           "isOpen": false,
           "members": [
@@ -425,28 +425,28 @@
             }
            ]
           },
-           {
-          "id": "usi mare",
-          "type": "group",
-          "name": "Other sea uses",
-          "description": "This collection provides a representation of the main current and planned uses of the sea that may interact with or interfere with the development of offshore wind energy. The data presented include, in particular, the Maritime Spatial Plans developed at the national level, shipping routes, fishing areas, military zones, marine protected areas, and other regulatory or functional constraints. </br> The information, collected from official sources and harmonized on a geographic basis, makes it possible to highlight potential overlaps with areas eligible for offshore wind installations, contributing to a more integrated and sustainable assessment of maritime space use.</br> The goal is to provide a support tool for planning and permitting processes, promoting a coordinated approach between the assessment of offshore wind potential and other marine uses and constraints, in line with shared marine spatial management strategies.",
-          "isOpen": false,
-          "members": [
-            {
-              "type": "wms",
-              "name": "Maritime spatial planning - simplified map",
-              "description": "DA MODIFICARE La mappa rappresenta la suddivisione del mare in Unità di Pianificazione (UP), ciascuna associata a uno o più usi prevalenti (prioritari, riservati, limitati o generici), secondo quanto stabilito dai Piani di gestione dello Spazio Marittimo. I dati derivano dalla piattaforma <a href=\"https://www.sid.mit.gov.it/\"  target=\"_blank\"> SID - Il portale del mare</a> e riflettono le destinazioni d’uso ufficiali individuate dal Ministero delle Infrastrutture e dei Trasporti (MIT), in coerenza con la Direttiva europea 2014/89/UE. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=2991&lingua=EN&descrizione=Maritime spatial planning - simplified map\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
-              "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=299"
-              }],
-              "styles":"new_atlante_integrato:p131",
-              "layers": "new_atlante_integrato:comuni_2022_aree_idonee",
-              "id": "msp"
-            }
-           ]
-          }
+         // {
+          //"id": "usi mare",
+          //"type": "group",
+          //"name": "Other sea uses",
+          //"description": "This collection provides a representation of the main current and planned uses of the sea that may interact with or interfere with the development of offshore wind energy. The data presented include, in particular, the Maritime Spatial Plans developed at the national level, shipping routes, fishing areas, military zones, marine protected areas, and other regulatory or functional constraints. </br> The information, collected from official sources and harmonized on a geographic basis, makes it possible to highlight potential overlaps with areas eligible for offshore wind installations, contributing to a more integrated and sustainable assessment of maritime space use.</br> The goal is to provide a support tool for planning and permitting processes, promoting a coordinated approach between the assessment of offshore wind potential and other marine uses and constraints, in line with shared marine spatial management strategies.",
+          //"isOpen": false,
+          //"members": [
+            //{
+              //"type": "wms",
+              //"name": "Maritime spatial planning - simplified map",
+              //"description": "DA MODIFICARE La mappa rappresenta la suddivisione del mare in Unità di Pianificazione (UP), ciascuna associata a uno o più usi prevalenti (prioritari, riservati, limitati o generici), secondo quanto stabilito dai Piani di gestione dello Spazio Marittimo. I dati derivano dalla piattaforma <a href=\"https://www.sid.mit.gov.it/\"  target=\"_blank\"> SID - Il portale del mare</a> e riflettono le destinazioni d’uso ufficiali individuate dal Ministero delle Infrastrutture e dei Trasporti (MIT), in coerenza con la Direttiva europea 2014/89/UE. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=2991&lingua=EN&descrizione=Maritime spatial planning - simplified map\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
+              //"url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
+              //"metadataUrls":[{
+                //"title":"metadata link",
+                //"url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=299"
+              //}],
+              //"styles":"new_atlante_integrato:p131",
+              //"layers": "new_atlante_integrato:comuni_2022_aree_idonee",
+              //"id": "msp"
+            //}
+           //]
+          //}
         ]
        }
      ]

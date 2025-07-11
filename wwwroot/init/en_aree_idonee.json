@@ -425,28 +425,28 @@
             }
            ]
           },
-         // {
-          //"id": "usi mare",
-          //"type": "group",
-          //"name": "Other sea uses",
-          //"description": "This collection provides a representation of the main current and planned uses of the sea that may interact with or interfere with the development of offshore wind energy. The data presented include, in particular, the Maritime Spatial Plans developed at the national level, shipping routes, fishing areas, military zones, marine protected areas, and other regulatory or functional constraints. </br> The information, collected from official sources and harmonized on a geographic basis, makes it possible to highlight potential overlaps with areas eligible for offshore wind installations, contributing to a more integrated and sustainable assessment of maritime space use.</br> The goal is to provide a support tool for planning and permitting processes, promoting a coordinated approach between the assessment of offshore wind potential and other marine uses and constraints, in line with shared marine spatial management strategies.",
-          //"isOpen": false,
-          //"members": [
-            //{
-              //"type": "wms",
-              //"name": "Maritime spatial planning - simplified map",
-              //"description": "DA MODIFICARE La mappa rappresenta la suddivisione del mare in Unità di Pianificazione (UP), ciascuna associata a uno o più usi prevalenti (prioritari, riservati, limitati o generici), secondo quanto stabilito dai Piani di gestione dello Spazio Marittimo. I dati derivano dalla piattaforma <a href=\"https://www.sid.mit.gov.it/\"  target=\"_blank\"> SID - Il portale del mare</a> e riflettono le destinazioni d’uso ufficiali individuate dal Ministero delle Infrastrutture e dei Trasporti (MIT), in coerenza con la Direttiva europea 2014/89/UE. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=2991&lingua=EN&descrizione=Maritime spatial planning - simplified map\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
-              //"url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_2022_aree_idonee",
-              //"metadataUrls":[{
-                //"title":"metadata link",
-                //"url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=299"
-              //}],
-              //"styles":"new_atlante_integrato:p131",
-              //"layers": "new_atlante_integrato:comuni_2022_aree_idonee",
-              //"id": "msp"
-            //}
-           //]
-          //}
+          {
+          "id": "usi mare",
+          "type": "group",
+          "name": "Other sea uses",
+          "description": "This collection provides a representation of the main current and planned uses of the sea that may interact with or interfere with the development of offshore wind energy. The data presented include, in particular, the Maritime Spatial Plans developed at the national level, shipping routes, fishing areas, military zones, marine protected areas, and other regulatory or functional constraints. </br> The information, collected from official sources and harmonized on a geographic basis, makes it possible to highlight potential overlaps with areas eligible for offshore wind installations, contributing to a more integrated and sustainable assessment of maritime space use.</br> The goal is to provide a support tool for planning and permitting processes, promoting a coordinated approach between the assessment of offshore wind potential and other marine uses and constraints, in line with shared marine spatial management strategies.",
+          "isOpen": false,
+          "members": [
+            {
+              "type": "wms",
+              "name": "Maritime spatial planning - simplified map",
+              "description": "</p><p align=\"justify\">The map shows the division of the sea into Planning Units (UP), each associated with one or more prevailing uses (priority, reserved, limited, or general), as defined by the Maritime Spatial Plans. The data come from the SID platform – Il portale del mare (https://www.sid.mit.gov.it/) and reflect the official designated uses identified by the Ministry of Infrastructure and Transport (MIT), in accordance with European Directive 2014/89/EU.</br> To facilitate the interpretation of the map for offshore wind development purposes, the representation has been simplified by aggregating certain land-use classes. In particular, the areas have been reclassified according to the following criteria:</p><p align=\"justify\"><ul><li><p align=\"justify\">Areas with exclusive priority use for “energy”: primarily designated for energy production, with no competing uses.</p></li></p><p align=\"justify\"><li><p align=\"justify\"> Areas with non-exclusive priority use for “energy”: energy use is a priority, but it coexists with other priority uses.</p></li><li><p align=\"justify\">Areas with generic use: no specific uses are identified, energy development therefore possible.</p></li></p></li><li><p align=\"justify\">Areas with predominant use related to other priority uses: energy development is only possible if it does not interfere with the assigned priority uses.</p></li><li><p align=\"justify\">Areas with limited or restricted use: energy development is not permitted.</p></li></ul></br> <p align=\"justify\">This classification aims to provide a concise and functional overview of the planning context, in support of preliminary assessments for offshore wind development. The complete classification can be found in the “Sea uses” section of the “Territorial data” catalog.</p>.</br></br><table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=299&lingua=IT&descrizione=Pianificazione dello spazio marittimo - mappa semplificata\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></p></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:msp",
+              "metadataUrls":[{
+                "title":"metadata link",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=299"
+              }],
+              "styles":"new_atlante_integrato:msp_semplificato",
+              "layers": "new_atlante_integrato:msp",
+              "id": "msp"
+            }
+           ]
+          }
         ]
        }
      ]

@@ -3,7 +3,7 @@ import Terria from "../Terria";
 export function defaultBaseMaps(terria: Terria): any[] {
   const baseMaps: any[] = [];
 
-  if (
+  /* if (
     terria.configParameters.bingMapsKey &&
     !terria.configParameters.useCesiumIonBingImagery
   ) {
@@ -70,7 +70,7 @@ export function defaultBaseMaps(terria: Terria): any[] {
       },
       image: "build/TerriaJS/images/bing-maps-roads.png"
     });
-  }
+  } */
 
   // baseMaps.push({
   //   item: {
@@ -126,6 +126,18 @@ export function defaultBaseMaps(terria: Terria): any[] {
     },
     image: "build/TerriaJS/images/dark-matter.png"
   });
-
+baseMaps.push({
+    item: {
+      id: "basemap-openstreetmap",
+      name: "OpenStreetMap",
+      type: "open-street-map",
+      url: "https://tile.openstreetmap.org/",
+      attribution:
+        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>",
+      opacity: 1.0
+    },
+    image: "build/TerriaJS/images/open_street_italy.png"
+  
+  });
   return baseMaps;
 }

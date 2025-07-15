@@ -174,11 +174,11 @@ const SidePanel = observer(
               animationDuration={250}
               btnText={t("addData.btnHide")}
             />
-            <SearchBoxAndResults
+            {/* <SearchBoxAndResults
               viewState={this.props.viewState}
               terria={this.props.terria}
               placeholder={t("search.placeholder")}
-            />
+            /> */}
             <Spacing bottom={2} />
             <Box justifySpaceBetween>
               <SidePanelButton

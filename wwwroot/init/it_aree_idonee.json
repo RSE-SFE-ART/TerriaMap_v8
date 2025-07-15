@@ -8,6 +8,13 @@
       "isOpen": false,
       "members": [
         {
+          "id": "Obiettivo e avanzamento",
+          "type": "group",
+          "name": "Obiettivo e avanzamento",
+          "description": "Questa raccolta comprende informazioni sull'Obiettivo FER per regione al 2030 e l’avanzamento ad ora effettuato per ciascuna regione o provincia autonoma rispetto agli obiettivi assegnati dal decreto Aree idonee in percentuale rispetto all'obiettivo regionale.",
+          "isOpen": false,
+          "members": [
+            {
           "type": "wms",
           "name": "Obiettivo FER per regione",
           "description": "Per portare l’Italia in linea con gli ultimi obiettivi EU, il MASE ha stabilito in 80 GW l’obiettivo di potenza aggiuntiva rispetto al 2020, ipotizzando che l’intero incremento di potenza FER al 2030 sia ascrivibile alle sole fonti eolica e fotovoltaica. Questa ipotesi di mix energetico non ha alcun effetto prescrittivo e rimane nella facoltà delle Regioni e delle Province autonome scegliere su quali tecnologie puntare per il raggiungimento dell’obiettivo, secondo un principio di “neutralità tecnologica”. </br></br>La mappa mostra la ripartizione regionale dell’obiettivo di potenza aggiuntiva previsto per l’Italia.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=295&lingua=IT&descrizione=Obiettivo FER per regione\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
@@ -22,27 +29,28 @@
                 "template": "<p>L'obiettivo di potenza aggiuntiva FER assegnato alla regione <b>{{den_reg}} è pari a <b>{{ob_2030}} MW</p>"
               },
           "id": "obiettivo_reg"
-        },
-        {
-          "type": "wms",
-          "name": "Avanzamento rispetto all'obiettivo",
-          "description": "Questa mappa mostra l’avanzamento per ciascuna regione o provincia autonoma rispetto agli obiettivi assegnati dal decreto Aree idonee in percentuale rispetto all’obiettivo regionale. Il dato, espresso in percentuale, è calcolato come rapporto tra la somma della potenza FER (tutte le tipologie) installata all'anno 2023, al netto delle dismissioni, e l'obiettivo regionale. Il dato in valori assoluti è riportato negli attributi del layer.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=295&lingua=IT&descrizione=Avanzamento rispetto all'obiettivo\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-          "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3obiettivi_2030",
-          "metadataUrls":[{
-            "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=295"
-          }],
-          "styles":"new_atlante_integrato:avanz_perc",
-          "layers": "new_atlante_integrato:obiettivi_2030",
-           "featureInfoTemplate": {
-                "template": "<p>La regione <b>{{den_reg}}</b> ha raggiunto il <b>{{av_perc}}%</b> dell'obiettivo di potenza aggiuntiva </br> e deve ancora installare <b>{{av_ass}} MW per completarlo</p>"
-              },
-          "id": "avanz_reg"
+            },
+            {
+              "type": "wms",
+              "name": "Avanzamento rispetto all'obiettivo",
+              "description": "Questa mappa mostra l’avanzamento per ciascuna regione o provincia autonoma rispetto agli obiettivi assegnati dal decreto Aree idonee in percentuale rispetto all’obiettivo regionale. Il dato, espresso in percentuale, è calcolato come rapporto tra la somma della potenza FER aggiuntiva (tutte le tipologie) installata al netto delle dismissioni, e l'obiettivo regionale. <p> Dato aggiornato a dicembre 2023. <p> Il dato in valori assoluti è riportato negli attributi del layer.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=295&lingua=IT&descrizione=Avanzamento rispetto all'obiettivo\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3obiettivi_2030",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=295"
+              }],
+              "styles":"new_atlante_integrato:avanz_perc",
+              "layers": "new_atlante_integrato:obiettivi_2030",
+              "featureInfoTemplate": {
+                    "template": "<p>La regione <b>{{den_reg}}</b> ha raggiunto il <b>{{av_perc}}%</b> dell'obiettivo di potenza aggiuntiva </br> e deve ancora installare <b>{{av_ass}} MW per completarlo</p>"
+                  },
+              "id": "avanz_reg"
+            }]
         },
         {
           "id": "Fotovoltaico",
           "type": "group",
-          "name": "Fotovoltaico",
+          "name": "Potenzialità Fotovoltaico",
           "description": "Questa raccolta comprende informazioni sull'estensione di alcune tipologie di aree  per nuove installazioni fotovoltaiche (a terra e su tetto) e sulla presenza di proposte progettuali di impianti soggetti a Valutazione di Impatto Ambientale (VIA), utili per valutazioni sull’avanzamento rispetto all’obiettivo FER al 2030. </br>I risultati riportati in queste mappe derivano da studi che si basano su ipotesi specifiche e vanno intesi come una guida all’individuazione di aree potenzialmente disponibili a nuove installazioni fotovoltaiche, fornendo ai soggetti pianificatori indicazioni preliminari sulle aree a maggiore potenziale. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> seguente documento.</a> \n\n <div><img src=\"/public/img/Fotolia_53185812_Subscription_Monthly_XXL.jpg\" style=\"width:640px;height:427px;\"></div> ",
           "isOpen": false,
           "members": [
@@ -250,11 +258,11 @@
           ]
          }
         ]
-       },
-          {
+        },
+        {
           "id": "Eolico onshore",
           "type": "group",
-          "name": "Eolico onshore",
+          "name": "Potenzialità Eolico onshore",
           "description": "Questa raccolta comprende informazioni sull'estensione delle aree eleggibili per nuove installazioni eoliche onshore e sulla presenza di proposte progettuali di impianti soggetti a Valutazione di Impatto Ambientale (VIA), utili per valutazioni sull’avanzamento rispetto all’obiettivo FER al 2030. I risultati riportati in queste mappe derivano da studi che si basano su ipotesi specifiche e vanno intesi come una guida all’individuazione di aree potenzialmente disponibili a nuove installazioni fotovoltaiche, fornendo ai soggetti pianificatori indicazioni preliminari sulle aree a maggiore potenziale. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a> \n\n <div><img src=\"/public/img/shutterstock_1349148488.jpg\" style=\"width:640px;height:427px;\"></div> ",
           "isOpen": false,
           "members": [
@@ -262,7 +270,7 @@
           "id": "aree_eo_onshore",
           "type": "group",
           "name": "Aree disponibili per l'eolico onshore",
-          "description": "Questa raccolta comprende la mappa delle aree eleggibili per nuove installazioni eoliche onshore.Tali aree sono state calcolate considerando solo le aree con producibilità eolica superiore a 2250 MWh/MW (all’altezza di 100 m sul livello del terreno) ed escludendo le aree urbanizzate e le aree soggette a vincolo ambientale e culturale. La mappa di producibilità eolica deriva dalla nuova banca dati anemologica italiana prodotta da RSE ed è consultabile da <a href=\"https://aeolian.rse-web.it/\"  target=\"_blank\"> AEOLIAN - Atlante EOLico ItaliANo.</a> </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a>",
+          "description": "Questa raccolta comprende la mappa delle aree eleggibili per nuove installazioni eoliche onshore.Tali aree sono state calcolate considerando solo le aree con producibilità eolica superiore a 2250 MWh/MW (all'altezza di 100 m sul livello del terreno) ed escludendo le aree urbanizzate e le aree soggette a vincolo ambientale e culturale. La mappa di producibilità eolica deriva dalla nuova banca dati anemologica italiana prodotta da RSE ed è consultabile da <a href=\"https://aeolian.rse-web.it/\"  target=\"_blank\"> AEOLIAN - Atlante EOLico ItaliANo.</a> </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a>",
           "isOpen": false,
           "members": [
             {
@@ -325,11 +333,11 @@
            ]
           }
         ]
-       },
-       {
+        },
+        {
           "id": "Eolico offshore",
           "type": "group",
-          "name": "Eolico offshore",
+          "name": "Potenzialità Eolico offshore",
           "description": "Questa raccolta comprende informazioni sull'estensione delle aree eleggibili per nuove installazioni eoliche offshore e sulla presenza di proposte progettuali di impianti soggetti a Valutazione di Impatto Ambientale (VIA), utili per valutazioni sull’avanzamento rispetto all’obiettivo FER al 2030. I risultati riportati in queste mappe derivano da studi che si basano su ipotesi specifiche e rappresentano indicazioni preliminari sulle aree a maggiore potenziale considerato l’attuale stato dell’arte della tecnologia offshore. </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a> \n\n <div><img src=\"/public/img/shutterstock_1482625118.jpg\" style=\"width:640px;height:427px;\"></div> ",
           "isOpen": false,
           "members": [
@@ -337,7 +345,7 @@
           "id": "aree_eo_offshore",
           "type": "group",
           "name": "Aree disponibili per l'eolico offshore",
-          "description": "Questa raccolta comprende le mappe delle aree potenzialmente eleggibili ad accogliere nuove installazioni eoliche offshore, distinte per distanza dalla costa, range di profondità e range di producibilità. Le aree sono state individuate integrando la mappa di batimetria del Mar Mediterraneo, generata e rilasciata dallo European Marine Observation and Data Network (EMODnet), con le mappe di producibilità specifica annua teorica (calcolate a un'altezza di 150 m s.l.m.). Le mappe di producibilità derivano dalla nuova banca dati anemologica italiana prodotta da RSE e sono consultabili in <a href=\"https://aeolian.rse-web.it/\"  target=\"_blank\"> AEOLIAN - Atlante EOLico ItaliANo.</a>   </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a>",
+          "description": "Questa raccolta fornisce una panoramica integrata dello spazio marittimo italiano, utile alla valutazione preliminare dello sviluppo dell’eolico offshore. Comprende sia le informazioni relative alla Pianificazione dello Spazio Marittimo (PSM), derivate dai Piani ufficiali del Ministero delle Infrastrutture e dei Trasporti (MIT), sia le mappe delle aree potenzialmente eleggibili ad accogliere nuove installazioni eoliche offshore, distinte per distanza dalla costa, range di profondità e range di producibilità. <p> Queste ultime sono state individuate integrando la mappa di batimetria del Mar Mediterraneo, generata e rilasciata dallo European Marine Observation and Data Network (EMODnet), con le mappe di producibilità specifica annua teorica (calcolate a un'altezza di 150 m s.l.m.). Le mappe di producibilità derivano dalla nuova banca dati anemologica italiana prodotta da RSE e sono consultabili in <a href=\"https://aeolian.rse-web.it/\"  target=\"_blank\"> AEOLIAN - Atlante EOLico ItaliANo.</a> </br> </p> Per ulteriori approfondimenti sulla stima di tali aree è possibile consultare il <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_eolico.pdf\"  target=\"_blank\"> seguente documento.</a></p> ",
           "isOpen": false,
           "members": [
             {
@@ -387,10 +395,23 @@
                 "template": "<p>Range di batimetria [m] <b>{{range_bat}}</b></p></p><p>Range di producibilità [MWh/MW] <b>{{range_prod}}</b></p>"
               },
               "id": "off_oltre100"
+            },            
+            {
+              "type": "wms",
+              "name": "Pianificazione dello spazio marittimo - mappa semplificata",
+              "description": "</p><p align=\"justify\">La mappa rappresenta la suddivisione del mare in Unità di Pianificazione (UP), ciascuna associata a uno o più usi prevalenti (prioritari, riservati, limitati o generici), secondo quanto stabilito dai Piani di gestione dello Spazio Marittimo. I dati derivano dalla piattaforma <a href=\"https://www.sid.mit.gov.it/\"  target=\"_blank\"> SID - Il portale del mare</a> e riflettono le destinazioni d’uso ufficiali individuate dal Ministero delle Infrastrutture e dei Trasporti (MIT), in coerenza con la Direttiva europea 2014/89/UE. </br> Per rendere più agevole la lettura della mappa ai fini dello sviluppo dell’eolico offshore, la rappresentazione è stata semplificata mediante l’aggregazione di alcune classi di uso. In particolare, le aree sono state riclassificate secondo i seguenti criteri: </p><p align=\"justify\"><ul><li><p align=\"justify\">Aree con uso prioritario “energia” esclusivo: destinate principalmente alla produzione di energia, senza altri usi concorrenti. </p></li></p><p align=\"justify\"><li><p align=\"justify\"> Aree con uso prioritario “energia” non esclusivo: l’uso energetico è prioritario, ma coesiste con altri usi prioritari.</p></li><li><p align=\"justify\">Aree con uso generico: non presentano usi specifici, lo sviluppo energetico è quindi possibile.</p></li></p></li><li><p align=\"justify\">Aree con uso prevalente riconducibile ad altri usi prioritari: lo sviluppo energetico è possibile solo se non interferisce con gli usi prioritari assegnati.</p></li><li><p align=\"justify\">Aree con uso limitato o riservato: lo sviluppo energetico non è consentito.</p></li></ul></br> <p align=\"justify\">Questa classificazione ha l’obiettivo di offrire una visione sintetica e funzionale del contesto pianificatorio, a supporto delle valutazioni preliminari per lo sviluppo dell’eolico offshore. La classificazione completa è consultabile nella sezione “Usi del mare” della scheda “Dati territoriali”</p></br></br><table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=299&lingua=IT&descrizione=Pianificazione dello spazio marittimo - mappa semplificata\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></p></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:msp",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=299"
+              }],
+              "styles":"new_atlante_integrato:msp_semplificato",
+              "layers": "new_atlante_integrato:msp",
+              "id": "msp"
             }
            ]
           },
-         {
+          {
           "id": "imp_eo_offshore",
           "type": "group",
           "name": "Impianti eolici offshore in progetto",
@@ -424,31 +445,9 @@
               "id": "imp_eo_offshore_aree"
             }
            ]
-          },
-          {
-          "id": "usi mare",
-          "type": "group",
-          "name": "Altri usi del mare",
-          "description": "Questa raccolta fornisce una rappresentazione dei principali usi attuali e pianificati del mare che possono interagire o interferire con lo sviluppo dell’eolico offshore. Tra i dati presentati rientrano, in particolare, i Piani dello Spazio Marittimo elaborati a livello nazionale, le rotte di traffico navale, le aree destinate alla pesca, le zone militari, le aree marine protette e altri vincoli normativi o funzionali. </br> Le informazioni, raccolte da fonti ufficiali e armonizzate su base geografica, consentono di evidenziare le potenziali sovrapposizioni con le aree eleggibili all’installazione di impianti offshore, contribuendo a una valutazione più integrata e sostenibile dell’utilizzo dello spazio marittimo. </br>L’obiettivo è offrire uno strumento di supporto ai processi di pianificazione e autorizzazione, favorendo un approccio coordinato tra la valutazione del potenziale eolico offshore e gli altri usi e vincoli del mare, nel rispetto delle strategie di gestione condivisa dello spazio marino. ",
-          "isOpen": false,
-          "members": [
-            {
-              "type": "wms",
-              "name": "Pianificazione dello spazio marittimo - mappa semplificata",
-              "description": "</p><p align=\"justify\">La mappa rappresenta la suddivisione del mare in Unità di Pianificazione (UP), ciascuna associata a uno o più usi prevalenti (prioritari, riservati, limitati o generici), secondo quanto stabilito dai Piani di gestione dello Spazio Marittimo. I dati derivano dalla piattaforma <a href=\"https://www.sid.mit.gov.it/\"  target=\"_blank\"> SID - Il portale del mare</a> e riflettono le destinazioni d’uso ufficiali individuate dal Ministero delle Infrastrutture e dei Trasporti (MIT), in coerenza con la Direttiva europea 2014/89/UE. </br> Per rendere più agevole la lettura della mappa ai fini dello sviluppo dell’eolico offshore, la rappresentazione è stata semplificata mediante l’aggregazione di alcune classi di uso. In particolare, le aree sono state riclassificate secondo i seguenti criteri: </p><p align=\"justify\"><ul><li><p align=\"justify\">Aree con uso prioritario “energia” esclusivo: destinate principalmente alla produzione di energia, senza altri usi concorrenti. </p></li></p><p align=\"justify\"><li><p align=\"justify\"> Aree con uso prioritario “energia” non esclusivo: l’uso energetico è prioritario, ma coesiste con altri usi prioritari.</p></li><li><p align=\"justify\">Aree con uso generico: non presentano usi specifici, lo sviluppo energetico è quindi possibile.</p></li></p></li><li><p align=\"justify\">Aree con uso prevalente riconducibile ad altri usi prioritari: lo sviluppo energetico è possibile solo se non interferisce con gli usi prioritari assegnati.</p></li><li><p align=\"justify\">Aree con uso limitato o riservato: lo sviluppo energetico non è consentito.</p></li></ul></br> <p align=\"justify\">Questa classificazione ha l’obiettivo di offrire una visione sintetica e funzionale del contesto pianificatorio, a supporto delle valutazioni preliminari per lo sviluppo dell’eolico offshore. La classificazione completa è consultabile nella sezione “Usi del mare” della scheda “Dati territoriali”</p></br></br><table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=299&lingua=IT&descrizione=Pianificazione dello spazio marittimo - mappa semplificata\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></p></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:msp",
-              "metadataUrls":[{
-                "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=299"
-              }],
-              "styles":"new_atlante_integrato:msp_semplificato",
-              "layers": "new_atlante_integrato:msp",
-              "id": "msp"
-            }
-           ]
           }
         ]
-       }
+        }
      ]
     }
   ]

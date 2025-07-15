@@ -7,7 +7,14 @@
       "description": "<p style='text-align:justify;'> The achievement of the challenging renewable energy development targets for 2030 set out in the PNIEC (National Integrated Energy and Climate Plan), and driven by the REPowerEU program and the Fit for 55 package, relies primarily on the contribution of photovoltaic and wind power sources. The availability of suitable areas for installations is a key differentiating factor among different territories and may highlight potential limitations to the development itself. </br></br> This section presents spatially-based information that fits within the framework of territorial energy planning and the monitoring of regional targets assigned under the “Suitable Areas” decree (DM 21 giugno 2024). Alongside the progress toward these targets, for each of the main categories of plants considered in this section (photovoltaic, onshore wind, and offshore wind), estimates are provided for different types of areas potentially available for new installations (eligible areas), along with information on the status of projects currently undergoing authorization. It should be noted that the results regarding eligible areas shown on these maps are derived from studies based on specific assumptions and should be understood as purely indicative information on land availability.\n\n <div><img src=\"/public/img/Energie Rinnovabili-iStock-586163548.jpg\" style=\"width:640px;height:427px;\"></br></br></div> </p>",
       "isOpen": false,
       "members": [
-        {
+         {
+          "id": "Obiettivo e avanzamento",
+          "type": "group",
+          "name": "Goal and process",
+          "description": "This collection includes information on the 2030 RES target by region and the progress made so far for each region or autonomous province towards the targets assigned by the Eligible Areas decree as a percentage of the regional target.",
+          "isOpen": false,
+          "members": [
+            {
           "type": "wms",
           "name": "RES target by region",
           "description": "To align Italy with the latest EU targets, the Ministry of the Environment and Energy Security (MASE) has set a goal of 80 GW of additional capacity compared to 2020, assuming that the entire increase in renewable energy capacity by 2030 will come solely from wind and solar sources. This assumed energy mix has no prescriptive effect and Regions and Autonomous Provinces remain free to choose which technologies to focus on to achieve the target, following the principle of “technological neutrality“. </br></br>The map shows the regional breakdown of the additional capacity target set for Italy.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=295&lingua=EN&descrizione=RES target by region\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
@@ -38,11 +45,12 @@
                 "template": "<p>The region <b>{{den_reg}}</b> has reached <b>{{av_perc}}%</b> of its additional power target </br> and still has to install <b>{{av_ass}} MW to complete it</p>"
               },
           "id": "avanz_reg"
+        }]
         },
         {
           "id": "Fotovoltaico",
           "type": "group",
-          "name": "Photovoltaic",
+          "name": "Potential Photovoltaic",
           "description": "This collection includes information on the extent of certain types of areas available for new photovoltaic installations (both ground-mounted and rooftop), as well as on the presence of proposed projects subject to Environmental Impact Assessment (EIA). These data are useful for assessing progress toward the 2030 renewable energy target. </br>The results shown in these maps are based on studies that rely on specific assumptions and should be understood as a guide for identifying areas potentially available for new photovoltaic installations. They provide planners with preliminary indications of the areas with the highest potential. </br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_en.pdf\"  target=\"_blank\"> following document.</a> \n\n <div><img src=\"/public/img/Fotolia_53185812_Subscription_Monthly_XXL.jpg\" style=\"width:640px;height:427px;\"></div> ",
           "isOpen": false,
           "members": [
@@ -254,7 +262,7 @@
           {
           "id": "Eolico onshore",
           "type": "group",
-          "name": "Onshore wind",
+          "name": "Potential Onshore wind",
           "description": "This collection includes information on the extent of eligible areas for new onshore wind installations and on the presence of proposed projects subject to Environmental Impact Assessment (EIA). These data are useful for assessing progress toward the 2030 renewable energy target. The results shown in these maps are based on studies relying on specific assumptions and should be understood as a guide for identifying areas potentially available for new wind installations, providing planners with preliminary indications of the areas with the highest potential. </br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a> \n\n <div><img src=\"/public/img/shutterstock_1349148488.jpg\" style=\"width:640px;height:427px;\"></div> ",
           "isOpen": false,
           "members": [
@@ -329,7 +337,7 @@
        {
           "id": "Eolico offshore",
           "type": "group",
-          "name": "Offshore wind",
+          "name": "Potential Offshore wind",
           "description": "This collection includes information on the extent of eligible areas for new offshore wind installations and on the presence of proposed projects subject to Environmental Impact Assessment (EIA), useful for assessing progress toward the 2030 renewable energy target. The results shown in these maps are based on studies that rely on specific assumptions and represent preliminary indications of the areas with the highest potential, considering the current state of offshore technology. </br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a> \n\n <div><img src=\"/public/img/shutterstock_1482625118.jpg\" style=\"width:640px;height:427px;\"></div> ",
           "isOpen": false,
           "members": [
@@ -337,7 +345,7 @@
           "id": "aree_eo_offshore",
           "type": "group",
           "name": "Areas available for offshore wind power installations",
-          "description": "This collection includes maps of areas potentially available for new offshore wind installations, classified by distance from the coast, depth range, and production range. The areas were identified by integrating the Mediterranean Sea bathymetry map, generated and released by the European Marine Observation and Data Network (EMODnet), with maps of theoretical annual specific producibility (calculated at a height of 150 m above sea level). The producibility maps derive from the new Italian anemological database produced by RSE and are available at <a href=\"https://aeolian.rse-web.it/\"  target=\"_blank\"> AEOLIAN - Atlante EOLico ItaliANo.</a>   </br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a>",
+          "description": "This collection provides an integrated overview of the Italian maritime space, useful for preliminary assessments of offshore wind development. It includes both Maritime Spatial Planning (MSP) information, derived from the official plans of the Ministry of Infrastructure and Transport (MIT), and maps of areas potentially eligible for new offshore wind installations, broken down by distance from the coast, depth range, and producibility range. <p> The latter were identified by integrating the Mediterranean Sea bathymetry map, generated and released by the European Marine Observation and Data Network (EMODnet), with maps of theoretical annual specific producibility (calculated at an altitude of 150 m above sea level). The producibility maps are derived from the new Italian wind database produced by RSE and are available at <a href=\"https://aeolian.rse-web.it/\"  target=\"_blank\"> AEOLIAN - Atlante EOLico ItaliANo.</a>   </br> </p> For further information on the estimation of these areas it is possible to consult the <a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA_wind.pdf\"  target=\"_blank\"> following document.</a></p> ",
           "isOpen": false,
           "members": [
             {
@@ -387,6 +395,19 @@
                 "template": "<p>Bathymetry range [m] <b>{{range_bat}}</b></p></p><p>Wind energy production range [MWh/MW] <b>{{range_prod}}</b></p>"
               },
               "id": "off_oltre100"
+            },
+            {
+              "type": "wms",
+              "name": "Maritime spatial planning - simplified map",
+              "description": "</p><p align=\"justify\">The map shows the division of the sea into Planning Units (UP), each associated with one or more prevailing uses (priority, reserved, limited, or general), as defined by the Maritime Spatial Plans. The data come from the SID platform – Il portale del mare (https://www.sid.mit.gov.it/) and reflect the official designated uses identified by the Ministry of Infrastructure and Transport (MIT), in accordance with European Directive 2014/89/EU.</br> To facilitate the interpretation of the map for offshore wind development purposes, the representation has been simplified by aggregating certain land-use classes. In particular, the areas have been reclassified according to the following criteria:</p><p align=\"justify\"><ul><li><p align=\"justify\">Areas with exclusive priority use for “energy”: primarily designated for energy production, with no competing uses.</p></li></p><p align=\"justify\"><li><p align=\"justify\"> Areas with non-exclusive priority use for “energy”: energy use is a priority, but it coexists with other priority uses.</p></li><li><p align=\"justify\">Areas with generic use: no specific uses are identified, energy development therefore possible.</p></li></p></li><li><p align=\"justify\">Areas with predominant use related to other priority uses: energy development is only possible if it does not interfere with the assigned priority uses.</p></li><li><p align=\"justify\">Areas with limited or restricted use: energy development is not permitted.</p></li></ul></br> <p align=\"justify\">This classification aims to provide a concise and functional overview of the planning context, in support of preliminary assessments for offshore wind development. The complete classification can be found in the “Sea uses” section of the “Territorial data” catalog.</p></br></br><table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=299&lingua=IT&descrizione=Maritime spatial planning - simplified map\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></p></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:msp",
+              "metadataUrls":[{
+                "title":"metadata link",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=299"
+              }],
+              "styles":"new_atlante_integrato:msp_semplificato",
+              "layers": "new_atlante_integrato:msp",
+              "id": "msp"
             }
            ]
           },
@@ -424,29 +445,8 @@
               "id": "imp_eo_offshore_aree"
             }
            ]
-          },
-          {
-          "id": "usi mare",
-          "type": "group",
-          "name": "Other sea uses",
-          "description": "This collection provides a representation of the main current and planned uses of the sea that may interact with or interfere with the development of offshore wind energy. The data presented include, in particular, the Maritime Spatial Plans developed at the national level, shipping routes, fishing areas, military zones, marine protected areas, and other regulatory or functional constraints. </br> The information, collected from official sources and harmonized on a geographic basis, makes it possible to highlight potential overlaps with areas eligible for offshore wind installations, contributing to a more integrated and sustainable assessment of maritime space use.</br> The goal is to provide a support tool for planning and permitting processes, promoting a coordinated approach between the assessment of offshore wind potential and other marine uses and constraints, in line with shared marine spatial management strategies.",
-          "isOpen": false,
-          "members": [
-            {
-              "type": "wms",
-              "name": "Maritime spatial planning - simplified map",
-              "description": "</p><p align=\"justify\">The map shows the division of the sea into Planning Units (UP), each associated with one or more prevailing uses (priority, reserved, limited, or general), as defined by the Maritime Spatial Plans. The data come from the SID platform – Il portale del mare (https://www.sid.mit.gov.it/) and reflect the official designated uses identified by the Ministry of Infrastructure and Transport (MIT), in accordance with European Directive 2014/89/EU.</br> To facilitate the interpretation of the map for offshore wind development purposes, the representation has been simplified by aggregating certain land-use classes. In particular, the areas have been reclassified according to the following criteria:</p><p align=\"justify\"><ul><li><p align=\"justify\">Areas with exclusive priority use for “energy”: primarily designated for energy production, with no competing uses.</p></li></p><p align=\"justify\"><li><p align=\"justify\"> Areas with non-exclusive priority use for “energy”: energy use is a priority, but it coexists with other priority uses.</p></li><li><p align=\"justify\">Areas with generic use: no specific uses are identified, energy development therefore possible.</p></li></p></li><li><p align=\"justify\">Areas with predominant use related to other priority uses: energy development is only possible if it does not interfere with the assigned priority uses.</p></li><li><p align=\"justify\">Areas with limited or restricted use: energy development is not permitted.</p></li></ul></br> <p align=\"justify\">This classification aims to provide a concise and functional overview of the planning context, in support of preliminary assessments for offshore wind development. The complete classification can be found in the “Sea uses” section of the “Territorial data” catalog.</p></br></br><table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=299&lingua=IT&descrizione=Maritime spatial planning - simplified map\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></p></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:msp",
-              "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=299"
-              }],
-              "styles":"new_atlante_integrato:msp_semplificato",
-              "layers": "new_atlante_integrato:msp",
-              "id": "msp"
-            }
-           ]
           }
+          
         ]
        }
      ]

@@ -50,7 +50,7 @@
             {
               "type": "wms",
               "name": "Onshore FLH at 100 m a.g.l.",
-              "description": "Onshore FLH at 75 m a.g.l. expressed in MWh/MW. <br> The map shows for each cell the maximum FLH value among those obtained using the following wind turbines: Nordex N131 [nominal power: 3.6 MW], Nordex N117 [nominal power: 3.6 MW], Enercon E115 [nominal power: 3 MW], Vestas V117 [nominal power: 3.4 MW] e Vestas V136 [nominal power: 3.4MW].",
+              "description": "Onshore FLH at 100 m a.g.l. expressed in MWh/MW. <br> The map shows for each cell the maximum FLH value among those obtained using the following wind turbines: Nordex N131 [nominal power: 3.6 MW], Nordex N117 [nominal power: 3.6 MW], Enercon E115 [nominal power: 3 MW], Vestas V117 [nominal power: 3.4 MW] e Vestas V136 [nominal power: 3.4MW].",
               "url": "https://gis3.rse-web.it/geoserver/wms",
               "featureInfoTemplate": {
                 "template": "<p>FLH is equal to <b>{{prod_100}}</b> MWh/MW </p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ae_connessione_db_dati_grafico_prod.php?id_cella={{id_cella}}&titolo=on&lingua=EN\"><font color='#FFFFFF'>View chart</a></font></td></tr></table>"

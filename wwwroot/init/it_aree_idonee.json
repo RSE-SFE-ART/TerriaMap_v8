@@ -405,7 +405,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=299"
               }],
-              "styles":"new_atlante_integrato:msp_semplificato",
+              "styles":"new_atlante_integrato:msp_simplified_fill",
               "layers": "new_atlante_integrato:msp",
               "id": "msp"
             }

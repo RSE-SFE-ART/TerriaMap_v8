@@ -207,13 +207,13 @@
                     "cql_filter": "var_id=218"
                   },
                   "id": "eo_218",
-                  /* "initialMessage": {
+                  "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "eo_218",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  }, */
+                  },
                   "styles":"eo_imp_com_potenza"
                 },
                 {
@@ -233,13 +233,13 @@
                     "cql_filter": "var_id=204"
                   },
                   "id": "eo_204",
-                  /*                   "initialMessage": {
+                  "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "eo_204",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  }, */
+                  },
                   "styles":"new_atlante_integrato:eo_num_comun"
                 },
                 {
@@ -259,13 +259,13 @@
                     "cql_filter": "var_id=217"
                   },
                   "id": "eo_217",
-                  /* "initialMessage": {
+                  "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "eo_217",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  }, */
+                  },
                   "styles":"new_atlante_integrato:eo_num_ae_comun"
                 },
                 {
@@ -940,13 +940,13 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=74&anno=2021"
                   }],
-                  /* "initialMessage": {
+                  "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili dal 2015 al 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "var_id=74",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  }, */
+                  },
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"ge_imp_prov_potenza_installata",
                   "parameters": {
@@ -1008,13 +1008,13 @@
                   "parameters": {
                     "cql_filter": "var_id=220"
                   },
-                  /* "initialMessage": {
+                  "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili per l'anno 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale l'anno 2019 dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "ge_220",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  }, */
+                  },
                   "styles":"ge_pot_imp_com",
                   "id": "ge_220"
                 },

@@ -1,0 +1,105 @@
+{
+  "catalog": [
+    {
+      "type": "group",
+      "name": "contribuisci",
+      "isOpen": true,
+      "members": [
+        {
+          "type": "wms",
+          "id": "contribute_click",
+          "name": "Contribute Click Layer",
+          "url": "https://gis3.rse-web.it/geoserver/wms",
+          "layers": "marinewind:ghost_click",
+          "opacity": 0,
+          "disableAboutData": true,
+          "disableZoomTo": true,
+          "hideLegendInWorkbench": true,
+          "featureInfoTemplate": {
+            "name": "Contribute",
+            "template": "<form action=\"https://aeolian-api.rse-web.it/marinewind/contribute\" method=\"post\" target=\"_blank\"><table width=\"620\"><tr><td><label for=\"email\">Email *</label></td><td><input type=\"email\" id=\"email\" name=\"email\" required size=\"32\" style=\"color:black;\"></td></tr><tr><td><label for=\"lat_display\">Latitude *</label></td><td><input type=\"text\" id=\"lat_display\" value=\"{{#terria.formatNumber}}{maximumFractionDigits:6,useGrouping:false}{{terria.coords.latitude}}{{/terria.formatNumber}}\" readonly required size=\"18\" style=\"color:black;\"><input type=\"hidden\" name=\"lat\" value=\"{{terria.coords.latitude}}\"></td></tr><tr><td><label for=\"lon_display\">Longitude *</label></td><td><input type=\"text\" id=\"lon_display\" value=\"{{#terria.formatNumber}}{maximumFractionDigits:6,useGrouping:false}{{terria.coords.longitude}}{{/terria.formatNumber}}\" readonly required size=\"18\" style=\"color:black;\"><input type=\"hidden\" name=\"lon\" value=\"{{terria.coords.longitude}}\"></td></tr><tr><td><label for=\"country\">Country *</label></td><td><select id=\"country\" name=\"country\" required style=\"color:black;\"><option value=\"\" disabled selected>Select…</option><option>Albania</option><option>Belgium</option><option>Bosnia and Herzegovina</option><option>Bulgaria</option><option>Croatia</option><option>Cyprus</option><option>Denmark</option><option>Estonia</option><option>Finland</option><option>France</option><option>Germany</option><option>Greece</option><option>Iceland</option><option>Ireland</option><option>Italy</option><option>Latvia</option><option>Lithuania</option><option>Malta</option><option>Monaco</option><option>Montenegro</option><option>Netherlands</option><option>Norway</option><option>Poland</option><option>Portugal</option><option>Romania</option><option>Slovenia</option><option>Spain</option><option>Sweden</option><option>Ukraine</option><option>United Kingdom</option></select></td></tr><tr><td><label for=\"proj_name\">Project Name</label></td><td><input type=\"text\" id=\"proj_name\" name=\"name\" size=\"32\" style=\"color:black;\"></td></tr><tr><td><label for=\"ptype\">Type *</label></td><td><select id=\"ptype\" name=\"type\" required style=\"color:black;\"><option value=\"\" disabled selected>Select…</option><option value=\"floating\">Floating</option><option value=\"bottom-fixed\">Bottom fixed</option></select></td></tr><tr><td><label for=\"company\">Proposing company</label></td><td><input type=\"text\" id=\"company\" name=\"company\" size=\"32\" style=\"color:black;\"></td></tr><tr><td><label for=\"power_mw\">Power [MW] *</label></td><td><input type=\"number\" id=\"power_mw\" name=\"power_mw\" required min=\"0\" step=\"any\" style=\"color:black;\"></td></tr><tr><td><label for=\"n_WTG\">Number of WTG</label></td><td><input type=\"number\" id=\"n_WTG\" name=\"n_WTG\" min=\"0\" step=\"1\" style=\"color:black;\"></td></tr><tr><td><label for=\"status\">Status *</label></td><td><select id=\"status\" name=\"status\" required style=\"color:black;\"><option value=\"\" disabled selected>Select…</option><option value=\"preliminary_study\">Preliminary study</option><option value=\"permitting_eia_ongoing\">Permitting (EIA ongoing)</option><option value=\"permitting_eia_completed\">Permitting (EIA completed)</option><option value=\"authorized\">Authorized</option><option value=\"under_construction\">Under construction</option><option value=\"operational\">Operational</option></select></td></tr><tr><td><label for=\"source_url\">Source (link)</label></td><td><input type=\"url\" id=\"source_url\" name=\"source\" size=\"32\" style=\"color:black;\"></td></tr></table><table width=\"1000\" style=\"border-left: 1px solid #626973;border-right: 1px solid #626973; margin-top:8px;\"><tr style=\"border-left: 1px solid #626973;border-right: 1px solid #626973;\"><td><p style='text-align:justify; font-size:12px'>RSE - Ricerca sul Sistema Energetico SpA informs that the optional, explicit and voluntary sending of personal data by completing the registration form or other modules on the site involves the acquisition of the sender's contact details, necessary to have access to the material to download, as well as all personal data voluntarily included in communications. <br>For further information, please refer to the full text of the <a href=\"https://www.rse-web.it/privacy\" target=\"_blank\">privacy policy.</a></p></td></tr><tr><td><input type=\"checkbox\" required>  I have read the information</label></td></tr></table><div style=\"margin-top:8px;\"><input type=\"submit\" value=\"Submit\" style=\"color:black;\"></div></form>"
+          },
+          "initialMessage": {
+            "title": "Instructions:",
+            "content": "<p align = \"justify\">This tool enables users to provide georeferenced data and related technical information for new offshore wind project proposals. <br>To <b>add a project</b>, please zoom in and select the approximate location on the map. The system will automatically capture the coordinates and redirect you to a submission form, which must be completed to finalize the process. You will automatically see on the map the projects which are already available in the database.<br> All submitted data will undergo review before being integrated into the WebGIS and reflected on the map.<br>Contributions are welcome from across Europe, not only from Marinewind partners.</p>",
+            "key": "ghost_click",
+            "confirmation": true,
+            "confirmText": "START"
+          }
+        },
+        {
+          "id": "Projects",
+          "type": "group",
+          "name": "Offshore Wind Projects",
+          "description": "Offshore Wind projects",
+          "isOpen": false,
+          "members": [
+            {
+              "type": "wms",
+              "name": "Italy - Offshore Wind Project Locations",
+              "url": "https://gis3.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%floating_offshore_wind_farms_IT",
+              "layers": "marinewind:floating_offshore_wind_farms_IT",
+              "id": "italy_new_inst"
+            },
+            {
+              "type": "wms",
+              "name": "Greece - Offshore Wind Project Areas",
+              "url": "https://gis3.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%3greece_potential_offshore_wind_areas",
+              "layers": "marinewind:greece_potential_offshore_wind_areas",
+              "id": "greece_new_inst"
+            },
+            {
+              "type": "wms",
+              "name": "Portugal - Potential FOW Farm Areas",
+              "url": "https://gis3.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%potential_areas_for_fow_farms",
+              "layers": "marinewind:potential_areas_for_fow_farms",
+              "id": "portugal_new_inst"
+            },
+            {
+              "type": "wms",
+              "name": "Portugal - Existing FOW Farm Areas",
+              "url": "https://gis3.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%portugal_existing_fow_farms_areas",
+              "layers": "marinewind:portugal_existing_fow_farms_areas",
+              "id": "portugal_inst_esistenti"
+            },
+            {
+              "type": "wms",
+              "name": "Spain - High Potential Offshore Wind Zones",
+              "url": "https://gis3.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%spain_high_potential_offshore_wind_zones",
+              "layers": "marinewind:spain_high_potential_offshore_wind_zones",
+              "id": "spain_high_potential_offshore_zind_zones"
+            },
+            {
+              "type": "wms",
+              "name": "UK - FOW Project Locations",
+              "url": "https://gis3.rse-web.it/geoserver/marinewind/wms?service=WMS&version=1.3.0&request=GetMap&layers=marinewind%floating offshore wind farms UK",
+              "layers": "marinewind:floating offshore wind farms UK",
+              "id": "uk_floating_offshore_wind_farms"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "homeCamera": {
+    "north": 48,
+    "east": 19,
+    "south": 35,
+    "west": 6
+  },
+  "baseMaps": {
+    "defaultBaseMapId": "basemap-positron",
+    "previewBaseMapId": "basemap-positron"
+  },
+  "viewerMode": "2D",
+  "workbench": [
+    "contribute_click",
+    "italy_new_inst",
+    "greece_new_inst",
+    "portugal_new_inst",
+    "portugal_inst_esistenti",
+    "spain_high_potential_offshore_zind_zones",
+    "uk_floating_offshore_wind_farms"
+  ]
+
+}

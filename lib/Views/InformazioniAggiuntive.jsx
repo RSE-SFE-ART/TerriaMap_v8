@@ -6,16 +6,16 @@ import PanelStyles from "terriajs/lib/ReactViews/Map/Panels/panel.scss";
 import Styles from "./related-maps.scss";
 import classNames from "classnames";
 
-function AnalisiAvanzate(props) {
+function InformazioniAggiuntive(props) {
   const dropdownTheme = {
     inner: Styles.dropdownInner,
-    icon: "gallery"
+    icon: "dataCatalog"
   };
 
   // to select language config.json depending on the browser language
   var userLang = navigator.language || navigator.userLanguage;
   var totem_link = "/#en_totemweb";
-  var analisi = "Additional tools";
+  var analisi = "Additional Informations";
   //if (userLang === "it-IT" || userLang === "it") {
   //  totem_link = "/#it_totemweb";
   //  analisi = "Analisi Avanzate";
@@ -44,60 +44,55 @@ function AnalisiAvanzate(props) {
           <table>
             <tr>
               <td colspan="2">
-                <h2>OFFSHORE WIND PROJECTS SUBMISSION</h2>
+                <h2>STRUCTURED DOCUMENTATION CATALOG</h2>
               </td>
             </tr>
             <tr>
               <td>
                 <img
                   className={Styles.image}
-                  src={require("../../wwwroot/images/wind_project_image.png")}
-                  alt="Wind Project"
+                  src={require("../../wwwroot/images/documentation_image.png")}
+                  alt="Documentation"
                 />
               </td>
               <td>
                 <p align="justify">
-                  Submit spatial and technical data for new offshore wind
-                  project proposals.
+                  Consult concise documentation on best practices,
+                  recommendations, financing solutions, guidelines, and
+                  environmental assessments to support information exchange
+                  among stakeholders and to support decision-making processes.
                 </p>
                 <br></br>
-                To access
-                <a className={Styles.link} href={"/#contribute"}>
+                Work in progress
+                {/*<a className={Styles.link} href={"/ #contribute"}>
                   {" click here"}
-                </a>
+                </a>*/}
               </td>
             </tr>
             <tr>
               <td colspan="2">
-                <h2>LCOE Simulation Tool</h2>
+                <h2>STAKEHOLDERS DATABASE</h2>
               </td>
             </tr>
             <tr>
               <td>
                 <img
                   className={Styles.image}
-                  src={require("../../wwwroot/images/simulation_tool.png")}
-                  alt="LCOE"
+                  src={require("../../wwwroot/images/marinewind_stakeholders.png")}
+                  alt="Stakeholders"
                 />
               </td>
               <td>
                 <p align="justify">
-                  This tool allows to perform a preliminary technical-economical
-                  evaluation of a hypothetical floating offshore wind farm
-                  simulating the overall cost of energy production (€/MWh) by
-                  forecasting future macroeconomic factors such as inflation,
-                  interest rates, electricity prices and operating hours.
+                  This tool provides access to a database of potential
+                  stakeholders involved in the offshore wind sector. For further
+                  details, please contact the respective stakeholder directly.
                 </p>
                 <br></br>
                 Work in progress
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={Styles.link}
-                  href={"https://marinewind-lcoe.hosted.york.ac.uk/CF_20.html"}
-                >
-                  {"Provvisional Link"}
-                </a>
+                {/*<a className={Styles.link} href={"/ #contribute"}>
+                  {" click here"}
+                </a>*/}
               </td>
             </tr>
           </table>
@@ -107,9 +102,9 @@ function AnalisiAvanzate(props) {
   );
 }
 
-AnalisiAvanzate.propTypes = {
+InformazioniAggiuntive.propTypes = {
   viewState: PropTypes.object.isRequired,
   smallScreen: PropTypes.bool
 };
 
-export default AnalisiAvanzate;
+export default InformazioniAggiuntive;

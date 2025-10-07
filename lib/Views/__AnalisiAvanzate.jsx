@@ -14,7 +14,7 @@ function AnalisiAvanzate(props) {
 
   const dropdownTheme = {
     inner: Styles.dropdownInner,
-    icon: "gallery"
+    icon: "?"
   };
 
   // to select language config.json depending on the browser language

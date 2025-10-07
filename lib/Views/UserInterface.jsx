@@ -9,6 +9,7 @@ import React from "react";
 import RelatedMaps from "./RelatedMaps";
 import Multienergy from "./Multienergy";
 import AnalisiAvanzate from "./AnalisiAvanzate";
+import InformazioniAggiuntive from "./InformazioniAggiuntive";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
@@ -36,6 +37,7 @@ export default function UserInterface(props) {
       <MenuLeft>
         <MenuItem caption="About" href="about.html" key="about-link" />
         <AnalisiAvanzate viewState={props.viewState} />
+        <InformazioniAggiuntive viewState={props.viewState} />
       </MenuLeft>
       <ExperimentalMenu>
         {/* <If condition={isBrowserSupportedAV()}>

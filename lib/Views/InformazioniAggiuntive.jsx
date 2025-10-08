@@ -117,7 +117,7 @@ function InformazioniAggiuntive(props) {
                     href="#"
                     onClick={openStakeholdersNotification}
                   >
-                    Open stakeholders
+                    Open Stakeholders list
                   </a>
                 </td>
               </tr>

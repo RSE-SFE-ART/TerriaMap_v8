@@ -1,0 +1,117 @@
+// Palette
+$academia-bg: #c0e4f5;
+$academia-text: #0b1e3a;
+$civilsociety-bg: #ebf68c;
+$civilsociety-text: #365314;
+$greeninnovation-bg: #b5e6a2;
+$greeninnovation-text: #064a2f;
+$industry-bg: #d0d0d0;
+$industry-text: #1f2937;
+$publicauth-bg: #f5c6ab;
+$publicauth-text: #4c0519;
+
+.mw-stakeholders {
+  min-width: 1200;
+  max-width: 1200px;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #111;
+
+  .mw-grid {
+    display: grid;
+    gap: 12px;
+  }
+
+  .mw-section {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .mw-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 14px;
+    border: 0;
+    cursor: pointer;
+    transition: filter 0.12s ease;
+
+    &:hover {
+      filter: brightness(0.98);
+    }
+  }
+
+  .mw-chevron {
+    width: 16px;
+    text-align: center;
+  }
+  .mw-title {
+    font-weight: 700;
+  }
+  .mw-count {
+    margin-left: auto;
+    font-size: 12px;
+    background: #f3f4f6;
+    padding: 2px 8px;
+    border-radius: 999px;
+    color: #666;
+  }
+
+  .mw-cat--academia {
+    background: $academia-bg;
+    color: $academia-text;
+  }
+  .mw-cat--civil-society {
+    background: $civilsociety-bg;
+    color: $civilsociety-text;
+  }
+  .mw-cat--green-innovation {
+    background: $greeninnovation-bg;
+    color: $greeninnovation-text;
+  }
+  .mw-cat--industry {
+    background: $industry-bg;
+    color: $industry-text;
+  }
+  .mw-cat--public-authorities {
+    background: $publicauth-bg;
+    color: $publicauth-text;
+  }
+
+  .mw-body {
+    max-height: 60vh;
+    overflow: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      text-align: left;
+      padding: 10px 12px;
+      background: #fafafa;
+      border-bottom: 1px solid #e6e6e6;
+      font-weight: 600;
+    }
+
+    tbody td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+    }
+
+    tbody tr:nth-child(odd) {
+      background: #fbfbfb;
+    }
+    tbody tr:hover {
+      background: #f4f6f8;
+    }
+  }
+}

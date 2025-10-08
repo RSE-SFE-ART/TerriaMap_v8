@@ -90,14 +90,14 @@ function AnalisiAvanzate(props) {
                 </p>
                 <br></br>
                 Work in progress
-                <a
+                {/*<a
                   target="_blank"
                   rel="noopener noreferrer"
                   className={Styles.link}
                   href={"https://marinewind-lcoe.hosted.york.ac.uk/CF_20.html"}
                 >
                   {"Provvisional Link"}
-                </a>
+                </a>*/}
               </td>
             </tr>
           </table>

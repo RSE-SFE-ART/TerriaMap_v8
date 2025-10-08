@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "pm2": "^3.2.2",
-    "terriajs-server": "^3.3.3"
+    "terriajs-server": "^3.3.3",
+    "xlsx": "^0.18.5"
   },
   "config": {
     "awsProfile": "terria",
@@ -107,7 +108,7 @@
     "prettier-check": "prettier --check \"**/*\"",
     "replace_brand": "copy .\\_dasostituire\\Branding.tsx .\\node_modules\\terriajs\\lib\\ReactViews\\SidePanel\\ && copy .\\_dasostituire\\SidePanel.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\SidePanel\\",
     "replace_cql": "copy .\\_dasostituire\\WebMapServiceCatalogItem.ts .\\node_modules\\terriajs\\lib\\Models\\Catalog\\Ows\\",
-    "fix_images" : "copy .\\_dasostituire\\defaultBaseMaps.ts .\\node_modules\\terriajs\\lib\\Models\\BaseMaps\\",
+    "fix_images": "copy .\\_dasostituire\\defaultBaseMaps.ts .\\node_modules\\terriajs\\lib\\Models\\BaseMaps\\",
     "replace_prev": "copy wwwroot\\images\\basemaps\\black-marble.png .\\wwwroot\\build\\TerriaJS\\images\\ && copy wwwroot\\images\\basemaps\\dark-matter.png .\\wwwroot\\build\\TerriaJS\\images\\ && copy wwwroot\\images\\basemaps\\natural-earth.png .\\wwwroot\\build\\TerriaJS\\images\\ && copy wwwroot\\images\\basemaps\\positron.png .\\wwwroot\\build\\TerriaJS\\images\\ && copy wwwroot\\images\\basemaps\\open_street_italy.png .\\wwwroot\\build\\TerriaJS\\images\\",
     "replace_language": "copy node_modules\\terriajs\\lib\\Language\\it\\translation.json wwwroot\\languages\\it",
     "pre_gulp": "yarn replace_brand && yarn replace_cql && yarn fix_images",

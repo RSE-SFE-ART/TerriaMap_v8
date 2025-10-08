@@ -6,6 +6,8 @@ import PanelStyles from "terriajs/lib/ReactViews/Map/Panels/panel.scss";
 import Styles from "./related-maps.scss";
 import classNames from "classnames";
 
+import Stakeholders from "./Stakeholders.jsx";
+
 function InformazioniAggiuntive(props) {
   const dropdownTheme = {
     inner: Styles.dropdownInner,
@@ -13,13 +15,34 @@ function InformazioniAggiuntive(props) {
   };
 
   // to select language config.json depending on the browser language
-  var userLang = navigator.language || navigator.userLanguage;
-  var totem_link = "/#en_totemweb";
-  var analisi = "Additional Informations";
-  //if (userLang === "it-IT" || userLang === "it") {
-  //  totem_link = "/#it_totemweb";
-  //  analisi = "Analisi Avanzate";
-  //}
+  const userLang = navigator.language || navigator.userLanguage;
+  const totem_link = "/#en_totemweb";
+  const analisi = "Additional Informations";
+  // if (userLang === "it-IT" || userLang === "it") {
+  //   totem_link = "/#it_totemweb";
+  //   analisi = "Analisi Avanzate";
+  // }
+
+  // Handler: open Terria notification with <Stakeholders/>
+  const openStakeholdersNotification = e => {
+    e?.preventDefault?.();
+    const { terria } = props.viewState;
+
+    if (terria?.notificationState?.addNotificationToQueue) {
+      terria.notificationState.addNotificationToQueue({
+        title: "Stakeholders",
+        message: <Stakeholders />,
+        confirmText: "Close"
+      });
+    } else {
+      // Fallback for older builds without notificationState
+      // eslint-disable-next-line no-console
+      console.warn(
+        "terria.notificationState.addNotificationToQueue is not available."
+      );
+      alert("Stakeholders (notification not available in this build).");
+    }
+  };
 
   return (
     <MenuPanel
@@ -32,69 +55,73 @@ function InformazioniAggiuntive(props) {
       {/* titolo della pagina */}
       <div className={classNames(PanelStyles.header)}>
         <label className={PanelStyles.heading}>
-          {/*<h1> Navigate among the supplementary tools</h1>*/}
+          {/* <h1> Navigate among the supplementary tools</h1> */}
         </label>
       </div>
 
-      {/* caso multi energy*/}
-      {/* collegamento a WEN*/}
-      {/* collegamento a mapstore */}
+      {/* body */}
       <div className={classNames(PanelStyles.section, Styles.section)}>
-        <ul class="list-group list-group-flush">
+        <ul className="list-group list-group-flush">
           <table>
-            <tr>
-              <td colspan="2">
-                <h2>STRUCTURED DOCUMENTATION CATALOG</h2>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  className={Styles.image}
-                  src={require("../../wwwroot/images/documentation_image.png")}
-                  alt="Documentation"
-                />
-              </td>
-              <td>
-                <p align="justify">
-                  Consult concise documentation on best practices,
-                  recommendations, financing solutions, guidelines, and
-                  environmental assessments to support information exchange
-                  among stakeholders and to support decision-making processes.
-                </p>
-                <br></br>
-                Work in progress
-                {/*<a className={Styles.link} href={"/ #contribute"}>
-                  {" click here"}
-                </a>*/}
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <h2>STAKEHOLDERS DATABASE</h2>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  className={Styles.image}
-                  src={require("../../wwwroot/images/marinewind_stakeholders.png")}
-                  alt="Stakeholders"
-                />
-              </td>
-              <td>
-                <p align="justify">
-                  This tool provides access to a database of potential
-                  stakeholders involved in the offshore wind sector. For further
-                  details, please contact the respective stakeholder directly.
-                </p>
-                <br></br>
-                Work in progress
-                {/*<a className={Styles.link} href={"/ #contribute"}>
-                  {" click here"}
-                </a>*/}
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td colSpan="2">
+                  <h2>STRUCTURED DOCUMENTATION CATALOG</h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    className={Styles.image}
+                    src={require("../../wwwroot/images/documentation_image.png")}
+                    alt="Documentation"
+                  />
+                </td>
+                <td>
+                  <p align="justify">
+                    Consult concise documentation on best practices,
+                    recommendations, financing solutions, guidelines, and
+                    environmental assessments to support information exchange
+                    among stakeholders and to support decision-making processes.
+                  </p>
+                  <br />
+                  Work in progress
+                  {/* <a className={Styles.link} href={"/ #contribute"}>{" click here"}</a> */}
+                </td>
+              </tr>
+
+              <tr>
+                <td colSpan="2">
+                  <h2>STAKEHOLDERS DATABASE</h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    className={Styles.image}
+                    src={require("../../wwwroot/images/marinewind_stakeholders.png")}
+                    alt="Stakeholders"
+                  />
+                </td>
+                <td>
+                  <p align="justify">
+                    This tool provides access to a database of potential
+                    stakeholders involved in the offshore wind sector. For
+                    further details, please contact the respective stakeholder
+                    directly.
+                  </p>
+                  <br />
+                  {/* Trigger to open the Terria notification with your Stakeholders component */}
+                  <a
+                    className={Styles.link}
+                    href="#"
+                    onClick={openStakeholdersNotification}
+                  >
+                    Open stakeholders
+                  </a>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </ul>
       </div>

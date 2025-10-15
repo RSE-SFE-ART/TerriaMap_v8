@@ -13,6 +13,7 @@ import InformazioniAggiuntive from "./InformazioniAggiuntive";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
+import AppModalHost from "./AppModalHost.jsx";
 
 import "./global.scss";
 
@@ -26,6 +27,7 @@ export default function UserInterface(props) {
           <InformazioniAggiuntive viewState={props.viewState} />
         </MenuLeft>
       </StandardUserInterface>
+      <AppModalHost viewState={props.viewState} />
     </>
   );
 }

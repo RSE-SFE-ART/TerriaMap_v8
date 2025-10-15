@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import MenuPanel from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuPanel.jsx";
@@ -6,13 +6,19 @@ import PanelStyles from "terriajs/lib/ReactViews/Map/Panels/panel.scss";
 import Styles from "./related-maps.scss";
 import classNames from "classnames";
 
-import Stakeholders from "./Stakeholders.jsx";
+import Stakeholders from "./Stakeholders.jsx"; //Per la versione fatta in stile notifica
+
+import DemoExplorerModal from "./DemoExplorerModal.jsx";
+import StakeholdersModal from "./StakeholdersModal.jsx";
+import WebinarsModal from "./WebinairsModal.jsx";
 
 function InformazioniAggiuntive(props) {
   const dropdownTheme = {
     inner: Styles.dropdownInner,
     icon: "dataCatalog"
   };
+
+  const [isOpen, setIsOpen] = useState(false);
 
   // to select language config.json depending on the browser language
   const userLang = navigator.language || navigator.userLanguage;
@@ -23,7 +29,7 @@ function InformazioniAggiuntive(props) {
   //   analisi = "Analisi Avanzate";
   // }
 
-  // Handler: open Terria notification with <Stakeholders/>
+  /* STAKEHOLDER IN FORMATO NOTIFICATION (RIMPIAZZATO DAL MODAL POPUP SOTTO)
   const openStakeholdersNotification = e => {
     e?.preventDefault?.();
     const { terria } = props.viewState;
@@ -43,6 +49,64 @@ function InformazioniAggiuntive(props) {
       alert("Stakeholders (notification not available in this build).");
     }
   };
+  */
+
+  const openStakeholdersModal = e => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    const tabs = [
+      {
+        id: "academia",
+        label: "Academia",
+        render: () => <StakeholdersModal onlyCategory="Academia" />
+      },
+      {
+        id: "civil-society",
+        label: "Civil Society",
+        render: () => <StakeholdersModal onlyCategory="Civil Society" />
+      },
+      {
+        id: "green-innovation",
+        label: "Green Innovation",
+        render: () => <StakeholdersModal onlyCategory="Green Innovation" />
+      },
+      {
+        id: "industry",
+        label: "Industry",
+        render: () => <StakeholdersModal onlyCategory="Industry" />
+      },
+      {
+        id: "public-authorities",
+        label: "Public Authorities",
+        render: () => <StakeholdersModal onlyCategory="Public Authorities" />
+      }
+    ];
+
+    window.openAppModal(
+      <DemoExplorerModal
+        key={`stakeholders-${Date.now()}`}
+        title="Stakeholders Database"
+        tabs={tabs}
+      />
+    );
+  };
+
+  const openWebinars = e => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    const tabs = [
+      { id: "webinars", label: "Webinars", render: () => <WebinarsModal /> }
+    ];
+    window.openAppModal(
+      <DemoExplorerModal
+        key={`webinars-${Date.now()}`}
+        title="Webinars"
+        tabs={tabs}
+      />
+    );
+  };
 
   return (
     <MenuPanel
@@ -51,6 +115,8 @@ function InformazioniAggiuntive(props) {
       smallScreen={props.smallScreen}
       viewState={props.viewState}
       btnTitle={analisi}
+      isOpen={isOpen}
+      onOpenChanged={setIsOpen}
     >
       {/* titolo della pagina */}
       <div className={classNames(PanelStyles.header)}>
@@ -111,13 +177,38 @@ function InformazioniAggiuntive(props) {
                     directly.
                   </p>
                   <br />
-                  {/* Trigger to open the Terria notification with your Stakeholders component */}
                   <a
-                    className={Styles.link}
                     href="#"
-                    onClick={openStakeholdersNotification}
+                    className={Styles.link}
+                    onClick={openStakeholdersModal}
                   >
-                    Open Stakeholders list
+                    Open Stakeholders
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td colSpan="2">
+                  <h2>WEBINARS</h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    className={Styles.image}
+                    src={require("../../wwwroot/images/marinewind_webinairs.png")}
+                    alt="Webinars"
+                  />
+                </td>
+                <td>
+                  <p align="justify">
+                    Watch recordings and explore presentation slides from
+                    MarineWind webinars, where industry experts share their
+                    experience and discuss current topics in the offshore wind
+                    sector.
+                  </p>
+                  <br />
+                  <a href="#" className={Styles.link} onClick={openWebinars}>
+                    Browse Webinars
                   </a>
                 </td>
               </tr>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import MenuPanel from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuPanel.jsx";
@@ -14,12 +14,13 @@ function AnalisiAvanzate(props) {
 
   // to select language config.json depending on the browser language
   var userLang = navigator.language || navigator.userLanguage;
-  var totem_link = "/#en_totemweb";
   var analisi = "Additional tools";
   //if (userLang === "it-IT" || userLang === "it") {
   //  totem_link = "/#it_totemweb";
   //  analisi = "Analisi Avanzate";
   //}
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <MenuPanel
@@ -28,6 +29,8 @@ function AnalisiAvanzate(props) {
       smallScreen={props.smallScreen}
       viewState={props.viewState}
       btnTitle={analisi}
+      isOpen={isOpen}
+      onOpenChanged={setIsOpen}
     >
       {/* titolo della pagina */}
       <div className={classNames(PanelStyles.header)}>
@@ -62,8 +65,12 @@ function AnalisiAvanzate(props) {
                 </p>
                 <br></br>
                 To access
-                <a className={Styles.link} href={"/#contribute"}>
-                  {" click here"}
+                <a
+                  className={Styles.link}
+                  href={"/#contribute"}
+                  onClick={() => setIsOpen(false)}
+                >
+                  click here
                 </a>
               </td>
             </tr>

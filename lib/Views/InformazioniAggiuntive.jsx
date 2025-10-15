@@ -11,6 +11,7 @@ import Stakeholders from "./Stakeholders.jsx"; //Per la versione fatta in stile 
 import DemoExplorerModal from "./DemoExplorerModal.jsx";
 import StakeholdersModal from "./StakeholdersModal.jsx";
 import WebinarsModal from "./WebinairsModal.jsx";
+import DocumentationModal from "./DocumentationModal.jsx";
 
 function InformazioniAggiuntive(props) {
   const dropdownTheme = {
@@ -20,14 +21,7 @@ function InformazioniAggiuntive(props) {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  // to select language config.json depending on the browser language
-  const userLang = navigator.language || navigator.userLanguage;
-  const totem_link = "/#en_totemweb";
   const analisi = "Additional Informations";
-  // if (userLang === "it-IT" || userLang === "it") {
-  //   totem_link = "/#it_totemweb";
-  //   analisi = "Analisi Avanzate";
-  // }
 
   /* STAKEHOLDER IN FORMATO NOTIFICATION (RIMPIAZZATO DAL MODAL POPUP SOTTO)
   const openStakeholdersNotification = e => {
@@ -50,6 +44,47 @@ function InformazioniAggiuntive(props) {
     }
   };
   */
+
+  const openDocumentation = e => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    const tabs = [
+      {
+        id: "gr",
+        label: "Greece",
+        render: () => <DocumentationModal onlyCategory="Greece" />
+      },
+      {
+        id: "it",
+        label: "Italy",
+        render: () => <DocumentationModal onlyCategory="Italy" />
+      },
+      {
+        id: "sp",
+        label: "Spain",
+        render: () => <DocumentationModal onlyCategory="Spain" />
+      },
+      {
+        id: "pt",
+        label: "Portugal",
+        render: () => <DocumentationModal onlyCategory="Portugal" />
+      },
+      {
+        id: "uk",
+        label: "United Kingdom",
+        render: () => <DocumentationModal onlyCategory="UK" />
+      }
+    ];
+
+    window.openAppModal(
+      <DemoExplorerModal
+        key={`documents-${Date.now()}`}
+        title="Documentation Catalog"
+        tabs={tabs}
+      />
+    );
+  };
 
   const openStakeholdersModal = e => {
     e.preventDefault();
@@ -151,8 +186,13 @@ function InformazioniAggiuntive(props) {
                     among stakeholders and to support decision-making processes.
                   </p>
                   <br />
-                  Work in progress
-                  {/* <a className={Styles.link} href={"/ #contribute"}>{" click here"}</a> */}
+                  <a
+                    href="#"
+                    className={Styles.link}
+                    onClick={openDocumentation}
+                  >
+                    Work in progress
+                  </a>
                 </td>
               </tr>
 

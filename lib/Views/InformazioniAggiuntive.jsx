@@ -21,7 +21,7 @@ function InformazioniAggiuntive(props) {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const analisi = "Additional Informations";
+  const analisi = "Additional Information";
 
   /* STAKEHOLDER IN FORMATO NOTIFICATION (RIMPIAZZATO DAL MODAL POPUP SOTTO)
   const openStakeholdersNotification = e => {
@@ -167,7 +167,7 @@ function InformazioniAggiuntive(props) {
             <tbody>
               <tr>
                 <td colSpan="2">
-                  <h2>STRUCTURED DOCUMENTATION CATALOG</h2>
+                  <h2>DOCUMENTATION CATALOG</h2>
                 </td>
               </tr>
               <tr>

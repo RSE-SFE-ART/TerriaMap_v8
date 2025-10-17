@@ -64,7 +64,7 @@ function AnalisiAvanzate(props) {
                   project proposals.
                 </p>
                 <br></br>
-                To access
+                To access{" "}
                 <a
                   className={Styles.link}
                   href={"/#contribute"}

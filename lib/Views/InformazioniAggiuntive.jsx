@@ -6,6 +6,8 @@ import PanelStyles from "terriajs/lib/ReactViews/Map/Panels/panel.scss";
 import Styles from "./related-maps.scss";
 import classNames from "classnames";
 
+import withTerriaRef from "terriajs/lib/ReactViews/HOCs/withTerriaRef"; //GOF HOC x Ref di aggancio dei punti del Tour
+
 import Stakeholders from "./Stakeholders.jsx"; //Per la versione fatta in stile notifica
 
 import DemoExplorerModal from "./DemoExplorerModal.jsx";
@@ -145,6 +147,7 @@ function InformazioniAggiuntive(props) {
 
   return (
     <MenuPanel
+      btnRef={props.refFromHOC} //GOF   Ref sul bottone per il Tour
       theme={dropdownTheme}
       btnText={analisi}
       smallScreen={props.smallScreen}
@@ -252,6 +255,31 @@ function InformazioniAggiuntive(props) {
                   </a>
                 </td>
               </tr>
+              <tr>
+                <td colSpan="2">
+                  <h2>VIDEOS</h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    className={Styles.image}
+                    src={require("../../wwwroot/images/marinewind_videos.png")}
+                    alt="Videos"
+                  />
+                </td>
+                <td>
+                  <p align="justify">
+                    Watch videos about the MarineWind Project. Videos are
+                    available with subtitles in Greek, Italian, Spanish and
+                    Portuguese!.
+                  </p>
+                  <br />
+                  <a href="#" className={Styles.link} onClick={openWebinars}>
+                    Browse Videos
+                  </a>
+                </td>
+              </tr>
             </tbody>
           </table>
         </ul>
@@ -265,4 +293,6 @@ InformazioniAggiuntive.propTypes = {
   smallScreen: PropTypes.bool
 };
 
-export default InformazioniAggiuntive;
+//export default InformazioniAggiuntive;
+export const TOOLS_PANEL_NAME = "MenuBarInformationButton"; //GOF
+export default withTerriaRef(InformazioniAggiuntive, TOOLS_PANEL_NAME); //GOF esporto AnalisiAvanzate con il Ref x il Tour

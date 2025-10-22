@@ -217,5 +217,5 @@ AnalisiAvanzate.propTypes = {
 };
 
 // export default AnalisiAvanzate;
-export const TOOLS_PANEL_NAME = "MenuBarToolsButton"; //GOF
+export const TOOLS_PANEL_NAME = "bruh"; //GOF
 export default withTerriaRef(AnalisiAvanzate, TOOLS_PANEL_NAME); //GOF esporto AnalisiAvanzate con il Ref x il Tour

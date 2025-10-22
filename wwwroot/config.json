@@ -87,9 +87,8 @@
     // To override the welcome message video displayed on the welcome message
     // By default, the Getting Started to Terria video is displayed
    "welcomeMessageVideo": {
-        "videoTitle": "Getting started with the map",
-        "videoUrl": "https://www.youtube-nocookie.com/embed/NTtSM70rIvI", // use an embedded video link
-        "placeholderImage": "https://img.youtube.com/vi/NTtSM70rIvI/maxresdefault.jpg"
+        "videoUrl": "https://www.youtube.com/embed/IOhoSuS-Dqw?si=wttE3UdixRZghDvT", // use an embedded video link
+        "placeholderImage": "https://www.youtube.com/embed/IOhoSuS-Dqw?si=wttE3UdixRZghDvT"
     },
 
     // True to display in-app guides.

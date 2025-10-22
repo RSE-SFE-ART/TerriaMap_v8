@@ -48,7 +48,15 @@ export const defaultTourPoints = [
     caretOffsetLeft: TOUR_WIDTH - 25,
     offsetLeft: -TOUR_WIDTH - 30,
     positionLeft: RelativePosition.RECT_RIGHT,
-    content: "translate#tour.menuBarToolsButton.content"
+    content: "## Browse advanced analysis tools\n\nExplore the analysis tools developed to support territorial energy planning"
+  },
+    {
+    appRefName: "MenuBarInformationButton",
+    priority: 25,
+    caretOffsetLeft: TOUR_WIDTH - 25,
+    offsetLeft: -TOUR_WIDTH - 30,
+    positionLeft: RelativePosition.RECT_RIGHT,
+    content: "## Check advanced informations\n\nExplore detailed infographics, videos, webinars and more"
   },
   {
     appRefName: "MenuBarMapSettingsButton",

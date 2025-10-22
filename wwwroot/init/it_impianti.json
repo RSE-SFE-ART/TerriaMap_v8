@@ -318,6 +318,21 @@
                 },
                 {
                   "type": "wms",
+                  "name": "Impianti idroelettrici - potenza e tipologia d'impianto",
+                  "description": "<p>Mappa della distribuzione degli impianti idroelettrici operativi nel 2024, si rappresenta la potenza installata (dimensione del simbolo) e la tipologia di impianto (colore). </p><p>I dati degli impianti a serbatoio provengono da basi dati sviluppate da RSE in precedenti anni di Ricerca di Sistema (<a href= \"https://www.rse-web.it/rapporti/valutazione-del-potenziale-dei-sistemi-di-accumulo-di-energia-mediante-centrali-di-pompaggio-idroelettrico-per-il-sistema-idroelettrico-italiano-analisi-di-fattibilita-preliminari-314771/\">RSE report RdS prot. 12000959</a>), l'aggiornamento e i dati degli altri impianti sono derivati da ricerche online da siti quali quelli istituzionali, di gestori di impianti, di consorzi di bonifica, ecc. </p><p>La mappatura risultante confrontata con dati ufficiali Terna 2024 rappresenta il 93% in potenza degli impianti maggiore di 5 megawatt ed il 33% di quelli a potenza inferiore. </p>\n\n<table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=306&lingua=EN&descrizione=Idroelettrici - potenza e tipologia d'impianto\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=306&anno=2024"
+                  }],
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3impianti_idroelettrici_2024%22",
+                  "featureInfoTemplate": {
+                        "template": "<p>Impianto <b>{{denom_imp}}</b>, potenza (MW) <b>{{pot_eff__1}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=306&anno=2024\">metadata link </a></p>"
+                      },
+                  "layers": "new_atlante_integrato:impianti_idroelettrici_2024",
+                  "id": "idro_2024"
+                },
+                /* {
+                  "type": "wms",
                   "name": "Impianti idroelettrici",
                   "description": "Mappa degli impianti idroelettrici (anno di riferimento 2020), a partire dal Database HESCI che comprende impianti idroelettrici alimentanti da serbatoio. <br> Sono stati reperiti e riorganizzati i dati dei serbatoi italiani raccolti nel database dei serbatoi italiani presentato in <i>A. Frigerio, M. Meghella, G. Bruno, G. Stella, «Valutazione del potenziale di accumulo di energia mediante centrali di pompaggio idroelettrico per il sistema elettrico italiano,» RSE - Rapporto RdS, Milano, 2011.</i>\n Le informazioni inserite nel database sono state reperite dalle seguenti fonti:\n • Il database del Registro Italiano Dighe (<a href=\"www.registroitalianodighe.it\">www.registroitalianodighe.it</a>) che raccoglie le informazioni relative alle grandi dighe italiane quali posizione, tipo, altezza e volume d’invaso secondo la L.584/94, volume d’invaso autorizzato, quota di massima regolazione e autorizzata, concessionario; • I database “Risentimenti Sismici” e “Costi/Benefici” che sono stati sviluppati nell’ambito della Ricerca di Sistema negli anni passati. Il primo individua, per un dato evento sismico, le dighe da sottoporre a controllo secondo le indicazioni del Registro Italiano Dighe; il secondo fornisce una valutazione a posteriori dei costi/benefici delle dighe italiane al fine di migliorare l’accettazione sociale della presenza dell’impianto sul territorio; • I volumi “Le dighe di ritenuta degli impianti idroelettrici italiani”, redatti a cura della commissione ANIDEL (Associazione Nazionale Imprese Produttrici e Distributrici di Energia Elettrica) nel 1961 e, successivamente, da ENEL nel 1974; • Il sito internet di Progetto Dighe (<a href=\"www.progettodighe.it\">www.progettodighe.it</a>) curato e aggiornato da un gruppo di appassionati di dighe, centrali idroelettriche e opere idrauliche, che si segnala per la completezza dei dati. Il database nella sezione “SKYdam” contiene, infatti, ben 577 dighe non solo italiane, ma anche francesi, statunitensi e svizzere. Una scheda riporta sia le loro caratteristiche principali sia una mappa di Google Maps con la posizione geografica.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=213&lingua=IT&descrizione=Impianti idroelettrici\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3hesci_centrali2020",
@@ -327,7 +342,7 @@
                   }],
                   "layers": "new_atlante_integrato:hesci_centrali2020",
                   "id": "H_plant"
-                },
+                }, */
                 {
                   "id": "num_idro",
                   "type": "group",
@@ -684,6 +699,63 @@
                         "cql_filter": "var_id=279"
                       },
                       "id": "279"
+                    },
+                    {
+                      "type": "wms",
+                      "name": " Idroelettrico - Produzione idroelettrica provinciale da serbatoio al netto del pompaggio (GWh)",
+                      "description": "Mappa della produzione da impianti a serbatoio al netto del pompaggio  a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi). \n\n </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=304&lingua=IT&descrizione=Idroelettrico - Produzione idroelettrica provinciale da serbatoio al netto del pompaggio (GWh)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                      "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "featureInfoTemplate": {
+                        "template": "<p>Produzione provinciale da serbatoio al netto del pompaggio (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                      },
+                      "metadataUrls":[{
+                        "title":"link metadato",
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=304&anno=2023"
+                      }],
+                      "styles":"idro_prod_prov_bacino",
+                      "layers": "new_atlante_integrato:v_province_t",
+                      "parameters": {
+                        "cql_filter": "var_id=304"
+                      },
+                      "id": "304"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Idroelettrici - Produzione provinciale da impianti a bacino (GWh)",
+                      "description": "Mappa della produzione da impianti a bacino a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi). \n\n </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=302&lingua=IT&descrizione=Idroelettrico - Produzione idroelettrica provinciale a livello di bacino (GWh)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                      "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "featureInfoTemplate": {
+                        "template": "<p>Produzione provinciale da impianti a bacino (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                      },
+                      "metadataUrls":[{
+                        "title":"link metadato",
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=302&anno=2023"
+                      }],
+                      "styles":"idro_prod_prov_bacino",
+                      "layers": "new_atlante_integrato:v_province_t",
+                      "parameters": {
+                        "cql_filter": "var_id=302"
+                      },
+                      "id": "302"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Idroelettrico - Produzione idroelettrica provinciale ad acqua fluente (GWh)",
+                      "description": "Mappa della produzione da impianti ad acqua fluente a livello provinciale, espressa in GWh, negli anni.<br> Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi). \n\n </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=303&lingua=IT&descrizione=Idroelettrico - Produzione idroelettrica provinciale ad acqua fluente (GWh)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                      "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "featureInfoTemplate": {
+                        "template": "<p>Produzione provinciale da impianti ad acqua fluente (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                      },
+                      "metadataUrls":[{
+                        "title":"link metadato",
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=303&anno=2023"
+                      }],
+                      "styles":"idro_prod_prov_bacino",
+                      "layers": "new_atlante_integrato:v_province_t",
+                      "parameters": {
+                        "cql_filter": "var_id=303"
+                      },
+                      "id": "303"
                     }
                   ]
                 }
@@ -1242,6 +1314,25 @@
                     "confirmText": "Ho capito"
                   },
                   "id": "192"
+                },
+                {
+                  "type": "wms",
+                  "name": "Bioenergie - Potenza elettrica provinciale (MW)",
+                  "description": "Mappa della potenza da impianti a biomassa (solida, inclusi RU biodegradabili, liquida, gassosa) a livello provinciale, espressa in MW, negli anni.<br><p>Elaborazioni RSE a partire da dati GSE, TERNA e ISTAT (confini amministrativi).\n\n </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=305&lingua=IT&descrizione=Bioenergie - Potenza elettrica provinciale (MW)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "featureInfoTemplate": {
+                    "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                  },
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=305&anno=2023"
+                  }],
+                  "layers": "new_atlante_integrato:v_province_t",
+                  "styles":"bioenergie_potenza_provinciale",
+                  "parameters": {
+                    "cql_filter": "var_id=305"
+                  },
+                  "id": "305"
                 },
                 {
                   "type": "wms",

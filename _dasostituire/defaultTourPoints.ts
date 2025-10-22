@@ -48,7 +48,7 @@ export const defaultTourPoints = [
     caretOffsetLeft: TOUR_WIDTH - 25,
     offsetLeft: -TOUR_WIDTH - 30,
     positionLeft: RelativePosition.RECT_RIGHT,
-    content: "## Browse advanced analysis tools\n\nExplore the analysis tools developed to support territorial energy planning"
+    content: "## Browse analysis tools\n\nExplore the analysis tools developed to support FOW energy planning"
   },
     {
     appRefName: "MenuBarInformationButton",
@@ -56,7 +56,7 @@ export const defaultTourPoints = [
     caretOffsetLeft: TOUR_WIDTH - 25,
     offsetLeft: -TOUR_WIDTH - 30,
     positionLeft: RelativePosition.RECT_RIGHT,
-    content: "## Check advanced informations\n\nExplore detailed infographics, videos, webinars and more"
+    content: "## Check more informations\n\nExplore detailed infographics, videos, webinars and more"
   },
   {
     appRefName: "MenuBarMapSettingsButton",

@@ -14,6 +14,7 @@ import DemoExplorerModal from "./DemoExplorerModal.jsx";
 import StakeholdersModal from "./StakeholdersModal.jsx";
 import WebinarsModal from "./WebinairsModal.jsx";
 import DocumentationModal from "./DocumentationModal.jsx";
+import VideosModal from "./VideosModal.jsx";
 
 function InformazioniAggiuntive(props) {
   const dropdownTheme = {
@@ -140,6 +141,47 @@ function InformazioniAggiuntive(props) {
       <DemoExplorerModal
         key={`webinars-${Date.now()}`}
         title="Webinars"
+        tabs={tabs}
+      />
+    );
+  };
+
+  const openVideos = e => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    const tabs = [
+      {
+        id: "en",
+        label: "English",
+        render: () => <VideosModal onlyLang="en" />
+      },
+      {
+        id: "gr",
+        label: "Greek Sub",
+        render: () => <VideosModal onlyLang="gr" />
+      },
+      {
+        id: "it",
+        label: "Italian Sub",
+        render: () => <VideosModal onlyLang="it" />
+      },
+      {
+        id: "es",
+        label: "Spanish Sub",
+        render: () => <VideosModal onlyLang="es" />
+      },
+      {
+        id: "pt",
+        label: "Portuguese Sub",
+        render: () => <VideosModal onlyLang="pt" />
+      }
+    ];
+
+    window.openAppModal(
+      <DemoExplorerModal
+        key={`videos-${Date.now()}`}
+        title="Videos"
         tabs={tabs}
       />
     );
@@ -272,10 +314,10 @@ function InformazioniAggiuntive(props) {
                   <p align="justify">
                     Watch videos about the MarineWind Project. Videos are
                     available with subtitles in Greek, Italian, Spanish and
-                    Portuguese!.
+                    Portuguese!
                   </p>
                   <br />
-                  <a href="#" className={Styles.link} onClick={openWebinars}>
+                  <a href="#" className={Styles.link} onClick={openVideos}>
                     Browse Videos
                   </a>
                 </td>

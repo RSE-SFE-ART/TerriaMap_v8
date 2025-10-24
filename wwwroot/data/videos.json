@@ -1,0 +1,62 @@
+{
+  "en": [
+    {
+      "id": "1-en",
+      "title": "MARINEWIND Project Video I",
+      "url": "https://www.youtube.com/watch?v=3BEe9sd-a6o"
+    },
+    {
+      "id": "2-en",
+      "title": "MARINEWIND Project Video II",
+      "url": "https://www.youtube.com/watch?v=v0BBfxPfPdE"
+    }
+  ],
+  "gr": [
+    {
+      "id": "1-gr",
+      "title": "MARINEWIND Project Video I (Greek Subtitles)",
+      "url": "https://www.youtube.com/watch?v=ozdt1OdEc-M"
+    },
+    {
+      "id": "2-gr",
+      "title": "MARINEWIND Project Video II (Greek Subtitles)",
+      "url": "https://www.youtube.com/watch?v=x8uY_OlLw1M"
+    }
+  ],
+  "it": [
+    {
+      "id": "1-it",
+      "title": "MARINEWIND Project Video I (Italian Subtitles)",
+      "url": "https://www.youtube.com/watch?v=A_Ra0pVntgU"
+    },
+    {
+      "id": "2-it",
+      "title": "MARINEWIND Project Video II (Italian Subtitles)",
+      "url": "https://www.youtube.com/watch?v=HSbtaJxfXcY"
+    }
+  ],
+  "es": [
+    {
+      "id": "1-es",
+      "title": "MARINEWIND Project Video I (Spanish Subtitles)",
+      "url": "https://www.youtube.com/watch?v=VO6nMysEiXU"
+    },
+    {
+      "id": "2-es",
+      "title": "MARINEWIND Project Video II (Spanish Subtitles)",
+      "url": "https://www.youtube.com/watch?v=EngeIm6SmCI"
+    }
+  ],
+  "pt": [
+    {
+      "id": "1-pt",
+      "title": "MARINEWIND Project Video I (Portuguese Subtitles)",
+      "url": "https://www.youtube.com/watch?v=QArtxuOsZcU"
+    },
+    {
+      "id": "2-pt",
+      "title": "MARINEWIND Project Video II (Portuguese Subtitles)",
+      "url": "https://www.youtube.com/watch?v=axLejm5MZfg"
+    }
+  ]
+}

@@ -14,15 +14,38 @@ import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
 import AppModalHost from "./AppModalHost.jsx";
+import About from "./About.jsx";
 
 import "./global.scss";
+
+function AboutMenuItem({ viewState }) {
+  const openAbout = e => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const tabs = [
+      { id: "about", label: "About", render: () => <AboutModal /> }
+    ];
+
+    window.openAppModal(
+      <DemoExplorerModal
+        key={`about-${Date.now()}`}
+        title="About MARINEWIND"
+        tabs={tabs}
+      />
+    );
+  };
+
+  return <MenuItem caption="About" href="#" onClick={openAbout} />;
+}
 
 export default function UserInterface(props) {
   return (
     <>
       <StandardUserInterface {...props} version={version}>
         <MenuLeft>
-          <MenuItem caption="About" href="about.html" key="about-link" />
+          {/*<MenuItem caption="About" href="about.html" key="about-link" />*/}
+          <About viewState={props.viewState} />
           <AnalisiAvanzate viewState={props.viewState} />
           <InformazioniAggiuntive viewState={props.viewState} />
         </MenuLeft>

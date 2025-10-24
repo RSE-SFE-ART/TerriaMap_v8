@@ -54,10 +54,10 @@ export default function About(props) {
               </p>
 
               <p>
-                The MARINEWIND web-based GIS provides specific information on
-                FOWTs by stakeholder category, location and policy goals,
-                offering recommendations for informed renewable-energy policy
-                and improved societal acceptance.
+                The MARINEWIND WebGIS provides specific information on FOWTs by
+                stakeholder category, location and policy goals, offering
+                recommendations for informed renewable-energy policy and
+                improved societal acceptance.
               </p>
 
               <p>
@@ -77,7 +77,8 @@ export default function About(props) {
               <p>
                 The Additional Information section provides access to supporting
                 materials and resources, including a Documentation Catalog,
-                Stakeholders Database, Webinars, and Videos.
+                Stakeholders Database, Webinars, and Videos produced within the
+                project.
               </p>
 
               {/* Footer buttons */}

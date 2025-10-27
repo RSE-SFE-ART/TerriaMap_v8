@@ -1,0 +1,98 @@
+/* Tabs bar */
+.navbar {
+  display: flex;
+  gap: 6px;
+  padding: 8px 12px;
+  background: #f7f9fb;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.tab {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #334155;
+  padding: 6px 10px;
+  margin: 4px 0;
+  border-radius: 16px; /* pill */
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+
+  &:hover {
+    background: #eef2f7;
+  }
+}
+
+.active {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.content {
+  padding: 12px;
+}
+
+// PALETTE
+$academia-bg: #c0e4f5;
+$academia-text: #0b1e3a;
+$civilsociety-bg: #ebf68c;
+$civilsociety-text: #365314;
+$greeninnovation-bg: #b5e6a2;
+$greeninnovation-text: #064a2f;
+$industry-bg: #d0d0d0;
+$industry-text: #1f2937;
+$publicauth-bg: #f5c6ab;
+$publicauth-text: #4c0519;
+
+.tab.cat--academia {
+  background: $academia-bg;
+  color: $academia-text;
+}
+.tab.cat--civil-society {
+  background: $civilsociety-bg;
+  color: $civilsociety-text;
+}
+.tab.cat--green-innovation {
+  background: $greeninnovation-bg;
+  color: $greeninnovation-text;
+}
+.tab.cat--industry {
+  background: $industry-bg;
+  color: $industry-text;
+}
+.tab.cat--public-authorities {
+  background: $publicauth-bg;
+  color: $publicauth-text;
+}
+
+.active.cat--academia {
+  background: $academia-bg;
+  color: $academia-text;
+  border-color: $academia-text;
+  border-width: medium;
+}
+.active.cat--civil-society {
+  background: $civilsociety-bg;
+  color: $civilsociety-text;
+  border-color: $civilsociety-text;
+  border-width: medium;
+}
+.active.cat--green-innovation {
+  background: $greeninnovation-bg;
+  color: $greeninnovation-text;
+  border-color: $greeninnovation-text;
+  border-width: medium;
+}
+.active.cat--industry {
+  background: $industry-bg;
+  color: $industry-text;
+  border-color: $industry-text;
+  border-width: medium;
+}
+.active.cat--public-authorities {
+  background: $publicauth-bg;
+  color: $publicauth-text;
+  border-color: $publicauth-text;
+  border-width: medium;
+}

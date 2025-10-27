@@ -1,0 +1,41 @@
+/* --- scope wrapper on the explorer window root --- */
+.mwExplorer {
+  /* hide any Terria header buttons inside THIS modal only */
+  :global(.topBar .tjs-_buttons__btn) {
+    display: none !important;
+  }
+  :global(.topBar .btn--close) {
+    display: none !important;
+  }
+}
+
+/* our own header bar */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: #519ac2; /* tweak to match your catalogue exactly */
+  color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  flex: 1;
+}
+
+/* our single Done button */
+.doneBtn {
+  margin-left: auto;
+  appearance: none;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  background: transparent;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}

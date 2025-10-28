@@ -1621,7 +1621,7 @@
     "perAccedere": "To access",
     "cliccaQui": "click here",
     "downloadSerieStorica": " DOWNLOAD THE HISTORICAL WIND SPEED SERIES ",
-    "infoSerieStorica": "This tool allows you to download the thirty-year hourly historical series (1990 - 2019) of wind speed (m/s) and direction (from 2015), on the onshore and offshore domains of the national territory.",
+    "infoSerieStorica": "This tool allows you to download the hourly historical series (1990 - 2024) of wind speed (m/s) and direction (from 2015), on the onshore and offshore domains of the national territory.",
     "h2DownloadMappaVento": " WIND MAP DOWNLOAD ",
     "infoShapefile": "This tool allows you to download in shapefile format (.shp) the grid containing the parameters of the Wind Atlas of Italy (speed, producibility, temperature, wind energy density, shape parameter of the Weibull distribution and distance from the primary cabins) on the onshore and offshore domains of the national territory.",
     "approfondisciEdownload": "Read more and download",

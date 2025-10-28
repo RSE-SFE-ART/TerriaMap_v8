@@ -1,0 +1,38 @@
+.mwExplorer {
+  :global(.topBar .tjs-_buttons__btn) {
+    display: none !important;
+  }
+  :global(.topBar .btn--close) {
+    display: none !important;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: #519ac2;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  flex: 1;
+}
+
+.doneBtn {
+  margin-left: auto;
+  appearance: none;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  background: transparent;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}

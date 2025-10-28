@@ -14,6 +14,9 @@ import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface
 import version from "../../version";
 import { useTranslation } from "react-i18next"; //GOF x traduzione didascalie
 
+import About from "./About.jsx"
+import AppModalHost from "./AppModalHost.jsx"
+
 import "./global.scss";
 
 // function loadAugmentedVirtuality(callback) {
@@ -37,24 +40,28 @@ export default function UserInterface(props) {
   const { t } = useTranslation(); //GOF x traduzione link about.html/about-en.html
   
   return (
-    <StandardUserInterface {...props} version={version}>
-      <MenuLeft>
-        {/* <MenuItem caption="About" href="about.html" key="about-link" /> */}
-        <MenuItem caption="About" href={t("varie.aboutlink")} key="about-link" />
-        <AnalisiAvanzate viewState={props.viewState} />
-      </MenuLeft>
-      <ExperimentalMenu>
-        
-        {/* <If condition={isBrowserSupportedAV()}>
-          <SplitPoint
-            loadComponent={loadAugmentedVirtuality}
-            viewState={props.viewState}
-            terria={props.viewState.terria}
-            experimentalWarning={true}
-          />
-        </If> */}
-      </ExperimentalMenu>
-    </StandardUserInterface>
+    <>
+      <StandardUserInterface {...props} version={version}>
+        <MenuLeft>
+          {/* <MenuItem caption="About" href="about.html" key="about-link" /> 
+          <MenuItem caption="About" href={t("varie.aboutlink")} key="about-link" />*/}
+          <About viewState={props.viewState} />
+          <AnalisiAvanzate viewState={props.viewState} />
+        </MenuLeft>
+        <ExperimentalMenu>
+          
+          {/* <If condition={isBrowserSupportedAV()}>
+            <SplitPoint
+              loadComponent={loadAugmentedVirtuality}
+              viewState={props.viewState}
+              terria={props.viewState.terria}
+              experimentalWarning={true}
+            />
+          </If> */}
+        </ExperimentalMenu>
+      </StandardUserInterface>
+      <AppModalHost viewState={props.viewState} />
+    </>
   );
 }
 

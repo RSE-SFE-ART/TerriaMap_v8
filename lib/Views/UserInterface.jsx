@@ -18,27 +18,6 @@ import About from "./About.jsx";
 
 import "./global.scss";
 
-function AboutMenuItem({ viewState }) {
-  const openAbout = e => {
-    e.preventDefault();
-    e.stopPropagation();
-
-    const tabs = [
-      { id: "about", label: "About", render: () => <AboutModal /> }
-    ];
-
-    window.openAppModal(
-      <DemoExplorerModal
-        key={`about-${Date.now()}`}
-        title="About MARINEWIND"
-        tabs={tabs}
-      />
-    );
-  };
-
-  return <MenuItem caption="About" href="#" onClick={openAbout} />;
-}
-
 export default function UserInterface(props) {
   return (
     <>

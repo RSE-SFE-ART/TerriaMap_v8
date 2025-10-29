@@ -99,15 +99,17 @@ function AnalisiAvanzate(props) {
                   interest rates, electricity prices and operating hours.
                 </p>
                 <br></br>
-                Work in progress
-                {/*<a
+                To access{" "}
+                <a
                   target="_blank"
                   rel="noopener noreferrer"
                   className={Styles.link}
-                  href={"https://marinewind-lcoe.hosted.york.ac.uk/CF_20.html"}
+                  href={
+                    "https://marinewind-lcoe.hosted.york.ac.uk/MARINEWIND_LCOE_Simulation_Tool_York.html"
+                  }
                 >
-                  {"Provvisional Link"}
-                </a>*/}
+                  click here
+                </a>
               </td>
             </tr>
           </table>

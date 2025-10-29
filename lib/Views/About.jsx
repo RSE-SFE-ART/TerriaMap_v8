@@ -71,7 +71,10 @@ export default function About(props) {
               <p>
                 The Additional Tools section allows users to submit spatial and
                 technical data for new offshore wind project proposals through
-                the Offshore Wind Projects Submission interface.
+                the Offshore Wind Projects Submission interface, and a tool to
+                perform a preliminary technical-economical evaluation of a
+                hypothetical floating offshore wind farm through the LCOE
+                simulation tool
               </p>
 
               <p>

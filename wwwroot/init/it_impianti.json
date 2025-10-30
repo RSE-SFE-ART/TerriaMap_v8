@@ -292,7 +292,7 @@
               "description": "Questa raccolta comprende dati relativi agli impianti idroelettrici presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n <div><img src=\"/public/img/shutterstock_1208041777.jpg\" style=\"width:640px;height:427px;\"></div>",
               "isOpen": false,
               "members": [
-                {
+                /* {
                   "type": "wms",
                   "name": "Idroelettrici - Dighe",
                   "description": "Mappa delle dighe (anno di riferimento 2020)  a partire dal Database HESCI che comprende impianti idroelettrici alimentanti da serbatoio. <br> Sono stati reperiti e riorganizzati i dati dei serbatoi italiani raccolti nel database dei serbatoi italiani presentato in <i>A. Frigerio, M. Meghella, G. Bruno, G. Stella, «Valutazione del potenziale di accumulo di energia mediante centrali di pompaggio idroelettrico per il sistema elettrico italiano,» RSE - Rapporto RdS, Milano, 2011.</i>\n Le informazioni inserite nel database sono state reperite dalle seguenti fonti:\n • Il database del Registro Italiano Dighe (<a href=\"www.registroitalianodighe.it\">www.registroitalianodighe.it</a>) che raccoglie le informazioni relative alle grandi dighe italiane quali posizione, tipo, altezza e volume d’invaso secondo la L.584/94, volume d’invaso autorizzato, quota di massima regolazione e autorizzata, concessionario; • I database “Risentimenti Sismici” e “Costi/Benefici” che sono stati sviluppati nell’ambito della Ricerca di Sistema negli anni passati. Il primo individua, per un dato evento sismico, le dighe da sottoporre a controllo secondo le indicazioni del Registro Italiano Dighe; il secondo fornisce una valutazione a posteriori dei costi/benefici delle dighe italiane al fine di migliorare l’accettazione sociale della presenza dell’impianto sul territorio; • I volumi “Le dighe di ritenuta degli impianti idroelettrici italiani”, redatti a cura della commissione ANIDEL (Associazione Nazionale Imprese Produttrici e Distributrici di Energia Elettrica) nel 1961 e, successivamente, da ENEL nel 1974; • Il sito internet di Progetto Dighe (<a href=\"www.progettodighe.it\">www.progettodighe.it</a>) curato e aggiornato da un gruppo di appassionati di dighe, centrali idroelettriche e opere idrauliche, che si segnala per la completezza dei dati. Il database nella sezione “SKYdam” contiene, infatti, ben 577 dighe non solo italiane, ma anche francesi, statunitensi e svizzere. Una scheda riporta sia le loro caratteristiche principali sia una mappa di Google Maps con la posizione geografica.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=211&lingua=IT&descrizione=Idroelettrici - Dighe\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
@@ -303,8 +303,8 @@
                   "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3hesci_dighe2020",
                   "layers": "new_atlante_integrato:hesci_dighe2020",
                   "id": "H_dam"
-                },
-                {
+                }, */
+                /* {
                   "type": "wms",
                   "name": "Invasi",
                   "description": "Mappa degli invasi (anno di riferimento 2020), a partire dal Database HESCI che comprende impianti idroelettrici alimentanti da serbatoio. <br> Sono stati reperiti e riorganizzati i dati dei serbatoi italiani raccolti nel database dei serbatoi italiani presentato in <i>A. Frigerio, M. Meghella, G. Bruno, G. Stella, «Valutazione del potenziale di accumulo di energia mediante centrali di pompaggio idroelettrico per il sistema elettrico italiano,» RSE - Rapporto RdS, Milano, 2011.</i>\n Le informazioni inserite nel database sono state reperite dalle seguenti fonti:\n • Il database del Registro Italiano Dighe (<a href=\"www.registroitalianodighe.it\">www.registroitalianodighe.it</a>) che raccoglie le informazioni relative alle grandi dighe italiane quali posizione, tipo, altezza e volume d’invaso secondo la L.584/94, volume d’invaso autorizzato, quota di massima regolazione e autorizzata, concessionario; • I database “Risentimenti Sismici” e “Costi/Benefici” che sono stati sviluppati nell’ambito della Ricerca di Sistema negli anni passati. Il primo individua, per un dato evento sismico, le dighe da sottoporre a controllo secondo le indicazioni del Registro Italiano Dighe; il secondo fornisce una valutazione a posteriori dei costi/benefici delle dighe italiane al fine di migliorare l’accettazione sociale della presenza dell’impianto sul territorio; • I volumi “Le dighe di ritenuta degli impianti idroelettrici italiani”, redatti a cura della commissione ANIDEL (Associazione Nazionale Imprese Produttrici e Distributrici di Energia Elettrica) nel 1961 e, successivamente, da ENEL nel 1974; • Il sito internet di Progetto Dighe (<a href=\"www.progettodighe.it\">www.progettodighe.it</a>) curato e aggiornato da un gruppo di appassionati di dighe, centrali idroelettriche e opere idrauliche, che si segnala per la completezza dei dati. Il database nella sezione “SKYdam” contiene, infatti, ben 577 dighe non solo italiane, ma anche francesi, statunitensi e svizzere. Una scheda riporta sia le loro caratteristiche principali sia una mappa di Google Maps con la posizione geografica.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=212&lingua=IT&descrizione=Invasi\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
@@ -315,9 +315,10 @@
                   }],
                   "layers": "new_atlante_integrato:hesci_laghi2020",
                   "id": "H_lake"
-                },
-                {
+                }, */
+                /* {
                   "type": "wms",
+                  //"type": "WebMapServiceCatalogItem",
                   "name": "Impianti idroelettrici - potenza e tipologia d'impianto",
                   "description": "<p>Mappa della distribuzione degli impianti idroelettrici operativi nel 2024, si rappresenta la potenza installata (dimensione del simbolo) e la tipologia di impianto (colore). </p><p>I dati degli impianti a serbatoio provengono da basi dati sviluppate da RSE in precedenti anni di Ricerca di Sistema (<a href= \"https://www.rse-web.it/rapporti/valutazione-del-potenziale-dei-sistemi-di-accumulo-di-energia-mediante-centrali-di-pompaggio-idroelettrico-per-il-sistema-idroelettrico-italiano-analisi-di-fattibilita-preliminari-314771/\">RSE report RdS prot. 12000959</a>), l'aggiornamento e i dati degli altri impianti sono derivati da ricerche online da siti quali quelli istituzionali, di gestori di impianti, di consorzi di bonifica, ecc. </p><p>La mappatura risultante confrontata con dati ufficiali Terna 2024 rappresenta il 93% in potenza degli impianti maggiore di 5 megawatt ed il 33% di quelli a potenza inferiore. </p>\n\n<table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=306&lingua=EN&descrizione=Idroelettrici - potenza e tipologia d'impianto\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "metadataUrls":[{
@@ -329,8 +330,16 @@
                         "template": "<p>Impianto <b>{{denom_imp}}</b>, potenza (MW) <b>{{pot_eff__1}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=306&anno=2024\">metadata link </a></p>"
                       },
                   "layers": "new_atlante_integrato:impianti_idroelettrici_2024",
+                  //"legendUrl": "http://dbeta.rse-web.it/immagini/baffo.jpg",
+                  //"legendUrl": "http://dbeta.rse-web.it/dbeta/immagini/baffo.jpg",
+                  //"legends": [
+                  //  {
+                  //    "title": "My Legend",
+                 //     "imageUrl": "../../wwwroot/images/logo_totem_TrW_new.png"
+                  //  }
+                  //],
                   "id": "idro_2024"
-                },
+                }, */
                 /* {
                   "type": "wms",
                   "name": "Impianti idroelettrici",
@@ -343,7 +352,7 @@
                   "layers": "new_atlante_integrato:hesci_centrali2020",
                   "id": "H_plant"
                 }, */
-                {
+                /* {
                   "id": "num_idro",
                   "type": "group",
                   "name": "Numerosità impianti",
@@ -370,7 +379,7 @@
                       "id": "183"
                     }
                   ]
-                },
+                }, */
                 {
                   "id": "potenza_idro",
                   "type": "group",
@@ -758,7 +767,106 @@
                       "id": "303"
                     }
                   ]
+                },
+                {
+                  "id": "num_idro",
+                  "type": "group",
+                  "name": "Impianti",
+                  "description": "Questa raccolta comprende dati relativi alla numerosità e localizzazione degli impianti idroelettrici presenti sul territorio nazionale.\n\n",
+                  "isOpen": false,
+                  "members": [
+                    {
+                      "type": "wms",
+                      "name": "Idroelettrici - Numero impianti regionale",
+                      "description": "Mappa della numerosità a livello regionale degli impianti idroelettrici, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). \n\n </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=183&lingua=IT&descrizione=Idroelettrici - Numero impianti regionale\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                      "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "featureInfoTemplate": {
+                        "template": "<p>Numero impianti regionali <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
+                      },
+                      "metadataUrls":[{
+                        "title":"link metadato",
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=183&anno=2021"
+                      }],
+                      "layers": "new_atlante_integrato:v_regioni_t",
+                      "styles":"id_num_imp_reg",
+                      "parameters": {
+                        "cql_filter": "var_id=183"
+                      },
+                      "id": "183"
+                    },
+                    {
+                  "type": "wms",
+                  "name": "Impianti idroelettrici - Localizzazione impianti",
+                  "description": "<p>Mappa degli impianti idroelettrici presenti sul territorio (anno di riferimento 2024). La dimensione del simbolo rappresenta la classe di potenza e il colore la tipologia di impianto.</p><p>La base dati deriva dall’aggiornamento e dall’integrazione di una precedente versione relativa ai soli grandi impianti sviluppata da RSE in precedenti anni di Ricerca di Sistema (<a href= \"https://www.rse-web.it/rapporti/valutazione-del-potenziale-dei-sistemi-di-accumulo-di-energia-mediante-centrali-di-pompaggio-idroelettrico-per-il-sistema-idroelettrico-italiano-analisi-di-fattibilita-preliminari-314771/\">RSE report RdS prot. 12000959</a>)), su informazioni desunte prevalentemente dal database del Registro Italiano Dighe e dalla pubblicazione “Le dighe di ritenuta degli impianti idroelettrici italiani” (ANIDEL/Enel). I dati della versione attuale sono stati integrati e aggiornati attraverso consultazione dei siti internet di gestori degli impianti, incrociati con informazioni derivate da siti istituzionali (regionali, provinciali, consorzi di bonifica, ecc.).</p><p>Nel complesso, gli impianti localizzati rappresentano il 93% in potenza degli impianti maggiore di 5 MW e il 33% di quelli di potenza inferiore (riferimento dati Terna 2024).</p>\n\n<table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=306&lingua=IT&descrizione=Idroelettrici - potenza e tipologia d'impianto\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=306&anno=2024"
+                  }],
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3impianti_idroelettrici_2024%22",
+                  "featureInfoTemplate": {
+                        "template": "<p>Impianto <b>{{denom_imp}}</b>, potenza (MW) <b>{{pot_eff__1}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=306&anno=2024\">metadata link </a></p>"
+                      },
+                  "layers": "new_atlante_integrato:impianti_idroelettrici_2024",
+                  //"legendUrl": "http://dbeta.rse-web.it/immagini/baffo.jpg",
+                  //"legendUrl": "http://dbeta.rse-web.it/dbeta/immagini/baffo.jpg",
+                  //"legends": [
+                  //  {
+                  //    "title": "My Legend",
+                 //     "imageUrl": "../../wwwroot/images/logo_totem_TrW_new.png"
+                  //  }
+                  //],
+                  "id": "idro_2024"
+                },
+                {
+                  "type": "wms",
+                  "name": "Relazioni impianto-invaso",
+                  "description": "<p>Mappa dei collegamenti tra l’impianto idroelettrico e il relativo invaso di alimentazione</p>\n\n<table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=307&lingua=IT&descrizione=Relazioni impianto-invaso\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
+                  "metadataUrls":[{
+                    "title":"metadata link",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=307&anno=2024"
+                  }],
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3connessione_imp_invaso%22",
+                  "layers": "new_atlante_integrato:connessione_imp_invaso",
+                  //"legendUrl": "http://dbeta.rse-web.it/immagini/baffo.jpg",
+                  //"legendUrl": "http://dbeta.rse-web.it/dbeta/immagini/baffo.jpg",
+                  //"legends": [
+                  //  {
+                  //    "title": "My Legend",
+                 //     "imageUrl": "../../wwwroot/images/logo_totem_TrW_new.png"
+                  //  }
+                  //],
+                  "id": "connessioni"
                 }
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Invasi",
+                  "description": "<p>Mappa degli invasi  presenti sul territorio (anno di riferimento 2024). Sono localizzati in totale 521 invasi.</p><p>La base dati è stata costruita a partire da informazioni desunte prevalentemente dal sito della <a href=\"https://dgdighe.mit.gov.it/categoria/articolo/_cartografie_e_dati/_cartografie/cartografia_dighe\">Direzione generale per le dighe e le infrastrutture idriche</a> e dalla pubblicazione “Le dighe di ritenuta degli impianti idroelettrici italiani” (ANIDEL/Enel), aggiornate e integrate mediante ricerche puntuali.</p><p>Per gli invasi ad uso idroelettrico, è possibile individuare l’impianto idroelettrico alimentato attivando lo strato “Impianti/relazioni impianto-invaso”.</p> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=212&lingua=IT&descrizione=Invasi\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3hesci_laghi2020",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=212&anno=2020"
+                  }],
+                  "layers": "new_atlante_integrato:hesci_laghi2020",
+                  "id": "H_lake",
+                  "styles":"invasi_2020"
+                },
+                {
+                  "type": "wms",
+                  "name": "Dighe",
+                  "description": "<p>Mappa delle dighe di ritenuta presenti sul territorio (anno di riferimento 2020). Sono rappresentate in totale 535 dighe.</p><p>La base dati è stata costruita a partire da informazioni desunte prevalentemente dal sito della <a href=\"https://dgdighe.mit.gov.it/categoria/articolo/_cartografie_e_dati/_cartografie/cartografia_dighe\">Direzione generale per le dighe e le infrastrutture idriche</a> e dalla pubblicazione “Le dighe di ritenuta degli impianti idroelettrici italiani” (ANIDEL/Enel), aggiornate e integrate mediante ricerche puntuali.</p><table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=211&lingua=IT&descrizione=Idroelettrici - Dighe\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=211&anno=2020"
+                  }],
+                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3hesci_dighe2020",
+                  "layers": "new_atlante_integrato:hesci_dighe2020",
+                  "id": "H_dam"
+                }
+
+
+
               ]
             },
             {

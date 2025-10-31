@@ -235,7 +235,7 @@
               "styles":"new_atlante_integrato:imp_progetto_fv_tot_num",
               "layers": "new_atlante_integrato:impianti_in_progetto_2024",
               "featureInfoTemplate": {
-                "template": "<p>Provincia <b>{{den_uts}}</b></p></p></b></p></b></p><p>Numero totale di impianti fotovoltaici in progetto: <b>{{fv_tot_num}}</b></p><p>di cui <b>{{fotov_num}}</b> di tipo tradizionale e <b>{{agriv_num}}</b> di tipo agrivoltaico.</b></p><p>Di questi <b>{{fot_n_mul}}</b> si trovano anche in altre province.</p>"
+                "template": "<p>Provincia <b>{{den_uts}}</b></p></p></b></p></b></p><p>Numero totale di impianti fotovoltaici in progetto: <b>{{fv_tot_num}}</b></p><p>di cui <b>{{fotov_num}}</b> di tipo tradizionale e <b>{{agriv_num}}</b> di tipo agrivoltaico.</b></p><p>Di questi <b>{{fv_n_mul}}</b> si trovano anche in altre province.</p>"
               },
               "id": "num_imp"
             },

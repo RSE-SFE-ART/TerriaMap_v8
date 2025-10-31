@@ -235,7 +235,7 @@
               "styles":"new_atlante_integrato:imp_progetto_fv_tot_num",
               "layers": "new_atlante_integrato:impianti_in_progetto_2024",
               "featureInfoTemplate": {
-                "template": "<p>Provincia <b>{{den_uts}}</b></p></p></b></p></b></p><p>Total number of solar plants: <b>{{fv_tot_num}}</b></p><p>of which <b>{{fotov_num}}</b> are traditional and <b>{{agriv_num}}</b> are agrivoltaic</p>"
+                "template": "<p>Provincia <b>{{den_uts}}</b></p></p></b></p></b></p><p>Total number of solar plants: <b>{{fv_tot_num}}</b></p><p>of which <b>{{fotov_num}}</b> are traditional and <b>{{agriv_num}}</b> are agrivoltaic.</p><p>Among these <b>{{fv_n_mul}}</b> are shared with other provinces.</p>"
               },
               "id": "num_imp"
             },
@@ -310,7 +310,7 @@
               "styles":"new_atlante_integrato:imp_progetto_eo_tot_num",
               "layers": "new_atlante_integrato:impianti_in_progetto_2024",
               "featureInfoTemplate": {
-                "template": "<p>Province <b>{{den_uts}}</b></p></p></b></p></b></p><p>Total number of onshore wind projects <b>{{eol_num}}</b></p>"
+                "template": "<p>Province <b>{{den_uts}}</b></p></p></b></p></b></p><p>Total number of onshore wind projects <b>{{eol_num}}</b>.</p><p>Among these <b>{{eol_n_mul}}</b> are shared with other provinces.</p>"
               },
               "id": "imp_eo_onshore_num"
             },

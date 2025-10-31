@@ -3,18 +3,11 @@ import React from "react";
 const COUNTRIES = ["Greece", "Italy", "Spain", "Portugal", "UK"];
 
 export default function DocumentationModal({ onlyCategory }) {
-  // simple lookup map for placeholder text per country
-  const placeholders = {
-    Greece: "Placeholder documentation content for Greece.",
-    Italy: "Placeholder documentation content for Italy.",
-    Spain: "Placeholder documentation content for Spain.",
-    Portugal: "Placeholder documentation content for Portugal.",
-    UK: "Placeholder documentation content for the UK."
-  };
-
   const selected = COUNTRIES.includes(onlyCategory)
     ? onlyCategory
     : COUNTRIES[0];
+
+  const pdfFile = `/data/infograph_${selected.toLowerCase()}.pdf`;
 
   return (
     <div>
@@ -27,7 +20,18 @@ export default function DocumentationModal({ onlyCategory }) {
             color: "#333"
           }}
         >
-          <p>{placeholders[selected]}</p>
+          <iframe
+            src={pdfFile}
+            title={`${selected} Documentation`}
+            width="100%"
+            height="600px"
+            style={{
+              border: "none"
+            }}
+          >
+            This browser does not support PDFs.{" "}
+            <a href={pdfFile}>Download PDF</a>
+          </iframe>
         </div>
       </div>
     </div>

@@ -7,14 +7,14 @@ export default function DocumentationModal({ onlyCategory }) {
     ? onlyCategory
     : COUNTRIES[0];
 
-  const pdfFile = `/data/infograph_${selected.toLowerCase()}.pdf`;
+  const pdfFile = `/data/infograph_${selected.toLowerCase()}.pdf#navpanes=0`;
 
   return (
     <div>
       <div>
         <div
           style={{
-            maxHeight: "60vh",
+            maxHeight: "70vh",
             overflow: "auto",
             padding: "1em",
             color: "#333"

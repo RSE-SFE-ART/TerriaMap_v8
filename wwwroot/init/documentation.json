@@ -1,0 +1,20 @@
+{
+  "workbench": [
+    "italy_confreg",
+    "greece_confreg",
+    "portugal_confreg",
+    "spain_confreg",
+    "uk_confreg"
+  ],
+  "homeCamera": {
+    "north": 60,
+    "east": 19,
+    "south": 33,
+    "west": 6
+  },
+  "baseMaps": {
+    "defaultBaseMapId": "basemap-positron",
+    "previewBaseMapId": "basemap-positron"
+  },
+  "viewerMode": "2d"
+}

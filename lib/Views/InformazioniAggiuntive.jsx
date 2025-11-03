@@ -15,6 +15,7 @@ import StakeholdersModal from "./StakeholdersModal.jsx";
 import WebinarsModal from "./WebinairsModal.jsx";
 import DocumentationModal from "./DocumentationModal.jsx";
 import VideosModal from "./VideosModal.jsx";
+import { useEffect } from "react";
 
 function InformazioniAggiuntive(props) {
   const dropdownTheme = {
@@ -23,6 +24,50 @@ function InformazioniAggiuntive(props) {
   };
 
   const [isOpen, setIsOpen] = useState(false);
+
+  //Funzione per aprire il modale in base all'url
+  useEffect(() => {
+    const handleHash = () => {
+      const hash = window.location.hash.replace("#", "").toLowerCase();
+
+      if (typeof window.openAppModal !== "function") {
+        setTimeout(handleHash, 300);
+        return;
+      }
+
+      if (typeof window.closeAppModal === "function") {
+        window.closeAppModal();
+      }
+
+      switch (hash) {
+        case "stakeholders":
+          openStakeholdersModal({ preventDefault: () => {} });
+          break;
+        case "documentation":
+          openDocumentation({ preventDefault: () => {} });
+          break;
+        case "webinars":
+          openWebinars({ preventDefault: () => {} });
+          break;
+        case "videos":
+          openVideos({ preventDefault: () => {} });
+          break;
+        case "":
+          break;
+        default:
+          break;
+      }
+    };
+
+    // --- listen for hash changes ---
+    window.addEventListener("hashchange", handleHash);
+
+    // --- handle the current hash at mount ---
+    handleHash();
+
+    // --- cleanup ---
+    return () => window.removeEventListener("hashchange", handleHash);
+  }, []);
 
   const analisi = "Additional Information";
 
@@ -232,11 +277,11 @@ function InformazioniAggiuntive(props) {
                   </p>
                   <br />
                   <a
-                    href="#"
+                    href="#documentation"
                     className={Styles.link}
                     onClick={openDocumentation}
                   >
-                    Work in progress
+                    Look at the infographics
                   </a>
                 </td>
               </tr>
@@ -263,7 +308,7 @@ function InformazioniAggiuntive(props) {
                   </p>
                   <br />
                   <a
-                    href="#"
+                    href="#stakeholders"
                     className={Styles.link}
                     onClick={openStakeholdersModal}
                   >
@@ -292,7 +337,11 @@ function InformazioniAggiuntive(props) {
                     sector.
                   </p>
                   <br />
-                  <a href="#" className={Styles.link} onClick={openWebinars}>
+                  <a
+                    href="#webinars"
+                    className={Styles.link}
+                    onClick={openWebinars}
+                  >
                     Browse Webinars
                   </a>
                 </td>
@@ -317,7 +366,11 @@ function InformazioniAggiuntive(props) {
                     Portuguese!
                   </p>
                   <br />
-                  <a href="#" className={Styles.link} onClick={openVideos}>
+                  <a
+                    href="#videos"
+                    className={Styles.link}
+                    onClick={openVideos}
+                  >
                     Browse Videos
                   </a>
                 </td>

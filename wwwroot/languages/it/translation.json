@@ -1222,6 +1222,7 @@
       "playSlower": "Riproduci più piano",
       "textCell": "Nome del set di dati di cui viene mostrato l'intervallo di tempo"
     },
+    "selectorLabel": "Tempo",
     "useTimeline": "Utilizza barra del tempo",
     "next": "Tempo successivo",
     "previous": "Tempo precedente",

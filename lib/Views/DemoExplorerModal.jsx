@@ -18,7 +18,6 @@ export default function DemoExplorerModal({
     <div className={`explorer-window ${Header.mwExplorer}`}>
       <div className={Header.header}>
         <div className={Header.title}>{title}</div>
-        {/* single custom Done button */}
         <button
           className={Header.doneBtn}
           onClick={() => window.closeAppModal?.()}
@@ -32,9 +31,9 @@ export default function DemoExplorerModal({
         style={{
           display: "flex",
           flexDirection: "column",
-          maxHeight, // limit
-          height: "auto", // 👈 allow natural shrink
-          overflow: "hidden" // don’t leak scrollbars
+          maxHeight,
+          height: "auto",
+          overflow: "hidden"
         }}
       >
         {showTabs && (

@@ -43,7 +43,7 @@ export default function About(props) {
                   __html: t("about.htmlContent")
                 }}
               />
-              {/* Footer buttons */}
+              {/* Footer */}
               <div
                 style={{
                   marginTop: 24,

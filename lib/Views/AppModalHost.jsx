@@ -1,21 +1,12 @@
-// lib/Views/AppModalHost.jsx
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 
-/**
- * Custom global modal host — no Terria dependencies.
- *
- * Usage:
- *   window.openAppModal(<MyComponent />, { width, maxHeight })
- *   window.closeAppModal()
- */
 export default function AppModalHost() {
   const [isVisible, setIsVisible] = useState(false);
   const [content, setContent] = useState(null);
   const [style, setStyle] = useState({});
 
   useEffect(() => {
-    // global helpers
     window.openAppModal = (node, opts = {}) => {
       const { width = "min(95vw, 1000px)", maxHeight = "90vh" } = opts;
       setContent(node);

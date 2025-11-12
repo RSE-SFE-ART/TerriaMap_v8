@@ -99,7 +99,7 @@ export default function StakeholdersModal({ onlyCategory }) {
         });
         const COL_B = 1,
           COL_F = 5,
-          COL_G = 6;
+          COL_H = 7;
 
         const seenF = new Set();
         const grouped = new Map(CANON_ORDER.map(c => [c, []]));
@@ -109,10 +109,10 @@ export default function StakeholdersModal({ onlyCategory }) {
           if (!f || seenF.has(f)) continue; // require org name, dedupe by F
           seenF.add(f);
 
-          const g = (r[COL_G] ?? "").toString().trim();
+          const h = (r[COL_H] ?? "").toString().trim();
           const canon = normalizeCategory(r[COL_B]);
 
-          grouped.get(canon).push({ f, g });
+          grouped.get(canon).push({ f, h });
         }
 
         const categories = CANON_ORDER.map((label, idx) => ({
@@ -171,7 +171,7 @@ export default function StakeholdersModal({ onlyCategory }) {
                 {cat.rows.map((r, i) => (
                   <tr key={`${cat.id}-${i}`}>
                     <td>{r.f}</td>
-                    <td>{r.g}</td>
+                    <td>{r.h}</td>
                   </tr>
                 ))}
                 {!cat.rows.length && (

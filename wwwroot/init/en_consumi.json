@@ -27,6 +27,13 @@
             {"layerName":"consumi_reg"}
           ],
           "styles":"consumi_reg",
+          "initialMessage": {
+                    "title": "Layer view:",
+                    "content": "Data available till 2022.<br>To view this layer, select an year in the sidebar after adding the information layer to the map.",
+                    "key": "275",
+                    "confirmation": true,
+                    "confirmText": "I understand"
+          },
           "id": "275"
         },
 /*         {

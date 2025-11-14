@@ -1,0 +1,229 @@
+{
+  "catalog": [
+    
+    {
+      "id": "en_recuper_calore",
+      "type": "group",
+      "name": "Waste heat recovery",
+      "description": "<p align=\"justify\">As part of the energy transition towards full decarbonization, the use of waste heat and the integration of renewables represent the only two sources of generation for efficient district heating by 2050. Furthermore, heat recovery represents a significant opportunity to increase the efficiency of the industrial sector.</p><p align=\"justify\">This collection contains maps useful for assessing the potential heat that can be recovered from industrial waste heat and distributed to domestic and tertiary sector users via district heating networks. For this purpose, the following are available:</p><p align=\"justify\"><ul><li><p align=\"justify\">Italian maps of possible industrial heat waste estimated from the data available from industries registered in the ETS register (<a href=\"https://union-registry-data.ec.europa.eu/report/welcome\">Emission Trading System</a>), representing energy-intensive industrial sectors (e.g., oil refineries, steel mills, and large-scale production of iron, metals, aluminum, cement, lime, glass, ceramics, pulp and paper, acids, and organic chemicals). These include generating sites already serving district heating networks. The maps are categorized by different waste heat temperature ranges.</p></li><li><p align=\"justify\">Maps estimating the heating demand for the residential and tertiary sectors by census area for 2030 based on 2011 ISTAT data.</p></li><li><p align=\"justify\">The map estimating recoverable heat and its cost, including distribution, obtained by matching thermal supply and demand with a view to economic sustainability compared to individual heating systems.</p></li></ul><p align=\"justify\">The maps are the result of processing carried out jointly by RSE and the Energy Department of the Milan Polytechnic (<a href=\"https://www.energia.polimi.it/laboratori/relab/\">RELAB - Energy Department</a>). </p></p><p align=\"justify\"><img src=\"/images/calore_scarto_descrizione.png\"></p>",
+      "isOpen": false,
+      "members": [
+        {
+          "type": "wms",
+          "name": "High Temperature Waste Heat Estimate - T > 300°C (MWh)",
+          "description": "<p align=\"justify\">Map of the estimated high-temperature waste heat (HT - T> 300°C) calculated for Italian industries registered in the ETS register (<a href=\"https://union-registry-data.ec.europa.eu/report/welcome\">Union Registry Public Website</a>). The estimated thermal waste is mapped and themed based on the quantity of waste heat calculated from the CO<sub>2</sub> emission data and some recovery coefficients taken from the literature, linked to the type of industry and the temperature level of the effluents.<b> The reported value refers to the energy available for the heating season (6 months)</b>.</p><p align=\"justify\">By clicking on the point you can get additional information such as the estimated amount of waste heat available (MWh), the municipality, etc.</p><p align=\"justify\">The maps are the result of elaborations carried out jointly by RSE and the Energy Department of the Polytechnic University of Milan (<a href=\"https://www.energia.polimi.it/laboratori/relab/\">RELAB - Department of Energy</a>) starting from the data of the ETS register (<a href=\"https://union-registry-data.ec.europa.eu/report/welcome\">Union Registry Public Website</a>) </a>.</p><p align=\"justify\">For further details see the System Research reports XXX (DA LINKARE QUANDO SARA' PUBBLICATO), 23012308, 20010734, 21010223.</p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p>",
+          //"url": "http://gis2.rse-web.it/geoserver/wms",
+          "url": "https://gis3.rse-web.it/geoserver/wms",
+          
+          "featureInfoTemplate": {
+            "template": "<p>Recovery energy [MWh] <b>{{energia_rec}}</b> of a plant located in the municipality of  {{comune}}, province of {{provincia}}.</p><br><br>"
+          },
+          
+          //"layers": "atlante_integrato:ht_fonti_atlante_statico",
+          "layers": "dbeta:ht_fonti_atlante_statico",
+          "id": "en_punti_calore_ht"
+          //"styles":"punti_calore_di_recupero"
+        },
+        {
+          "type": "wms",
+          "name": "Medium Temperature Waste Heat Estimate - 100°C ≤ T ≤ 300°C (MWh)",
+          "description": "<p align=\"justify\">Map of the estimated medium temperature waste heat (MT - 100°C ≤ T ≤ 300°C) calculated for Italian industries registered in the ETS register (<a href=\"https://union-registry-data.ec.europa.eu/report/welcome\">Union Registry Public Website</a>). The estimated thermal waste is mapped and themed based on the quantity of waste heat calculated from CO<sub>2</sub> emission data and some recovery coefficients taken from the literature, linked to the type of industry and the temperature level of the effluents.<b> The value reported refers to the energy available for the heating season (6 months).</b></p><p align=\"justify\">By clicking on the point it is possible to have additional information such as the estimate of the quantity of waste heat available (MWh), the municipality, etc.</p><p align=\"justify\">The maps are the result of elaborations carried out jointly by RSE and the Energy Department of the Polytechnic University of Milan (<a href=\"https://www.energia.polimi.it/laboratori/relab/\">RELAB - Department of Energy</a>) starting from the data of the ETS register (<a href=\"https://union-registry-data.ec.europa.eu/report/welcome\">Union Registry Public Website</a>) </a>.</p><p align=\"justify\">For further details see the XXX System Research reports (DA LINKARE QUANDO SARA' PUBBLICATO), 23012308, 20010734, 21010223.</p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p>",
+          "url": "https://gis3.rse-web.it/geoserver/wms",
+          
+          "featureInfoTemplate": {
+            "template": "<p>Energy recovered [MWh] <b>{{energia_rec}}</b> from a plant located in the municipality of {{comune}}, province of {{provincia}}.</p><br><br>"
+          },
+          
+          //"layers": "atlante_integrato:ht_fonti_atlante_statico",
+          "layers": "dbeta:mt_fonti_atlante_statico",
+          "id": "en_punti_calore_md"
+          //"styles":"punti_calore_di_recupero"
+        },
+        {
+          "type": "wms",
+          "name": "Low Temperature Waste Heat Estimate - T < 100°C (MWh)",
+          "description": "<p align=\"justify\">Map of the estimated low-temperature waste heat (LT - T < 100°C) calculated for Italian industries registered in the ETS register (<a href=\"https://union-registry-data.ec.europa.eu/report/welcome\">Union Registry Public Website</a>). The estimated thermal waste is mapped and themed based on the quantity of waste heat calculated from the CO2 emission data and some recovery coefficients taken from the literature, linked to the type of industry and the temperature level of the effluents. <b>The reported value refers to the energy available for the heating season (6 months)</b>.</p><p align=\"justify\">By clicking on the point you can get additional information such as the estimate of the quantity of waste heat available (MWh), the municipality, etc.</p><p align=\"justify\">The maps are the result of elaborations carried out jointly by RSE and the Energy Department of the Polytechnic University of Milan (<a href=\"https://www.energia.polimi.it/laboratori/relab/\">RELAB - Department of Energy</a>) starting from the data of the ETS registry (<a href=\"https://union-registry-data.ec.europa.eu/report/welcome\">Union Registry Public Website</a>)</a>.</p><p align=\"justify\">For further details see the XXXXX System Research Reports (DA LINKARE QUANDO SARA' PUBBLICATO), 23012308, 20010734, 21010223.</p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p>",
+          //"url": "http://gis2.rse-web.it/geoserver/wms",
+          "url": "https://gis3.rse-web.it/geoserver/wms",
+         
+          "featureInfoTemplate": {
+            "template": "<p>Energy recovered [MWh] <b>{{energia_rec}}</b> from a plant located in the municipality of {{comune}}, province of {{provincia}}.</p><br>"
+          },
+          
+          //"layers": "atlante_integrato:lt_fonti_atlante_statico",
+          "layers": "dbeta:lt_fonti_atlante_statico",
+          "id": "en_punti_calore_LT"
+          //"styles":"punti_calore_di_recupero"
+
+        },
+        //{
+        //  "type": "wms",
+        //  "name": "Calore di scarto COPERTURA PARZIALE",
+        //  "description": "<p align=\"justify\">L'atlante italiano del calore di scarto riporta il calore di scarto disponibile per le industrie iscritte al registro ETS comprendente settori industriali ad alta intensità energetica, come raffinerie di petrolio, acciaierie e produzione di ferro, metalli, alluminio, cemento, calce, vetro, ceramica, pasta di legno, carta, acidi e prodotti chimici organici su larga scala. Il calore di scarto disponibile è stato calcolato partendo da una valutazione dell'energia annua consumata utilizzando dei coefficienti percentuali di calore di scarto prodotto riportati in letteratura, legati alla tipologia di industria e temperatura del calore di scarto.</p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p><p align=\"justify\">Le mappe sono categorizzate in base alla temperatura del calore e suo utilizzo:<ul><li>Calore di scarto ad Alta Temperatura (HT): T> 300°C</li><li>Calore di scarto a Media Temperatura (MT): 80<T<300 °C</li><li>Calore di scarto a Bassa Temperatura (LT): T<80°C</li><li>Impianti di Teleriscaldamento</li></ul></p>",
+        //  "url": "http://gis2.rse-web.it/geoserver/wms",
+        // 
+        //  "featureInfoTemplate": {
+        //    "template": "<p>Energia di recupero [MWh] <b>{{energia_rec}}</b> di un impianto situato nel comune di {{comune}}, provincia di {{provincia}}</p><br><table width=\"250\" border = \"0\" align='center'><tr border = \"0\"><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ai_connessione_db_recupero_calore.php?id_input={{id_fonte}}&Comune={{comune}}&Provincia={{provincia}}&}&Heat={{energia_rec}}&latitudine={{latitudine}}&longitudine={{longitudine}}&lingua=IT\"><font color='#FFFFFF'>Dati Input Codice di calcolo</a></font></td></tr></table>"
+        //  },
+        // 
+        //  "layers": "dbeta:lt_fonti_parziale",
+        //  "id": "punti_calore_parziale"
+          //"styles":"punti_calore_di_recupero"
+
+        //},
+        //{
+        //  "type": "wms",
+        //  "name": "Levelized Cost of Energy (LCOE) del calore distribuito all'utenza",
+        //  "description": "<p align=\"justify\">L'atlante italiano del calore di scarto riporta il calore di scarto disponibile per le industrie iscritte al registro ETS comprendente settori industriali ad alta intensità energetica, come raffinerie di petrolio, acciaierie e produzione di ferro, metalli, alluminio, cemento, calce, vetro, ceramica, pasta di legno, carta, acidi e prodotti chimici organici su larga scala. Il calore di scarto disponibile è stato calcolato partendo da una valutazione dell'energia annua consumata utilizzando dei coefficienti percentuali di calore di scarto prodotto riportati in letteratura, legati alla tipologia di industria e temperatura del calore di scarto.</p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p><p align=\"justify\">Le mappe sono categorizzate in base alla temperatura del calore e suo utilizzo:<ul><li>Calore di scarto ad Alta Temperatura (HT): T> 300°C</li><li>Calore di scarto a Media Temperatura (MT): 80<T<300 °C</li><li>Calore di scarto a Bassa Temperatura (LT): T<80°C</li><li>Impianti di Teleriscaldamento</li></ul></p>",
+        //  "url": "http://gis2.rse-web.it/geoserver/wms",
+         
+        //  "featureInfoTemplate": {
+        //    "template": "<p>Energia di recupero [MWh] <b>{{lat_fonte}}</b> di un impianto situato nel comune di {{comune}}, provincia di {{provincia}}</p><br><table width=\"250\" border = \"0\" align='center'><tr border = \"0\"><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ai_connessione_db_recupero_calore.php?id_input={{id_fonte}}&Comune={{comune}}&pro_com={{pro_com}}&Provincia={{provincia}}&Heat={{lat_fonte}}&latitudine={{lat_fonte}}&longitudine={{long_fonte}}&lingua=IT\"><font color='#FFFFFF'>Dati Input Codice di calcolo</a></font></td></tr></table>"
+        //  },
+          
+        //  "layers": "dbeta:fonti_all",
+        //  "id": "fonti_all"
+          //"styles":"punti_calore_di_recupero"
+
+        //},
+       
+        {
+          "type": "wms",
+          "name": "District heating systems (MWh/year)",
+          "description": "<p align=\"justify\">Map of generating plants present in the national territory and registered in the ETS register (<a href=\"https://union-registry-data.ec.europa.eu/report/welcome\">Union Registry Public Website</a>) that serve district heating networks.</p>",
+          "url": "https://gis3.rse-web.it/geoserver/wms",
+          "featureInfoTemplate": {
+            "template": "<p>Recycled energy [MWh] <b>{{energia_an}}</b> of the municipality of {{citta}} ({{prov}})<br><br>"
+          },
+          
+          //"layers": "atlante_integrato:chp_fonti_atlante_statico",
+          "layers": "dbeta:impianti_teleriscaldamento",
+          "id": "en_punti_calore_CHP"
+          //"styles":"punti_calore_di_recupero"
+        },
+        //{
+        //  "type": "wms",
+        //  "name": "Nome layer punti calore di recupero",
+        //  "description": "Descrizione layer punti calore di recupero .... ...",
+        //  "url": "http://gis2.rse-web.it/geoserver/wms",
+        //  "featureInfoTemplate": {
+         //   "template": "<b>ID: {{lat}}</b> <br>Heat wastee <b>{{heat waste}}</b> W  del comune di {{citta}}, provincia di {{provincia}}<form action=\"https://dbeta.rse-web.it/ai_connessione_db_recupero_calore.php\" target='_blank' method=\"post\"><table width=\"5000\"  style=\"border-top: 2px solid #FFFFFF; border-bottom: 2px solid #FFFFFF; border-lef: 2px solid #FFFFFF; border-right: 2px solid #FFFFFF;\"  border='4'><tr><td><label for=\"label_nome\"><b>Nome:&nbsp;&nbsp;&nbsp;</b></label><input type=\"text\" id=\"Nome\" name=\"Nome\" size=\"20\" style=\"color: black;\"></td><td><label for=\"label_cognome\"><b>Cognome:&nbsp;&nbsp;&nbsp;</b></label><input type=\"text\" id=\"Cognome\" name=\"Cognome\" size=\"20\" style=\"color: black;\"></td><td><label for=\"label_mail\">Mail:&nbsp;&nbsp;&nbsp;</label> <input type=\"email\" required  minlength=5 id=\"label_mail\" name=\"label_mail\" size=\"27\" style=\"color: black;\"></td></tr></table><br><table  width=\"5000\"  style=\"border-top: 2px solid #FFFFFF; border-bottom: 2px solid #FFFFFF; border-lef: 2px solid #FFFFFF; border-right: 2px solid #FFFFFF; width=\"5000\" border='4'><tr><td><label for=\"raggio_considerato\">Raggio considerato:&nbsp;&nbsp;;&nbsp;;&nbsp;&nbsp;&nbsp;</label><input type=\"number\" id=\"raggio_considerato\" name=\"raggio_considerato\" min=\"1\" max=\"5\" required style=\"color: black;\"></td><td><label for=\"costo_gas\">Costo del gas:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type=\"number\" id=\"costo_gas\" name=\"costo_gas\" min=\"1\" max=\"5\" required style=\"color: black;\"></td></tr><tr><tr><td><label for=\"costo_calore_scarto\">Costo del calore di scarto:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type=\"number\" id=\"costo_calore_scarto\" name=\"costo_calore_scarto\" min=\"1\" max=\"5\" required style=\"color: black;\"></td><td><label for=\"costo_energia\">Costo energia elettrica:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type=\"number\" id=\"costo_energia\" name=\"costo_energia\" min=\"1\" max=\"5\" required style=\"color: black;\"></td></tr><tr><td><label for=\"tipo_di_fonte\">Tipo di fonte:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type=\"checkbox\" id=\"HT\" name=\"HT\" value=\"HT\"><label for=\"HT\"> HT &nbsp;&nbsp;&nbsp;</label><input type=\"checkbox\" id=\"MT\" name=\"MT\" value=\"MT\"><label for=\"MT\"> MT &nbsp;&nbsp;&nbsp;</label><input type=\"checkbox\" id=\"LT\" name=\"LT\" value=\"LT\"><label for=\"LT\"> LT &nbsp;&nbsp;&nbsp;</label><input type=\"checkbox\" id=\"Tutte\" name=\"Tutte\" value=\"Tutte\"><label for=\"Tutte\"> Tutte &nbsp;&nbsp;&nbsp;</label></td><td><label for=\"calore_recuperato\">Calore recuperato per tipo di fonte:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type=\"number\" id=\"calore_recuperato\" name=\"calore_recuperato\" min=\"1\" max=\"5\" required style=\"color: black;\"></td></tr><tr><td><label for=\"ore_equivalenti\">Ore equivalenti di funzionamento:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type=\"number\" id=\"ore_equivalenti\" name=\"ore_equivalenti\" min=\"1\" max=\"5\" required  size=\"15\" style=\"color: black;\"></td><td><label for=\"tasso_sconto\">Tasso di sconto per attualizzazione:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type=\"number\" id=\"tasso_sconto\" name=\"tasso_sconto\" min=\"1\" max=\"5\" required size=\"15\" style=\"color: black;\"></td></tr><tr><td colspan=\"2\" style=\"text-align:center\"><input type=\"submit\" value=\"Avvia\"  style=\"color: black;\"></td></tr></table></p><table width=\"1000\"><tr><td><p style= 'text-align:justify; font-size:12px'>RSE - Ricerca sul Sistema Energetico SpA informa che l'invio facoltativo, esplicito e volontario di dati personali attraverso la compilazione del form di  registrazione o di altri moduli presenti sul sito comporta l'acquisizione dei dati di contatto del mittente, necessari ad avere accesso al materiale da scaricare, nonché di tutti i dati personali volontariamente inclusi nelle comunicazioni. RSE SpA utilizza dei cookie persistenti di Registrazione: i cookie memorizzano informazioni sulla navigazione che vengono utilizzate da RSE SpA per verificare e migliorare la diffusione dei risultati delle proprie attività di ricerca e per tenere traccia del tipo di diffusione avvenuta in conformità all’interesse pubblico alla divulgazione scientifica perseguito. Il cookie di Registrazione è stato creato da RSE SpA per il proprio sito e non può essere letto da altri siti.<br>Per ulteriori informazioni si rinvia al testo integrale dell’<a href=\"https://www.rse-web.it/privacy\" target=\"_blank\">informativa privacy.</a></p></td></tr><tr><td><input type=\"checkbox\" required>  Ho letto l'informativa</td></tr></table></form>"
+         // },
+        //  "metadataUrls":[{
+        //    "title":"link metadato",
+        //    "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=240"
+        //  }],
+        //  "layers": "atlante_integrato:punti_calore_di_recupero",
+        ////  "id": "punti_calore",
+        //  "styles":"punti_calore_di_recupero"
+        //},
+        {
+          "type": "wms",
+          "name": "Estimated heat demand for heating and domestic hot water in 2030 (MWh/year)",
+          "description": "<p align=\"justify\">Map of the estimated annual heat demand for heating and domestic hot water expected for 2030 by ISTAT census area (data relating to <a href=\"http://dati-censimentopopolazione.istat.it/Index.aspx\">Istat Population and Housing Census 2011</a>).</p><p align=\"justify\">The estimate of the current heating demand of the residential sector is calculated from known consumption data (from the EUROSTAT National Energy Balance), aggregated on a regional basis (according to the procedure described by GSE in the report \"Evaluation of the national and regional potential for the application of high-efficiency cogeneration and efficient district heating\") and redistributed across the territory with respect to each census section, considering the characteristics of the buildings (i.e., construction period and surface area) available from the Census, with distinctions for space heating and domestic hot water.</p><p align=\"justify\">The estimate of the heating demand of the residential sector for 2030 is calculated starting from the current demand data determined in each census section, considering an overall average deep retrofit rate in Italy of 0.7% per year for the residential sector and 2.5% per year for the tertiary sector (consistent with the indications of the PNIEC) and a light retrofit rate for the residential sector of approximately 0.3% per year.</p><p align=\"justify\">The maps are the result of elaborations carried out jointly by RSE and the Energy Department of the Polytechnic University of Milan (<a href=\"https://www.energia.polimi.it/laboratori/relab/\">RELAB - Energy Department</a>) starting from <a href=\"https://www.rse-web.it/rapporti/soluzioni-innovative-per-la-transizione-del-teleriscaldamento-casi-studio-e-mappatura-di-domanda-e-offerta-di-calore/\">regional consumption data</a> and data relating to the sections of the <a href=\"http://dati-censimentopopolazione.istat.it/Index.aspx\">Istat 2011 Population and Housing Census</a>, based on algorithms reported in the document '<a href=\"https://www.rse-web.it/wp-content/uploads/2023/11/1656886035_TGM-1.06-LA2.03-22014105.pdf\">Innovative solutions for the energy transition and efficiency of district heating</a>' and in the document '<a href=\"https://www.camera.it/application/xmanager/projects/leg18/attachments/upload_file_doc_acquisiti/pdfs/000/004/811/Memoria_AIRU_Report_finale_.pdf\">Evaluation of the potential for the diffusion of efficient district heating across the national territory</a>'.</p><p align=\"justify\"><img src=\"/images/calore_scarto_fabbisogno_annuo.png\"></p>",
+          "url": "https://gis2.rse-web.it/geoserver/wms",
+          "featureInfoTemplate": {
+            "template": "<p>Heat demand by 2030: (MWh/year) <b>{{_fabbiso_3}}</b> of the municipality of {{_comune}}, province of {{_provincia}}</p>"
+          },
+          "layers": "atlante_integrato:richieste_calore_2030",
+          "id": "en_richieste_calore_2030_fabbisogno"
+        },
+        {
+          "type": "wms",
+          "name": "Levelized Cost of Energy (LCOE) of RECOVERABLE HEAT FOR DISTRICT HEATING (€/MWh)",
+          "description": "<p align=\"justify\"Map of potential industrial waste heat recovery projects through new district heating networks and estimate of the LCOE (Levelized Cost of Energy €/MWh) of waste heat distributed to residential and tertiary users.</p><p align=\"justify\">The estimate of heat distributed to the network is the result of an optimized matching between the technically district heating demand located within 10 km of the heat source and the economically viable waste heat supply, with a view to competing with domestic heating.</p><p align=\"justify\">The LCOE takes into account the cost of recovery technology (high- and medium-temperature (HT and MT) heat exchangers and low-temperature (LT) heat pumps) and the cost of the transmission and distribution network. Many industrial heat sources have both high and low temperature heat so the LCOE takes into account the use of both heat inputs.</p><p align=\"justify\">By clicking on each site with available waste heat, the network connecting the heat source to the center of the served census area is displayed, along the best road routes. The census areas served by the waste heat are also displayed, and finally, the values ​​used and calculated by the optimization software can be consulted<ul><li>distance from the heat source within which the user to be considered is located (radius in m)</li><li>length of the transport network (m)</li><li>cost of the transport network (keuro) </li><li>length of the distribution network (m)</li><li>cost of the distribution network (k€)</li><li>waste heat available at HT and MT (MWh)</li><li>heat supplied to the user recovered from waste heat at HT and MT (MWh) </li><li>investment cost of recovery technology for HT and MT (k€)</li><li>waste heat available at LT (MWh)</li><li>heat supplied to the user recovered from waste heat at LT (MWh)</li><li>investment cost of waste heat recovery technology per LT (k€)</li><li>energy served by individual boiler solutions [MWh/year] pertaining to the census areas served by waste heat</li><li>LCOE - levelized cost of energy of heat distributed to users (€/MWh)</li></ul></p><p align=\"justify\">A module can be activated that allows the user to set site-specific data (e.g., the amount of waste heat to consider, the radius within which to consider thermal users, the cost of waste heat, and the energy costs of the individual solution) to ensure a more accurate assessment of the cost of using waste heat for district heating applications. The results of the new optimization are sent to each user via email and can be uploaded to the website.</p><p align=\"justify\">The maps are the result of processing carried out jointly by RSE and the Energy Department of the Milan Polytechnic (<a href=\"https://www.energia.polimi.it/laboratori/relab/\">RELAB - Energy Department </a>).</p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p>",
+          "url": "http://gis2.rse-web.it/geoserver/wms",
+         
+          "featureInfoTemplate": {
+            "template": "<p>LCOE [€/mwh] <b>{{lcoe_n}}</b>, recovered energy [MWh] <b>{{energia se}}</b> of a plant located in the municipality of {{comune}}, province of {{provincia}}</p><br><table width=\"250\" border = \"0\" align='center'><tr border = \"0\"><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ai_connessione_db_recupero_calore.php?id_input={{id_fonte}}&Comune={{comune}}&pro_com={{pro_com}}&Provincia={{provincia}}&Heat={{lat_fonte}}&latitudine={{lat_fonte}}&longitudine={{long_fonte}}&lingua=EN\"><font color='#FFFFFF'>Input Data Calculation Code</a></font></td></tr></table><br><table width=\"250\" border = \"0\" align='center'><tr border = \"0\"><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ai_connessione_db_recupero_calore_dati_dettagliati.php?id_input={{id_fonte}}&Comune={{comune}}&pro_com={{pro_com}}&Provincia={{provincia}}&Heat={{energia se}}&latitudine={{lat_fonte}}&longitudine={{long_fonte}}&lingua=EN\"><font color='#FFFFFF'>&nbsp;&nbsp;&nbsp;Detailed Data&nbsp;&nbsp;&nbsp;</a></font></td></tr></table>"
+          },
+          
+          "layers": "dbeta:fonti_all_lcoe",
+          "id": "en_fonti_all_lcoe"
+          //"styles":"punti_calore_di_recupero"
+
+        },
+        {
+          "type": "wms",
+          "name": "Quantity of waste heat recoverable for district heating (MWh/year)",
+          "description": "<p align=\"justify\">Map of potential projects for recovering industrial waste heat through new district heating networks with an estimate of the quantity (MWh) of waste heat distributed to residential and tertiary users.</p><p align=\"justify\">The estimate of heat distributed to the network is the result of the optimized matching between the technically district heating demand located within 10 km of the heat source, and the thermal supply of waste heat, which is economically less expensive than domestic heating.</p><p align=\"justify\">The cost of distributed heat is calculated based on the cost of the heat recovery technology (high- and medium-temperature (HT and MT) heat exchangers and low-temperature (LT) heat pumps) and the cost of the transmission and distribution network. Many industrial heat sources have both high- and low-temperature heat, so the cost takes into account the use of both heat sources.</p><p align=\"justify\">By clicking on each site with available waste heat, the network connecting the heat source to the center of the served census area is displayed, along the best road routes. The census areas served by the waste heat are also displayed, and finally the values ​​used and calculated by the optimization software can be consulted. <ul><li>Distance from the heat source within which the user being considered is located (radius in meters)</li><li>length of the transport network (m)</li><li>cost of the transport network (keuro)</li><li>length of the distribution network (m)</li><li>cost of the distribution network (k€)</li><li>waste heat available at HT and MT (MWh)</li><li>heat supplied to the user recovered from waste heat at HT and MT (MWh)</li><li>investment cost of recovery technology for HT and MT (k€)</li><li>waste heat available at LT (MWh)</li><li>heat supplied to the user recovered from waste heat at LT (MWh)</li><li>investment cost of recovery technology per LT (k€)</li><li>energy served by individual boiler solutions [MWh/year] pertaining to the census areas served by waste heat</li><li>LCOE- levelized cost of Energy of heat distributed to users (€/MWh)</li></ul></p><p align=\"justify\">A module can be activated that allows the user to set site-specific data (e.g., the amount of waste heat to consider, the radius within which to consider thermal users, the cost of waste heat, and the energy costs of the individual solution) to ensure a more accurate assessment of the cost of using waste heat for district heating applications. The results of the new optimization are sent to each user via email and can be uploaded to the website.</p><p align=\"justify\">The maps are the result of processing carried out jointly by RSE and the Energy Department of the Milan Polytechnic (<a href=\"https://www.energia.polimi.it/laboratori/relab/\">RELAB - Energy Department</a>).</p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p>",
+          "url": "http://gis2.rse-web.it/geoserver/wms",
+          "featureInfoTemplate": {
+            "template": "<p>Recovery energy [MWh] <b>{{energia se}}</b>, LCOE [€/mwh] <b>{{lcoe_n}}</b> of a plant located in the municipality of {{comune}}, province of {{provincia}}</p><br><table width=\"250\" border = \"0\" align='center'><tr border = \"0\"><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ai_connessione_db_recupero_calore.php?id_input={{id_fonte}}&Comune={{comune}}&pro_com={{pro_com}}&Provincia={{provincia}}&Heat={{lat_fonte}}&latitudine={{lat_fonte}}&longitudine={{long_fonte}}&lingua=EN\"><font color='#FFFFFF'>Input Data Calculation Code</a></font></td></tr></table><br><table width=\"250\" border = \"0\" align='center'><tr border = \"0\"><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ai_connessione_db_recupero_calore_dati_dettagliati.php?id_input={{id_fonte}}&Comune={{comune}}&pro_com={{pro_com}}&Provincia={{provincia}}&Heat={{energia se}}&latitudine={{lat_fonte}}&longitudine={{long_fonte}}&lingua=EN\"><font color='#FFFFFF'>&nbsp;&nbsp;&nbsp;Detailed Data&nbsp;&nbsp;&nbsp;</a></font></td></tr></table>"
+          },
+                    
+          "layers": "dbeta:fonti_all_lcoe",
+          "id": "en_fonti_all_lcoe_energia_se",
+          "styles":"energia_se"
+
+        }
+       //{
+        //  "id": "Stima degli impianti a servizio del teleriscaldamento",
+         //  "type": "group",
+         //  "name": "Stima degli impianti a servizio del teleriscaldamento",
+         //  "description": "Stima degli impianti a servizio del teleriscaldamento",
+         //  "isOpen": false,
+         //  "members": [
+           //  {
+           //    "type": "wms",
+            //   "name": "Impianti di teleriscaldamento (MWh/anno)",
+           //    "description": "<p align=\"justify\">Mappa degli impianti generativi presenti sul territorio nazionale e iscritti al registro ETS (<a href=\"https://union-registry-data.ec.europa.eu/report/welcome\">Union Registry Public Website</a>) che risultano a servizio di reti di teleriscaldamento.</p>",
+           //    "url": "https://gis3.rse-web.it/geoserver/wms",
+           //    "featureInfoTemplate": {
+           //      "template": "<p>Energia di recupero [MWh] <b>{{energia_rec}}</b>  del comune di {{comune}}, provincia di {{provincia}}</p><p>Latitudine: {{lat}} - Longitudine: {{long}}</p><br><br>"
+           //    },
+           //    
+           //    "layers": "atlante_integrato:chp_fonti_atlante_statico",
+           //    "id": "punti_calore_CHP_bis"
+           //    //"styles":"punti_calore_di_recupero"
+           //  },
+           //  {
+            //   "type": "wms",
+            //   "name": "Levelized Cost of Energy (LCOE) del CALORE RECUPERABILE PER TELERISCALDAMENTO (€/MWh)",
+            //   "description": "<p align=\"justify\">Mappa dei potenziali progetti di recupero del calore di scarto industriale tramite nuove reti di teleriscaldamento e stima del LCOE (Levelized Cost Of Energy €/MWh) del calore di scarto distribuito alle  utenze residenziali e terziarie.</p><p>La stima del calore distribuito in rete è frutto del matching ottimizzato tra la domanda termica tecnicamente teleriscaldabile situata ad una distanza inferiore a 10 km della fonte di calore, e l'offerta termica di calore di scarto economicamente in un'ottica di competizione con il riscaldamento domestico.</p><p>Il LCOE tiene conto del costo della tecnologia di recupero (scambiatore per calore ad alta e media temperatura (HT e MT) e pompe di calore per calore a bassa temperatura (LT)) e del costo della rete di trasmissione e di distribuzione. Molte fonti di calore industriale dispongono sia di calore ad alta che a bassa temperatura per cui il LCOE tiene conto dell'utilizzo di entrambi i contributi di calore.</p><p>Cliccando su ciascun sito con calore di scarto disponibile, viene visualizzata la rete che unisce la fonte del calore con il centro dell'area di censimento servita, lungo i migliori percorsi stradali. Vengono inoltre visualizzate le aree di censimento servite dal calore di scarto ed infine sono consultabili i valori utilizzati e calcolati dal software di ottimizzazione<ul><li>distanza della fonte di calore entro cui è situata l’utenza da considerare (raggio in m)</li><li>lunghezza della rete di trasporto (m)</li><li>costo della rete di trasporto (keuro) </li><li>lunghezza della rete di distribuzione (m)</li><li>costo della rete di distribuzione (k€)</li><li>calore di scarto disponibile a HT e MT (MWh)</li><li>calore fornito all'utenza recuperato dal calore di scarto a HT e MT (MWh) </li><li>costo di investimento della tecnologia di recupero per HT e MT (k€)</li><li>calore di scarto disponibile a LT (MWh)</li><li>calore fornito all'utenza recuperato dal calore di scarto a LT (MWh)</li><li>costo di investimento della tecnologia di recupero per LT (k€)</li><li>energia servita da soluzioni individuali- boiler [MWh/anno] afferenti alle aree di censimento servite dal calore di scarto</li><li>LCOE- levelized cost of Energy del calore distribuito all'utenza (€/MWh)</li></ul></p><p align=\"justify\"><img src=\"/images/calore_scarto_fonti_di_calore.png\"></p><p>E' possibile attivare un modulo che permette all'utente di impostare alcuni dati sito-specifici (es. quantità di calore di scarto da considerare, il raggio entro cui considerare le utenze termiche, il costo del calore di scarto, i costi dell'energia della soluzione individuale) per garantire una valutazione più accurata del costo dello sfruttamento del calore di scarto per applicazioni di teleriscaldamento. I risultati della nuova ottimizzazione vengono inviati a ciascun utente via mail e possono essere caricati nel sito.</p><p>Le mappe sono il risultato di elaborazioni svolte congiuntamente da RSE e dal dipartimento di Energia del Politecnico di Milano (<a href=\"https://www.energia.polimi.it/laboratori/relab/\">RELAB - Dipartimento di Energia</a>).</p>",
+           //    "url": "http://gis2.rse-web.it/geoserver/wms",
+            //  
+            //   "featureInfoTemplate": {
+            //     "template": "<p>LCOE [€/mwh] <b>{{lcoe_n}}</b>, energia di recupero [MWh] <b>{{lat_fonte}}</b> di un impianto situato nel comune di {{comune}}, provincia di {{provincia}}</p><br><table width=\"250\" border = \"0\" align='center'><tr border = \"0\"><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ai_connessione_db_recupero_calore.php?id_input={{id_fonte}}&Comune={{comune}}&pro_com={{pro_com}}&Provincia={{provincia}}&Heat={{lat_fonte}}&latitudine={{lat_fonte}}&longitudine={{long_fonte}}&lingua=IT\"><font color='#FFFFFF'>Dati Input Codice di calcolo</a></font></td></tr></table><br><table width=\"250\" border = \"0\" align='center'><tr border = \"0\"><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ai_connessione_db_recupero_calore_dati_dettagliati.php?id_input={{id_fonte}}&Comune={{comune}}&pro_com={{pro_com}}&Provincia={{provincia}}&Heat={{lat_fonte}}&latitudine={{lat_fonte}}&longitudine={{long_fonte}}&lingua=IT\"><font color='#FFFFFF'>&nbsp;&nbsp;&nbsp;Dati Dettagliati&nbsp;&nbsp;&nbsp;</a></font></td></tr></table>"
+            //   },
+            //   
+           //    "layers": "dbeta:fonti_all_lcoe",
+           //    "id": "fonti_all_lcoe_bis"
+           //    //"styles":"punti_calore_di_recupero"
+            //
+           //  }
+           // ]
+       // }
+        //{
+        //  "type": "wms",
+        //  "name": "Levelized Cost Of Heat (LCOH) del calore di scarto recuperato (€/MWh)",
+        //  "description": "<p align=\"justify\">Il <i>Levelized Cost Of Heat</i> (LCOH) in €/MWh è calcolato considerando il costo del calore di scarto riconosciuto all’impianto, i costi di investimento ed i costi operativi delle tecnologie appropriate per il recupero di calore in base alla temperatura ed i costi di investimento della rete per la distribuzione del calore individuata ottimizzando il matching tra domanda ed offerta</p><p align=\"justify\">Elaborazione di RSE a partire da ..  DA LINKARE QUANDO SARA’ PUBBLICATO-Rapporto 2024</p>",
+        //  "url": "https://gis2.rse-web.it/geoserver/wms",
+        //  "featureInfoTemplate": {
+        //    "template": "<p>Richiesta di calore al 2030 :   <b>{{_fabbiso_3}}</b> del comune di  {{_comune}}, provincia di  {{_provincia}}</p>"
+        //  },
+        //  "layers": "atlante_integrato:richieste_calore_2030",
+        //  "id": "richieste_calore_2030"
+        //}
+        //
+        //{
+         // "type": "wms",
+        //  "name": "Nome layer punti calore di recupero BIS",
+        //  "description": "Descrizione layer punti calore di recupero .... ...",
+        //  "url": "http://gis2.rse-web.it/geoserver/wms",
+        //  "featureInfoTemplate": {
+        //    "template": "<p>Heat waste <b>{{heat waste}}</b>  del comune di {{citta}}, provincia di {{provincia}}</p><p>Latitudine: {{lat}} - Longitudine: {{long}}</p><br><br><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"https://dbeta.rse-web.it/ai_connessione_db_recupero_calore.php?Nome={{lat}}&Comune={{citta}}&Provincia={{provincia}}&}&Heat={{heat waste}}&lingua=IT\"><font color='#FFFFFF'>Dati Input Codice di calcolo</a></font></td></tr></table>"
+         // },
+         // "metadataUrls":[{
+         //   "title":"link metadato",
+         //   "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=240"
+         // }],
+         // "layers": "atlante_integrato:punti_calore_di_recupero",
+        //  "id": "punti_calore_bis",
+        //  "styles":"punti_calore_di_recupero"
+        //}
+      ]
+    }
+  ]
+  
+}

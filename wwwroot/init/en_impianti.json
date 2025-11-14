@@ -1077,13 +1077,13 @@
                   "parameters": {
                     "cql_filter": "var_id=78"
                   },                  
-                  "initialMessage": {
+                  /* "initialMessage": {
                     "title": "Layer view:",
                     "content": "Data available from 2015 to 2021.<br>To view this layer, select an available year in the sidebar after adding the information layer to the map.",
                     "key": "78",
                     "confirmation": true,
                     "confirmText": "I understand"
-                  },
+                  }, */
                   "id": "78"
                 },
                 {
@@ -1103,13 +1103,13 @@
                   "parameters": {
                     "cql_filter": "var_id=201"
                   },                  
-                  "initialMessage": {
+                  /* "initialMessage": {
                     "title": "Layer view:",
                     "content": "Data available from 2015 to 2021.<br>To view this layer, select an available year in the sidebar after adding the information layer to the map.",
                     "key": "201",
                     "confirmation": true,
                     "confirmText": "I understand"
-                  },
+                  }, */
                   "id": "201"
                 },
                 {

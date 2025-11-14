@@ -48,6 +48,13 @@
           "availableStyles": [
             {"layerName":"consumi_reg"}
           ],
+          "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                    "content": "Dati disponibili fino al 2022.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
+                    "key": "var_id=275",
+                    "confirmation": true,
+                    "confirmText": "Ho capito"
+           },
           "styles":"consumi_reg",
           "id": "275"
         },

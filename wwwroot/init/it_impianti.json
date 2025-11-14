@@ -1120,13 +1120,13 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=74&anno=2021"
                   }],
-                  "initialMessage": {
+                  /* "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili dal 2015 al 2019.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "var_id=74",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  },
+                  }, */
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"ge_imp_prov_potenza_installata",
                   "parameters": {
@@ -1265,13 +1265,13 @@
                   "parameters": {
                     "cql_filter": "var_id=78"
                   },
-                  "initialMessage": {
+                  /* "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili dal 2015 al 2021.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "var_id=78",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  },
+                  }, */
                   "id": "78"
                 },
                 {
@@ -1291,13 +1291,13 @@
                   "parameters": {
                     "cql_filter": "var_id=201"
                   },
-                  "initialMessage": {
+                  /* "initialMessage": {
                     "title": "Visualizzazione strato:",
                     "content": "Dati disponibili dal 2015 al 2021.<br>Per visualizzare questo layer occorre selezionare nella barra laterale un' annualità disponibile dopo aver aggiunto lo strato informativo alla mappa.",
                     "key": "var_id=201",
                     "confirmation": true,
                     "confirmText": "Ho capito"
-                  },
+                  }, */
                   "id": "201"
                 },
                 {

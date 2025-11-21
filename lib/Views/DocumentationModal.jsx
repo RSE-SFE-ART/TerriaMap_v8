@@ -1,14 +1,23 @@
 import React from "react";
 
-const COUNTRIES = ["Greece", "Italy", "Spain", "Portugal", "UK"];
+const COUNTRIES = [
+  "Marinewind Project Factsheet",
+  "Greece",
+  "Italy",
+  "Spain",
+  "Portugal",
+  "UK"
+];
 
 export default function DocumentationModal({ onlyCategory }) {
   const selected = COUNTRIES.includes(onlyCategory)
     ? onlyCategory
     : COUNTRIES[0];
 
-  const pdfFile = `/data/infograph_${selected.toLowerCase()}.pdf#navpanes=0`;
-
+  const pdfFile =
+    selected === "Marinewind Project Factsheet"
+      ? `/data/MARINEWIND_Project_2025_Infographic_Factsheet.pdf#navpanes=0`
+      : `/data/MARINEWIND_Project_2025_Infographic_${selected}.pdf#navpanes=0`;
   return (
     <div>
       <div>

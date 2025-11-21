@@ -40,10 +40,13 @@ function InformazioniAggiuntive(props) {
       }
 
       switch (hash) {
+        case "documentation":
+          setIsOpen(true);
+          break;
         case "stakeholders":
           openStakeholdersModal({ preventDefault: () => {} });
           break;
-        case "documentation":
+        case "infographics":
           openDocumentation({ preventDefault: () => {} });
           break;
         case "webinars":
@@ -98,6 +101,13 @@ function InformazioniAggiuntive(props) {
     setIsOpen(false);
 
     const tabs = [
+      {
+        id: "fs",
+        label: "Marinewind Project Factsheet",
+        render: () => (
+          <DocumentationModal onlyCategory="Marinewind Project Factsheet" />
+        )
+      },
       {
         id: "gr",
         label: "Greece",
@@ -277,7 +287,7 @@ function InformazioniAggiuntive(props) {
                   </p>
                   <br />
                   <a
-                    href="#documentation"
+                    href="#infographics"
                     className={Styles.link}
                     onClick={openDocumentation}
                   >

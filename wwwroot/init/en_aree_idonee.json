@@ -10,7 +10,7 @@
          {
           "id": "Obiettivo e avanzamento",
           "type": "group",
-          "name": "Goal and process",
+          "name": "Target and progress",
           "description": "<div style='text-align:justify;'><p>In order to align Italy with the latest EU objectives, the MASE, with the DM of June 21, 2024, has set an additional renewable energy power target of 80 GW to be achieved by the year 2030.<br> The Decree indicated both the contribution required from each Region and Autonomous Province, as well as the expected trajectories starting from the year 2021.</p><p> This collection includes the map of the regional renewable energy targets for 2030, as specified in the decree, and the map of their current level of achievement.</p></div>",
           "isOpen": false,
           "members": [
@@ -98,7 +98,7 @@
           {
           "id": "terra",
           "type": "group",
-          "name": "Available areas for ground-based photovoltaic installations",
+          "name": "Areas available areas for ground-based photovoltaic installations",
           "description": "<p style=\"text-align:justify\">This collection includes municipal-scale estimates of the percentage of available area for new ground-mounted photovoltaic installations compared to the municipal area obtained from the 2018 Corine Land Cover map and from spatial data relating to environmental and landscape constraints with homogeneous coverage throughout the national territory.  </br> </p> Details of used data for the estimation are available in the<a href=\"http://dbeta.rse-web.it/documenti/aree_idonee_DBETA.pdf\"  target=\"_blank\"> following document.</a></p>",
           "isOpen": false,
           "members": [

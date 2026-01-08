@@ -954,51 +954,51 @@
             },
             {
               "type": "wms",
-              "name": "Conducibilità termica 0-70m (W/m/K) - punti",
-              "description": "Conducibilità termica media del terreno, riferita ai primi 70 m di profondità, in condizioni dry (assenza di falda). È stata calcolata come media pesata dei valori di conducibilità termica delle litologie presenti nel sottosuolo in corrispondenza del sito indicato, in base agli spessori di ogni livello stratigrafico. Il valore di conducibilità termica assegnato a ogni litologia è stato desunto da dati di letteratura. La stratigrafia a cui si fa riferimento è disponibile nell'Archivio nazionale delle indagini nel sottosuolo - ISPRA. Elaborazione dei dati ad opera di RSE S.p.A. - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=285&lingua=IT&descrizione=Conducibilità termica 0-70m (W/m/K) - punti\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br> ",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_cond_punti_0_70m",
+              "name": "Conducibilità termica 0-70m (W/m/K) - Falda assente",
+              "description": "<p>Conducibilità termica media nei primi 70 metri di sottosuolo in assenza di falda. La mappa è stata prodotta come interpolazione dei valori puntuali calcolati in corrispondenza dei principali siti di perforazione dell’Archivio Nazionale delle Indagini nel Sottosuolo, gestito da ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\"> Dipartimento per il Servizio Geologico</a>. Per ogni log stratigrafico è stata calcolata la media pesata della conducibilità termica, in base alla litologia e allo spessore di ogni livello, poi interpolata. Il valore di conducibilità termica assegnato a ogni litologia è stato desunto da dati di letteratura. Elaborazione dei dati ad opera di RSE S.p.A. </p></br></br><table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=316&lingua=IT&descrizione=Conducibilità termica 0-70m (W/m/K) - Falda assente\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br> ",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_cond_termica_0-70m_aree_falda_assente",
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=285"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=316"
               }],
-              "layers": "new_atlante_integrato:ge_cond_punti_0_70m",
-              "id": "conducibilit_pti"
+              "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_assente",
+              "id": "ge_cond_aree_falda_assente"
             },
             {
               "type": "wms",
-              "name": "Conducibilità termica 0-70m (W/m/K) - aree",
-              "description": "Conducibilità termica media del terreno, riferita ai primi 70 m di profondità, in condizioni dry (assenza di falda). È stata calcolata interpolando i valori puntuali di conducibilità termica media nei primi 70 m di sottosuolo. Elaborazione dei dati ad opera di RSE S.p.A. </p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=286&lingua=IT&descrizione=Conducibilità termica 0-70m (W/m/K) - aree\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br> ",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3conducibilita_0-70m_aree",
+              "name": "Conducibilità termica 0-70m (W/m/K) - Falda a piano campagna",
+              "description": "<p>Conducibilità termica media nei primi 70 metri di sottosuolo in condizioni di completa saturazione del terreno. La mappa è stata prodotta come interpolazione dei valori puntuali calcolati in corrispondenza dei principali siti di perforazione dell’Archivio Nazionale delle Indagini nel Sottosuolo, gestito da ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\"> Dipartimento per il Servizio Geologico</a>. Per ogni log stratigrafico è stata calcolata la media pesata della conducibilità termica, in base alla litologia e allo spessore di ogni livello, poi interpolata. Il valore di conducibilità termica assegnato a ogni litologia è stato desunto da dati di letteratura. Elaborazione dei dati ad opera di RSE S.p.A.</p></br></br><table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=317&lingua=IT&descrizione=Conducibilità termica 0-70m (W/m/K) - Falda a piano campagna\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br> ",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_cond_termica_0-70m_aree_falda_piano_campagna",
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=286"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=317"
               }],
-              "layers": "new_atlante_integrato:conducibilita_0-70m_aree",
-              "id": "conducibilit_aree"
+              "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_piano_campagna",
+              "id": "ge_cond_aree_falda_piano_campagna"
             },
             {
               "type": "wms",
-              "name": "Potenziale termico 0-70 m (W/m) - punti",
-              "description": "Potenziale termico medio del terreno, riferito ai primi 70 m di profondità, in condizioni dry (assenza di falda). È stato calcolato come media pesata dei valori di potenziale termico delle litologie presenti nel sottosuolo in corrispondenza del sito indicato, in base agli spessori di ogni livello stratigrafico. Il valore di potenziale termico assegnato a ogni litologia è stato desunto da dati di letteratura. La stratigrafia a cui si fa riferimento è disponibile nell'Archivio nazionale delle indagini nel sottosuolo - ISPRA. Elaborazione dei dati ad opera di RSE S.p.A. - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=290&lingua=IT&descrizione=Potenziale termico 0-70 m (W/m) - punti\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br> ",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_pot_punti_0_70m",
+              "name": "Potenziale geotermico 0-70 m (W/m) - Falda assente",
+              "description": "<p>Potenziale geotermico medio nei primi 70 metri di sottosuolo in assenza di falda. La mappa è stata prodotta come interpolazione dei valori puntuali calcolati in corrispondenza dei principali siti di perforazione dell’Archivio Nazionale delle Indagini nel Sottosuolo, gestito da ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\"> Dipartimento per il Servizio Geologico</a>. Per ogni livello di ciascun log stratigrafico, il potenziale è stato calcolato sulla base dei valori di conducibilità termica e capacità termica volumetrica, attraverso l'applicazione speditiva di un modello di dispersione di calore tipo-ILS, ed è stato mediato sulla verticale di pozzo per poi essere interpolato. Il valore dei parametri termici assegnati a ogni litologia è stato desunto da dati di letteratura. Elaborazione dei dati ad opera di RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=319&lingua=IT&descrizione=Potenziale termico 0-70 m (W/m) - Falda assente\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br> ",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_pot_termico_0_70_aree_falda_assente",
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=290"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=319"
               }],
-              "layers": "new_atlante_integrato:ge_pot_punti_0_70m",
-              "id": "potenziale_pti"
+              "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_assente",
+              "id": "ge_pot_aree_falda_assente"
             },
             {
               "type": "wms",
-              "name": "Potenziale termico 0-70 m (W/m) - aree",
-              "description": "Potenziale termico medio del terreno, riferito ai primi 70 m di profondità, in condizioni dry (assenza di falda). È stato calcolato interpolando i valori puntuali di potenziale termico medio nei primi 70 m di sottosuolo. Elaborazione dei dati ad opera di RSE S.p.A. </p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=289&lingua=IT&descrizione=Potenziale termico 0-70 m (W/m) - aree\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br> ",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3potenziale_0-70m_aree",
+              "name": "Potenziale geotermico 0-70 m (W/m) - Falda a piano campagna - Gradiente elevato",
+              "description": "<p>Potenziale geotermico medio nei primi 70 metri di sottosuolo in condizioni di completa saturazione del terreno e considerando un gradiente idraulico elevato (= 5E-3). La mappa è stata prodotta come interpolazione dei valori puntuali calcolati in corrispondenza dei principali siti di perforazione dell'Archivio Nazionale delle Indagini nel Sottosuolo, gestito da ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\"> Dipartimento per il Servizio Geologico</a>. Per ogni livello di ciascun log stratigrafico, il potenziale è stato calcolato sulla base dei valori di conducibilità termica e capacità termica volumetrica, attraverso l'applicazione speditiva di un modello di dispersione di calore tipo-MILS, ed è stato mediato sulla verticale di pozzo per poi essere interpolato. Il valore dei parametri termici assegnati a ogni litologia è stato desunto da dati di letteratura. Elaborazione dei dati ad opera di RSE S.p.A. </p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=321&lingua=IT&descrizione=Potenziale termico 0-70 m (W/m) - Falda a piano campagna\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br> ",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_pot_termico_0_70_aree_falda_piano_campagna_gradiente_elevato",
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=289"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=321"
               }],
-              "layers": "new_atlante_integrato:potenziale_0-70m_aree",
-              "id": "potenziale_aree"
+              "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_piano_campagna_gradiente_elevato",
+              "id": "ge_pot_aree_falda_piano_campagna"
             }
           ]
         }

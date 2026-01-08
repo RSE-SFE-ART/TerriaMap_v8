@@ -946,51 +946,51 @@
             },
             {
               "type": "wms",
-              "name": "Thermal conductivity 0-70m (W/m/K) - points",
-              "description": "Average thermal conductivity of the soil, referring to the first 70 m of depth, in dry conditions (absence of water table). It was calculated as a weighted average of the thermal conductivity values of the lithologies present in the subsoil at the indicated site, based on the thicknesses of each stratigraphic level. The thermal conductivity value assigned to each lithology was taken from literature data. The stratigraphy referred to is available in the National Archive of Subsoil Investigations - ISPRA. Data processing by RSE S.p.A. - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=285&lingua=EN&descrizione=Thermal conductivity 0-70m (W/m/K) - points\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_cond_punti_0_70m",
+              "name": "Thermal conductivity 0-70m (W/m/K) - No aquifer",
+              "description": "Average thermal conductivity in the first 70 meters of subsoil in the absence of a groundwater table. The map was produced by interpolating the point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each stratigraphic level, the weighted average of the thermal conductivity was calculated based on the lithology and thickness of each layer, and then interpolated. The thermal conductivity value assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=316&lingua=EN&descrizione=Thermal conductivity 0-70m (W/m/K) - No aquifer\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_cond_termica_0-70m_aree_falda_assente",
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=285"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=316"
               }],
-              "layers": "new_atlante_integrato:ge_cond_punti_0_70m",
-              "id": "conducibilit_pti"
+              "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_assente",
+              "id": "ge_cond_aree_falda_assente_en"
             },
             {
               "type": "wms",
-              "name": "Thermal conductivity 0-70m (W/m/K) - areas",
-              "description": "Average thermal conductivity of the soil, referring to the first 70 m of depth, in dry conditions (absence of water table). It was calculated by interpolating the specific values of average thermal conductivity in the first 70 m of subsoil. Data processing by RSE S.p.A. </p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=286&lingua=EN&descrizione=Thermal conductivity 0-70m (W/m/K) - areas\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3conducibilita_0-70m_aree",
+              "name": "Thermal conductivity 0-70m (W/m/K) - Plain aquifer",
+              "description": "Average thermal conductivity in the first 70 meters of subsurface under conditions of complete soil saturation. The map was produced by interpolating the point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each stratigraphic log, the weighted average of the thermal conductivity was calculated based on the lithology and thickness of each layer, and then interpolated. The thermal conductivity value assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=317&lingua=EN&descrizione=Thermal conductivity 0-70m (W/m/K) - Plain aquifer\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_cond_termica_0-70m_aree_falda_piano_campagna",
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=286"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=317"
               }],
-              "layers": "new_atlante_integrato:conducibilita_0-70m_aree",
-              "id": "conducibilit_aree"
+              "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_piano_campagna",
+              "id": "ge_cond_aree_falda_piano_campagna_en"
             },
             {
               "type": "wms",
-              "name": "Thermal potential 0-70m (W/m) - points",
-              "description": "Average thermal potential of the soil, referring to the first 70 m of depth, in dry conditions (absence of water table). It was calculated as a weighted average of the thermal potential values of the lithologies present in the subsoil at the indicated site, based on the thicknesses of each stratigraphic level. The thermal potential value assigned to each lithology was taken from literature data. The stratigraphy referred to is available in the National Archive of Subsoil Investigations - ISPRA. Data processing by RSE S.p.A. - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=290&lingua=EN&descrizione=Thermal potential 0-70m (W/m) - points\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_pot_punti_0_70m",
+              "name": "Thermal potential 0-70m (W/m) - No aquifer",
+              "description": "<p>Average geothermal potential in the first 70 meters of subsurface in the absence of a groundwater table. The map was produced as an interpolation of point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each level of each stratigraphic log, the potential was calculated based on the thermal conductivity and volumetric heat capacity values, through the rapid application of an ILS-type heat dispersion model, and was averaged along the well's vertical axis and then interpolated. The value of the thermal parameters assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=319&lingua=EN&descrizione=Thermal potential 0-70m (W/m) - No aquifer\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_pot_termico_0_70_aree_falda_assente",
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=290"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=319"
               }],
-              "layers": "new_atlante_integrato:ge_pot_punti_0_70m",
-              "id": "potenziale_pti"
+              "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_assente",
+              "id": "ge_pot_aree_falda_assente_en"
             },
             {
               "type": "wms",
-              "name": "Thermal potential 0-70m (W/m) - areas",
-              "description": "Average thermal potential of the soil, referring to the first 70 m of depth, in dry conditions (absence of water table). It was calculated by interpolating the specific values of average thermal potential in the first 70 m of subsoil. Data processing by RSE S.p.A. </p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=289&lingua=EN&descrizione=Thermal potential 0-70m (W/m) - areas\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3potenziale_0-70m_aree",
+              "name": "Thermal potential 0-70m (W/m) - Plain aquifer - High gradient",
+              "description": "Average geothermal potential in the first 70 meters of subsurface under conditions of complete soil saturation and considering a high hydraulic gradient (= 5E-3). The map was produced as an interpolation of point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each level of each stratigraphic log, the potential was calculated based on the thermal conductivity and volumetric heat capacity values, through the rapid application of a MILS-type heat dispersion model, and was averaged along the well's vertical line and then interpolated. The value of the thermal parameters assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=321&lingua=EN&descrizione=Thermal potential 0-70m (W/m) - Plain aquifer - High gradient\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_pot_termico_0_70_aree_falda_piano_campagna_gradiente_elevato",
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=289"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=321"
               }],
-              "layers": "new_atlante_integrato:potenziale_0-70m_aree",
-              "id": "potenziale_aree"
+              "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_piano_campagna_gradiente_elevato",
+              "id": "ge_pot_aree_falda_piano_campagna_en"
             }
           ]
         }

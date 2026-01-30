@@ -84,6 +84,46 @@ export default function About(props) {
                 project.
               </p>
 
+              {/* Contacts */}
+              <div
+                style={{
+                  marginTop: 32,
+                  paddingTop: 8,
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-start",
+                  gap: 16
+                }}
+              >
+                <div>
+                  <h2 style={{ margin: 0 }}>Contacts</h2>
+                  <p style={{ marginTop: 6 }}>
+                    <br></br>
+                    For technical reports related to the functionality of the
+                    atlas you can{" "}
+                    <a href="mailto:geoportale@rse-web.it">send us an email</a>.
+                  </p>
+                </div>
+
+                <button
+                  onClick={() => window.apri_Pagina("EN")}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    padding: 0,
+                    cursor: "pointer",
+                    marginTop: 4
+                  }}
+                  aria-label="Give feedback"
+                >
+                  <img
+                    src="help/img/feedback_EN.png"
+                    alt="Feedback"
+                    style={{ height: 78 }}
+                  />
+                </button>
+              </div>
+
               {/* Footer buttons */}
               <div
                 style={{

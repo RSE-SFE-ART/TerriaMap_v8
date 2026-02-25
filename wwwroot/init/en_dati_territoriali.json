@@ -213,7 +213,7 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=298"
               }],
-              "styles":"new_atlante_integrato:msp",
+              "styles":"msp_EN",
               "layers": "new_atlante_integrato:msp",
               "id": "msp_tot"
             },

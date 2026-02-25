@@ -4,7 +4,7 @@
       "id": "producibilita",
       "type": "group",
       "name": "Full Load Hours",
-      "description": "This collection contains the Full Load Hours (FLH) maps expressed in MWh/MW calculated as an annual average over 30 years of data at different heights. \n<br> In particular, these elaborations derive from the new Italian anemological database consisting of 30 years of data with an hourly and spatial time step of 1.4 km, using the Weather Research and Forecasting (WRF) meteorological model combined with a post-processing statistic based on Analog Ensemble (AnEn).",
+      "description": "This collection contains the Full Load Hours (FLH) maps expressed in MWh/MW calculated as an annual average over 35 years of data at different heights. \n<br> In particular, these elaborations derive from the new Italian anemological database consisting of 35 years of data with an hourly and spatial time step of 1.4 km, using the Weather Research and Forecasting (WRF) meteorological model combined with a post-processing statistic based on Analog Ensemble (AnEn).",
       "isOpen": false,
       "members": [
         {
@@ -27,7 +27,7 @@
                 "title":"metadata link",
                 "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=240"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_prod50_onshore",
               "styles":"aeolian:prod50_onshore"
             },
@@ -43,7 +43,7 @@
                 "title":"metadata link",
                 "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=241"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_prod75_onshore",
               "styles":"aeolian:prod75_onshore"
             } ,
@@ -59,7 +59,7 @@
                 "title":"metadata link",
                 "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=242"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_prod100_onshore",
               "styles":"aeolian:prod100_onshore"
             }  
@@ -85,7 +85,7 @@
                 "title":"metadata link",
                 "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=243"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_prod100_offshore",
               "styles":"aeolian:prod100_offshore"
             },
@@ -101,7 +101,7 @@
                 "title":"metadata link",
                 "url":"https://dbeta.rse-web.it/aaeolian_metadati.php?var_id=244"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_prod125_offshore",
               "styles":"aeolian:prod125_offshore"
             },
@@ -117,7 +117,7 @@
                 "title":"metadata link",
                 "url":"https://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=245"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_prod150_offshore",
               "styles":"aeolian:prod150_offshore"
             }    

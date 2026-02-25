@@ -6,7 +6,7 @@
       "id": "temperatura",
       "type": "group",
       "name": "Temperature",
-      "description": "This collection contains the temperature map at 2 m a.g.l./a.s.l. expressed in °C calculated as an average over the period 2015-2019. \n<br> This information derives from processing conducted at an hourly and spatial time step of 1.4 km, using the Weather Research and Forecasting (WRF) ",
+      "description": "This collection contains the temperature map at 2 m a.g.l./a.s.l. expressed in °C calculated as an average over the period 2015-2024. \n<br> This information derives from processing conducted at an hourly and spatial time step of 1.4 km, using the Weather Research and Forecasting (WRF) ",
       "isOpen": false,
       "members": [
         {
@@ -29,7 +29,7 @@
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=230"
               }],
               
-              "layers":"aeolian:griglia_dati_20240221",
+              "layers":"aeolian:griglia_dati_2026_febbr",
               "id": "en_eo_temperatura_onshore",
               "styles":"aeolian:temperatura_griglia20240221"
                           

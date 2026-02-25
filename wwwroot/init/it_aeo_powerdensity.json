@@ -4,7 +4,7 @@
       "id": "powerdensity",
       "type": "group",
       "name": "Densità di potenza",
-      "description": "Questa raccolta contiene le mappe di densità di potenza eolica (wind power density) espresse in W/m<sup>2</sup> calcolate come media annua su 30 anni di dati a diverse altezze. \n<br> In particolare, questo parametro è stato calcolato come metà del prodotto tra la densità dell'aria e il cubo della velocità del vento, ottenuta dalla nuova banca dati anemologica italiana costituita da 30 anni di dati a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF) combinato con un post-processing statistico basato su Analog Ensemble (AnEn).",
+      "description": "Questa raccolta contiene le mappe di densità di potenza eolica (wind power density) espresse in W/m<sup>2</sup> calcolate come media annua su 35 anni di dati a diverse altezze. \n<br> In particolare, questo parametro è stato calcolato come metà del prodotto tra la densità dell'aria e il cubo della velocità del vento, ottenuta dalla nuova banca dati anemologica italiana costituita da 35 anni di dati a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF) combinato con un post-processing statistico basato su Analog Ensemble (AnEn).",
       "isOpen": false,
       "members": [
         {
@@ -27,7 +27,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=240"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_dens50_onshore",
               "styles":"aeolian:power_density_onshore"
             },
@@ -43,7 +43,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=241"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_dens75_onshore",
               "styles":"aeolian:power_density_onshore"
             } ,
@@ -59,7 +59,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=242"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_dens100_onshore",
               "styles":"aeolian:power_density_onshore"
             },
@@ -75,7 +75,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=242"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_dens125_onshore",
               "styles":"aeolian:power_density_onshore"
             },
@@ -91,7 +91,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=242"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_dens150_onshore",
               "styles":"aeolian:power_density_onshore"
             }     
@@ -117,7 +117,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=243"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_dens50_offshore",
               "styles":"aeolian:power_density_offshore"
             },
@@ -133,7 +133,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aaeolian_metadati.php?var_id=244"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_dens75_offshore",
               "styles":"aeolian:power_density_offshore"
             },
@@ -149,7 +149,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=245"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_dens100_offshore",
               "styles":"aeolian:power_density_offshore"
             },
@@ -165,7 +165,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=245"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_dens125_offshore",
               "styles":"aeolian:power_density_offshore"
             },
@@ -181,7 +181,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=245"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "eo_dens150_offshore",
               "styles":"aeolian:power_density_offshore"
             }            

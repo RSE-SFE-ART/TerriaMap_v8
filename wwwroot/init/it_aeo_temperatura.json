@@ -6,7 +6,7 @@
       "id": "temperatura",
       "type": "group",
       "name": "Temperatura",
-      "description": "Questa raccolta contiene la mappa di temperatura a 2 m s.l.t./s.l.m. espressa in °C calcolata come media sul periodo 2015-2019. \n<br> Queste informazioni derivano dalle elaborazioni condotte a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF).",
+      "description": "Questa raccolta contiene la mappa di temperatura a 2 m s.l.t./s.l.m. espressa in °C calcolata come media sul periodo 2015-2024. \n<br> Queste informazioni derivano dalle elaborazioni condotte a passo temporale orario e spaziale di 1.4 km, utilizzando il modello meteorologico Weather Research and Forecasting (WRF).",
       "isOpen": false,
       "members": [
         {
@@ -29,7 +29,7 @@
                 "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=230"
               }],
               
-              "layers":"aeolian:griglia_dati_20240221",
+              "layers":"aeolian:griglia_dati_2026_febbr",
               "id": "eo_temperatura_onshore",
               "styles":"aeolian:temperatura_griglia20240221"
                           

@@ -9,7 +9,7 @@
           "type": "wms",
           "name": "calculation module",
           "url": "https://gis3.rse-web.it/geoserver/wms",
-          "layers": "dbeta:Grid_nazionale_20240221_limiti_amministrativi", 
+          "layers": "aeolian:griglia_2026_febbr_limiti_amministrativi", 
           "styles": "polygon",
           "opacity": 0.5,
           "featureInfoTemplate": {

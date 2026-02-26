@@ -13,7 +13,7 @@
           "id": "temperatura_onshore",
           "type": "group",
           "name": "Temperatura",
-          "description": "Questa raccolta contiene la mappa di temperatura a 2 m s.l.t./s.l.m. espressa in °C calcolata come media sul periodo 2015-2019.",
+          "description": "Questa raccolta contiene la mappa di temperatura a 2 m s.l.t./s.l.m. espressa in °C calcolata come media sul periodo 2015-2024.",
           "isOpen": false,
           "members": [
             {

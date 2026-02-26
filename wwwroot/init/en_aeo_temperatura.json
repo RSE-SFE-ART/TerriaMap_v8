@@ -13,7 +13,7 @@
           "id": "temperatura_onshore",
           "type": "group",
           "name": "Temperature",
-          "description": "This collection contains the temperature map at 2 m a.g.l./a.s.l. expressed in °C calculated as an average over the period 2015-2019.",
+          "description": "This collection contains the temperature map at 2 m a.g.l./a.s.l. expressed in °C calculated as an average over the period 2015-2024.",
           "isOpen": false,
           "members": [
             {

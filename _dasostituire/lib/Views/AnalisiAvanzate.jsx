@@ -119,7 +119,16 @@ function AnalisiAvanzate(props) {
                 <p align="justify">{t("analisiAvanzate.infoSerieStorica")}</p>
                 <br></br>
                 {t("analisiAvanzate.perAccedere")}{" "}
-                <a className={Styles.link} href={totem_link}>
+                <a
+                  className={Styles.link}
+                  href={totem_link}
+                  onClick={(e) => {
+                    if (window.location.href.includes(totem_link)) {
+                      e.preventDefault();
+                      window.location.reload();
+                    }
+                  }}
+                >
                   {t("analisiAvanzate.cliccaQui")}
                 </a>
                 .

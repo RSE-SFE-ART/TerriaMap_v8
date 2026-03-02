@@ -18,7 +18,7 @@
               "type": "wms",
               "name": "Popolazione residente a livello regionale",
               "description": "Mappa della popolazione residente a livello regionale che viene calcolata al 31 dicembre di ogni anno e diffusa al 1° gennaio dell'anno successivo.<br><br>Elaborazioni RSE su dati Istituto Nazionale di Statistica - ISTAT</p>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
               },

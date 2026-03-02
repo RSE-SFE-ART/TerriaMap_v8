@@ -33,7 +33,7 @@
           "type": "wms",
           "name": "Consumi elettrici - Totali regionali esclusi i consumi FS (GWh)",
           "description": "Mappa della distribuzione regionale dei consumi elettrici esclusi i consumi FS (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
-          "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+          "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
           "featureInfoTemplate": {
             "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a><br></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
           },

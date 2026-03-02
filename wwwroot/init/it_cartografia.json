@@ -1,9 +1,5 @@
 {
-  "corsDomains" : [
-    "gis2.rse-web.it",
-    "gis2.rse-web.it:8080"
-  ],
-  "catalog": [
+   "catalog": [
     {
       "type": "group",
       "name": "Cartografia",

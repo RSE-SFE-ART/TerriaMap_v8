@@ -18,7 +18,7 @@
               "type": "wms",
               "name": "Offshore annual mean wind speed at 100 m a.s.l. (m/s)",
               "description": "<p align=\"justify\">Map of the offshore annual mean  wind speed at an altitude of 100 meters a.s.l. expressed in m/s.\n\n </br></br>Source: </br><a href=\"http://aeolian.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a></p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=258&lingua=EN&descrizione=Offshore annual mean wind speed at 100 m a.s.l. (m/s)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/aeolian/wms?service=WMS&version=1.3.0&request=GetMap&layers=aeolian%3griglia_dati_20240221",
+              "url": "https://gis3.rse-web.it/geoserver/aeolian/wms?service=WMS&version=1.3.0&request=GetMap&layers=aeolian%3griglia_dati_2026_febbr",
               "featureInfoTemplate": {
                 "template": "<p>Mean wind speed <b>{{vento_100}} m/s </b></p>"
               },
@@ -26,7 +26,7 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=258"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "aeol_100",
               "styles":"aeolian:speed100_offshore"
             },
@@ -34,7 +34,7 @@
               "type": "wms",
               "name": "Onshore annual mean wind speed at 100 m a.s.l. (m/s)",
               "description": "Map of the onshore annual mean  wind speed at an altitude of 100 meters a.s.l. expressed in m/s.<br>\n\n Source: </br><a href=\"http://aeolian.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=258&lingua=EN&descrizione=Onshore annual mean wind speed at 100 m a.s.l. (m/s)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/aeolian/wms?service=WMS&version=1.3.0&request=GetMap&layers=aeolian%3griglia_dati_20240221",
+              "url": "https://gis3.rse-web.it/geoserver/aeolian/wms?service=WMS&version=1.3.0&request=GetMap&layers=aeolian%3griglia_dati_2026_febbr",
               "featureInfoTemplate": {
                 "template": "<p>Mean wind speed <b>{{vento_100}} m/s </b></p>"
               },
@@ -42,7 +42,7 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=258"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "aeol_100_on",
               "styles":"aeolian:speed100_onshore"
             },
@@ -50,7 +50,7 @@
               "type": "wms",
               "name": "Offshore specific annual wind energy production at 100 m a.s.l. (MWh/MW)", 
               "description": "Map of the offshore annual wind energy production at 100 mters a.s.l. expressed in MWh/MW.\n\n Source: </br><a href=\"http://aeolian.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=258&lingua=EN&descrizione=Offshore specific annual wind energy production at 100 m a.s.l. (MWh/MW)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/aeolian/wms?service=WMS&version=1.3.0&request=GetMap&layers=aeolian%3griglia_dati_20240221",
+              "url": "https://gis3.rse-web.it/geoserver/aeolian/wms?service=WMS&version=1.3.0&request=GetMap&layers=aeolian%3griglia_dati_2026_febbr",
               "featureInfoTemplate": {
                 "template": "<p>Specific wind energy production <b>{{prod_100}} MWh/MW</b></p>"
               },
@@ -58,7 +58,7 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=258"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "aeol_100_prod",
               "styles":"aeolian:prod100_offshore"
             },
@@ -66,7 +66,7 @@
               "type": "wms",
               "name": "Onshore specific annual wind energy production at 100 m a.s.l. (MWh/MW)",
               "description": "Map of the onshore annual wind energy production at 100 mters a.s.l. expressed in MWh/MW.\n\n Source: </br><a href=\"http://aeolian.rse-web.it\"  target=\"_blank\"> Italian Wind Atlas AEOLIAN.</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=258&lingua=EN&descrizione=Onshore specific annual wind energy production at 100 m a.s.l. (MWh/MW)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/aeolian/wms?service=WMS&version=1.3.0&request=GetMap&layers=aeolian%3griglia_dati_20240221",
+              "url": "https://gis3.rse-web.it/geoserver/aeolian/wms?service=WMS&version=1.3.0&request=GetMap&layers=aeolian%3griglia_dati_2026_febbr",
               "featureInfoTemplate": {
                 "template": "<p>Specific wind energy production <b>{{prod_100}} MWh/MW</b></p>"
               },
@@ -74,7 +74,7 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=258"
               }],
-              "layers": "aeolian:griglia_dati_20240221",
+              "layers": "aeolian:griglia_dati_2026_febbr",
               "id": "aeol_100_prod_on",
               "styles":"aeolian:prod100_onshore"
               

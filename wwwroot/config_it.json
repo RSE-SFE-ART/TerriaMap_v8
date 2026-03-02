@@ -8,6 +8,9 @@
     "it_stime_energetiche",
     "it_aree_idonee",
     "it_recupero_calore",
+    "it_cartografia_geo",
+    "it_caratteriz_geo",
+    "it_titoli_miner",
     "it"],
   "parameters": {
     "tabbedCatalog": true,

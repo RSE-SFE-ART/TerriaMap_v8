@@ -10,7 +10,7 @@
             "type": "wms",
             "name": "Confini regionali",
             "description": "Limiti amministrativi regionali selezionabili in differenti anni. Fonte dati ISTAT.",
-            "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_terria",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_terria",
             "featureInfoTemplate": {
               "template": "<p>Regione <b>{{den_reg}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno={{anno}}\">link al metadato </a> </p>"
             },
@@ -25,7 +25,7 @@
             "type": "wms",
             "name": "Confini provinciali",
             "description": "Limiti amministrativi provinciali selezionabili in differenti anni. Fonte dati ISTAT.",
-            "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_terria",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_terria",
             "featureInfoTemplate": {
               "template": "<p>Provincia <b>{{den_uts}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=109&anno={{anno}}\">link al metadato </a> </p>"
             },
@@ -39,7 +39,7 @@
             "type": "wms",
             "name": "Confini comunali",
             "description": "Limiti amministrativi comunali selezionabili in differenti anni. Fonte dati ISTAT.",
-            "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_terria",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_terria",
             "featureInfoTemplate": {
              "template": "<p>Comune <b>{{comune}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">link al metadato </a> </p>"
             },
@@ -53,7 +53,7 @@
             "type": "wms",
             "name": "Centri abitati",
             "description": "Località italiane definite dal censimento ISTAT 2021.",
-            "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3localita_2021_istat",
+            "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3localita_2021_istat",
             "metadataUrls":[{
               "title":"link metadato",
               "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=151"
@@ -75,7 +75,7 @@
             "type": "wms",
             "name": "Capacità di uso dei suoli",
             "description": "<p style=\"text-align:justify\">Mappe di capacità di uso del suolo regionali messe a disposizione dalle regioni Basilicata, Emilia-Romagna, Friuli-Venezia Giulia, Lazio, Lombardia, Piemonte, Sardegna, Toscana e Veneto.​</br> Le regioni per le quali non è presente il dato non hanno messo a disposizione la mappa di capacità di uso dei suoli o non l'hanno definita.</br> In questo strato le mappe di capacità di uso del suolo regionali sono state uniformate per ottenere un'unica classificazione nelle 8 classi definite di seguito. ​</br>La capacità di uso del suolo fornisce indicazioni sulla potenzialità del suolo ad ospitare e favorire l’accrescimento di piante coltivate e spontanee. La metodologia di stima prevede la classificazione in base alla potenzialità produttiva e considera esclusivamente parametri fisici chimici permanenti del suolo, senza tenere conto di considerazioni di carattere economico-strategico o di caratteri o di qualità che possono essere modificati con interventi specifici.</p>I suoli vengono classificati in:<ul><li><p style=\"text-align:justify\">Classe I - Limitazioni all’uso scarse o nulle. Ampia possibilità di scelte colturali e usi del suolo.</p></li><li><p style=\"text-align:justify\">Classe II - Limitazioni moderate che riducono parzialmente la produttività o richiedono alcune pratiche conservative.</p></li><li><p style=\"text-align:justify\">Classe III - Evidenti limitazioni che riducono le scelte colturali, la produttività e/o richiedono speciali pratiche conservative.</p></li><li><p style=\"text-align:justify\">Classe IV - Limitazioni molto evidenti che restringono la scelta delle colture e richiedono una gestione molto attenta per contenere la degradazione.</p></li><li><p style=\"text-align:justify\">Classe V - Limitazioni difficili da eliminare che restringono fortemente gli usi agrari. Pascolo e bosco sono usi possibili insieme alla conservazione naturalistica.</p></li><li><p style=\"text-align:justify\">Classe VI - Limitazioni severe che rendono i suoli generalmente non adatti alla coltivazione e limitano il loro uso al pascolo, alla forestazione, al bosco o alla conservazione naturalistica e paesaggistica.</p></li><li><p style=\"text-align:justify\">Classe VII - Limitazioni molto severe che rendono i suoli non adatti alle attività produttive e che restringono l’uso al bosco naturaliforme, alla conservazione naturalistica e paesaggistica.</p></li><li><p style=\"text-align:justify\">Classe VIII - Limitazioni che precludono totalmente l’uso produttivo dei suoli, restringendo gli utilizzi alla funzione ricreativa e turistica, alla conservazione naturalistica, alla riserva idrica e alla tutela del paesaggio.</p></li></ul><p style=\"text-align:justify\">Le prime quattro classi indicano, di fatto, suoli adatti alla coltivazione e ad altri usi, la classe V indica suoli utilizzabili per scopi agrari solo in determinate condizioni, mentre le ultime classi indicano suoli non adatti alla coltivazione. </br> In base a decisioni regionali, i suoli a capacità elevata possono essere considerate come una limitazione territoriale allo sfruttamento e allo sviluppo delle FER.​ \n</p>",
-            "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3lcc_merge",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3lcc_merge",
             "layers": "new_atlante_integrato:lcc_merge",
             "metadataUrls":[{
               "title":"link metadato",
@@ -95,7 +95,7 @@
                 "type": "wms",
                 "name": "Batimetria (m)",
                 "description": "Batimetria riclassificata a partire da dati dell' European Marine Observation and Data Network (EMODnet) DTM for European sea regions (2018) https://www.emodnet-bathymetry.eu/metadata-data.\n",
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3bati_2018_aeolian",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3bati_2018_aeolian",
                 "layers": "new_atlante_integrato:bati_2018_aeolian",
                 "metadataUrls":[{
                   "title":"link metadato",
@@ -107,21 +107,21 @@
               {
                 "type": "wms",
                 "name": "Zona Economica Esclusiva",
-                "description": " Zona economica esclusiva dell'Italia. \n<br>Dato distribuito dal Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3eez",
+                "description": "Zona economica esclusiva dell'Italia. \n<br>Dato distribuito dal Flanders Marine Institute https://www.marineregions.org/.",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3eez",
                 "metadataUrls":[{
                   "title":"link metadato",
                   "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
                 }],
                 "layers": "new_atlante_integrato:eez",
-                "styles":"aeolian:linea_blu_2",
+                //"styles":"aeolian:linea_blu_2",
                 "id": "eez"
               },
               {
                 "type": "wms",
                 "name": "Limite delle acque interne",
                 "description": "Limite delle acque interne dell'Italia. \n<br>Dato distribuito dal Flanders Marine Institute https://www.marineregions.org/ e rielaborato da RSE.",
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3limite_acque_interne",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3limite_acque_interne",
                 "layers": "new_atlante_integrato:limite_acque_interne",
                 "metadataUrls":[{
                   "title":"link metadato",
@@ -134,7 +134,7 @@
                 "type": "wms",
                 "name": "Linea delle 12 miglia nautiche",
                 "description": "Linea delle 12 miglia nautiche dalla costa italiana. \n<br>Dato distribuito dal Flanders Marine Institute https://www.marineregions.org/ e rielaborato da RSE.",
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3linea_12mn",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3linea_12mn",
                 "layers": "new_atlante_integrato:linea_12mn",
                 "metadataUrls":[{
                   "title":"link metadato",
@@ -147,7 +147,7 @@
                 "type": "wms",
                 "name": "Linea delle 24 miglia nautiche",
                 "description": "Linea delle 24 miglia nautiche dalla costa italiana. \n<br>Dato distribuito dal Flanders Marine Institute https://www.marineregions.org/ e rielaborato da RSE.",
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3linea_24mn",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3linea_24mn",
                 "layers": "new_atlante_integrato:linea_24mn",
                 "metadataUrls":[{
                   "title":"link metadato",

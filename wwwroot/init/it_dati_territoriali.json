@@ -44,7 +44,7 @@
               "type": "wms",
               "name": "Popolazione residente a livello provinciale",
               "description": "Mappa della popolazione residente a livello provinciale che viene calcolata al 31 dicembre di ogni anno e diffusa al 1° gennaio dell'anno successivo.<br><br>Elaborazioni RSE su dati Istituto Nazionale di Statistica - ISTAT </p>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
               },
@@ -70,7 +70,7 @@
               "type": "wms",
               "name": "Popolazione residente a livello comunale",
               "description": "Mappa della popolazione residente a livello comunale che viene calcolata al 31 dicembre di ogni anno e diffusa al 1° gennaio dell'anno successivo.<br><br>Elaborazioni RSE su dati Istituto Nazionale di Statistica - ISTAT</p>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
               },
@@ -105,7 +105,7 @@
               "type": "wms",
               "name": "Elenco ufficiale aree protette (EUAP)",
               "description": "Mappa del VI Elenco Ufficiale Aree Naturali Protette (EUAP) aggiornate al 2011.\n\n Istituito in base alla legge 394/91 Legge quadro sulle aree protette, l\\'elenco ufficiale attualmente in vigore è quello relativo al 6° Aggiornamento approvato con D.M. 27/04/2010 e pubblicato nel Supplemento Ordinario n. 115 alla Gazzetta Ufficiale n. 125 del 31/05/2010. In base alla legge 394/91, le aree protette sono distinte in Parchi Nazionali (PNZ), Aree Naturali Marine Protette (MAR), Parchi Naturali Statali marini (PNZ_m), Riserve Naturali Statali (RNS), Parchi e Riserve Naturali Regionali (PNR - RNR), Parchi Naturali sommersi (GAPN), Altre Aree Naturali Protette (AAPN). L\\'Elenco è stilato, e periodicamente aggiornato, dal Ministero dell\\'Ambiente e della Sicurezza Energetica \n\n Fonte: Ministero dell'Ambiente e Sicurezza Energetica.",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta:euap",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta:euap",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=117"
@@ -115,9 +115,9 @@
             },
             {
               "type": "wms",
-              "name": "Siti di Importanza Comunitaria (SIC)",
+              "name": "Sitii di Importanza Comunitaria (SIC)",
               "description": "Mappa dei siti di Importanza Comunitaria e Zone Speciali di Conservazione (ZSC) presenti sul territorio italiano aggiornati al 2023. Il Sito di Importanza Comunitaria (SIC) e la Zona Speciale di Conservazionee (ZSC), sono concetti definiti dalla Direttiva comunitaria n. 43 del 21 maggio 1992, (92/43/CEE), nota anche come Direttiva \\\"Habitat\\\", e recepita in Italia nel 1997. La Direttiva è relativa alla conservazione degli habitat naturali e seminaturali e della flora e della fauna selvatiche.<br><br> Fonte: Ministero dell'Ambiente e Sicurezza Energetica.",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3sic",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3sic",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=118"
@@ -129,7 +129,7 @@
               "type": "wms",
               "name": "Zone di Protezione Speciale (ZPS)",
               "description": "Mappa delle Zone di Protezione Speciale presenti sul territorio italiano aggiornate al 2023. Le Zone di Protezione Speciale (ZPS), in Italia, ai sensi dell'art. 1 comma 5 della Legge n° 157/1992 sono zone di protezione scelte lungo le rotte di migrazione dell'avifauna, finalizzate al mantenimento ed alla sistemazione di idonei habitat per la conservazione e gestione delle popolazioni di uccelli selvatici migratori. La tabella associata contiene una serie di informazioni tra cui codice, denominazione, superficie, perimetro e Regione di appartenenza di ciascuna zona.<br><br> Fonte: Ministero dell'Ambiente e Sicurezza Energetica.",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3zps",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3zps",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=118"
@@ -139,9 +139,9 @@
             },
             {
               "type": "wms",
-              "name": "Aree umide (Ramsar)",
+              "name": "Aree umideee (Ramsar)",
               "description": "Mappa delle aree Ramsar, aree del territorio italiano rispondenti ai requisiti della convenzione internazionale relativa alle zone umide di importanza internazionale, soprattutto come habitat degli uccelli acquatici, nota come Convenzione di Ramsar. La Convenzione di Ramsar è un atto firmato a Ramsar, in Iran, il 2 febbraio 1971. La Convenzione di Ramsar è stata ratificata e resa esecutiva dall'Italia col DPR n. 448 del 13 marzo 1976 e con il successivo DPR n. 184 dell'11 febbraio 1987. Ai sensi della Convenzione si intendono per zone umide le paludi e gli acquitrini, le torbe oppure i bacini, naturali o artificiali, permanenti o temporanei, con acqua stagnante o corrente, dolce, salmastra, o salata, ivi comprese le distese di acqua marina la cui profondità, durante la bassa marea, non supera i sei metri. Ai sensi della convenzione si intendono per uccelli acquatici gli uccelli ecologicamente dipendenti dalle zone umide. Aggiornamento aree Ramsar 2021.<br><br>Fonte: Ministero dell'Ambiente e Sicurezza Energetica.",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3ramsar",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3ramsar",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=120"
@@ -153,7 +153,7 @@
               "type": "wms",
               "name": "Specchi d'acqua interni",
               "description": "Elementi poligonali appartenenti al DBPrior10K rappresentanti gli specchi d’acqua interni come laghi, lagune, stagni, bacini artificiali, ecc.<br><br>Ministero dell'Ambiente e della Tutela del Territorio e del Mare - Geoportale nazionale - Centro interregionale per i sistemi informatici, geografici, statistici - Comitato permanente per i sistemi geografici.</p>",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3specchi_acqua_interni",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3specchi_acqua_interni",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=121"
@@ -165,7 +165,7 @@
               "type": "wms",
               "name": "Important Bird Areas (IBA)",
               "description": "Mappa delle Important Bird Areas o IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n Le IBA sono delle aree che rivestono un ruolo chiave per la salvaguardia degli uccelli e della biodiversità, la cui identificazione è parte di un progetto a carattere mondiale, curato da BirdLife International. Il progetto IBA nasce dalla necessità di individuare dei criteri omogenei e standardizzati per la designazione delle ZPS. Le IBA sono state utilizzate per valutare l’adeguatezza delle reti nazionali di ZPS designate negli Stati membri, il 71% della superficie delle IBA è anche ZPS. Per essere riconosciuto come IBA, un sito deve possedere almeno una delle seguenti caratteristiche: ospitare un numero significativo di individui di una o più specie minacciate a livello globale; fare parte di una tipologia di aree importante per la conservazione di particolari specie (es. zone umide); essere una zona in cui si concentra un numero particolarmente alto di uccelli in migrazione. Aggiornamento delle IBA 2019<br><br> Fonte: Ministero dell'Ambiente e Sicurezza Energetica.",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3iba",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3iba",
               "metadataUrls":[{
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"

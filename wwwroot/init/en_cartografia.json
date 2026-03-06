@@ -1,7 +1,7 @@
 {
   "corsDomains" : [
-    "gis2.rse-web.it",
-    "gis2.rse-web.it:8080"
+    "gis3.rse-web.it",
+    "gis3.rse-web.it:8080"
   ],
   "catalog": [
     {
@@ -14,7 +14,7 @@
             "type": "wms",
             "name": "Regional boundaries",
             "description": "Regional boundaries selectable in different years. ISTAT data source.",
-            "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_terria",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_terria",
             "featureInfoTemplate": {
               "template": "<p>Regione <b>{{den_reg}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno={{anno}}\">metadata link </a> </p>"
             },
@@ -29,7 +29,7 @@
             "type": "wms",
             "name": "Provincial boundaries",
             "description": "Provincial boundaries selectable in different years. ISTAT data source.",
-            "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_terria",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_terria",
             "featureInfoTemplate": {
               "template": "<p>Provincia <b>{{den_uts}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=109&anno={{anno}}\">metadata link </a> </p>"
             },
@@ -43,7 +43,7 @@
             "type": "wms",
             "name": "Municipal boundaries",
             "description": "Municipal boundaries selectable in different years. ISTAT data source.",
-            "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_terria",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_terria",
             "featureInfoTemplate": {
              "template": "<p>Comune <b>{{comune}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">metadata link </a> </p>"
             },
@@ -57,7 +57,7 @@
             "type": "wms",
             "name": "Inhabited centres",
             "description": "Italian localities defined by the 2021 ISTAT census.",
-            "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3localita_2021_istat",
+            "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3localita_2021_istat",
             "metadataUrls":[{
               "title":"metadata link",
               "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=151"
@@ -79,7 +79,7 @@
             "type": "wms",
             "name": "Land use capacity",
             "description": "<p style=\"text-align:justify\">Regional land use capacity maps produced by the regions Basilicata, Emilia-Romagna, Friuli-Venezia Giulia, Lazio, Lombardy, Piedmont, Sardinia, Tuscany and Veneto.​</br> Regions for which data is not present have not made the land use capacity map available or have not defined it.</br> In this layer, regional land use capacity maps have been standardized to obtain a single classification in the 8 classes defined below. ​</br>Land use capacity provides indications on soil potential to host and favor the growth of cultivated and wild plants. The estimation methodology provides classification on the basis of production potential and only considers permanent physical-chemical parameters of the soil, without taking into account economic-strategic considerations or characteristics or qualities that can be modified with specific interventions.</p>Soils are classified into:<ul><li><p style=\"text-align:justify\">Class I - Little or no restrictions on use. Wide range of crop choices and land uses.</p></li><li><p style=\"text-align:justify\">Class II - Moderate limitations that partially reduce productivity or require some conservative practices.</p></li><li><p style=\"text-align:justify\">Class III - Heavy limitations that reduce crop choices, productivity and/or require special conservation practices.</p></li><li><p style=\"text-align:justify\">Class IV - Very evident limitations which restrict the choice of crops and require very careful management to contain the degradation.</p></li><li><p style=\"text-align:justify\">Class V - Limitations that are difficult to eliminate and strongly restrict agricultural uses. Pasture and forest are possible uses together with naturalistic conservation.</p></li><li><p style=\"text-align:justify\">Class VI - Severe limitations that make soils generally unsuitable for cultivation and limit their use to grazing, forestation, woodland or naturalistic and landscape conservation.</p></li><li><p style=\"text-align:justify\">Class VII - Very severe limitations that make the soils unsuitable for production activities and that restrict their use to natural forest, naturalistic and landscape conservation.</p></li><li><p style=\"text-align:justify\">Class VIII - Limitations that totally preclude the productive use of the land, restricting the uses to the recreational and touristic function, to the naturalistic conservation, to the water reserve and to the protection of the landscape.</p></li></ul><p style=\"text-align:justify\">The first four classes essentially indicate soils suitable for cultivation and other uses, class V indicates soils that can be used for agricultural purposes only under certain conditions, while the last classes indicate soils unsuitable for cultivation. </br> Based on regional decisions, high capacity soils can be considered as a territorial limitation to the exploitation and development of RES.​ \n</p>",
-            "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3lcc_merge",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3lcc_merge",
             "layers": "new_atlante_integrato:lcc_merge",
             "metadataUrls":[{
               "title":"metadata link",
@@ -99,7 +99,7 @@
                 "type": "wms",
                 "name": "Bathymetry (m)",
                 "description": "Bathymetry reclassified from data from the European Marine Observation and Data Network (EMODnet) DTM for European sea regions (2018) https://www.emodnet-bathymetry.eu/metadata-data.\n",
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3bati_2018_aeolian",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3bati_2018_aeolian",
                 "layers": "new_atlante_integrato:bati_2018_aeolian",
                 "metadataUrls":[{
                   "title":"metadata link",
@@ -112,20 +112,20 @@
                 "type": "wms",
                 "name": "Exclusive Economic Zone",
                 "description": " Italian Exclusive Economic Zone. \n<br>Data provided by the Flanders Marine Institute https://www.marineregions.org/.",
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eez",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:eez",
                 "metadataUrls":[{
                   "title":"link metadato",
                   "url":"http://dbeta.rse-web.it/aeolian/aeolian_metadati.php?var_id=171"
                 }],
                 "layers": "new_atlante_integrato:eez",
-                "styles":"aeolian:linea_blu_2",
+                //"styles":"aeolian:linea_blu_2",
                 "id": "eez"
               },
               {
                 "type": "wms",
                 "name": "Internal waters limit",
                 "description": "Italian internal waters limits. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/ and processed by RSE.",
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3limite_acque_interne",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3limite_acque_interne",
                 "layers": "new_atlante_integrato:limite_acque_interne",
                 "metadataUrls":[{
                   "title":"link metadato",
@@ -138,7 +138,7 @@
                 "type": "wms",
                 "name": "12 nautical miles line from coast",
                 "description": "12 nautical miles line from Italian coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/ and processed by RSE.",
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3linea_12mn",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3linea_12mn",
                 "layers": "new_atlante_integrato:linea_12mn",
                 "metadataUrls":[{
                   "title":"link metadato",
@@ -151,7 +151,7 @@
                 "type": "wms",
                 "name": "24 nautical miles line from coast",
                 "description": "24 nautical miles line from Italian coast. \n<br>Data provided by Flanders Marine Institute https://www.marineregions.org/ and processed by RSE.",
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3linea_24mn",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3linea_24mn",
                 "layers": "new_atlante_integrato:linea_24mn",
                 "metadataUrls":[{
                   "title":"link metadato",

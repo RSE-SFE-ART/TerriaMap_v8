@@ -115,7 +115,7 @@
             },
             {
               "type": "wms",
-              "name": "Sitii di Importanza Comunitaria (SIC)",
+              "name": "Siti di Importanza Comunitaria (SIC)",
               "description": "Mappa dei siti di Importanza Comunitaria e Zone Speciali di Conservazione (ZSC) presenti sul territorio italiano aggiornati al 2023. Il Sito di Importanza Comunitaria (SIC) e la Zona Speciale di Conservazionee (ZSC), sono concetti definiti dalla Direttiva comunitaria n. 43 del 21 maggio 1992, (92/43/CEE), nota anche come Direttiva \\\"Habitat\\\", e recepita in Italia nel 1997. La Direttiva è relativa alla conservazione degli habitat naturali e seminaturali e della flora e della fauna selvatiche.<br><br> Fonte: Ministero dell'Ambiente e Sicurezza Energetica.",
               "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3sic",
               "metadataUrls":[{

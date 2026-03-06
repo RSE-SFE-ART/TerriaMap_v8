@@ -23,7 +23,7 @@
             "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=141"
           }],
-          "id": "Flusso_cal"
+          "id": "geo_Flusso_cal"
         },
         {
           "type": "wms",
@@ -35,7 +35,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=140"
           }],
           "layers": "atlante_integrato:tetto_carbonati_clip3857",
-          "id": "tetto_carb"
+          "id": "geo_tetto_carb"
         },
         {
           "type": "wms",
@@ -47,7 +47,7 @@
             "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=145"
           }],
-          "id": "aree_int_geot"
+          "id": "geo_aree_int_geot"
         },
         {
           "type": "wms",
@@ -60,7 +60,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=145"
           }],
           "id": "Zon_Geoter",
-          "styles":"zon_geo_t1000_mean"
+          "styles":"geo_zon_geo_t1000_mean"
         },
         {
           "id": "p_omogenee",
@@ -79,7 +79,7 @@
               "title":"link metadato",
               "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=142"
             }],
-            "id": "T_1000"
+            "id": "geo_T_1000"
           },
           {
             "type": "wms",
@@ -91,7 +91,7 @@
               "title":"link metadato",
               "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
             }],
-            "id": "T_2000"
+            "id": "geo_T_2000"
           },
           {
             "type": "wms",
@@ -103,7 +103,7 @@
               "title":"link metadato",
               "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
             }],
-            "id": "T_3000"
+            "id": "geo_T_3000"
           }
           ]
         },
@@ -124,7 +124,7 @@
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=282"
               }],
               "layers": "new_atlante_integrato:AE_mappa_T70",
-              "id": "aree_geot_70_5000"
+              "id": "geo_aree_geot_70_5000"
             },
             {
               "type": "wms",
@@ -136,7 +136,7 @@
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=283"
               }],
               "layers": "new_atlante_integrato:AE_mappa_T120_5000",
-              "id": "aree_geot_120_5000"
+              "id": "geo_aree_geot_120_5000"
             },
             {
               "type": "wms",
@@ -148,7 +148,7 @@
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=284"
               }],
               "layers": "new_atlante_integrato:AE_mappa_T140_5000",
-              "id": "aree_geot_140_5000"
+              "id": "geo_aree_geot_140_5000"
             }
           ]
         },
@@ -169,7 +169,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=311"
           }],
           "layers": "new_atlante_integrato:ge_pot_0_70m_falda_assente_punti",
-          "id": "ge_pot_falda_assente_punti"
+          "id": "geo_ge_pot_falda_assente_punti"
         },
         {
           "type": "wms",
@@ -181,7 +181,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=312"
           }],
           "layers": "new_atlante_integrato:ge_pot_0_70m_falda_piano_camp_gradiente_ridotto_punti",
-          "id": "ge_pot_falda_p_c_gradiente_ridotto_punti"
+          "id": "geo_ge_pot_falda_p_c_gradiente_ridotto_punti"
         },
         {
           "type": "wms",
@@ -193,7 +193,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=313"
           }],
           "layers": "new_atlante_integrato:ge_pot_0_70m_falda_piano_camp_gradiente_elevato_punti",
-          "id": "ge_pot_falda_p_c_gradiente_elevato_punti"
+          "id": "geo_ge_pot_falda_p_c_gradiente_elevato_punti"
         },
         {
           "type": "wms",
@@ -205,7 +205,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=314"
           }],
           "layers": "new_atlante_integrato:ge_pot_0_70m_falda_rilevata_gradiente_ridotto_punti",
-          "id": "ge_pot_falda_rilevata_gradiente_ridotto_punti"
+          "id": "geo_ge_pot_falda_rilevata_gradiente_ridotto_punti"
         },
         {
           "type": "wms",
@@ -217,7 +217,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=315"
           }],
           "layers": "new_atlante_integrato:ge_pot_0_70m_falda_rilevata_gradiente_elevato_punti",
-          "id": "ge_pot_falda_rilevata_gradiente_elevato_punti"
+          "id": "geo_ge_pot_falda_rilevata_gradiente_elevato_punti"
         },
         {
           "type": "wms",
@@ -229,7 +229,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=319"
           }],
           "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_assente",
-          "id": "ge_pot_aree_falda_assente"
+          "id": "geo_ge_pot_aree_falda_assente"
         },
         {
           "type": "wms",
@@ -241,7 +241,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=320"
           }],
           "layers": "new_atlante_integrato:ge_pot_0_70m_falda_piano_camp_gradiente_ridotto_aree",
-          "id": "ge_pot_falda_p_c_gradiente_ridotto_aree"
+          "id": "geo_ge_pot_falda_p_c_gradiente_ridotto_aree"
         },
         {
           "type": "wms",
@@ -253,7 +253,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=321"
           }],
           "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_piano_campagna_gradiente_elevato",
-          "id": "ge_pot_aree_falda_piano_campagna"
+          "id": "geo_ge_pot_aree_falda_piano_campagna"
         },
         {
           "type": "wms",
@@ -265,7 +265,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=322"
           }],
           "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_rilevata_gradiente_ridotto",
-          "id": "ge_pot_falda_rilevata_gradiente_ridotto_aree"
+          "id": "geo_ge_pot_falda_rilevata_gradiente_ridotto_aree"
         },
         {
           "type": "wms",
@@ -277,7 +277,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=323"
           }],
           "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_rilevata_gradiente_elevato",
-          "id": "ge_pot_falda_rilevata_gradiente_elevato_aree"
+          "id": "geo_ge_pot_falda_rilevata_gradiente_elevato_aree"
         }
         ]},
         {
@@ -297,7 +297,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=310"
           }],
           "layers": "new_atlante_integrato:ge_cond_punti_0_70m_falda_rilevata_punti",
-          "id": "ge_cond_aree_falda_rilevata_punti"
+          "id": "geo_ge_cond_aree_falda_rilevata_punti"
         },
         {
           "type": "wms",
@@ -321,7 +321,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=311"
           }],
           "layers": "new_atlante_integrato:ge_cond_punti_0_70m_falda_assente_punti",
-          "id": "ge_cond_aree_falda_assente_punti"
+          "id": "geo_ge_cond_aree_falda_assente_punti"
         },
         {
           "type": "wms",
@@ -345,7 +345,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=317"
           }],
           "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_piano_campagna",
-          "id": "ge_cond_aree_falda_piano_campagna"
+          "id": "geo_ge_cond_aree_falda_piano_campagna"
         },
          {
           "type": "wms",
@@ -357,7 +357,7 @@
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=318"
           }],
           "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_rilevata",
-          "id": "ge_cond_aree_falda_rilevata"
+          "id": "geo_ge_cond_aree_falda_rilevata"
         }
         ]}
       ]

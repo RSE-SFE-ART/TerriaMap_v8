@@ -18,7 +18,7 @@
               "type": "wms",
               "name": "Resident population at regional level",
               "description": "Map of the resident population at regional level which is calculated on December 31st of each year and shared on January 1st of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
               },
@@ -44,7 +44,7 @@
               "type": "wms",
               "name": "Resident population at provincial level",
               "description": "<p align=\"justify\">Map of the resident population at the provincial level which is calculated on 31st December of each year and shared on 1st January of the following year. <br><br>RSE elaborations on data from the National Institute of Statistics - ISTAT</p>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
               },
@@ -70,7 +70,7 @@
               "type": "wms",
               "name": "Resident population at municipal level",
               "description": "<p align=\"justify\">Map of the resident population at the municipal level which is calculated on 31st December of each year and shared on 1st January of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
               },
@@ -105,7 +105,7 @@
               "type": "wms",
               "name": "Official Protected Area List (EUAP)",
               "description": "<p align=\"justify\">Map of the VI Official List of Protected Natural Areas (EUAP) updated to 2011.\n\n Established on the basis of law 394/91 Framework law on protected areas, the official list currently in force is that relating to the 6th Update approved with D.M. 27/04/2010 and published in the Ordinary Supplement n. 115 to the Official Journal no. 125 of 05/31/2010. According to the law 394/91, the protected areas are divided into National Parks (PNZ), Natural Marine Protected Areas (MAR), Marine State Natural Parks (PNZ_m), State Natural Reserves (RNS), Regional Natural Parks and Reserves (PNR - RNR), Submerged Natural Parks (GAPN), Other Protected Natural Areas (AAPN). The list is compiled and periodically updated by the Ministry of the Environment and the Protection of the Territory and the Sea - Nature Protection Directorate. \n\n Source: Ministry of Environment Energy Security.</p>",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta:euap",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta:euap",
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=117"
@@ -117,7 +117,7 @@
               "type": "wms",
               "name": "Sites of Community Importance (SIC)",
               "description": "<p align=\"justify\">Map of sites of Community Importance and Special Areas of Conservation (ZSC) present in Italy updated in 2023. The Site of Community Importance (SIC) and the Special Conservation Area (ZSC), are concepts defined by the Community Directive n. 43 of 21 May 1992, (92/43/EEC), also known as the \\\"Habitats\\\" Directive, and implemented in Italy in 1997. The Directive relates to the conservation of natural and semi-natural habitats and wild flora and fauna.<br><br> Source: Ministry of Environment Energy Security.</p>",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3sic",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3sic",
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=118"
@@ -129,7 +129,7 @@
               "type": "wms",
               "name": "Special Protection Areas (ZPS)",
               "description": "<p align=\"justify\">Map of the Special Protection Areas present on the Italian territory updated in 2023. The Special Protection Areas (ZPS), in Italy, in accordance with art. 1 paragraph 5 of Law No. 157/1992 are protection zones chosen along the bird migration routes, aimed at the maintenance and arrangement of suitable habitats for the conservation and management of migratory wild bird populations. The associated table contains a series of information among which code, denomination, surface, perimeter and Region to which each zone belongs.<br><br> Source: Ministry of Environment Energy Security.</p>",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3zps",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3zps",
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=118"
@@ -141,7 +141,7 @@
               "type": "wms",
               "name": "Wetlands (Ramsar)",
               "description": "<p align=\"justify\">Map of Ramsar areas, areas of the Italian territory that meet the requirements of the international convention relating to wetlands of international importance, especially as a habitat for aquatic birds, known as the Ramsar Convention. The Ramsar Convention is an act signed in Ramsar, Iran, on February 2nd, 1971. The Ramsar Convention was ratified and implemented by Italy with Presidential Decree no. 448 of 13rd March 1976 and with the subsequent Presidential Decree n. 184 of 11th February 1987. According to the Convention are meant for wetlands marshes, peats or basins, natural or artificial, permanent or temporary, with stagnant or flowing water, fresh, brackish or salty, including expanses of sea water the depth of which, at low tide, does not exceed six metres. According to the Convention, waterbirds are birds ecologically dependent on wetlands. Ramsar areas update 2021.<br><br>Source: Ministry of Environment Energy Security.</p>",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3ramsar",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3ramsar",
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=120"
@@ -153,7 +153,7 @@
               "type": "wms",
               "name": "Internal bodies of water",
               "description": "<p align=\"justify\">Polygonal elements belonging to the DBPrior10K representing internal bodies of water such as lakes, lagoons, ponds, artificial basins, etc.<br><br>Ministry of the Environment and Protection of the Territory and the Sea - National geoportal - Interregional center for computer, geographic, statistical systems - Standing Committee for geographic systems.</p>",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3specchi_acqua_interni",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3specchi_acqua_interni",
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=121"
@@ -165,7 +165,7 @@
               "type": "wms",
               "name": "Important Bird Areas (IBA)",
               "description": "<p align=\"justify\">Map of Important Bird Areas or IBA, http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map\n\n which are areas that play a key role in the protection of birds and biodiversity, the identification of which is part of a worldwide project, managed by BirdLife International. The IBA project was born from the need to identify homogeneous and standardized criteria for the designation of ZPS. The IBAs were used to assess the adequacy of the national networks of designated ZPS in the Member States, 71% of the IBA area is also a ZPS. To be recognized as an IBA, a site must have at least one of the following characteristics: hosting a significant number of individuals of one or more globally threatened species; be part of a type of area that is important for the conservation of particular species (e.g. wetlands); be an area where a particularly large number of migrating birds are concentrated.<br><br> Source: Ministry of Environment Energy Security.</p>",
-              "url": "https://gis2.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3iba",
+              "url": "https://gis3.rse-web.it/geoserver/dbeta/wms?service=WMS&version=1.3.0&request=GetMap&layers=dbeta%3iba",
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=122"
@@ -186,7 +186,7 @@
               "type": "wms",
               "name": "Seismic classification of Italian municipalities in 2023",
               "description": "Seismic classification of Italian municipalities updated in April 2023. Source: <a href=\"https://rischi.protezionecivile.gov.it/it/sismico/attivita/classificazione-sismica\"><br>Civil Protection</p></a>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3class_sismica_2023",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3class_sismica_2023",
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=288"

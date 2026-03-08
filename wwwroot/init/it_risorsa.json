@@ -1,7 +1,7 @@
 {
   "corsDomains" : [
-    "gis2.rse-web.it",
-    "gis2.rse-web.it:8080"
+    "gis3.rse-web.it",
+    "gis3.rse-web.it:8080"
   ],
   "catalog": [
     {

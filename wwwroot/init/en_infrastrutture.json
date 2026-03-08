@@ -11,7 +11,7 @@
           //"type": "wms",
           //"name": "Municipalities with Primary Substations with flow reversal",
           //"description": "<p align=\"justify\">Municipal-scale map of reverse energy events detected in 2015 in primary substations, categorized according to duration. \n\n The data concerning the flow cabins owned by e-distribuzione and the data for the years 2015 and/or 2020 are visible.\n\n These data only include information from the company Enel Distribuzione, which covers around 85% of the energy served by primary substations in Italy (the remaining 15% is handled by around 100 other distributors). \n\nThe data refer only to the primary substations WITH flow inversion, they do not report the substations WITHOUT flow inversion. The mapped information is correct as regards the municipalities with substations with 1% or 5% flow inversion, it is uncertain for the municipalities not mentioned (they could be from other operators with flow inversion or from e-distribuzione with zero inversion).</p>",
-          //"url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+          //"url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
           //"featureInfoTemplate": {
             //"template": "<p>Inversione di flusso (%) {{valore}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
            //},
@@ -37,7 +37,7 @@
           "type": "wms",
           "name": "AT network - OSM",
           "description": "Track of high voltage power lines for the national territory provided by <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a>.",
-          "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3OSM_power_line",
+          "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3OSM_power_line",
           "metadataUrls":[{
             "title":"link metadato",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=216"

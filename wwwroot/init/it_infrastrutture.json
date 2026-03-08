@@ -11,7 +11,7 @@
           //"type": "wms",
           //"name": "Comuni con Cabine Primarie con inversione di flusso",
           //"description": "Mappa a scala comunale degli eventi di inversione del flusso di energia rilevati nel /2015 nelle Cabine primarie, categorizzati in base alla durata. \n\n I dati riguardano le cabine di flusso di proprietà e-distribuzione e sono visibili i dati degli anni 2015 e/o 2020.\n\n Questi dati riportano informazioni della sola società Enel Distribuzione che copre circa l’85% dell’energia servita da cabine primarie nel territorio italiano (il restante 15% è in carico a circa altri 100 distributori). \n\nI dati si riferiscono alle sole cabine primarie CON inversione di flusso, non riportano le cabine SENZA inversione di flusso. L’informazione mappata risulta corretta per quanto riguarda i comuni con cabine con inversione di flusso 1% o 5%, è incerta per i comuni non citati (potrebbero essere di altri gestori con inversione di flusso oppure di e-distribuzione con inversione nulla).",
-          //"url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+          //"url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
           //"featureInfoTemplate": {
             //"template": "<p>Inversione di flusso (%) {{valore}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=1&anno={{data}}\">link al metadato </a> </p>"
            //},

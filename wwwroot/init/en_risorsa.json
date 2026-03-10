@@ -90,7 +90,7 @@
                   "type": "wms",
                   "name": "Anemometric stations",
                   "description": "Anemometric stations installed from 2000 to 2014 and no longer active.\n\n Site to download data: </br><a href=\"html/download_terria_dati-EN.html\" target=\"_blank\">Wind Atlas- Anemometric stations </a>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3stazioni_anemometriche_3857",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3stazioni_anemometriche_3857",
                   "metadataUrls":[{
                     "title":"metadata link",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=260"
@@ -113,7 +113,7 @@
               "type": "wms",
               "name": "Maximum hydroelectric potential (GWh/year)",
               "description": "The maps of the maximum hydroelectric potential show the <b> maximum gross energy obtainable from hydroenergy exploitation (GWh/year) </b> in each sub-basin considered in the Italian territory.\n\n The calculation considers the spatial distribution of the average annual precipitation, the flow coefficients, the topographic relief (DEM) and the minimum vital flow (DMV) equal to 10% of the natural flow.</br><b>It is important to underline that the calculation does not take into account the current uses of water (hydroelectric, irrigation, potable, etc.)</b> and therefore the total value of the maximum Italian hydroelectric producibility is approximately 190,000 GWh/year. \n\n This purely theoretical value would imply being able to convert all the available water potential into electrical energy, an unrealistic hypothesis from both a technical and an environmental point of view. A plausible value of the actual exploitation can be considered approximately 25% of the maximum hydroelectric producibility, a percentage that could be reached and possibly exceeded with the construction of distributed generation plants (mini-hydroelectric).</br></br>\n\n Two components are considered for the calculation of the maximum potential:</br><ul><li>the basin's own production capacity;</li><li>the producibility deriving from the flow rates that come from upstream, with jump from upstream height to downstream height.</li></ul></br><img src=\"images/idro_pot_.png\"></br><b>The two components for calculating the maximum hydroelectric potential</b></br></p> \n\n\n To explore the issue relating to the hydroelectric resource of a specific river basin, you can use the tools developed in RdS: <a href=\"https://www.rse-web.it/prodotti/valutazione-del-potenziale-idroelettrico-residuo-nelle-aste-fluviali-da-utilizzarsi-ai-fini-della-pianificazione-127/\" target=\"_blank\"> VAPIDRO-ASTE</a> allows you to automatically calculate the river network of the area of ​​interest. The user chooses a river branch in which he wants to calculate the potential hydroelectric producibility along the different river stretches.\n \n\n To deepen the aspects of technical and economic feasibility, the software <a href=\"https://www.rse-web.it/prodotti/software-per-valutare-la-fattibilita-tecnico-economica-di-impianti-mini-idroelettrici-ad-acqua-fluente-129/\" target=\"_blank\"> SMART Mini-Idro</a> allows you to analyze different project proposals by identifying the most convenient one.\n </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=170&lingua=EN&descrizione=Maximum hydroelectric potential (GWh/year)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3bacini_view",
+              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3bacini_view",
               "layers": "atlante_integrato:bacini_view",
               "styles":"bacini",
               /*<a href=\"http://www.aim2014.eu/tools/vapidro-aste.phppp\" target=\"_blank\"> VAPIDRO-ASTE</a> <a href=\"http://www.aim2014.eu/tools/smart-mini-idro.php\" target=\"_blank\"> SMART Mini-Idro</a>*/
@@ -127,7 +127,7 @@
               "type": "wms",
               "name": "Specific hydroelectric potential (GWh/year/m)",
               "description": "The maps of the maximum hydroelectric potential illustrate the <b>maximum specific energy for unit length</b> obtainable from hydroenergy exploitation (GWh/year/m) in each sub-basin considered in the Italian territory. The calculation takes into account the spatial distribution of the average annual precipitation, the flow coefficients, the topographic relief (DEM) and the minimum vital flow (DMV) equal to 10% of the natural flow.</br></br>The specific potential considers two different energy contributions:</br><ul><li>the basin's own production capacity;</li><li>the producibility deriving from the flow rates coming from upstream, with Hupstream-Hdownstream head.</li></ul></br><img src=\"images/idro_pot_.png\"></br><b>The two components for calculating the maximum hydroelectric potential</b></br></br></p><p align=\"justify\">The energy coming from the exploitation of the upstream flow rates is related to the distance L, corresponding to the structural development of a hypothetical plant which draws water from the inlet point of the basins that flow upstream and returns it to the closing section of the basin under analysis; the own energy is instead related to an equivalent distance, defined as the square root of the basin surface.</p> \n\n\n <a href=\"http://dbeta.rse-web.it/documenti/Metodologia_Mappe_Producibilita_Massima_e_Residua.pdf\" target=\"_blank\">Methodology for drafting maps of hydroelectric production at the basin scale</a> \n\n Per approfondire la tematica relativa alla risorsa idroelettrica di uno specifico bacino fluviale si può ricorrere a dei tool sviluppati in RdS: <a href=\"https://www.rse-web.it/prodotti/software-per-valutare-la-fattibilita-tecnico-economica-di-impianti-mini-idroelettrici-ad-acqua-fluente-129/\" target=\"_blank\">Software SMART Mini-Idro</a></br></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=170&lingua=EN&descrizione=Specific hydroelectric potential (GWh/year/m)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3bacini_view",
+              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3bacini_view",
               "layers": "atlante_integrato:bacini_view",
               "styles":"potenziale_specifico",
               "metadataUrls":[{
@@ -147,7 +147,7 @@
                   "type": "wms",
                   "name": "Monthly rainfall year 2021",
                   "description": "Monthly rainfall year 2021 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=EN&descrizione=Monthly rainfall year 2021\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_2021_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_2021_v6",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_2021_v6",
                   "styles":"stile_TP",
@@ -164,7 +164,7 @@
                   "type": "wms",
                   "name": "Average monthly rainfall years 2011-2020",
                   "description": "Average monthly rainfall years 2011-2020 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=EN&descrizione=Average monthly rainfall years 2011-2020\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_2011-2020_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_2011-2020_v6",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_2011-2020_v6",
                   "styles":"stile_TP",
@@ -181,7 +181,7 @@
                   "type": "wms",
                   "name": "Average monthly rainfall years 2001-2010",
                   "description": "Average monthly rainfall years 2001-2010 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=EN&descrizione=Average monthly rainfall years 2001-2010\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_2001-2010_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_2001-2010_v6",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_2001-2010_v6",
                   "styles":"stile_TP",
@@ -198,7 +198,7 @@
                   "type": "wms",
                   "name": "Average monthly rainfall years 1991-2000",
                   "description": "Average monthly rainfall years 1991-2000 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=EN&descrizione=Average monthly rainfall years 1991-2000\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1991-2000_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1991-2000_v6",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1991-2000_v6",
                   "styles":"stile_TP",
@@ -215,7 +215,7 @@
                   "type": "wms",
                   "name": "Average monthly rainfall years 1981-1990",
                   "description": "Average monthly rainfall years 1981-1990 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=EN&descrizione=Average monthly rainfall years 1981-1990\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1981-1990_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1981-1990_v6",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1981-1990_v6",
                   "styles":"stile_TP",
@@ -232,7 +232,7 @@
                   "type": "wms",
                   "name": "Average monthly rainfall years 1971-1980",
                   "description": "Average monthly rainfall years 1971-1980 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=EN&descrizione=Average monthly rainfall years 1971-1980\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1971-1980_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1971-1980_v6",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1971-1980_v6",
                   "styles":"stile_TP",
@@ -249,7 +249,7 @@
                   "type": "wms",
                   "name": "Average monthly rainfall years 1961-1970",
                   "description": "Average monthly rainfall years 1961-1970 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=EN&descrizione=Average monthly rainfall years 1961-1970\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1961-1970_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1961-1970_v6",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1961-1970_v6",
                   "styles":"stile_TP",
@@ -266,7 +266,7 @@
                   "type": "wms",
                   "name": "Average monthly rainfall years 1951-1960",
                   "description": "Average monthly rainfall years 1951-1960 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=EN&descrizione=Average monthly rainfall years 1951-1960\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1951-1960_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1951-1960_v6",
                   "dataCustodian": "text",
                   "layers": "new_atlante_integrato:TP_1951-1960_v6",
                   "styles":"stile_TP",
@@ -283,7 +283,7 @@
                   "type": "wms",
                   "name": "Monthly runoff year 2021",
                   "description": "Monthly runoff year 2021 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=EN&descrizione=Monthly runoff year 2021\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_2021_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_2021_v6",
                   "layers": "new_atlante_integrato:RF_2021_v6",
                   "id": "bbRF_2021",
                   "styles":"stile_RF",
@@ -299,7 +299,7 @@
                   "type": "wms",
                   "name": "Average monthly runoff years 2011-2020",
                   "description": "Average monthly runoff years 2011-2020 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=EN&descrizione=Average monthly runoff years 2011-2020\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_2011-2020_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_2011-2020_v6",
                   "layers": "new_atlante_integrato:RF_2011-2020_v6",
                   "id": "bbRF_2011",
                   "styles":"stile_RF",
@@ -315,7 +315,7 @@
                   "type": "wms",
                   "name": "Average monthly runoff years 2001-2010",
                   "description": "Average monthly runoff years 2001-2010 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=EN&descrizione=Average monthly runoff years 2001-2010\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_2001-2010_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_2001-2010_v6",
                   "layers": "new_atlante_integrato:RF_2001-2010_v6",
                   "id": "bbRF_2001",
                   "styles":"stile_RF",
@@ -331,7 +331,7 @@
                   "type": "wms",
                   "name": "Average monthly runoff years 1991-2000",
                   "description": "Average monthly runoff years 1991-2000 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=EN&descrizione=Average monthly runoff years 1991-2000\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1991-2000_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1991-2000_v6",
                   "layers": "new_atlante_integrato:RF_1991-2000_v6",
                   "id": "bbRF_1991",
                   "styles":"stile_RF",
@@ -347,7 +347,7 @@
                   "type": "wms",
                   "name": "Average monthly runoff years 1981-1990",
                   "description": "Average monthly runoff years 1981-1990 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=EN&descrizione=Average monthly runoff years 1981-1990\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1981-1990_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1981-1990_v6",
                   "layers": "new_atlante_integrato:RF_1981-1990_v6",
                   "id": "bbRF_1981",
                   "styles":"stile_RF",
@@ -363,7 +363,7 @@
                   "type": "wms",
                   "name": "Average monthly runoff years 1971-1980",
                   "description": "Average monthly runoff years 1971-1980 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=EN&descrizione=Average monthly runoff years 1971-1980\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1971-1980_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1971-1980_v6",
                   "layers": "new_atlante_integrato:RF_1971-1980_v6",
                   "id": "bbRF_1971",
                   "styles":"stile_RF",
@@ -379,7 +379,7 @@
                   "type": "wms",
                   "name": "Average monthly runoff years 1961-1970",
                   "description": "Average monthly runoff years 1961-1970 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=EN&descrizione=Average monthly runoff years 1961-1970\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1961-1970_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1961-1970_v6",
                   "layers": "new_atlante_integrato:RF_1961-1970_v6",
                   "id": "bbRF_1961",
                   "styles":"stile_RF",
@@ -395,7 +395,7 @@
                   "type": "wms",
                   "name": "Average monthly runoff years 1951-1960",
                   "description": "Average monthly runoff years 1951-1960 - Data reprocessed and aggregated to show some themes obtainable from the results of the BIGBANG 6.0 model (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) developed by ISPRA for the estimation of the hydrological balance components on a regular grid of 1 km of spatial resolution covering the entire national territory and on a monthly basis. </br> For more details visit: https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=EN&descrizione=Average monthly runoff years 1951-1960\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1951-1960_v6",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1951-1960_v6",
                   "layers": "new_atlante_integrato:RF_1951-1960_v6",
                   "id": "bbRF_1951",
                   "styles":"stile_RF",
@@ -420,7 +420,7 @@
                   "type": "wms",
                   "name": "Hydrometric data",
                   "description": "Map of measuring stations: it is possible to view the position of the stations and <i>download their historical data</i>.\n\n Hydrometric measurements of the IDROSTAZ database deriving from historical data published in the annals of the Hydrographic Service. \n Note: The service has stopped collecting data since 1998 when the service was moved to regions. <br> For further details: \n\n <a href=\"https://www.isprambiente.gov.it/it/progetti/cartella-progetti-in-corso/acque-interne-e-marino-costiere-1/progetti-conclusi/progetto-annali/inquadramento-storico-del-monitoraggio-idro-meteografico-e-delle-relative-competenze\">  Ispra ambiente </a>\n\n\n",
-                  "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_idrometri",
+                  "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_idrometri",
                   "layers": "atlante_integrato:v_idrometri",
                   "featureInfoTemplate": {
                     "template": "<br><p>Selected hydrometer <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"https://dbeta.rse-web.it/download/export_idroNAI.php?input_codstaz={{codice_stazione}}\">download station data (.xlsx format) </a></button></p>"
@@ -435,7 +435,7 @@
                   "type": "wms",
                   "name": "Rainfall data",
                   "description": "Map of measuring stations: it is possible to view the position of the stations and <i>download their historical data</i>.\n\n Rainfall measurements from the IDROSTAZ database deriving from historical data published in the annals of the Hydrographic Service. </p> \n Note: The service has stopped collecting data since 1998 when it was moved to the regions. <br> For further details: \n\n <a href=\"https://www.isprambiente.gov.it/it/progetti/cartella-progetti-in-corso/acque-interne-e-marino-costiere-1/progetti-conclusi/progetto-annali/inquadramento-storico-del-monitoraggio-idro-meteografico-e-delle-relative-competenze\">  Ispra ambiente </a>\n\n\n",
-                  "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_pluviometri",
+                  "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_pluviometri",
                   "layers": "atlante_integrato:v_pluviometri",
                   "featureInfoTemplate": {
                     "template": "<br><p>Selected rain gauge <b>{{nome_stazione}}</b></p><p style='display: block; text-align: center;'><button><a href=\"http://dbeta.rse-web.it/download/export_pluvioNAI.php?input_codstaz={{codice_stazione}}\">download station data (.xlsx format) </a></button></p>"
@@ -450,7 +450,7 @@
                   "type": "wms",
                   "name": "Flow duration curve",
                   "description": "Duration curves for the assessment of foreseeable water availability at the closure section of a predetermined hydrographic basin. Processing is available in the following areas: Abruzzo-Marche, Adamello and Orobie and Graian and Pennine Alps.</p>\n\n Additional information:  <a href=\"https://www.rse-web.it/prodotti/software-per-valutare-la-fattibilita-tecnico-economica-di-impianti-mini-idroelettrici-ad-acqua-fluente-129/\" target=\"_blank\">Software SMART Mini-Idro</a>",
-                  "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_stazioni",
+                  "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_stazioni",
                   "layers": "atlante_integrato:v_stazioni",
                   "styles":"Stazioni_Mini_Idro_EN",
                   "metadataUrls":[{
@@ -477,7 +477,7 @@
               "type": "wms",
               "name": "Average value of the annual sum of global radiation (kWh/m\u00b2)",
               "description": "Map of the average global radiation referring to the period 2005-2015 and expressed in kWh/m<sup>2</sup>\n\n The map was created using data from the RADSAF archive of global ground irradiance estimated on the Italian territory, using a methodology developed by RSE. The methodology is based on the processing of images taken by the MSG (Meteosat Second Generation) geostationary satellite placed at an altitude of 36,000 km above the Gulf of Guinea which entirely covers the Italian territory. The spatial resolution of the images is about 3-5 km, the temporal resolution of 15 minutes. An algorithm called SAFNWC, jointly developed by various European meteorological institutes, allows automatic recognition of cloud cover and its type starting from the satellite images acquired every 15 minutes by a ground receiving station with which RSE is equipped.</p>\n Information about the SOLAR RESOURCE layer </br><a href=\"http://sunrise.rse-web.it\" target=\"_blank\">Solar Atlas (sunRiSE)</a>.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=15&lingua=EN&descrizione=Average value of the annual sum of global radiation (kWh/m\u00b2)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br> ",
-              "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3solare_10anni",
+              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3solare_10anni",
               "layers": "solare_10anni",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -509,7 +509,7 @@
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226"
                 }],
-                "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_ma_points",
+                "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_ma_points",
                 "styles":"new_atlante_integrato:ma_points",
                 "featureInfoTemplate": {
                   "template": "<p>Depth (m) {{depth__m_}}</p><p>Distance (km) {{distance_t}}</p><p>Average wave energy (kW/m) {{energia}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=226\">metadata link </a> </p>"
@@ -528,7 +528,7 @@
                     "type": "wms",
                     "name": "AquaBuOY - Capacity Factor",
                     "description": "Offshore wave potential of some devices: AquaBuOY \n\n This map describes the characteristics of each device for the points analysed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE report RdS prot. 20010732 </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=228&lingua=EN&descrizione=AquaBuOY - Capacity Factor\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                    "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
+                    "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
                     "metadataUrls":[{
                       "title":"metadata link",
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
@@ -547,7 +547,7 @@
                     "type": "wms",
                     "name": "CycWEC - Capacity Factor",
                     "description": "Offshore wave potential of some devices: CycWEC \n\n This map describes the characteristics of each device for the analysed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732  </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=228&lingua=EN&descrizione=CycWEC - Capacity Factor\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                    "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
+                    "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
                     "metadataUrls":[{
                       "title":"metadata link",
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
@@ -566,7 +566,7 @@
                     "type": "wms",
                     "name": "Drakoo - Capacity Factor",
                     "description": "Offshore wave potential of some devices: Drakoo \n\n This map describes the characteristics of each device for the analysed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732 </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=228&lingua=EN&descrizione=Drakoo - Capacity Factor\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                    "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
+                    "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
                     "metadataUrls":[{
                       "title":"metadata link",
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
@@ -585,7 +585,7 @@
                     "type": "wms",
                     "name": "Pelamis - Capacity Factor",
                     "description": "Offshore wave potential of some devices: Pelamis \n\n This map describes the characteristics of each device for the analysed points off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the report RSE RdS prot. 20010732 </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=228&lingua=EN&descrizione=Pelamis - Capacity Factor\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                    "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
+                    "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
                     "metadataUrls":[{
                       "title":"metadata link",
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
@@ -604,7 +604,7 @@
                     "type": "wms",
                     "name": "Seabased - Capacity Factor",
                     "description": "Offshore wave potential of some devices: Seabased \n\n This map describes the characteristics of each device for the points analysed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732 </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=228&lingua=EN&descrizione=Seabased - Capacity Factor\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                    "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
+                    "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
                     "metadataUrls":[{
                       "title":"metadata link",
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
@@ -623,7 +623,7 @@
                     "type": "wms",
                     "name": "Symphony - Capacity Factor",
                     "description": "Offshore wave potential of some devices: Symphony \n\n This map describes the characteristics of each device for the points analysed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732 </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=228&lingua=EN&descrizione=Symphony - Capacity Factor\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                    "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
+                    "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
                     "metadataUrls":[{
                       "title":"metadata link",
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
@@ -642,7 +642,7 @@
                     "type": "wms",
                     "name": "Wavebob - Capacity Factor",
                     "description": "Offshore wave potential of some devices: Wavebob \n\n This map describes the characteristics of each device for the points analysed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732 </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=228&lingua=EN&descrizione=Wavebob - Capacity Factor\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                    "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
+                    "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
                     "metadataUrls":[{
                       "title":"metadata link",
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
@@ -661,7 +661,7 @@
                     "type": "wms",
                     "name": "Wavedragon - Capacity Factor",
                     "description": "Offshore wave potential of some devices: Wavedragon \n\n This map describes the characteristics of each device for the points analysed off the Italian coast. The following are shown: the best scale factor (-), the capacity factor (-), annual energy produced (kWh), nominal capacity of the device (kW).\n\n For further information, see the RSE RdS prot. 20010732 </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=228&lingua=EN&descrizione=Wavedragon - Capacity Factor\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                    "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
+                    "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_dispositivi",
                     "metadataUrls":[{
                       "title":"metadata link",
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=228"
@@ -691,7 +691,7 @@
                 "type": "wms",
                 "name": "Piers exploitable for wave motion",
                 "description": "Map of existing piers potentially suitable for wave motion exploitation for electricity production.</p> </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=174&lingua=EN&descrizione=Piers exploitable for wave motion\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_strutture_portuali",
+                "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_strutture_portuali",
                 "metadataUrls":[{
                   "title":"metadata link",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=174"
@@ -745,7 +745,7 @@
                   "type": "wms",
                   "name": "Wave measurement campaigns - Civitavecchia",
                   "description": "Measurements of wave motion and current flows carried out in the periods: 9th February 2017 - 12th March 2017, 12th March 2017 - 08th June 2017 and 10th October 2017 - 20th December 2017, in the stretch of sea in front of the port of Civitavecchia at about 40 m depth: wave height, currents, speed and direction, peak period, available power. \n\n Additional information: </br></br>RSE RdS document prot. 17002141</a>.</br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=135&lingua=EN&descrizione=Wave measurement campaigns - Civitavecchia\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ma_misure_civitavecchia_punto",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ma_misure_civitavecchia_punto",
                   "layers": "new_atlante_integrato:ma_misure_civitavecchia_punto",
                   "metadataUrls":[{
                     "title":"metadata link",
@@ -757,7 +757,7 @@
                   "type": "wms",
                   "name": "MOBI buoy measurement campaigns - Strait of Sicily",
                   "description": "MOBI - Offshore measuring station on floating buoy</br> Data includes anemometric, wave and current flow measurements acquired between 2018 and 2019. </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=259&lingua=EN&descrizione=MOBI buoy measurement campaigns - Strait of Sicily\"><font color='#FFFFFF' size = 2>Data download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3boa_mobi",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3boa_mobi",
                   "layers": "new_atlante_integrato:boa_mobi",
                   "metadataUrls":[{
                     "title":"metadata link",
@@ -771,7 +771,7 @@
               "type": "wms",
               "name": "Power flow of currents (W/m\u00b2)",
               "description": "<p align=\"justify\">Map of the specific power flow of marine currents in Italian seas on a synoptic scale (RSE Report RdS prot. 12000352 of 03/31/2012). The spatial resolution of the results obtained is in fact linked to the temporal resolution of the current values ​​used for processing. Reference is made to the numerical results available at http://marine.copernicus.eu, with daily current values ​​relating to the period 2004-2010, with a horizontal resolution of approximately 7 km and arranged on 71 vertical levels. Only sites close enough to the coast (maximum 10 km away) and at fairly modest depths (less than 50 m) are considered feasible. The specific power flow represents the power supplied by the current per unit of useful section of the turbine, at the point along the vertical line, where this flow has its maximum value. The resulting map provides general indications (given the approximation linked to the temporal resolution of the speed averages) for meso- and micro-scale studies, for the purpose of exploiting energy from marine currents in Italian waters.</p> \n\n Information about the MARINE RESOURCE layer <a href=\"http://marenergy.rse-web.it\" target=\"_blank\">MARENERGY</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=138&lingua=EN&descrizione=Power flow of currents (W/m\u00b2)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:correnti",
+              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:correnti",
               "layers": "correnti",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -792,7 +792,7 @@
               "type": "wms",
               "name": "Heat flow (mW/m\u00b2)",
               "description": "Superficial heat flux map expressed in mW/m<sup>2</sup> prepared by RSE S.p.A. using the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=141&lingua=EN&descrizione=Heat flow (mW/m\u00b2)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3Flusso_calore_clip3857",
+              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3Flusso_calore_clip3857",
               "layers": "atlante_integrato:Flusso_calore_clip3857",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -804,7 +804,7 @@
               "type": "wms",
               "name": "Potential reservoir top level (m asl)",
               "description": "The map shows the top level, in meters asl, of the roof of the potential carbonate tank. The carbonate complex, being characterized by a significant permeability, by considerable thicknesses and by a high area extension, is the main reservoir of Italian geothermal fields. The map was elaborated by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Economic Development - DGS-UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=140&lingua=EN&descrizione=Potential reservoir top level (m asl)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3tetto_carbonati_clip3857",
+              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3tetto_carbonati_clip3857",
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=140"
@@ -816,7 +816,7 @@
               "type": "wms",
               "name": "Geothermal zoning",
               "description": "Geothermal zoning supports the identification on a municipal scale of areas in which there are significant increases in subsoil temperatures at lower depths than the average which generate the theoretical conditions necessary to draw heat, supporting the identification of a possible geothermal fluid reservoir industrially usable.  \n This map shows the following information for each municipality:\n - the minimum, average and maximum temperature (°C) at 1,000, 2,000 and 3,000 meters of depth (fields: T1000, T2000 and T3000);\n - The minimum, average and maximum heat flow (mW/m2) (fields: Flow) ;\n - the minimum, average and maximum depth (meters) of the roof of rocks potentially suitable for containing a geothermal system (carbonate reservoir roof where mapped) (fields: Carbo).\n\n NThe map displayed shows, by way of example, the distribution of the average temperature parameter at a depth of 1,000 m, but by selecting the appropriate legend it is possible to view the distribution of the other parameters present.\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=145&lingua=EN&descrizione=Geothermal zoning\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_comuni_valori_mappe",
+              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_comuni_valori_mappe",
               "layers": "atlante_integrato:v_comuni_valori_mappe",
               "metadataUrls":[{
                 "title":"metadata link",
@@ -836,7 +836,7 @@
                   "type": "wms",
                   "name": "Temperature at 1000 m depth (°C)",
                   "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 1000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=142&lingua=EN&descrizione=Temperature at 1000 m depth (°C)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3mappa_T_1000_mt_clip3857",
+                  "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3mappa_T_1000_mt_clip3857",
                   "layers": "atlante_integrato:mappa_T_1000_mt_clip3857",
                   "metadataUrls":[{
                     "title":"metadata link",
@@ -848,7 +848,7 @@
                   "type": "wms",
                   "name": "Temperature at 2000 m depth (°C)",
                   "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 2000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=143&lingua=EN&descrizione=Temperature at 2000 m depth (°C)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3mappa_T_2000_mt_clip3857",
+                  "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3mappa_T_2000_mt_clip3857",
                   "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
                   "metadataUrls":[{
                     "title":"metadata link",
@@ -860,7 +860,7 @@
                   "type": "wms",
                   "name": "Temperature at 3000 m depth (°C)",
                   "description": "Map of subsoil temperatures expressed in degrees Celsius at a depth of 3000 meters from ground level. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=144&lingua=EN&descrizione=Temperature at 3000 m depth (°C)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3mappa_T_3000_mt_clip3857",
+                  "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3mappa_T_3000_mt_clip3857",
                   "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
                   "metadataUrls":[{
                     "title":"metadata link",
@@ -881,7 +881,7 @@
                   "type": "wms",
                   "name": "Depth of areas with homogeneous temperature of 70° C",
                   "description": "Depth map of areas where a temperature of 70 °C is found, considering a maximum depth of 5000 m*.<br> <i>* For Sardinia region, the maximum depth of investigation is 2000 m. <br> </i> Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=282&lingua=EN&descrizione=Depth of areas with homogeneous temperature of 70° C\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3AE_mappa_T70",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3AE_mappa_T70",
                   "metadataUrls":[{
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=282"
@@ -893,7 +893,7 @@
                   "type": "wms",
                   "name": "Depth of areas with homogeneous temperature of 120° C (meters)",
                   "description": "Depth maps related to the temperature of 120° C. Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p> ",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3mappa_profondita_120C_fino_3000m",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3mappa_profondita_120C_fino_3000m",
                   "metadataUrls":[{
                     "title":"metadata link",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=224"
@@ -906,7 +906,7 @@
                   "type": "wms",
                   "name": "Depth of areas with homogeneous temperature of 120° C",
                   "description": "Depth map of areas where a temperature of 120 °C is found, considering a maximum depth of 5000 m*.<br> <i>* For Sardinia region, the maximum depth of investigation is 2000 m. <br> </i> Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=283&lingua=EN&descrizione=Depth of areas with homogeneous temperature of 120° C\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3AE_mappa_T120_5000",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3AE_mappa_T120_5000",
                   "metadataUrls":[{
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=283"
@@ -918,7 +918,7 @@
                   "type": "wms",
                   "name": "Depth of areas with homogeneous temperature of 140° C",
                   "description": "Depth map of areas where a temperature of 140 °C is found, considering a maximum depth of 5000 m*.<br> <i>* For Sardinia region, the maximum depth of investigation is 2000 m. <br> </i> Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources (UNMIG - https://unmig.mase.gov.it/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali/) and in the VIGOR project archive (http://www.vigor-geotermia.it/). </p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=284&lingua=EN&descrizione=Depth of areas with homogeneous temperature of 140° C\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-                  "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3AE_mappa_T140_5000",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3AE_mappa_T140_5000",
                   "metadataUrls":[{
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=284"
@@ -932,7 +932,7 @@
               "type": "wms",
               "name": "Producible geothermal potential (MWh/year)",
               "description": "<p align=\"justify\">Geothermal map potential at municipal level: for the areas of the Italian territory that have a temperature greater than or equal to 120°C, the estimate of the geothermal potential expressed as thermal energy obtainable per year (MWh/year) is shown. This estimate was made using the volume method. - Map developed by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG  (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=225&lingua=EN&descrizione=Producible geothermal potential (MWh/year)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis2.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_potenziale_120c",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:comuni_potenziale_120c",
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=225"

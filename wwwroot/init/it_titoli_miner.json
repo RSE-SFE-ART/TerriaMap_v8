@@ -9,129 +9,55 @@
     {
       "id": "titoli_min",
       "type": "group",
-      "name": "Perforazioni e Titoli minerari",
-      "description": "Questa raccolta comprende informazioni su perforazioni, titoli minerari e concessioni di stoccaggio.",
+      "name": "Titoli minerari",
+      "description": "Questa raccolta comprende informazioni su titoli minerari e concessioni di stoccaggio.",
       "isOpen": false,
       "members": [
         {
-          "id": "perforazioni",
+          "id": "titoli vigenti",
           "type": "group",
-          "name": "Perforazioni Profonde",
-          "description": "Questa raccolta comprende informazioni sulle perforazioni. \n\n",
-          "isOpen": false,
-          "members": [
-          {
-            "type": "wms",
-            "name": "Perforazioni idrocarburi",
-            "description": "xxxxxxx Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=143&lingua=IT&descrizione=Temperatura alla profondità di 2000 m (°C)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-            "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:mappa_T_2000_mt_clip3857",
-            "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
-            "metadataUrls":[{
-              "title":"link metadato",
-              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
-            }],
-            "id": "145145"
-          },
-          {
-          "type": "wms",
-          "name": "Peforazioni con disponibilità di stratigrafia",
-          "description": "Perforazioni con disponibilita' stratigrafia",
-          "url": "https://gis3.rse-web.it/geoserver/idrogeno/wms?service=WMS&version=1.3.0&request=GetMap&layers=idrogeno%3pozzi_stratigrafia",
-          "layers": "idrogeno:pozzi_stratigrafia",
-          "metadataUrls":[{
-            "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
-          }],
-          "localId": "pozzi_strat"
-        },
-          {
-          "type": "wms",
-          "name": "Peforazioni con disponibilità di temperatura",
-          "description": "Perforazioni con disponibilita' temperature sotterranee",
-          "url": "https://gis3.rse-web.it/geoserver/idrogeno/wms?service=WMS&version=1.3.0&request=GetMap&layers=idrogeno%3pozzi_temperatura",
-          "layers": "idrogeno:pozzi_temperatura",
-          "metadataUrls":[{
-            "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
-          }],
-          "localId": "pozzi_T"
-        },
-  /*          {
-            "type": "wms",
-            "name": "Perforazioni con disponibilita' profilo",
-            "description": "xxxxxxx Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=143&lingua=IT&descrizione=Temperatura alla profondità di 2000 m (°C)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-            "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:mappa_T_2000_mt_clip3857",
-            "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
-            "metadataUrls":[{
-              "title":"link metadato",
-              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
-            }],
-            "id": "7777"
-          },
- */           {
-            "type": "wms",
-            "name": "Perforazioni stoccaggio gas",
-            "description": "xxxxxx Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 3000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=144&lingua=IT&descrizione=Temperatura alla profondità di 3000 m (°C)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-            "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:mappa_T_3000_mt_clip3857",
-            "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
-            "metadataUrls":[{
-              "title":"link metadato",
-              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
-            }],
-            "id": "888888"
-          },
-          {
-            "type": "wms",
-            "name": "Perforazioni geotermia",
-            "description": "xxxxxx Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 3000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=144&lingua=IT&descrizione=Temperatura alla profondità di 3000 m (°C)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
-            "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:mappa_T_3000_mt_clip3857",
-            "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
-            "metadataUrls":[{
-              "title":"link metadato",
-              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
-            }],
-            "id": "888444"
-          }
-          ]
-        },
-        {
-          "id": "titoli",
-          "type": "group",
-          "name": "Titoli minerari",
+          "name": "Titoli minerari vigenti",
           "description": "Questa raccolta comprende informazioni sulle profondità a temperatura omogenea. \n\n",
           "isOpen": false,
-          "members": [
-            {
-              "id": "titoli_cessati",
-              "name": "titoli minerari cessati",
-              "type": "kml",
-              "url": "test/titoli_cessati.kml",
-              "description":"Ubicazione dei titoli cessati concessioni di stoccaggio dati derivanti dal sito UNIMIG...... link: fffff"
-            },  
+          "members": [ 
             {
               "id": "titoli_idrocarburi",
               "name": "titoli minerari vigenti",
               "type": "kml",
               "url": "test/titoli_idrocarburi.kml",
               "description":"Ubicazione dei titoli vigenti di stoccaggio dati derivanti dal sito UNIMIG...... link: fffff"
-             }
-          ]
-        },
-        {
-          "id": "concessioni",
-          "type": "group",
-          "name": "Concessioni di stoccaggio",
-          "description": "Questa raccolta comprende informazioni su concessioni di stoccaggio. \n\n",
-          "isOpen": false,
-          "members": [
-            {
+             },
+              {
               "id": "conc_stocc_kml",
               "name": "Concessioni di stoccaggio",
               "type": "kml",
               "url": "test/titoli_stoccaggio.kml",
               "description":"Ubicazione delle concessioni di stoccaggio dati derivanti dal sito UNIMIG...... link: fffff"
-            } 
-        ]}
+            },{
+              "id": "Istanze_conferimento",
+              "name": "istanze per il conferimento",
+              "type": "kml",
+              "url": "",
+              "description":"Istanze per il conferimento dati derivanti dal sito UNIMIG...... link: va scaricato TODO"
+             } 
+          ]
+        },
+        {
+          "id": "tit_cassati",
+          "type": "group",
+          "name": "Titoli Cessati",
+          "description": "Questa raccolta comprende informazioni su concessioni di stoccaggio. \n\n",
+          "isOpen": false,
+          "members": [            
+            {
+              "id": "titoli_cessati",
+              "name": "titoli minerari cessati",
+              "type": "kml",
+              "url": "test/titoli_cessati.kml",
+              "description":"Ubicazione dei titoli cessati delle concessioni di stoccaggio dati derivanti dal sito UNIMIG...... link: fffff"
+            }
+        ]
+      }
       ]
     }
   ]

@@ -1,0 +1,128 @@
+{
+  "homeCamera": {
+    "north": 48,
+    "east": 19,
+    "south": 35,
+    "west": 6
+  },
+  "catalog": [
+        {
+      "id": "Perforazioni",
+      "type": "group",
+      "name": "Perforazioni",
+      "description": "Questa raccolta comprende informazioni su perforazioni.",
+      "isOpen": false,
+      "members": [
+        {
+        "id": "profonde",
+        "type": "group",
+        "name": "Perforazioni profonde",
+        "description": "Questa raccolta comprende informazioni su perforazioni profonde.",
+        "isOpen": false,
+        "members": [
+        {
+        "id": "idrocarb",
+        "type": "group",
+        "name": "Perforazioni idrocarburi",
+        "description": "Questa raccolta comprende informazioni su perforazioni idrocarburi.",
+        "isOpen": false,
+        "members": [
+            {
+                "type": "wms",
+                "name": "Perforazioni Idrocarburi",
+                "description": "xxxxxxx Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=143&lingua=IT&descrizione=Temperatura alla profondità di 2000 m (°C)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:mappa_T_2000_mt_clip3857",
+                "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
+                "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
+                }],
+                "id": "idroc_perf"
+            },
+            {
+            "type": "wms",
+            "name": "Peforazioni con disponibilità di stratigrafia",
+            "description": "Perforazioni con disponibilita' stratigrafia",
+            "url": "https://gis3.rse-web.it/geoserver/idrogeno/wms?service=WMS&version=1.3.0&request=GetMap&layers=idrogeno%3pozzi_stratigrafia",
+            "layers": "idrogeno:pozzi_stratigrafia",
+            "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
+            }],
+            "localId": "pozzi_strat"
+            },
+            {
+            "type": "wms",
+            "name": "Peforazioni con disponibilità di temperatura sotterranee",
+            "description": "Perforazioni con disponibilita' di temperature sotterranee",
+            "url": "https://gis3.rse-web.it/geoserver/idrogeno/wms?service=WMS&version=1.3.0&request=GetMap&layers=idrogeno%3pozzi_temperatura",
+            "layers": "idrogeno:pozzi_temperatura",
+            "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
+            }],
+            "localId": "pozzi_T"
+            }]},
+    /*          {
+                "type": "wms",
+                "name": "Perforazioni con disponibilita' profilo",
+                "description": "xxxxxxx Mappa delle temperature del sottosuolo espresse in gradi celsius alla profondità di 2000 metri dal piano campagna. Mappa elaborata da RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=143&lingua=IT&descrizione=Temperatura alla profondità di 2000 m (°C)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:mappa_T_2000_mt_clip3857",
+                "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
+                "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
+                }],
+                "id": "7777"
+            },
+    */           {
+                "type": "wms",
+                "name": "Perforazioni stoccaggio gas",
+                "description": "xxxxxx Perforazioni stoccaggio gas /n/n RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=144&lingua=IT&descrizione=Temperatura alla profondità di 3000 m (°C)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:mappa_T_3000_mt_clip3857",
+                "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
+                "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
+                }],
+                "id": "stocc_gas"
+            },
+            {
+                "type": "wms",
+                "name": "Perforazioni geotermia",
+                "description": "xxxxxx Mappa delle Perforazioni geotermia   RSE S.p.A. partendo dai dati raccolti nell'Inventario delle Risorse Geotermiche Nazionali disponibile sul sito del Ministero della transizione ecologica - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=144&lingua=IT&descrizione=Temperatura alla profondità di 3000 m (°C)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:mappa_T_3000_mt_clip3857",
+                "layers": "atlante_integrato:mappa_T_3000_mt_clip3857",
+                "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
+                }],
+                "id": "Perf_geotermia"
+            }
+            ]
+        },
+        {
+        "id": "superficiali",
+        "type": "group",
+        "name": "Perforazioni superficiali",
+        "description": "Questa raccolta comprende informazioni su perforazioni superficiali.",
+        "isOpen": false,
+        "members": [
+            {
+                "type": "wms",
+                "name": "Perforazioni Superficiali",
+                "description": "xxxxxxx superficiali con tasti per rappresentazione grafica... da definire - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=143&lingua=IT&descrizione=Temperatura alla profondità di 2000 m (°C)\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato:mappa_T_2000_mt_clip3857",
+                "layers": "atlante_integrato:mappa_T_2000_mt_clip3857",
+                "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
+                }],
+                "id": "perf_superf"
+            }
+        ]
+    }
+        ]
+    }
+  ]
+}

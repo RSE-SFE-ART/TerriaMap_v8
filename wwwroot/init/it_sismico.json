@@ -1,0 +1,58 @@
+{
+  "homeCamera": {
+    "north": 48,
+    "east": 19,
+    "south": 35,
+    "west": 6
+  },
+  "catalog": [
+    {
+          "id": "geo_sismico",
+          "type": "group",
+          "name": "Aspetti di valutazione dei rischi",
+          "description": "Questa raccolta comprende informazioni sulla sismicità del territorio.",
+          "isOpen": false,
+          "members": [
+            {
+              "type": "wms",
+              "name": "Classificazione sismica dei comuni italiani al 2024",
+              "description": "Classificazione sismica dei comuni italiani aggiornata ad aprile 2024. Fonte: <a href=\"https://rischi.protezionecivile.gov.it/it/sismico/attivita/classificazione-sismica\"><br>Protezione civile</p></a>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:v_class_sismica_all",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=124"
+              }],
+              "styles":"new_atlante_integrato:sism_23",
+              "layers": "new_atlante_integrato:v_class_sismica_all",
+              "parameters": {
+              "cql_filter": "anno='2024'"
+                    },
+              "id": "geo_sisma23"
+            },
+            {
+                "type": "wfs",
+                "name": "faglie",
+                "description": "zzzzzzzzzzzzzzzzzzzzz Classificazione sismica dei comuni italiani aggiornata ad aprile 2024. Fonte: <a href=\"https://rischi.protezionecivile.gov.it/it/sismico/attivita/classificazione-sismica\">https://sgi2.isprambiente.it/geoserver/ge-core7/wms?service=wms&version=1.3.0&request=GetCapabilities <br>Protezione civile</p></a>",
+                "url": "https://sgi2.isprambiente.it/geoserver/ge-core7/wfs?service=wfs&version=2.0.0&request=GetCapabilities",
+                //"layers": "Faglie1M",
+                "typeNames": "Faglie1M",
+                "maxFeatures": 50000,
+                /* "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=124"
+                        }
+                ], */
+                "id": "geo_faglie_Wfs"
+            },
+            {
+                "type": "wms",
+                "name": "faglie wms",
+                "description": "zzzzzzzzzzzzzzzzzzzzz Classificazione sismica dei comuni italiani aggiornata ad aprile 2024. Fonte: <a href=\"https://rischi.protezionecivile.gov.it/it/sismico/attivita/classificazione-sismica\">https://sgi2.isprambiente.it/geoserver/ge-core7/wms?service=wms&version=1.3.0&request=GetCapabilities <br>Protezione civile</p></a>",
+                "url": "https://sgi2.isprambiente.it/geoserver/ge-core7/wms?service=wms&version=1.3.0&request=GetCapabilities",
+                "layers": "Faglie1M",
+                "id": "geo_faglie_Wms"
+            }]  
+        }
+
+    ]
+}

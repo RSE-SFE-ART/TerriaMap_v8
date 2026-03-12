@@ -73,6 +73,19 @@
           "name": "Cartografia marina",
           "description": "Questa raccolta comprende informazioni sulla batimetria e i principali limiti territoriali nell'area marina.",
           "members": [
+          {
+              "type": "wms",
+              "name": "Limite delle acque interne",
+              "description": "Limite delle acque interne dell'Italia. \n<br>Dato distribuito dal Flanders Marine Institute https://www.marineregions.org/ e rielaborato da RSE.",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3limite_acque_interne",
+              "layers": "new_atlante_integrato:limite_acque_interne",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
+              }],
+              "styles":"new_atlante_integrato:acque_interne",
+              "localId": "int_waters"
+            },
             {
               "type": "wms",
               "name": "Linea delle 12 miglia nautiche",
@@ -98,19 +111,6 @@
               }],
               "localId": "geo_Z_marine____"
             },          
-            {
-              "type": "wms",
-              "name": "Limite delle acque interne",
-              "description": "Limite delle acque interne dell'Italia. \n<br>Dato distribuito dal Flanders Marine Institute https://www.marineregions.org/ e rielaborato da RSE.",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3limite_acque_interne",
-              "layers": "new_atlante_integrato:limite_acque_interne",
-              "metadataUrls":[{
-                "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=267"
-              }],
-              "styles":"new_atlante_integrato:acque_interne",
-              "localId": "int_waters"
-            },
             {
               "type": "wms",
               "name": "Batimetria (m)",

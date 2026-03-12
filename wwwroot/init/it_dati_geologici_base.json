@@ -63,8 +63,8 @@
       },
       {
         "type": "wms",
-        "name": "isocrone",
-        "description": "Mappa delle isocrone RSE solo zona b",
+        "name": "Isocrone Marne a Fucoidi",
+        "description": "Mappa delle Isocrone Marne a Fucoidi RSE solo zona b",
         "url": "https://gis3.rse-web.it/geoserver/idrogeno/wms?service=WMS&version=1.3.0&request=GetMap&layers=idrogeno:marne_isocrone_zonab",
         "layers": "idrogeno:marne_isocrone_zonab",
         "metadataUrls":[{

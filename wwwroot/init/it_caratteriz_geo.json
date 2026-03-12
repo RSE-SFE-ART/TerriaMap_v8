@@ -79,7 +79,7 @@
               "title":"link metadato",
               "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=142"
             }],
-            "id": "geo_T_1000"
+            "id": "geo_T_1000_"
           },
           {
             "type": "wms",
@@ -91,7 +91,7 @@
               "title":"link metadato",
               "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
             }],
-            "id": "geo_T_2000"
+            "id": "geo_T_2000_"
           },
           {
             "type": "wms",
@@ -103,7 +103,7 @@
               "title":"link metadato",
               "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
             }],
-            "id": "geo_T_3000"
+            "id": "geo_T_3000_"
           }
           ]
         },

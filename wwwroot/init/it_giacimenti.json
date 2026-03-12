@@ -13,7 +13,7 @@
       "description": "Questa raccolta comprende informazioni sui giacimenti. \n\n",
       "isOpen": true,
       "members": [
-      {
+     /*  {
       "type": "wms",
       "name": "Giacimenti (Fonte AGIP)",
       "description": "zzzzzzzzzzzzzzzzz sezioni geologiche visibili dalla scala 1:10000",
@@ -36,11 +36,11 @@
           "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
         }],
         "id": "giac_casero"
-      },
+      }, */
       {
         "type": "wms",
-        "name": "Giacimenti (Elaborazione RSE)",
-        "description": "zzzzzzzzzz zzzMappa geologica italiana 1:500000 Origine sito isprambiente",
+        "name": "Giacimenti",
+        "description": "Elaborazioni RSE giacimenti",
         "url": "https://gis3.rse-web.it/geoserver/geologia/wms?service=WMS&version=1.3.0&request=GetMap&layers=geologia:giacimenti_rse",
         "layers": "geologia:giacimenti_rse",
         "metadataUrls":[{

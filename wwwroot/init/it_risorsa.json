@@ -15,7 +15,7 @@
           "id": "eolica",
           "type": "group",
           "name": "Eolica",
-          "description": "Questa raccolta comprende informazioni sulla risorsa eolica disponibile sul territorio. Per ulteriori approfondimenti si rimanda al dedicato atlante eolico \n <a href=\"https://aeolian.rse-web.it/\" target=\"_blank\">AEOLIAN</a> e all'articolo <a href=\"https://onlinelibrary.wiley.com/doi/epdf/10.1002/we.2890\" target=\"_blank\">A new Wind Atlas to support the expansion of the Italian windpower fleet</a>.\n<div><a title=\"Ximonic (Simo Räsänen), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Coconut_trees_in_Boa_Vista,_Cape_Verde,_December_2010.jpg\"><img width=\"640\" alt=\"Coconut trees in Boa Vista, Cape Verde, December 2010\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg/512px-Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg\"></a></div>",
+          "description": "Questa raccolta comprende informazioni sulla risorsa eolica disponibile sul territorio. Per ulteriori approfondimenti si rimanda al dedicato atlante eolico \n <a href=\"https://aeolian.rse-web.it/\" target=\"_blank\">AEOLIAN</a> e all'articolo <a href=\"https://onlinelibrary.wiley.com/doi/epdf/10.1002/we.2890\" target=\"_blank\">A new Wind Atlas to support the expansion of the Italian windpower fleet</a>.\n<div><a title=\"Ximonic (Simo Räsänen), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Coconut_trees_in_Boa_Vista,_Cape_Verde,_December_2010.jpg\"><img width=\"640\" alt=\"Coconut trees in Boa Vista, Cape Verde, December 2010\" src=\"https://upload.wikimedia.org/wikipedia/commons/0/09/Coconut_trees_in_Boa_Vista%2C_Cape_Verde%2C_December_2010.jpg\"></a></div>",
           "isOpen": false,
           "members": [
             {
@@ -113,7 +113,7 @@
           "id": "idroel",
           "type": "group",
           "name": "Idroelettrica",
-          "description": "Questa raccolta comprende informazioni sulla risorsa idroelettrica. <div><a title=\"JJ Harrison (https://www.jjharrison.com.au/), CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Water_Dolphin.jpg\"><img width=\"640\" alt=\"Water Dolphin\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Water_Dolphin.jpg/512px-Water_Dolphin.jpg\"></a></div>",
+          "description": "Questa raccolta comprende informazioni sulla risorsa idroelettrica. <div><a title=\"JJ Harrison (https://www.jjharrison.com.au/), CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Water_Dolphin.jpg\"><img width=\"640\" alt=\"Water Dolphin\" src=\"https://upload.wikimedia.org/wikipedia/commons/f/f9/Water_Dolphin.jpg\"></a></div>",
           "isOpen": false,
           "members": [
             {
@@ -498,7 +498,7 @@
           "id": "seaside",
           "type": "group",
           "name": "Marina",
-          "description": "Questa raccolta comprende informazioni riguardo all'energia marina. <div><a title=\"© Friedrich Haag / Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:002_2017_11_14_Wind.jpg\"><img width=\"640\" alt=\"002 2017 11 14 Wind\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/002_2017_11_14_Wind.jpg/512px-002_2017_11_14_Wind.jpg\"></a></div>",
+          "description": "Questa raccolta comprende informazioni riguardo all'energia marina. <div><a title=\"© Friedrich Haag / Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:002_2017_11_14_Wind.jpg\"><img width=\"640\" alt=\"002 2017 11 14 Wind\" src=\"https://upload.wikimedia.org/wikipedia/commons/4/43/002_2017_11_14_Wind.jpg\"></a></div>",
           "isOpen": false,
           "members": [
             {  
@@ -793,7 +793,7 @@
           "id": "geotermia",
           "type": "group",
           "name": "Geotermica",
-          "description": "Questa raccolta comprende informazioni sulla risorsa geotermica. \n\n <a title=\"Virtual-Pano, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Hveravellir_thermal_energy.jpg\"><img width=\"640\" alt=\"Hveravellir thermal energy\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Hveravellir_thermal_energy.jpg/512px-Hveravellir_thermal_energy.jpg\"></a>",
+          "description": "Questa raccolta comprende informazioni sulla risorsa geotermica. \n\n <a title=\"Virtual-Pano, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Hveravellir_thermal_energy.jpg\"><img width=\"640\" alt=\"Hveravellir thermal energy\" src=\"https://upload.wikimedia.org/wikipedia/commons/3/3a/Hveravellir_thermal_energy.jpg\"></a>",
           "isOpen": false,
           "members": [
             {

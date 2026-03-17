@@ -785,47 +785,74 @@
           "id": "geotermia",
           "type": "group",
           "name": "Geothermal",
-          "description": "This collection includes information about the geothermal resource. \n\n <a title=\"Virtual-Pano, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Hveravellir_thermal_energy.jpg\"><img width=\"640\" alt=\"Hveravellir thermal energy\" src=\"https://upload.wikimedia.org/wikipedia/commons/3/3a/Hveravellir_thermal_energy.jpg\"></a>",
+          "description": "This collection includes information on the geothermal potential of the Italian territory, divided into two categories: the first concerns shallow terrain in which low-temperature fluids circulate (Low Enthalpy), the second concerns the portions of the subsoil affected by processes involving high-temperature fluids, generally referring to great depths (High Enthalpy).\n\n <a title=\"Virtual-Pano, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Hveravellir_thermal_energy.jpg\"><img width=\"640\" alt=\"Hveravellir thermal energy\" src=\"https://upload.wikimedia.org/wikipedia/commons/3/3a/Hveravellir_thermal_energy.jpg\"></a>",
           "isOpen": false,
           "members": [
             {
+              "id": "en_bassa_entalpia",
+              "type": "group",
+              "name": "Low Enthalpy",
+              "description": "This collection includes maps of the geothermal properties of the first subsurface (0-70 m), where the circulating fluids generally have temperatures below 30°C. The spatial distributions of the average thermal conductivity and geothermal potential of the ground are represented, which indicate, respectively, the heat exchange capacity of the materials present in the subsurface and the heat potential extractable from them.\n\n",
+              "isOpen": false,
+              "members": [
+                            {
               "type": "wms",
-              "name": "Heat flow (mW/m\u00b2)",
-              "description": "Superficial heat flux map expressed in mW/m<sup>2</sup> prepared by RSE S.p.A. using the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=141&lingua=EN&descrizione=Heat flow (mW/m\u00b2)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3Flusso_calore_clip3857",
-              "layers": "atlante_integrato:Flusso_calore_clip3857",
+              "name": "Thermal conductivity 0-70m (W/m/K) - No water table",
+              "description": "Average thermal conductivity in the first 70 meters of subsoil in absence of a water table. The map was produced by interpolating the point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each stratigraphic level, the weighted average of the thermal conductivity was calculated based on lithology and thickness of each layer, and then interpolated. The thermal conductivity value assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=316&lingua=EN&descrizione=Thermal conductivity 0-70m (W/m/K) - No water table\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_cond_termica_0-70m_aree_falda_assente",
               "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=141"
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=316"
               }],
-              "id": "Flusso_cal"
+              "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_assente",
+              "id": "ge_cond_aree_falda_assente_en"
             },
             {
               "type": "wms",
-              "name": "Potential reservoir top level (m asl)",
-              "description": "The map shows the top level, in meters asl, of the roof of the potential carbonate tank. The carbonate complex, being characterized by a significant permeability, by considerable thicknesses and by a high area extension, is the main reservoir of Italian geothermal fields. The map was elaborated by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Economic Development - DGS-UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=140&lingua=EN&descrizione=Potential reservoir top level (m asl)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3tetto_carbonati_clip3857",
+              "name": "Thermal conductivity 0-70m (W/m/K) - Water table at ground/topographic level",
+              "description": "Average thermal conductivity in the first 70 meters of subsurface under conditions of complete soil saturation. The map was produced by interpolating the point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each stratigraphic log, the weighted average of the thermal conductivity was calculated based on the lithology and thickness of each layer, and then interpolated. The thermal conductivity value assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=317&lingua=EN&descrizione=Thermal conductivity 0-70m (W/m/K) - Water table at ground/topographic level\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_cond_termica_0-70m_aree_falda_piano_campagna",
               "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=140"
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=317"
               }],
-              "layers": "atlante_integrato:tetto_carbonati_clip3857",
-              "id": "tetto_carb"
+              "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_piano_campagna",
+              "id": "ge_cond_aree_falda_piano_campagna_en"
+            },
+                       {
+              "type": "wms",
+              "name": "Thermal potential 0-70m (W/m) - No water table",
+              "description": "<p>Average geothermal potential in the first 70 meters of subsurface in absence of a water table. The map was produced as an interpolation of point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each level of each stratigraphic log, the potential was calculated based on the thermal conductivity and volumetric heat capacity values, through the rapid application of an ILS-type heat dispersion model, and was averaged along the well's vertical axis and then interpolated. The value of the thermal parameters assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=319&lingua=EN&descrizione=Thermal potential 0-70m (W/m) - No water table\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_pot_termico_0_70_aree_falda_assente",
+              "metadataUrls":[{
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=319"
+              }],
+              "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_assente",
+              "id": "ge_pot_aree_falda_assente_en"
             },
             {
               "type": "wms",
-              "name": "Geothermal zoning",
-              "description": "Geothermal zoning supports the identification on a municipal scale of areas in which there are significant increases in subsoil temperatures at lower depths than the average which generate the theoretical conditions necessary to draw heat, supporting the identification of a possible geothermal fluid reservoir industrially usable.  \n This map shows the following information for each municipality:\n - the minimum, average and maximum temperature (°C) at 1,000, 2,000 and 3,000 meters of depth (fields: T1000, T2000 and T3000);\n - The minimum, average and maximum heat flow (mW/m2) (fields: Flow) ;\n - the minimum, average and maximum depth (meters) of the roof of rocks potentially suitable for containing a geothermal system (carbonate reservoir roof where mapped) (fields: Carbo).\n\n NThe map displayed shows, by way of example, the distribution of the average temperature parameter at a depth of 1,000 m, but by selecting the appropriate legend it is possible to view the distribution of the other parameters present.\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=145&lingua=EN&descrizione=Geothermal zoning\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_comuni_valori_mappe",
-              "layers": "atlante_integrato:v_comuni_valori_mappe",
+              "name": "Thermal potential 0-70m (W/m) - Water table at ground/topographic level - High gradient",
+              "description": "Average geothermal potential in the first 70 meters of subsurface under conditions of complete soil saturation and considering a high hydraulic gradient (= 5E-3). The map was produced as an interpolation of point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each level of each stratigraphic log, the potential was calculated based on the thermal conductivity and volumetric heat capacity values, through the rapid application of a MILS-type heat dispersion model, and was averaged along the well's vertical line and then interpolated. The value of the thermal parameters assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=321&lingua=EN&descrizione=Thermal potential 0-70m (W/m) - Water table at ground/topographic level - High gradient\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_pot_termico_0_70_aree_falda_piano_campagna_gradiente_elevato",
               "metadataUrls":[{
-                "title":"metadata link",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=145"
+                "title":"link metadato",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=321"
               }],
-              "id": "Zon_Geoter",
-              "styles":"zon_geo_t1000_mean"
+              "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_piano_campagna_gradiente_elevato",
+              "id": "ge_pot_aree_falda_piano_campagna_en"
+            }
+            ]
             },
             {
+              "id": "en_alta_entalpia",
+              "type": "group",
+              "name": "High Enthalpy",
+              "description": "This collection includes maps of the geothermal properties of the deep subsurface, where circulating fluids generally have temperatures in the order of hundreds of degrees Celsius or higher. Temperature trends with depth and their distribution across the region are depicted, as well as data regarding the geometry of the natural reservoirs containing high-enthalpy geothermal energy. The dataset also includes information on the heat flow produced by the hot fluids permeating the subsurface, its distribution across Italian municipalities, and the geothermal potential that can be generated at the municipal level.\n\n",
+              "isOpen": false,
+              "members": [
+              {
               "id": "p_omogenee",
               "type": "group",
               "name": "temperature at homogeneous depth",
@@ -869,8 +896,8 @@
                   "id": "T_3000"
                 }
               ]
-            },
-            {
+              },
+              {
               "id": "t_omogenee",
               "type": "group",
               "name": "depth at homogeneous temperatures",
@@ -927,6 +954,43 @@
                   "id": "aree_geot_140_5000"
                 }
               ]
+              },
+                          {
+              "type": "wms",
+              "name": "Potential reservoir top level (m asl)",
+              "description": "The map shows the top level, in meters asl, of the roof of the potential carbonate tank. The carbonate complex, being characterized by a significant permeability, by considerable thicknesses and by a high area extension, is the main reservoir of Italian geothermal fields. The map was elaborated by RSE S.p.A. starting from the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Economic Development - DGS-UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=140&lingua=EN&descrizione=Potential reservoir top level (m asl)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3tetto_carbonati_clip3857",
+              "metadataUrls":[{
+                "title":"metadata link",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=140"
+              }],
+              "layers": "atlante_integrato:tetto_carbonati_clip3857",
+              "id": "tetto_carb"
+            },
+                        {
+              "type": "wms",
+              "name": "Heat flow (mW/m\u00b2)",
+              "description": "Superficial heat flux map expressed in mW/m<sup>2</sup> prepared by RSE S.p.A. using the data collected in the Inventory of National Geothermal Resources available on the website of the Ministry of Ecological Transition - UNMIG (https://unmig.mise.gov.it/index.php/it/dati/risorse-geotermiche/inventario-delle-risorse-geotermiche-nazionali).\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=141&lingua=EN&descrizione=Heat flow (mW/m\u00b2)\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3Flusso_calore_clip3857",
+              "layers": "atlante_integrato:Flusso_calore_clip3857",
+              "metadataUrls":[{
+                "title":"metadata link",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=141"
+              }],
+              "id": "Flusso_cal"
+            },
+            {
+              "type": "wms",
+              "name": "Geothermal zoning",
+              "description": "Geothermal zoning supports the identification on a municipal scale of areas in which there are significant increases in subsoil temperatures at lower depths than the average which generate the theoretical conditions necessary to draw heat, supporting the identification of a possible geothermal fluid reservoir industrially usable.  \n This map shows the following information for each municipality:\n - the minimum, average and maximum temperature (°C) at 1,000, 2,000 and 3,000 meters of depth (fields: T1000, T2000 and T3000);\n - The minimum, average and maximum heat flow (mW/m2) (fields: Flow) ;\n - the minimum, average and maximum depth (meters) of the roof of rocks potentially suitable for containing a geothermal system (carbonate reservoir roof where mapped) (fields: Carbo).\n\n NThe map displayed shows, by way of example, the distribution of the average temperature parameter at a depth of 1,000 m, but by selecting the appropriate legend it is possible to view the distribution of the other parameters present.\n\n Additional information: <a href=\"http://geowebgis.rse-web.it/map.phtml\" target=\"_blank\"> GEO WebGIS CCS -- Geothermal -- Gas storage</a></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=145&lingua=EN&descrizione=Geothermal zoning\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
+              "url": "https://gis3.rse-web.it/geoserver/atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=atlante_integrato%3v_comuni_valori_mappe",
+              "layers": "atlante_integrato:v_comuni_valori_mappe",
+              "metadataUrls":[{
+                "title":"metadata link",
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=145"
+              }],
+              "id": "Zon_Geoter",
+              "styles":"zon_geo_t1000_mean"
             },
             {
               "type": "wms",
@@ -943,54 +1007,8 @@
               "layers": "new_atlante_integrato:comuni_potenziale_120c",
               "styles":"new_atlante_integrato:potenziale_120c",
               "id": "Potenziale_Geoter"
-            },
-            {
-              "type": "wms",
-              "name": "Thermal conductivity 0-70m (W/m/K) - No water table",
-              "description": "Average thermal conductivity in the first 70 meters of subsoil in absence of a water table. The map was produced by interpolating the point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each stratigraphic level, the weighted average of the thermal conductivity was calculated based on lithology and thickness of each layer, and then interpolated. The thermal conductivity value assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=316&lingua=EN&descrizione=Thermal conductivity 0-70m (W/m/K) - No water table\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_cond_termica_0-70m_aree_falda_assente",
-              "metadataUrls":[{
-                "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=316"
-              }],
-              "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_assente",
-              "id": "ge_cond_aree_falda_assente_en"
-            },
-            {
-              "type": "wms",
-              "name": "Thermal conductivity 0-70m (W/m/K) - Water table at ground/topographic level",
-              "description": "Average thermal conductivity in the first 70 meters of subsurface under conditions of complete soil saturation. The map was produced by interpolating the point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each stratigraphic log, the weighted average of the thermal conductivity was calculated based on the lithology and thickness of each layer, and then interpolated. The thermal conductivity value assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=317&lingua=EN&descrizione=Thermal conductivity 0-70m (W/m/K) - Water table at ground/topographic level\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_cond_termica_0-70m_aree_falda_piano_campagna",
-              "metadataUrls":[{
-                "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=317"
-              }],
-              "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_piano_campagna",
-              "id": "ge_cond_aree_falda_piano_campagna_en"
-            },
-            {
-              "type": "wms",
-              "name": "Thermal potential 0-70m (W/m) - No water table",
-              "description": "<p>Average geothermal potential in the first 70 meters of subsurface in absence of a water table. The map was produced as an interpolation of point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each level of each stratigraphic log, the potential was calculated based on the thermal conductivity and volumetric heat capacity values, through the rapid application of an ILS-type heat dispersion model, and was averaged along the well's vertical axis and then interpolated. The value of the thermal parameters assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=319&lingua=EN&descrizione=Thermal potential 0-70m (W/m) - No water table\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_pot_termico_0_70_aree_falda_assente",
-              "metadataUrls":[{
-                "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=319"
-              }],
-              "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_assente",
-              "id": "ge_pot_aree_falda_assente_en"
-            },
-            {
-              "type": "wms",
-              "name": "Thermal potential 0-70m (W/m) - Water table at ground/topographic level - High gradient",
-              "description": "Average geothermal potential in the first 70 meters of subsurface under conditions of complete soil saturation and considering a high hydraulic gradient (= 5E-3). The map was produced as an interpolation of point values ​​calculated at the main drilling sites of the National Archive of Underground Investigations, managed by ISPRA - <a href=\"https://portalesgi.isprambiente.it/it/\">Geological Survey Department</a>. For each level of each stratigraphic log, the potential was calculated based on the thermal conductivity and volumetric heat capacity values, through the rapid application of a MILS-type heat dispersion model, and was averaged along the well's vertical line and then interpolated. The value of the thermal parameters assigned to each lithology was derived from literature data. Data processing by RSE S.p.A.</p></br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=321&lingua=EN&descrizione=Thermal potential 0-70m (W/m) - Water table at ground/topographic level - High gradient\"><font color='#FFFFFF' size = 2>Data Download</a></font></td></tr></table></br></br></br>",
-              "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3ge_pot_termico_0_70_aree_falda_piano_campagna_gradiente_elevato",
-              "metadataUrls":[{
-                "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=321"
-              }],
-              "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_piano_campagna_gradiente_elevato",
-              "id": "ge_pot_aree_falda_piano_campagna_en"
+            }
+            ]
             }
           ]
         }

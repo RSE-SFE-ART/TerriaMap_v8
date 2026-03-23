@@ -7,10 +7,10 @@
   },
   "catalog": [
     {
-      "id": "geo_dati_geologici_1",
+      "id": "geowebgis_dati_geologici",
       "type": "group",
-      "name": "dati geologici",
-      "description": "Questa raccolta comprende informazioni dati geologici. \n\n",
+      "name": "Dati geologici",
+      "description": "Descrizione Dati geologici. \n\n",
       "isOpen": true,
       "members": [
       {
@@ -23,7 +23,14 @@
         "title":"link metadato",
         "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=266"
       }],
-      "id": "geo_sezioniiii"
+      "initialMessage": {
+            "title": "Visualizzazione strato:",
+            "content": "Dati disponibili dalla scala 1:10000.<br>Per visualizzare questo layer occorre fare uno zoom sulla mappa.",
+            "key": "geo_100",
+            "confirmation": true,
+            "confirmText": "Ho capito"
+      },
+      "id": "geowebgis_sezioni"
       },
       {
         "type": "wms",
@@ -33,13 +40,13 @@
         "layers": "CG500k_unita_geology500k",
         "featureInfoTemplate": {
                     "template": "<br><br><br><br>Precipitazione media  {{ETAINF}}<br> Precipitazione media  {{LITHOUNIT}}<br>Precipitazione media  {{LITHOUNIT}}<br>Precipitazione media  {{ETAINF}}<br>"
-                },
+        },
         
         "metadataUrls":[{
           "title":"link metadato",
           "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
         }],
-        "id": "geo_geologia500"
+        "id": "geowebgis_geologia500"
       },
       {
         "type": "wms",
@@ -52,13 +59,13 @@
           "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
         }],
         "initialMessage": {
-                    "title": "Visualizzazione strato:",
-                    "content": "Dati disponibili dalla scala 1:10000.<br>Per visualizzare questo layer occorre fare uno zoom sulla mappa.",
-                    "key": "geo_100",
-                    "confirmation": true,
-                    "confirmText": "Ho capito"
-                  },
-        "id": "geo_geologia100"
+          "title": "Visualizzazione strato:",
+          "content": "Dati disponibili dalla scala 1:10000.<br>Per visualizzare questo layer occorre fare uno zoom sulla mappa.",
+          "key": "geo_100",
+          "confirmation": true,
+          "confirmText": "Ho capito"
+        },
+        "id": "geowebgis_geologia100"
       },
       {
         "type": "wms",
@@ -70,7 +77,7 @@
           "title":"link metadato",
           "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
         }],
-        "id": "geo_isocrone_1"
+        "id": "geowebgis_isocrone"
       }
       ]
     }

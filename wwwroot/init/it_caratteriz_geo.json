@@ -30,7 +30,7 @@
                   "title":"link metadato",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=145"
                 }],
-                "id": "geo_aree_int_geot"
+                "id": "geowebgis_aree_int_geot"
               },
               {
                 "type": "wms",
@@ -42,7 +42,7 @@
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=140"
                 }],
                 "layers": "atlante_integrato:tetto_carbonati_clip3857",
-                "id": "geo_tetto_carb"
+                "id": "geowebgis_tetto_carb"
               },
               {
                 "id": "geo_p_omogenee",
@@ -61,7 +61,7 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=142"
                   }],
-                  "id": "geolog_T_1000"
+                  "id": "geowebgis_T_1000"
                 },
                 {
                   "type": "wms",
@@ -73,7 +73,7 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=143"
                   }],
-                  "id": "geolog_T_2000"
+                  "id": "geowebgis_T_2000"
                 },
                 {
                   "type": "wms",
@@ -85,12 +85,12 @@
                     "title":"link metadato",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=144"
                   }],
-                  "id": "geolog_T_3000"
+                  "id": "geowebgis_T_3000"
                 }
                 ]
               },
               {
-                "id": "geo_t_omogenee",
+                "id": "geowebgis_t_omogenee_group",
                 "type": "group",
                 "name": "Profondità a Temperature omogenee",
                 "description": "Questa raccolta comprende informazioni sulle profondità a temperatura omogenea. \n\n",
@@ -106,7 +106,7 @@
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=282"
                     }],
                     "layers": "new_atlante_integrato:AE_mappa_T70",
-                    "id": "geo_aree_geot_70_5000"
+                    "id": "geowebgis_aree_geot_70_5000"
                   },
                   {
                     "type": "wms",
@@ -118,7 +118,7 @@
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=283"
                     }],
                     "layers": "new_atlante_integrato:AE_mappa_T120_5000",
-                    "id": "geo_aree_geot_120_5000"
+                    "id": "geowebgis_aree_geot_120_5000"
                   },
                   {
                     "type": "wms",
@@ -130,7 +130,7 @@
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=284"
                     }],
                     "layers": "new_atlante_integrato:AE_mappa_T140_5000",
-                    "id": "geo_aree_geot_140_5000"
+                    "id": "geowebgis_aree_geot_140_5000"
                   }
                 ]
               },
@@ -144,7 +144,7 @@
                   "title":"link metadato",
                   "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=141"
                 }],
-                "id": "geolog_Flusso_cal"
+                "id": "geowebgis_flusso_cal"
               },
 
         
@@ -158,7 +158,7 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=145"
               }],
-          "id": "geolog_zon_geoter",
+          "id": "geowebgis_zon_geoter",
           "styles":"geo_zon_geo_t1000_mean"
         },
                     {
@@ -175,19 +175,19 @@
               },
               "layers": "new_atlante_integrato:comuni_potenziale_120c",
               "styles":"new_atlante_integrato:potenziale_120c",
-              "id": "geoter_pot_Geoter"
+              "id": "geowebgis_pot_Geoter"
             }
           ]
         },
         {
-          "id": "geo_bassa_entalpia",
+          "id": "geowebgis_bassa_entalpia_group",
           "type": "group",
           "name": "Bassa Entalpia",
           "description": "Questa raccolta comprende informazioni sulla risorsa geotermica a bassa entalpia. \n\n",
           "isOpen": false,
           "members": [
           {
-              "id": "Cond_termica_bassa_ent",
+              "id": "geowebgis_cond_termica_bassa_ent",
               "type": "group",
               "name": "Conducibilità termica",
               "description": "Questa raccolta comprende informazioni sulla conducibilità termica a bassa entalpia. \n\n",
@@ -203,7 +203,7 @@
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=310"
                     }],
                     "layers": "new_atlante_integrato:ge_cond_punti_0_70m_falda_rilevata_punti",
-                    "id": "geo_ge_cond_aree_falda_rilevata_punti"
+                    "id": "geowebgis_ge_cond_aree_falda_rilevata_punti"
                   },
                   {
                     "type": "wms",
@@ -227,7 +227,7 @@
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=311"
                     }],
                     "layers": "new_atlante_integrato:ge_cond_punti_0_70m_falda_assente_punti",
-                    "id": "geo_ge_cond_aree_falda_assente_punti"
+                    "id": "geowebgis_ge_cond_aree_falda_assente_punti"
                   },
                   {
                     "type": "wms",
@@ -239,7 +239,7 @@
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=316"
                     }],
                     "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_assente",
-                    "id": "ge_cond_aree_falda_assente"
+                    "id": "geowebgis_ge_cond_aree_falda_assente"
                   },
                   {
                     "type": "wms",
@@ -251,7 +251,7 @@
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=317"
                     }],
                     "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_piano_campagna",
-                    "id": "geo_ge_cond_aree_falda_piano_campagna"
+                    "id": "geowebgis_ge_cond_aree_falda_piano_campagna"
                   },
                   {
                     "type": "wms",
@@ -263,12 +263,12 @@
                       "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=318"
                     }],
                     "layers": "new_atlante_integrato:ge_cond_termica_0-70m_aree_falda_rilevata",
-                    "id": "geo_ge_cond_aree_falda_rilevata"
+                    "id": "geowebgis_ge_cond_aree_falda_rilevata"
                   }
             ]
           },
                       {
-              "id": "Pot_geot_bassa_ent",
+              "id": "geowebgis_pot_geot_bassa_ent_group",
               "type": "group",
               "name": "Potenziale geotermico ",
               "description": "Questa raccolta comprende informazioni sul potenziale geotermico a bassa entalpia. \n\n",
@@ -284,7 +284,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=311"
                   }],
                   "layers": "new_atlante_integrato:ge_pot_0_70m_falda_assente_punti",
-                  "id": "geo_ge_pot_falda_assente_punti"
+                  "id": "geowebgis__ge_pot_falda_assente_punti"
                 },
                 {
                   "type": "wms",
@@ -296,7 +296,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=312"
                   }],
                   "layers": "new_atlante_integrato:ge_pot_0_70m_falda_piano_camp_gradiente_ridotto_punti",
-                  "id": "geo_ge_pot_falda_p_c_gradiente_ridotto_punti"
+                  "id": "geowebgis_ge_pot_falda_p_c_gradiente_ridotto_punti"
                 },
                 {
                   "type": "wms",
@@ -308,7 +308,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=313"
                   }],
                   "layers": "new_atlante_integrato:ge_pot_0_70m_falda_piano_camp_gradiente_elevato_punti",
-                  "id": "geo_ge_pot_falda_p_c_gradiente_elevato_punti"
+                  "id": "geowebgis_ge_pot_falda_p_c_gradiente_elevato_punti"
                 },
                 {
                   "type": "wms",
@@ -320,7 +320,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=314"
                   }],
                   "layers": "new_atlante_integrato:ge_pot_0_70m_falda_rilevata_gradiente_ridotto_punti",
-                  "id": "geo_ge_pot_falda_rilevata_gradiente_ridotto_punti"
+                  "id": "geowebgis_ge_pot_falda_rilevata_gradiente_ridotto_punti"
                 },
                 {
                   "type": "wms",
@@ -332,7 +332,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=315"
                   }],
                   "layers": "new_atlante_integrato:ge_pot_0_70m_falda_rilevata_gradiente_elevato_punti",
-                  "id": "geo_ge_pot_falda_rilevata_gradiente_elevato_punti"
+                  "id": "geowebgis_ge_pot_falda_rilevata_gradiente_elevato_punti"
                 },
                 {
                   "type": "wms",
@@ -344,7 +344,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=319"
                   }],
                   "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_assente",
-                  "id": "geo_ge_pot_aree_falda_assente"
+                  "id": "geowebgis_ge_pot_aree_falda_assente"
                 },
                 {
                   "type": "wms",
@@ -356,7 +356,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=320"
                   }],
                   "layers": "new_atlante_integrato:ge_pot_0_70m_falda_piano_camp_gradiente_ridotto_aree",
-                  "id": "geo_ge_pot_falda_p_c_gradiente_ridotto_aree"
+                  "id": "geowebgis_ge_pot_falda_p_c_gradiente_ridotto_aree"
                 },
                 {
                   "type": "wms",
@@ -368,7 +368,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=321"
                   }],
                   "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_piano_campagna_gradiente_elevato",
-                  "id": "geo_ge_pot_aree_falda_piano_campagna"
+                  "id": "geowebgis_ge_pot_aree_falda_piano_campagna"
                 },
                 {
                   "type": "wms",
@@ -380,7 +380,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=322"
                   }],
                   "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_rilevata_gradiente_ridotto",
-                  "id": "geo_ge_pot_falda_rilevata_gradiente_ridotto_aree"
+                  "id": "geowebgis_ge_pot_falda_rilevata_gradiente_ridotto_aree"
                 },
                 {
                   "type": "wms",
@@ -392,7 +392,7 @@
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=323"
                   }],
                   "layers": "new_atlante_integrato:ge_pot_termico_0_70_aree_falda_rilevata_gradiente_elevato",
-                  "id": "geo_ge_pot_falda_rilevata_gradiente_elevato_aree"
+                  "id": "geowebgis_ge_pot_falda_rilevata_gradiente_elevato_aree"
                 }
             ]
           }

@@ -18,7 +18,7 @@
               "id": "eolo",
               "type": "group",
               "name": "Wind",
-              "description": "This collection includes data relating to wind farms present on the national territory referring to different levels of spatial aggregation in different years.\n\n <a href=\"https://creativecommons.org/licenses/by/2.5/ar/deed.en\" rel=\"license\">CC BY 2.5 AR</a>\n\n <a title=\"Juan Corral (Fotógrafo, Subdirección de Prensa y Contenidos Públicos del Municipio de Bahía Blanca), CC BY 2.5 AR &lt;https://creativecommons.org/licenses/by/2.5/ar/deed.en&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Parque_E%C3%B3lico_Molinos_Corti_(05).jpg\"><img width=\"640\" alt=\"Parque Eólico Molinos Corti (05)\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg/512px-Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg\"></a>",
+              "description": "This collection includes data relating to wind farms present on the national territory referring to different levels of spatial aggregation in different years.\n\n <a title=\"Juan Corral (Fotógrafo, Subdirección de Prensa y Contenidos Públicos del Municipio de Bahía Blanca), CC BY 2.5 AR &lt;https://creativecommons.org/licenses/by/2.5/ar/deed.en&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Parque_E%C3%B3lico_Molinos_Corti_(05).jpg\"><img width=\"640\" alt=\"Parque Eólico Molinos Corti (05)\" src=\"https://upload.wikimedia.org/wikipedia/commons/e/e6/Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg\"></a>", //<a href=\"https://creativecommons.org/licenses/by/2.5/ar/deed.en\" rel=\"license\">CC BY 2.5 AR</a>\n\n
               "isOpen": false,
               "members": [
                 {
@@ -737,7 +737,7 @@
               "id": "sun",
               "type": "group",
               "name": "Photovoltaics",
-              "description": "This collection includes data relating to photovoltaic plants present on the national territory referring to different levels of spatial aggregation in different years.\n\n <a title=\"Jeffrey Beall, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Alamosa_Photovoltaic_Power_Plant.JPG\"><img width=\"640\" alt=\"Alamosa Photovoltaic Power Plant\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Alamosa_Photovoltaic_Power_Plant.JPG/512px-Alamosa_Photovoltaic_Power_Plant.JPG\"></a>",
+              "description": "This collection includes data relating to photovoltaic plants present on the national territory referring to different levels of spatial aggregation in different years.\n\n <a title=\"Jeffrey Beall, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Alamosa_Photovoltaic_Power_Plant.JPG\"><img width=\"640\" alt=\"Alamosa Photovoltaic Power Plant\" src=\"https://upload.wikimedia.org/wikipedia/commons/2/28/Alamosa_Photovoltaic_Power_Plant.JPG\"></a>",
               "isOpen": false,
               "members": [
                 {
@@ -912,7 +912,7 @@
               "id": "geot",
               "type": "group",
               "name": "Geothermal",
-              "description": "This collection includes data relating to geothermal plants present on the national territory referring to different levels of spatial aggregation in different years. \n\n <a title=\"Mathieu Neville, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:The_Hellishei%C3%B0i_Geothermal_Power_Plant,_2018,_Iceland.jpg\"><img width=\"640\" alt=\"The Hellisheiði Geothermal Power Plant, 2018, Iceland\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_Hellishei%C3%B0i_Geothermal_Power_Plant%2C_2018%2C_Iceland.jpg/512px-The_Hellishei%C3%B0i_Geothermal_Power_Plant%2C_2018%2C_Iceland.jpg\"></a>",
+              "description": "This collection includes data relating to geothermal plants present on the national territory referring to different levels of spatial aggregation in different years. \n\n <a title=\"Mathieu Neville, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:The_Hellishei%C3%B0i_Geothermal_Power_Plant,_2018,_Iceland.jpg\"><img width=\"640\" alt=\"The Hellisheiði Geothermal Power Plant, 2018, Iceland\" src=\"https://upload.wikimedia.org/wikipedia/commons/2/2d/The_Hellishei%C3%B0i_Geothermal_Power_Plant%2C_2018%2C_Iceland.jpg\"></a>",
               "isOpen": false,
               "members": [
                 {
@@ -1102,7 +1102,7 @@
               "id": "biom",
               "type": "group",
               "name": "Biomass",
-              "description": "This collection includes data relating to biomass plants present on the national territory referring to different levels of spatial aggregation in different years.\n\n <a title=\"Herzi Pinki, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg\"><img width=\"640\" alt=\"Biomasse - Fernheizwerk Mittleres Schwarzatal\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg/512px-Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg\"></a>",
+              "description": "This collection includes data relating to biomass plants present on the national territory referring to different levels of spatial aggregation in different years.\n\n <a title=\"Herzi Pinki, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg\"><img width=\"640\" alt=\"Biomasse - Fernheizwerk Mittleres Schwarzatal\" src=\"https://upload.wikimedia.org/wikipedia/commons/d/db/Biomasse_-_Fernheizwerk_Mittleres_Schwarzatal.jpg\"></a>",
               "isOpen": false,
               "members": [
                 {

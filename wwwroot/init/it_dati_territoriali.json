@@ -26,10 +26,10 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=88&anno=2020"
               }],
-              "layers": "new_atlante_integrato:v_regioni_t",
-              "parameters": {
-                "cql_filter": "var_id=88"
-              },
+              "layers": "new_atlante_integrato:v_regioni_pop",
+              //"parameters": {
+              // "cql_filter": "var_id=88"
+              //},
               /* "initialMessage": {
                 "title": "Visualizzazione strato:",
                 "content": "Dati disponibili per gli anni dal 2015 al 2022.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",
@@ -52,10 +52,10 @@
                 "title":"link metadato",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=87&anno=2020"
               }],
-              "layers": "new_atlante_integrato:v_province_t",
-              "parameters": {
-                "cql_filter": "var_id=87"
-              },
+              "layers": "new_atlante_integrato:v_province_pop",
+             // "parameters": {
+              //  "cql_filter": "var_id=87"
+              //},
               /* "initialMessage": {
                 "title": "Visualizzazione strato:",
                 "content": "Dati disponibili per gli anni dal 2015 al 2022.<br>Per visualizzare questo layer occorre selezionare nella barra laterale uno di questi anni dopo aver aggiunto il layer alla mappa.",

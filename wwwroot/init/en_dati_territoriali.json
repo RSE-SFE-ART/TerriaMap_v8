@@ -26,10 +26,10 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=88&anno=2020"
               }],
-              "layers": "new_atlante_integrato:v_regioni_t",
-              "parameters": {
-                "cql_filter": "var_id=88"
-              },
+              "layers": "new_atlante_integrato:v_regioni_ppp",
+              //"parameters": {
+                //"cql_filter": "var_id=88"
+              //},
               /* "initialMessage": {
                 "title": "Layer view:",
                 "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
@@ -52,10 +52,10 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=87&anno=2020"
               }],
-              "layers": "new_atlante_integrato:v_province_t",
-              "parameters": {
-                "cql_filter": "var_id=87"
-              },
+              "layers": "new_atlante_integrato:v_province_pop",
+              //"parameters": {
+                //"cql_filter": "var_id=87"
+              //},
               // "initialMessage": {
                // "title": "Layer view:",
                // "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",
@@ -78,10 +78,10 @@
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=65&anno=2020"
               }],
-              "layers": "new_atlante_integrato:v_comuni_t",
-              "parameters": {
-                "cql_filter": "var_id=65"
-              },
+              "layers": "new_atlante_integrato:v_comuni_pop",
+              //"parameters": {
+                //"cql_filter": "var_id=65"
+              //},
               /* "initialMessage": {
                 "title": "Layer view:",
                 "content": "<p align=\"justify\">Data available for the years from 2015 to 2022.<br>To view this layer, select one of these years in the sidebar after adding the layer to the map.</p>",

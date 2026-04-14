@@ -11,7 +11,6 @@
                 "name": "Eolici - Potenza comunale (MW)",
                 "description": "Mappa della potenza eolica a livello comunale espressa in MW (anno di riferimento 2019).<br>                  Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).",
                 "url": "https://gis3.rse-web.it/geoserver/wms",
-                "dateFormat":"yyyy",
                 "featureInfoTemplate": {
                   "template": "<p>Potenza comunale (MW): <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                 },

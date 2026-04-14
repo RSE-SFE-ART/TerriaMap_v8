@@ -1,3 +1,5 @@
+node_modules/terriajs/lib/Language/en/translation.json
+
 {
   "general": {
     "close": "Close",
@@ -423,11 +425,6 @@
     "bodyIV": "Satellite imagery may not always be available at your preferred time and location. If you only want to view imagery for a particular location, click ‘filter by location’ in your data workbench.",
     "titleV": "How do I view false-colour imagery?",
     "bodyV": "You can apply a range of styles, such as false-colour, to satellite imagery by clicking on the styles dropdown in your data workbench."
-  },
-  "text":{
-    "century":"Select a century",
-    "year":"Select a year",
-    "time":"Select a time"
   },
   "addData": {
     "addDataBtnText": "Explore map data",
@@ -1611,16 +1608,21 @@
     "cliccaQui": "click here",
     "downloadSerieStorica": " DOWNLOAD THE HISTORICAL WIND SPEED SERIES ",
     "infoSerieStorica": "This tool allows you to download the thirty-year hourly historical series (1990-2019) of wind speed (m/s), on the onshore and offshore domains of the national territory.",
-    "infoseriestorica_bis": "Thanks to the collaboration with the University of Cagliari, a case study of multi-energy integration was created in the province of Sulcis Iglesiente.",
-    "scopricasostudio": "Discover the case study.",
+    "infoseriestorica_bis": "Thanks to the collaboration with the University of Cagliari a case study of multi-energy integration was created in the province of Sulcis Iglesiente.",
+    "scopricasostudio": "Discover the case study",
     "h2DownloadMappaVento": " WIND MAP DOWNLOAD ",
     "infoShapefile": "This tool allows you to download in shapefile format (.shp) the grid containing the parameters of the Wind Atlas of Italy (speed, producibility, shape parameter of the Weibull distribution and distance from the primary cabins) on the onshore and offshore domains of the national territory.",
     "approfondisciEdownload": "Read more and download",
     "link": "LINK",
+    "link_geostoria_sulcis": "https://geoportale.rse-web.it/#/geostory/shared/257",
+    "link_sankey": "https://dbeta.rse-web.it/sankey/sankey_en.php",
     "ulterioriApprofondimenti": "For further information about energy planning support, you can consult the",
     "atlanteIntegrato": "Integrated Atlas.",
     "possibileConsultare": "It is also possible to consult and download a variety of data on the national energy system available in the",
-    
+    "acqua_per_energia": "Water for energy, energy for water. National energy and water flows on a national scale.",
+    "geoportale": "The Energy and Territory Geoportal is a container of territorial information concerning the distribution of the various renewable energy sources and their relationships with the territory. It constitutes the access point to the Integrated Atlas, to the main thematic atlases and to other interactive contents linked to insights into aspects of the energy system of particular relevance.",
+    "GeoportaleEnergiaeTerritorio": "Energy and Environment Geoportal",
+    "totem_descrizione": "provides an energy characterization of the territory and allows to estimate, visualize and save data on a provincial scale regarding: energy demand, renewable resource, territorial constraints and water storage potential from pumping.",
     "geoDbEta": "GeoDB ETA."
   },
   "about": {

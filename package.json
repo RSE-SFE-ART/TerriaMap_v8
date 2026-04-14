@@ -113,8 +113,9 @@
     "replace_welcome": "copy .\\_dasostituire\\WelcomeMessage.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\WelcomeMessage\\",
     "replace_cookiesmsg": "copy .\\_dasostituire\\terriajs\\lib\\language\\en\\translation.json .\\node_modules\\terriajs\\lib\\language\\en\\ && copy .\\_dasostituire\\terriajs\\lib\\language\\it\\translation.json .\\node_modules\\terriajs\\lib\\language\\it\\ && copy .\\_dasostituire\\wwwroot\\languages\\it\\translation.json .\\wwwroot\\languages\\it\\",
     "fix_images" : "copy .\\_dasostituire\\defaultBaseMaps.ts .\\node_modules\\terriajs\\lib\\Models\\BaseMaps\\",
-    "fix_currentTime": "copy .\\_dasostituire\\FeatureInfoSection.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\FeatureInfo\\",
-    "pre_gulp": "yarn replace_brand && yarn replace_tour && yarn replace_welcome && yarn replace_cookiesmsg && yarn replace_cql && yarn fix_images && yarn fix_currentTime",
+    "fix_currentTime": "copy .\\_dasostituire\\FeatureInfoSection.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\FeatureInfo\\ && copy .\\_dasostituire\\DateTimeSelectorSection.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\Workbench\\Controls\\",
+    "fix_drop_down_it": "copy .\\_dasostituire\\DateTimePicker.tsx .\\node_modules\\terriajs\\lib\\ReactViews\\BottomDock\\Timeline\\",
+    "pre_gulp": "yarn replace_brand && yarn replace_tour && yarn replace_welcome && yarn replace_cookiesmsg && yarn replace_cql && yarn fix_images && yarn fix_currentTime && yarn fix_drop_down_it",
     "post_gulp": "yarn replace_prev"
   },
   "husky": {

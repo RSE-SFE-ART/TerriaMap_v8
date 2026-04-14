@@ -19,6 +19,7 @@
               "name": "Resident population at regional level",
               "description": "Map of the resident population at regional level which is calculated on December 31st of each year and shared on January 1st of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
               "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+              "dateFormat":"yyyy",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
               },
@@ -45,6 +46,7 @@
               "name": "Resident population at provincial level",
               "description": "<p align=\"justify\">Map of the resident population at the provincial level which is calculated on 31st December of each year and shared on 1st January of the following year. <br><br>RSE elaborations on data from the National Institute of Statistics - ISTAT</p>",
               "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+              "dateFormat":"yyyy",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
               },
@@ -71,6 +73,7 @@
               "name": "Resident population at municipal level",
               "description": "<p align=\"justify\">Map of the resident population at the municipal level which is calculated on 31st December of each year and shared on 1st January of the following year.<br><br>RSE processing on data from the National Institute of Statistics - ISTAT</p>",
               "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+              "dateFormat":"yyyy",
               "featureInfoTemplate": {
                 "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
               },

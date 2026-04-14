@@ -11,6 +11,7 @@
             "name": "Confini regionali",
             "description": "Limiti amministrativi regionali selezionabili in differenti anni. Fonte dati ISTAT.",
             "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_terria",
+            "dateFormat":"yyyy",
             "featureInfoTemplate": {
               "template": "<p>Regione <b>{{den_reg}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno={{anno}}\">link al metadato </a> </p>"
             },
@@ -26,6 +27,7 @@
             "name": "Confini provinciali",
             "description": "Limiti amministrativi provinciali selezionabili in differenti anni. Fonte dati ISTAT.",
             "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_terria",
+            "dateFormat":"yyyy",
             "featureInfoTemplate": {
               "template": "<p>Provincia <b>{{den_uts}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=109&anno={{anno}}\">link al metadato </a> </p>"
             },
@@ -40,6 +42,7 @@
             "name": "Confini comunali",
             "description": "Limiti amministrativi comunali selezionabili in differenti anni. Fonte dati ISTAT.",
             "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_terria",
+            "dateFormat":"yyyy",
             "featureInfoTemplate": {
              "template": "<p>Comune <b>{{comune}}</b> , anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno={{anno}}\">link al metadato </a> </p>"
             },

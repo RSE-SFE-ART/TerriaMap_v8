@@ -1285,6 +1285,11 @@
     "search": "Cerca '{{searchText}}' nel catalogo dei dati",
     "searchInDataCatalog": "Cerca <1>'{{locationSearchText}}'</1> nel catalogo dei dati"
   },
+  "text":{
+    "century":"Seleziona un secolo",
+    "year":"Seleziona un anno",
+    "time":"Seleziona il tempo"
+  },
   "addData": {
     "back": "Indietro",
     "dragDrop": "Trascina e rilascia",
@@ -1303,6 +1308,7 @@
     "load": "Carica dati locali/web",
     "browse": "Sfoglia...",
     "addDataBtnText": "Esplora i dati della mappa",
+    "time_": "Tempo: ",
     "localFile": "<0>Passo 2:</0> Selezionare il file",
     "note": "<0>Nota: </0>I dati aggiunti in questo modo non vengono salvati o resi visibili agli altri.",
     "infoText": "<0>Trascina un file qui per visualizzarlo localmente sulla mappa</0><1>(non sarà salvato o caricato su internet)</1>",

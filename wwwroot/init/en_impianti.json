@@ -27,6 +27,7 @@
                   "description": "Map of installed wind power at regional level, expressed in MW, over the years.<br>RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=89&lingua=EN&descrizione=Wind - Regional power (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br> ",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
                   "styles":"eo_imp_reg_potenza",
+                  "dateFormat":"yyyy",
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "featureInfoTemplate": {
                     "template": "<p>Regional power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
@@ -70,6 +71,7 @@
                   "name": "Wind - Regional number of plants",
                   "description": "Map of the number of wind plants installed at regional level over the years. RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=179&lingua=EN&descrizione=Wind - Regional number of plants\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "parameters":{"cql_filter":"var_id=179"},
                   "featureInfoTemplate": {
@@ -87,6 +89,7 @@
                   "name": "Wind - Regional production (GWh)",
                   "description": "Map of wind production at regional level, expressed in GWh, over the years.<br>RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=90&lingua=EN&descrizione=Wind - Regional production (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -107,6 +110,7 @@
                     "template": "<p>Provincial power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "layers": "new_atlante_integrato:v_province_t",
                   "parameters": {
                     "cql_filter": "var_id=69"
@@ -126,6 +130,7 @@
                     "template": "<p>Provincial power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "initialMessage": {
                     "title": "Layer view:",
                     "content": "Data available for the year 2015.<br>To view this layer, select the year 2015 in the sidebar after adding the information layer to the map.",
@@ -152,6 +157,7 @@
                     "template": "<p>Number of provincial plants<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"eo_num_impianti_prov",
                   "initialMessage": {
@@ -178,6 +184,7 @@
                     "template": "<p>Provincial production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"eo_imp_prov_produzione",
                   "metadataUrls":[{
@@ -194,6 +201,7 @@
                   "name": "Wind - Municipal power (MW)",
                   "description": "Map of wind power at municipal level expressed in MW (reference year 2019).<br> RSE elaborations starting from GSE data, The Wind Power, from Sentinel-2 satellite images and ISTAT (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=218&lingua=EN&descrizione=Wind - Municipal power (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Municipal power (MW): <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
@@ -223,6 +231,7 @@
                     "template": "<p>Number of municipal plants <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+                  "dateFormat":"yyyy",
                   "metadataUrls":[{
                     "title":"metadata link",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=204&anno=2019"
@@ -249,6 +258,7 @@
                     "template": "<p>Number of wind turbines generators <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+                  "dateFormat":"yyyy",
                   "metadataUrls":[{
                     "title":"metadata link",
                     "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=217&anno=2019"
@@ -303,6 +313,7 @@
                       "name": "Hydroelectric - Regional power including pumping (MW)",
                       "description": "Map of hydroelectric power installed at regional level including pumping, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=276&lingua=EN&descrizione=Hydroelectric - Regional power including pumping (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br> ",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Regional power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -322,6 +333,7 @@
                       "name": "Hydroelectric - Regional power net of pumping (MW)",
                       "description": "Map of hydroelectric power net of pumping installed at regional level, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=95&lingua=EN&descrizione=Hydroelectric - Regional power net of pumping (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Regional power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -348,6 +360,7 @@
                       "name": "Hydroelectric - Provincial power including pumping (MW)",
                       "description": "Map of installed hydroelectric capacity including pumping at provincial level, expressed in MW, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=277&lingua=EN&descrizione=Hydroelectric - Provincial power including pumping (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Provincial power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -367,6 +380,7 @@
                       "name": "Hydroelectric - Provincial power net of pumping (MW)",
                       "description": "Map of installed hydroelectric capacity net of pumping at provincial level, expressed in MW, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=76&lingua=EN&descrizione=Hydroelectric - Provincial power net of pumping (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Provincial power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -393,6 +407,7 @@
                       "name": "Hydroelectric - Regional power of mini hydroelectric plants (MW)",
                       "description": "Map of hydroelectric power, relating only to mini-hydro plants, installed at regional level expressed in MW (reference year, 2015).<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=104&lingua=EN&descrizione=Hydroelectric - Regional power of mini hydroelectric plants (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Regional power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}\">metadata link </a> </p>"
                       },
@@ -419,6 +434,7 @@
                       "name": "Hydroelectric - Provincial power of mini hydroelectric plants (MW)",
                       "description": "Map of hydroelectric power, relating to mini-hydro plants only, installed at provincial level, expressed in MW (reference year, 2015).<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=86&lingua=EN&descrizione=Hydroelectric - Provincial power of mini hydroelectric plants (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Provincial power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}\">metadata link </a> </p>"
                       },
@@ -454,6 +470,7 @@
                       "name": "Hydroelectric - Regional production (GWh)",
                       "description": "Map of hydroelectric production at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=210&lingua=EN&descrizione=Hydroelectric - Regional production (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Regional production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -473,6 +490,7 @@
                       "name": "Hydro - Regional production net of pumping (GWh)",
                       "description": "Map of hydroelectric production net of pumped storage at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=184&lingua=EN&descrizione=Hydro - Regional production net of pumping (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Regional production excluding pumping (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -492,6 +510,7 @@
                       "name": "Hydroelectric - Regional production from pumped storage (GWh)",
                       "description": "Map of pumped hydroelectric production at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=188&lingua=EN&descrizione=Hydroelectric - Regional production from pumped storage (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Regional production from pumped storage (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
                       },
@@ -511,6 +530,7 @@
                       "name": "Hydroelectric - Regional production from reservoir net of pumping (GWh)",
                       "description": "Map of hydroelectric production from reservoir plants (net of pumped storage), expressed in GWh, over the years. <br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=187&lingua=EN&descrizione=Hydroelectric - Regional production from reservoir net of pumping (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Regional reservoir production excluding pumped storage (GWh)<b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -530,6 +550,7 @@
                       "name": "Hydroelectric - Regional production from basin plants (GWh)",
                       "description": "Map of production from basin plants at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=185&lingua=EN&descrizione=Hydroelectric - Regional production from basin plants (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Regional production from basin plants (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=IT&limite=reg\"><font color='#FFFFFF'>Visualizza grafico storico</a></font></td></tr></table>"
                       },
@@ -549,6 +570,7 @@
                       "name": "Hydro - Regional production from flowing water plants (GWh)",
                       "description": "Map of production from flowing water plants at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=186&lingua=EN&descrizione=Hydro - Regional production from flowing water plants (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Regional production from flowing water plants (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -568,6 +590,7 @@
                       "name": "Hydroelectric - Provincial production including pumping (GWh)",
                       "description": "Map of hydroelectric production including pumping at provincial level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=278&lingua=EN&descrizione=Hydroelectric - Provincial production including pumping (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Provincial production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -587,6 +610,7 @@
                       "name": "Hydroelectric - Provincial production net of pumping (GWh)",
                       "description": "Map of hydroelectric production net of pumping at provincial level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries). \n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=77&lingua=EN&descrizione=Hydroelectric - Provincial production net of pumping (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Provincial production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -606,6 +630,7 @@
                       "name": "Hydroelectric - Provincial production from pumped storage (GWh)",
                       "description": "Map of hydroelectric production from pumping at provincial level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries). \n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=279&lingua=EN&descrizione=Hydroelectric - Provincial production from pumped storage (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Provincial production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -634,6 +659,7 @@
                       "name": "Hydroelectric - Number of regional plants",
                       "description": "Map of the number of hydroelectric plants at regional level, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=183&lingua=EN&descrizione=Hydroelectric - Number of regional plants\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br> ",
                       "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                      "dateFormat":"yyyy",
                       "featureInfoTemplate": {
                         "template": "<p>Number of regional plants <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                       },
@@ -745,6 +771,7 @@
                   "name": "Photovoltaics - Regional power (MW)",
                   "description": "Map of the photovoltaic power installed at regional level, expressed in MW, over the years.<br>RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=91&lingua=EN&descrizione=Photovoltaics - Regional power (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -764,6 +791,7 @@
                   "name": "Photovoltaics - Number of regional plants",
                   "description": "Map of the number of photovoltaic plants at regional level, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=71&lingua=EN&descrizione=Photovoltaics - Number of regional plants\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional number of plants <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -783,6 +811,7 @@
                   "name": "Photovoltaics - Regional production (GWh)",
                   "description": "Map of photovoltaic production at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=92&lingua=EN&descrizione=Photovoltaics - Regional production (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -802,6 +831,7 @@
                   "name": "Photovoltaics - Provincial power (MW)",
                   "description": "Photovoltaic power map at provincial level, expressed in MW, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=72&lingua=EN&descrizione=Photovoltaics - Provincial power (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -821,6 +851,7 @@
                   "name": "Photovoltaics - Number of provincial plants",
                   "description": "Map of the number of photovoltaic plants at regional level, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=181&lingua=EN&descrizione=Photovoltaics - Number of provincial plants\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial number of plants <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -840,6 +871,7 @@
                   "name": "Photovoltaics - Provincial production (GWh)",
                   "description": "Map of photovoltaic production at provincial level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=73&lingua=EN&descrizione=Photovoltaics - Provincial production (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -859,6 +891,7 @@
                   "name": "Photovoltaics - Municipal power on ground systems (> 100 kW)",
                   "description": "Map of the power of photovoltaic systems installed on the ground at the municipal level relating only to systems with a power greater than 100 kW (reference year, 2021).<br>RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=219&lingua=EN&descrizione=Photovoltaics - Municipal power on ground systems (> 100 kW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Municipal power on land (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
@@ -885,6 +918,7 @@
                   "name": "Photovoltaic - Number of municipal ground-mounted systems (> 100 kW).",
                   "description": "Map of the number of photovoltaic plants installed on the ground at municipal level relating only to plants with power exceeding 100 kW (reference year, 2021).<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=215&lingua=EN&descrizione=Photovoltaic - Number of municipal ground-mounted systems (> 100 kW).\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Municipal number of plants <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a> </p>"
                   },
@@ -920,6 +954,7 @@
                   "name": "Geothermal - Regional power (MW)",
                   "description": "Map of installed geothermal power at regional level, expressed in MW, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries)\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=93&lingua=EN&descrizione=Geothermal - Regional power (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -939,6 +974,7 @@
                   "name": "Geothermal - Number of regional plants",
                   "description": "Map of the number of geothermal plants at regional level, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n  <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=177&lingua=EN&descrizione=Geothermal -  Number of regional plants\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional number of plants <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -958,6 +994,7 @@
                   "name": "Geothermal - Regional production (GWh)",
                   "description": "Map of geothermal production at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n  <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=94&lingua=EN&descrizione=Geothermal - Regional production (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -977,6 +1014,7 @@
                   "name": "Geothermal - Provincial power (MW)",
                   "description": "Map of geothermal power at provincial level, expressed in MW, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n  <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=74&lingua=EN&descrizione=Geothermal - Provincial power (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -996,6 +1034,7 @@
                   "name": "Geothermal - Number of provincial plants",
                   "description": "Map of the number of geothermal plants at provincial level, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n  <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=178&lingua=EN&descrizione=Geothermal - Number of provincial plants\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Number of provincial plants <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1015,6 +1054,7 @@
                   "name": "Geothermal - Provincial production (GWh)",
                   "description": "Map of geothermal production at provincial level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries).\n\n  <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=75&lingua=EN&descrizione=Geothermal - Provincial production (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1034,6 +1074,7 @@
                   "name": "Geothermal - Municipal power (MW) ",
                   "description": "Map of geothermal power at the municipal level (reference year 2019).<br> RSE elaborations starting from the Global Power Plant Database and ISTAT (administrative boundaries). \n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=220&lingua=EN&descrizione=Geothermal - Municipal power (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Municipal plant power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=220\">metadata link </a> </p>"
                   },
@@ -1060,6 +1101,7 @@
                   "name": "Geothermal - Number of municipal plants",
                   "description": "Map of the number of geothermal plants at municipal level (reference year 2019). <br> RSE elaborations starting from Global Power Plant Database and ISTAT (administrative boundaries). \n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=203&lingua=EN&descrizione=Geothermal - Number of municipal plants\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Municipal number of plants: <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=203\">metadata link </a> </p>"
                   },
@@ -1110,6 +1152,7 @@
                   "name": "Biomass - Regional power (MW)",
                   "description": "Map of the power of biomass plants (solid, including biodegradable RU, liquid, gaseous) at regional level, expressed in MW, over the years.<br> RSE elaborations starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=78&lingua=EN&descrizione=Biomass - Regional power (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br> ",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1136,6 +1179,7 @@
                   "name": "Biomass - Regional number of plants",
                   "description": "Map of the number of biomass plants (solid, including biodegradable RU, liquid, gaseous) at regional level, over the years.<br> RSE elaborations starting from GSE, TERNA and ISTAT data (administrative bouindaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=201&lingua=EN&descrizione=Biomass - Regional number of plants\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br> ",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional number of plants <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1162,6 +1206,7 @@
                   "name": "Biomass - Regional electricity production (GWh)",
                   "description": "Map of production from biomass plants (solid, including biodegradable RU, liquid, gaseous) at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=97&lingua=EN&descrizione=Biomass - Regional electricity production (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1181,6 +1226,7 @@
                   "name": "Biomass - Regional electricity production from biogas (GWh)",
                   "description": "Map of production from biogas plants at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=195&lingua=EN&descrizione=Biomass - Regional electricity production from biogas (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production from biogas (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1207,6 +1253,7 @@
                   "name": "Biomass - Regional electricity production from bioliquids (GWh)",
                   "description": "Map of production from bioliquid plants at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE, TERNA and ISTAT data (administrative boundaries). For further information see metadata.</p>\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=189&lingua=EN&descrizione=Biomass - Regional electricity production from bioliquids (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production from bioliquids (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1233,6 +1280,7 @@
                   "name": "Biomass - Regional electricity production from solid biomass other than waste (GWh)",
                   "description": "Map of production from solid biomass plants other than waste, at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=198&lingua=EN&descrizione=Biomass - Regional electricity production from solid biomass other than waste (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production from solid biomass (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1259,6 +1307,7 @@
                   "name": "Biomass - Regional electricity production from regional biodegradable RU (GWh)",
                   "description": "Map of production from biodegradable municipal waste plants, at regional level, expressed in GWh, over the years.<br> RSE processing elaborations from GSE, TERNA and ISTAT data (administrative boundaries). For further information see metadata.</p> \n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=192&lingua=EN&descrizione=Biomass - Regional electricity production from regional biodegradable RU (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production from biodegradable RU (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1285,6 +1334,7 @@
                   "name": "Biomass - Provincial electricity production (GWh)",
                   "description": "Map of production from biomass plants (solid, including biodegradable RU, liquid, gaseous) at provincial level, expressed in GWh, over the years.<br>  RSE elaborations starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=79&lingua=EN&descrizione=Biomass - Provincial electricity production (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1304,6 +1354,7 @@
                   "name": "Biomass - Provincial electricity production from biogas (GWh)",
                   "description": "Map of production from biogas plants at provincial level, expressed in GWh, over the years.<br>The provincial production from bioliquids, biogas, biodegradable urban waste and solid biomass (other than waste) was calculated starting from the percentage production data on the national total.<br> Due to rounding in the starting data, in some cases, the sum of the production from bioliquids, biogas, biodegradable urban waste and solid biomass (other than waste) of a given province does not coincide with the total biomass production (including all types) of the province itself (statistical data provided by TERNA).<br> RSE processing starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=197&lingua=EN&descrizione=Biomass - Provincial electricity production from biogas (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial production from biogas (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1330,6 +1381,7 @@
                   "name": "Biomass - Provincial electricity production from biodegradable RU (GWh)",
                   "description": "Map of production from biodegradable urban waste plants at the provincial level, expressed in GWh, over the years.<br>The provincial production from bioliquids, biogas, biodegradable urban waste and solid biomass (other than waste) was calculated starting from the data of percentage production of the national total.<br> Due to rounding in the starting data, in some cases, the sum of the production from bioliquids, biogas, biodegradable urban waste and solid biomass (other than waste) of a given province does not coincide with the total biomass production (including all types) of the province itself (statistical data provided by TERNA).<br> RSE elaborations starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=194&lingua=EN&descrizione=Biomass - Provincial electricity production from biodegradable RU (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial production from biodegradable RU (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1356,6 +1408,7 @@
                   "name": "Biomass - Provincial electricity production from bioliquids (GWh)",
                   "description": "Map of production from bioliquid plants at provincial level, expressed in GWh, over the years.<br> The provincial production from bioliquids, biogas, biodegradable urban waste and solid biomass (other than waste) was calculated starting from the percentage production data on the national total.<br> Due to rounding in the starting data, in some cases, the sum of the production from bioliquids, biogas, biodegradable urban waste and solid biomass (other than waste) of a given province does not coincide with the total biomass production (including all types) of the province itself (statistical data provided by TERNA).<br> RSE processing starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=191&lingua=EN&descrizione=Biomass - Provincial electricity production from bioliquids (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial production from bioliquids (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1382,6 +1435,7 @@
                   "name": "Biomass - Provincial electricity production from solid biomass other than waste (GWh)",
                   "description": "Map of production from solid biomass plants other than waste at provincial level, expressed in GWh, over the years.<br> The provincial production from bioliquids, biogas, biodegradable urban waste and solid biomass (other than waste) was calculated starting from the percentage production data on the national total.<br> Due to rounding off of the starting data, in some cases, the the sum of the production from bioliquids, biogas, biodegradable urban waste and solid biomass (other than waste) of a given province does not coincide with the total production from biomass (including all types) of the province itself (statistical data provided by TERNA).<br> RSE elaborations starting from GSE, TERNA and ISTAT data (administrative boundaries).\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=200&lingua=EN&descrizione=Biomass - Provincial electricity production from solid biomass other than waste (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial production from biomass (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=EN&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1426,6 +1480,7 @@
                   "name": "Thermoelectric - Regional fossil power (MW)",
                   "description": "Map of installed fossil thermoelectric power at regional level, expressed in MW, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries)\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=271&lingua=EN&descrizione=Thermoelectric - Regional fossil power (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1445,6 +1500,7 @@
                   "name": "Thermoelectric - Regional fossil production (GWh)",
                   "description": "Map of installed fossil thermoelectric production at regional level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries)\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=272&lingua=EN&descrizione=Thermoelectric - Regional fossil production (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Regional production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link </a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_reg}}&lingua=EN&limite=reg\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1464,6 +1520,7 @@
                   "name": "Thermoelectric - Provincial fossil power (MW)",
                   "description": "Map of installed fossil thermoelectric power at provincial level, expressed in MW, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries)\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=273&lingua=EN&descrizione=Thermoelectric - Provincial fossil power (MW)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                    "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
+                   "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial fossil power (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },
@@ -1483,6 +1540,7 @@
                   "name": "Thermoelectric - Provincial fossil production (GWh)",
                   "description": "Map of installed fossil thermoelectric production at provincial level, expressed in GWh, over the years.<br> RSE elaborations starting from GSE and ISTAT data (administrative boundaries)\n\n <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=274&lingua=EN&descrizione=Thermoelectric - Provincial fossil production (GWh)\"><font color='#FFFFFF' size = 2> Data Download</a></font></td></tr></table></br></br></br>",
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
+                  "dateFormat":"yyyy",
                   "featureInfoTemplate": {
                     "template": "<p>Provincial production (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">metadata link</a></p><table width=\"220\" border = \"0\" align='center'><tr><td bgcolor='#519AC2' align='center' disabled><a href=\"http://dbeta.rse-web.it/ai_connessione_db_dati_grafico.php?var_id={{var_id}}&cod_ammin={{cod_prov}}&lingua=IT&limite=prov\"><font color='#FFFFFF'>View historical chart</a></font></td></tr></table>"
                   },

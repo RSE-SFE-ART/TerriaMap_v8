@@ -12,6 +12,7 @@
             "name": "Consumi elettrici del comparto domestico provinciale (GWh)",
             "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto domestico (GWh), negli anni.<br> \n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
             "url": "https://gis3.rse-web.it/geoserver/wms",
+            "dateFormat":"yyyy",
             "featureInfoTemplate": {
               "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
             },
@@ -33,6 +34,7 @@
             "name": "Consumi elettrici del comparto terziario provinciale (GWh)",
             "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto terziario (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
             "url": "https://gis3.rse-web.it/geoserver/wms",
+            "dateFormat":"yyyy",
             "featureInfoTemplate": {
               "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
             },
@@ -60,6 +62,7 @@
               }
             ],
             "url": "https://gis3.rse-web.it/geoserver/wms",
+            "dateFormat":"yyyy",
             "featureInfoTemplate": {
               "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
             },
@@ -81,6 +84,7 @@
             "name": "Consumi elettrici del comparto agricolo provinciale (GWh)",
             "description": "Mappa della distribuzione provinciale dei consumi elettrici del comparto agricolo (GWh), negli anni.\n\n Elaborazioni RSE a partire da dati TERNA e ISTAT (confini amministrativi).",
             "url": "https://gis3.rse-web.it/geoserver/wms",
+            "dateFormat":"yyyy",
             "featureInfoTemplate": {
               "template": "<p>Consumi registrati (GWh) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
             },

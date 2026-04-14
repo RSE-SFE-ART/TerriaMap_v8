@@ -143,7 +143,7 @@
               }],
               "id": "pot_bac"
             },
-            /* Bigbang*/  {
+            /* Bigbang  {
               "id": "Bbang",
               "type": "group",
               "name": "Dati BIGBANG 6.0",
@@ -415,7 +415,569 @@
                   }]
                 }                
               ]
-            },
+            },*/
+            /* Bigbang*/  {
+              "id": "Bbang",
+              "type": "group",
+              "name": "Dati BIGBANG 9.0",
+              "description": "Questa raccolta comprende parte dei dati rielaborati e aggregati risultanti dal modello idrologico BIGBANG 9.0. (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile (https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html). </br> Di tutte le variabili prodotte dal modello, sono qui rappresentate le precipitazioni e il ruscellamento medio mensile per ogni decade a partire dall’anno 1951.<br>I dati originali possono essere scaricati al seguente indirizzo: https://groupware.sinanet.isprambiente.it/bigbang-data/library/bigbang_90/ascii_grid",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "disableExport":true,
+                  "name": "Precipitazioni mensili medie del periodo 2021-2024 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di altezza di precipitazione cumulata mensile (mm) di ciascun mese dell’anno medio (periodo 2021-2024).<br>Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br>Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=IT&descrizione=Precipitazioni mensili anno 2021-2024\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato:TP_2021-2024",
+                  "dataCustodian": "text",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                    "template": "Precipitazione media nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Precipitazione_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                  },                 
+                  "layers": "new_atlante_integrato:TP_2021-2024",
+                  "styles":"new_atlante_integrato:stile_TP_2",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_2011"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
+                  }],
+                  "id": "bbTP_2021"
+                },
+                {
+                  "type": "wms",
+                  "name": "Precipitazioni mensili medie del periodo 2011-2020  (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di altezza di precipitazione cumulata mensile (mm) di ciascun mese dell’anno medio (periodo 2011-2020).<br>Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br>Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=IT&descrizione=Precipitazioni mensili medie anni 2011-2020\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_2011-2020",
+                  "dataCustodian": "text",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                      "template": "Precipitazione media nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Precipitazione_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                    },
+                  "layers": "new_atlante_integrato:TP_2011-2020",
+                  "styles":"new_atlante_integrato:stile_TP_2",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_2011"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
+                  }],
+                  "id": "bbTP_2011"
+                },
+                {
+                  "type": "wms",
+                  "name": "Precipitazioni mensili medie del periodo 2001-2010 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di altezza di precipitazione cumulata mensile (mm) di ciascun mese dell’anno medio (periodo 2001-2010).<br>Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br>Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=IT&descrizione=Precipitazioni mensili medie anni 2001-2010\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_2001-2010",
+                  "dataCustodian": "text",
+                  "dateFormat":"mmmm",
+                "featureInfoTemplate": {
+                    "template": "Precipitazione media nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Precipitazione_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                },
+                  "layers": "new_atlante_integrato:TP_2001-2010",
+                  "styles":"new_atlante_integrato:stile_TP_2",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_2001"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
+                  }],
+                  "id": "bbTP_2001"
+                },
+                {
+                  "type": "wms",
+                  "name": "Precipitazioni mensili medie del periodo 1991-2000 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di altezza di precipitazione cumulata mensile (mm) di ciascun mese dell’anno medio (periodo 1991-2000).<br>Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br>Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=IT&descrizione=Precipitazioni mensili medie anni 1991-2000\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1991-2000",
+                  "dataCustodian": "text",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                    "template": "Precipitazione media nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Precipitazione_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                   },
+                  "layers": "new_atlante_integrato:TP_1991-2000",
+                  "styles":"new_atlante_integrato:stile_TP_2",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_1991"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
+                  }],
+                  "id": "bbTP_1991"
+                },
+                {
+                  "type": "wms",
+                  "name": "Precipitazioni mensili medie del periodo 1981-1990 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di altezza di precipitazione cumulata mensile (mm) di ciascun mese dell’anno medio (periodo 1981-1990).<br>Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br>Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=IT&descrizione=Precipitazioni mensili medie anni 1981-1990\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1981-1990",
+                  "dataCustodian": "text",
+                  "dateFormat":"mmmm",
+                "featureInfoTemplate": {
+                    "template": "Precipitazione media nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Precipitazione_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                    },
+                  "layers": "new_atlante_integrato:TP_1981-1990",
+                  "styles":"new_atlante_integrato:stile_TP_2",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_1981"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
+                  }],
+                  "id": "bbTP_1981"
+                },
+                {
+                  "type": "wms",
+                  "name": "Precipitazioni mensili medie del periodo 1971-1980 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di altezza di precipitazione cumulata mensile (mm) di ciascun mese dell’anno medio (periodo 1971-1980).<br>Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br>Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=IT&descrizione=Precipitazioni mensili medie anni 1971-1980\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1971-1980",
+                  "dataCustodian": "text",
+                  "dateFormat":"mmmm",
+                "featureInfoTemplate": {
+                    "template": "Precipitazione media nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Precipitazione_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                },
+                  "layers": "new_atlante_integrato:TP_1971-1980",
+                  "styles":"new_atlante_integrato:stile_TP_2",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_1971"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
+                  }],
+                  "id": "bbTP_1971"
+                },
+                {
+                  "type": "wms",
+                  "name": "Precipitazioni mensili medie del periodo 1961-1970 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di altezza di precipitazione cumulata mensile (mm) di ciascun mese dell’anno medio (periodo 1961-1970).<br>Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br>Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=IT&descrizione=Precipitazioni mensili medie anni 1961-1970\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1961-1970",
+                  "dataCustodian": "text",
+                  "dateFormat":"mmmm",
+                "featureInfoTemplate": {
+                    "template": "Precipitazione media nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Precipitazione_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                },
+                  "layers": "new_atlante_integrato:TP_1961-1970",
+                  "styles":"new_atlante_integrato:stile_TP_2",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_1971"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
+                  }],
+                  "id": "bbTP_1961"
+                },
+                {
+                  "type": "wms",
+                  "name": "Precipitazioni mensili medie del periodo 1951-1960 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di altezza di precipitazione cumulata mensile (mm) di ciascun mese dell’anno medio (periodo 1951-1960).<br>Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br>Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile. </br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=252&lingua=IT&descrizione=Precipitazioni mensili medie anni 1951-1960\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3TP_1951-1960",
+                  "dataCustodian": "text",
+                  "dateFormat":"mmmm",
+                "featureInfoTemplate": {
+                    "template": "Precipitazione media nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Precipitazione_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                },
+                  "layers": "new_atlante_integrato:TP_1951-1960",
+                  "styles":"new_atlante_integrato:stile_TP_2",
+                  "shareKeys": [
+                    "Root Group/stime energetiche/bbTP_1951"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=252"
+                  }],
+                  "id": "bbTP_1951"
+                },
+                {
+                  "type": "wms",
+                  "name": "Ruscellamento mensile medio del periodo 2021-2024 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di ruscellamento cumulato mensile (mm) di ciascun mese dell’anno medio (periodo 2021-2024).<br> Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br> Il ruscellamento, per un facile confronto, è espresso nella stessa unità di misura della precipitazione, ovvero “altezza ragguagliata” che rappresenta il volume mensile ruscellato per unità di area della griglia.</br> Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile.</br> Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=IT&descrizione=Ruscellamento mensile anno 2021-2024\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_2021-2024",
+                  "layers": "new_atlante_integrato:RF_2021-2024",
+                  "id": "bbRF_2021",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                      "template": "Ruscellamento medio nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Ruscellamento_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                  },
+                  "styles":"new_atlante_integrato:stile_RF_2",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_2021-2024"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=253"
+                  }]
+                },
+                {
+                  "type": "wms",
+                  "name": "Ruscellamento mensile medio del periodo 2011-2020 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di ruscellamento cumulato mensile (mm) di ciascun mese dell’anno medio (periodo 2011-2020).<br> Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br> Il ruscellamento, per un facile confronto, è espresso nella stessa unità di misura della precipitazione, ovvero “altezza ragguagliata” che rappresenta il volume mensile ruscellato per unità di area della griglia.</br> Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile.</br>Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=IT&descrizione=Ruscellamento mensile medio anni 2011-2020\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_2011-2020",
+                  "layers": "new_atlante_integrato:RF_2011-2020",
+                  "id": "bbRF_2011",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                      "template": "Ruscellamento medio nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Ruscellamento_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                  },
+                  "styles":"new_atlante_integrato:stile_RF_2",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_2011"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=253"
+                  }]
+                },
+                {
+                  "type": "wms",
+                  "name": "Ruscellamento mensile medio del periodo 2001-2010 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di ruscellamento cumulato mensile (mm) di ciascun mese dell’anno medio (periodo 2001-2010).<br> Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br> Il ruscellamento, per un facile confronto, è espresso nella stessa unità di misura della precipitazione, ovvero “altezza ragguagliata” che rappresenta il volume mensile ruscellato per unità di area della griglia.</br> Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile.</br>Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=IT&descrizione=Ruscellamento mensile medio anni 2001-2010\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_2001-2010",
+                  "layers": "new_atlante_integrato:RF_2001-2010",
+                  "id": "bbRF_2001",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                     "template": "Ruscellamento medio nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Ruscellamento_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                  },
+                  "styles":"new_atlante_integrato:stile_RF_2",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_2001"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=253"
+                  }]
+                },
+                {
+                  "type": "wms",
+                  "name": "Ruscellamento mensile medio del periodo 1991-2000 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di ruscellamento cumulato mensile (mm) di ciascun mese dell’anno medio (periodo 1991-2000).<br> Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br> Il ruscellamento, per un facile confronto, è espresso nella stessa unità di misura della precipitazione, ovvero “altezza ragguagliata” che rappresenta il volume mensile ruscellato per unità di area della griglia.</br> Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile.</br>Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=IT&descrizione=Ruscellamento mensile medio anni 1991-2000\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1991-2000",
+                  "layers": "new_atlante_integrato:RF_1991-2000",
+                  "id": "bbRF_1991",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                      "template": "Ruscellamento medio nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Ruscellamento_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                  },
+                  "styles":"new_atlante_integrato:stile_RF_2",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_1991"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=253"
+                  }]
+                },
+                {
+                  "type": "wms",
+                  "name": "Ruscellamento mensile medio del periodo 1981-1990 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di ruscellamento cumulato mensile (mm) di ciascun mese dell’anno medio (periodo 1981-1990).<br> Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br> Il ruscellamento, per un facile confronto, è espresso nella stessa unità di misura della precipitazione, ovvero “altezza ragguagliata” che rappresenta il volume mensile ruscellato per unità di area della griglia.</br> Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile.</br>Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=IT&descrizione=Ruscellamento mensile medio anni 1981-1990\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1981-1990",
+                  "layers": "new_atlante_integrato:RF_1981-1990",
+                  "id": "bbRF_1981",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                      "template": "Ruscellamento medio nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Ruscellamento_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                  },
+                  "styles":"new_atlante_integrato:stile_RF_2",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_1981"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=253"
+                  }]
+                },
+                {
+                  "type": "wms",
+                  "name": "Ruscellamento mensile medio del periodo 1971-1980 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di ruscellamento cumulato mensile (mm) di ciascun mese dell’anno medio (periodo 1971-1980).<br> Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br> Il ruscellamento, per un facile confronto, è espresso nella stessa unità di misura della precipitazione, ovvero “altezza ragguagliata” che rappresenta il volume mensile ruscellato per unità di area della griglia.</br> Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile.</br>Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=IT&descrizione=Ruscellamento mensile medio anni 1971-1980\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1971-1980",
+                  "layers": "new_atlante_integrato:RF_1971-1980",
+                  "id": "bbRF_1971",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                     "template": "Ruscellamento medio nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Ruscellamento_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                  },
+                  "styles":"new_atlante_integrato:stile_RF_2",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_1971"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=253"
+                  }]
+                },
+                {
+                  "type": "wms",
+                  "name": "Ruscellamento mensile medio del periodo 1961-1970 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di ruscellamento cumulato mensile (mm) di ciascun mese dell’anno medio (periodo 1961-1970).<br> Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br> Il ruscellamento, per un facile confronto, è espresso nella stessa unità di misura della precipitazione, ovvero “altezza ragguagliata” che rappresenta il volume mensile ruscellato per unità di area della griglia.</br> Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile.</br>Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=IT&descrizione=Ruscellamento mensile medio anni 1961-1970\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1961-1970",
+                  "layers": "new_atlante_integrato:RF_1961-1970",
+                  "id": "bbRF_1961",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                      "template": "Ruscellamento medio nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Ruscellamento_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                  },
+                  "styles":"new_atlante_integrato:stile_RF_2",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_1961"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=253"
+                  }]
+                },
+                {
+                  "type": "wms",
+                  "name": "Ruscellamento mensile medio del periodo 1951-1960 (mm)",
+                  "description": "La mappa rappresenta, per ciascun punto della griglia 1 x 1 km, il valore di ruscellamento cumulato mensile (mm) di ciascun mese dell’anno medio (periodo 1951-1960).<br> Una volta caricato lo strato, è possibile visualizzare il mese di interesse agendo sulla barra del tempo posta sopra la legenda.<br> Il ruscellamento, per un facile confronto, è espresso nella stessa unità di misura della precipitazione, ovvero “altezza ragguagliata” che rappresenta il volume mensile ruscellato per unità di area della griglia.</br> Dati ottenuti per elaborazione dei risultati del modello BIGBANG 9.0 (Bilancio Idrologico GIS BAsed a scala Nazionale su Griglia regolare) sviluppato da ISPRA per la stima delle componenti del bilancio idrologico su una griglia regolare di 1 km di risoluzione spaziale ricoprente l’intero territorio nazionale e con cadenza mensile.</br>Per maggiori dettagli consultare:  https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html </br></br> <table width=\"120\" border = \"0\" align='left'><tr><td bgcolor='#519AC2' align='center' disabled width=\"100\" height=\"40\" style=\"border-radius: 25px;\"><a href=\"http://dbeta.rse-web.it/ai_selezione_anno_download.php?var_id=253&lingua=IT&descrizione=Ruscellamento mensile medio anni 1951-1960\"><font color='#FFFFFF' size = 2>Download dati</a></font></td></tr></table></br></br></br>",
+                  "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3RF_1951-1960",
+                  "layers": "new_atlante_integrato:RF_1951-1960",
+                  "id": "bbRF_1951",
+                  "dateFormat":"mmmm",
+                  "featureInfoTemplate": {
+                      "template": "Ruscellamento medio nel mese di {{#terria.partialByName}}{{#terria.formatDateTime}}{format:\"mm\"}{{terria.currentTime}}{{/terria.formatDateTime}}{{/terria.partialByName}} {{#terria.formatNumber}}{maximumFractionDigits:0}{{Ruscellamento_mensile_anno_medio}}{{/terria.formatNumber}} mm",
+                      "partials": {
+                        "01": "Gennaio",
+                        "02": "Febbraio",
+                        "03": "Marzo",
+                        "04": "Aprile",
+                        "05": "Maggio",
+                        "06": "Giugno",
+                        "07": "Luglio",
+                        "08": "Agosto",
+                        "09": "Settembre",
+                        "10": "Ottobre",
+                        "11": "Novembre",
+                        "12": "Dicembre"
+                      }
+                  },
+                  "styles":"new_atlante_integrato:stile_RF_2",
+                  "shareKeys": [
+                      "Root Group/stime energetiche/bbRF_1951"
+                  ],
+                  "metadataUrls":[{
+                    "title":"link metadato",
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=253"
+                  }]
+                }                
+              ]
+            },            
             {
               "id": "dati",
               "type": "group",

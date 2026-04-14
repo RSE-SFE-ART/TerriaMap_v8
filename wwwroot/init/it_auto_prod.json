@@ -11,6 +11,7 @@
                 "name": "Eolici - Potenza comunale (MW)",
                 "description": "Mappa della potenza eolica a livello comunale espressa in MW (anno di riferimento 2019).<br>                  Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).",
                 "url": "https://gis3.rse-web.it/geoserver/wms",
+                "dateFormat":"yyyy",
                 "featureInfoTemplate": {
                   "template": "<p>Potenza comunale (MW): <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
                 },
@@ -31,6 +32,7 @@
               "name": "Fotovoltaici - Potenza provinciale (MW)",
               "description": "Mappa della potenza fotovoltaica a livello provinciale, espressa in MW, negli anni.<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi).\n\n ",
               "url": "https://gis3.rse-web.it/geoserver/wms",
+              "dateFormat":"yyyy",
               "featureInfoTemplate": {
                 "template": "<p>Potenza provinciale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\">link al metadato </a> </p>"
               },
@@ -51,6 +53,7 @@
               "name": "Idroelettrici - Potenza regionale impianti mini idroelettrici (MW)",
               "description": "Mappa della potenza idroelettrica, relativa ai soli impianti mini idro, installata a livello regionale espressa in MW. (anno di riferimento, 2015).<br> Elaborazioni RSE a partire da dati GSE e ISTAT (confini amministrativi). \n\n  ",
               "url": "https://gis3.rse-web.it/geoserver/wms",
+              "dateFormat":"yyyy",
               "featureInfoTemplate": {
                 "template": "<p>Potenza regionale (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}\">link al metadato </a> </p>"
               },
@@ -79,6 +82,7 @@
               "name": "Geotermoelettrici - Potenza comunale (MW) ",
               "description": "Mappa della potenza geotermoelettrica a livello comunale (anno di riferimento 2019).<br> Elaborazioni RSE a partire da Global Power Plant Database e ISTAT (confini amministrativi).",
               "url": "https://gis3.rse-web.it/geoserver/wms",
+              "dateFormat":"yyyy",
               "featureInfoTemplate": {
                 "template": "<p>Potenza comunale impianti (MW) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=220\">link al metadato </a> </p>"
               },

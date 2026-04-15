@@ -21,13 +21,13 @@
               "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_t",
               "dateFormat":"yyyy-mm-dd",
               "featureInfoTemplate": {
-                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=88&anno={{anno}}\"> metadata link </a> </p>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
                 "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=88&anno=2020"
               }],
-              "layers": "new_atlante_integrato:v_regioni_ppp",
+              "layers": "new_atlante_integrato:v_regioni_pop",
               //"parameters": {
                 //"cql_filter": "var_id=88"
               //},
@@ -48,7 +48,7 @@
               "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_province_t",
               "dateFormat":"yyyy-mm-dd",
               "featureInfoTemplate": {
-                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=87&anno={{anno}}\"> metadata link </a> </p>"
               },
               "metadataUrls":[{
                 "title":"metadata link",
@@ -75,7 +75,7 @@
               "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_comuni_t",
               "dateFormat":"yyyy-mm-dd",
               "featureInfoTemplate": {
-                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id={{var_id}}&anno={{anno}}\"> metadata link </a> </p>"
+                "template": "<p>Popolazione (unità) <b>{{valore}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=65&anno={{anno}}\"> metadata link </a> </p>"
               },
               "metadataUrls":[{
                 "title":"metadata link",

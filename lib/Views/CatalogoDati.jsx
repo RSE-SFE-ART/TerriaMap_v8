@@ -85,7 +85,7 @@ function AnalisiAvanzate(props) {
           <table>
             <tr>
               <td colspan="2">
-                <h2>Geodatabase ETA</h2>
+                <h2>GeoDB ETA</h2>
               </td>
             </tr>
             <tr>
@@ -93,7 +93,7 @@ function AnalisiAvanzate(props) {
                 <a target="_blank" href={t("analisiAvanzate.link_dbeta")}>
                   <img
                     className={Styles.image}
-                    src={require("../../wwwroot/images/water-Energy.png")}
+                    src={require("../../wwwroot/images/dbeta.png")}
                     alt="WEN"
                   />
                 </a>

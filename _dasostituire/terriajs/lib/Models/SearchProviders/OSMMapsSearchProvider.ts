@@ -83,6 +83,12 @@ export default class OsmMapsSearchProvider extends SearchProvider {
     const searchResults: SearchResult[] = [];
 
     for (const item of response) {
+      
+      // ❌ esclude i county
+      if (item.addresstype === "county") {
+        continue;
+      }
+
       if (!defined(item.lat) || !defined(item.lon)) {
         continue;
       }

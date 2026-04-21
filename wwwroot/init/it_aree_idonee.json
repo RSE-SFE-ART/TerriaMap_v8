@@ -46,7 +46,7 @@
               "styles":"new_atlante_integrato:ob_2030_avanz_perc",
               //"layers": "new_atlante_integrato:obiettivi_2030",
               "layers": "new_atlante_integrato:new_obiettivi_2030",
-              "dateFormat":"yyyy-mm-dd",
+              "dateFormat":"dd-mm-yyyy",
               "featureInfoTemplate": {
                     "template":"<p> Al {{#terria.formatDateTime}}{format:\"dd-mm-yyyy\"}{{data}}{{/terria.formatDateTime}} la regione <b>{{Denominazione}}</b> ha raggiunto il <b>{{Avanzamento_percentuale}}%</b> dell'obiettivo di potenza aggiuntiva </br> e deve ancora installare <b>{{Avanzamento Assoluto}} MW per completarlo</p>"
                   },

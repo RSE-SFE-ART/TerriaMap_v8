@@ -190,6 +190,36 @@
             },
             {
               "type": "wms",
+              "name": "Giaciture",
+              "description": "Giaciture",
+             "url": "https://sinacloud.isprambiente.it/arcgisgeo/services/geo/SGI_ISPRA_geologia100K/MapServer/WMSServer?request=GetCapabilities",
+              "layers": "14",
+              /* "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                  "content": "Dati visualizzati ad uno zoom sulla mappa superiore a 2 km.",
+                  "key": "geo_k25_7_in_mess",
+                  "confirmation": true,
+                  "confirmText": "Ho capito"
+              }, */
+              "id": "geo_100k_giaciture"
+            },
+                      {
+              "type": "wms",
+              "name": "Quadro Unione",
+              "description": "Quadro Unione",
+             "url": "https://sgi2.isprambiente.it/arcgis/services/servizi/carta_geologica_100k/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "layers": "0",
+              /* "initialMessage": {
+                    "title": "Visualizzazione strato:",
+                  "content": "Dati visualizzati ad uno zoom sulla mappa superiore a 2 km.",
+                  "key": "geo_k25_7_in_mess",
+                  "confirmation": true,
+                  "confirmText": "Ho capito"
+              }, */
+              "id": "geo_100k_quadro_union"
+            },
+            {
+              "type": "wms",
               "name": "Tracce Sezioni Geologiche",
               "description": "Tracce Sezioni Geologiche",
               "url": "https://sinacloud.isprambiente.it/arcgisgeo/services/geo/SGI_ISPRA_Geologia25k/MapServer/WMSServer?request=GetCapabilities",

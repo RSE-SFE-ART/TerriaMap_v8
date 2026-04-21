@@ -1628,6 +1628,7 @@
     "scopricasostudio": "Scopri il caso studio",
     "acqua_per_energia": "L'acqua per l'energia, l'energia per l'acqua. Flussi energetici e idrici nazionali a scala nazionale.",
     "geoportale": "Il Geoportale Energia e Territorio è un contenitore di informazioni territoriali aventi per oggetto la distribuzione delle diverse fonti energetiche rinnovabili e le loro relazioni con il territorio. Esso costituisce il punto di accesso all'Atlante Integrato, ai principali atlanti tematici e ad altri contenuti interattivi legati ad approfondimenti su aspetti del sistema energetico di particolare rilevanza.",
+    "dbeta_descrizione": "Il Geodatabase ETA permette l’accesso alle principali informazioni relative al sistema energetico nazionale (disponibilità delle fonti, vincoli territoriali, struttura e elementi costituenti il sistema energetico)",
     "GeoportaleEnergiaeTerritorio": "Geoportale Energia e Territorio",
     "approfondisciEdownload": "Approfondisci e download",
     "link": "LINK",
@@ -1636,6 +1637,7 @@
     "atlanteIntegrato": "Atlante Integrato.",
     "link_geostoria_sulcis": "https://geoportale.rse-web.it/#/geostory/131",
     "link_sankey": "https://dbeta.rse-web.it/sankey/sankey_it.php",
+    "link_dbeta": "https://dbeta.rse-web.it",
     "possibileConsultare": "E' inoltre possibile consultare e scaricare i dati relativi al sistema energetico nazionale presenti nel",
     "geoDbEta": "GeoDB ETA."
   },

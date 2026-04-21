@@ -20,20 +20,22 @@ function AnalisiAvanzate(props) {
   // to select language config.json depending on the browser language
   var userLang = navigator.language || navigator.userLanguage;
   var totem_link = "/#en_totemweb";
-  var analisi = "Advanced Analysis";
+  //var analisi = "Advanced Analysis";
+  var catalogo_dati = "Data Catalogue";
   if (userLang === "it-IT" || userLang === "it") {
     totem_link = "/#it_totemweb";
-    analisi = "Analisi Avanzate";
+    //analisi = "Analisi Avanzate";
+    catalogo_dati = "Catalogo Dati";
   }
 
   return (
     <MenuPanel
       btnRef={props.refFromHOC} //GOF   Ref sul bottone per il Tour
       theme={dropdownTheme}
-      btnText={analisi}
+      btnText={catalogo_dati}
       smallScreen={props.smallScreen}
       viewState={props.viewState}
-      btnTitle={analisi}
+      btnTitle={catalogo_dati}
     >
       {/* titolo della pagina */}
       <div className={classNames(PanelStyles.header)}>
@@ -42,60 +44,53 @@ function AnalisiAvanzate(props) {
         </label>
       </div>
 
-      {/* totem */}
-      <div className={classNames(PanelStyles.section, Styles.section)}>
-        <ul class="list-group list-group-flush">
-          <table>
-            <tr>
-              <td colspan="2">
-                <h2> TOTEM </h2>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a target="_blank" href="https://totem.rse-web.it">
-                  <img
-                    className={Styles.image}
-                    src={require("../../wwwroot/images/logo_totem_TrW_new.png")}
-                    /*src={require("../../wwwroot/images/totem3_v3.png")}*/
-                    alt="totem"
-                  />
-                </a>
-              </td>
-              <td>
-                <p align="justify">
-                  {" "}
-                  TOTEM (<i>
-                    Territory Overview Tool for Energy Modelling
-                  </i>): {t("analisiAvanzate.totem_descrizione")}{" "}
-                  {t("analisiAvanzate.perAccedere")}{" "}
-                  <a className={Styles.link} href={totem_link}>
-                    {t("analisiAvanzate.selezionaprovincia")}
-                  </a>
-                  .
-                  {/* Permette la definizione ed il salvataggio di dati territoriali
-              necessari a software di analisi multienergetiche. Prima di
-              attivare il tool è necessario selezionare, a partire dal link qui
-              di seguito, il <i>territorio provinciale e l'anno </i> in cui se
-              vuole effettuare l'analisi.  href="http://rakino.ricerca.lan"*/}{" "}
-                </p>
-              </td>
-            </tr>
-          </table>
-        </ul>
-      </div>
-      {/* collegamento a WEN*/}
+      {/* collegamento a mapstore */}
       <div className={classNames(PanelStyles.section, Styles.section)}>
         <ul>
           <table>
             <tr>
               <td colspan="2">
-                <h2>Water-Energy Nexus</h2>
+                <h2>{t("analisiAvanzate.GeoportaleEnergiaeTerritorio")}</h2>
               </td>
             </tr>
             <tr>
               <td>
-                <a target="_blank" href={t("analisiAvanzate.link_sankey")}>
+                <a target="_blank" href="https://geoportale.rse-web.it/#/">
+                  <img
+                    className={Styles.image}
+                    src={require("../../wwwroot/images/geo_ET_TrGG.png")}
+                    alt="geoportale"
+                  />
+                </a>
+              </td>
+              <td>
+                <p align="justify">{t("analisiAvanzate.geoportale")}</p>
+                <a
+                  target="_blank"
+                  href="https://geoportale.rse-web.it/#/"
+                  className={Styles.link}
+                >
+                  {" "}
+                  {/* href="http://gis2.rse-web.it/mapstore"*/}
+                  {t("analisiAvanzate.GeoportaleEnergiaeTerritorio")}
+                </a>
+              </td>
+            </tr>
+          </table>
+        </ul>
+      </div>
+      {/* collegamento a DBETA*/}
+      <div className={classNames(PanelStyles.section, Styles.section)}>
+        <ul>
+          <table>
+            <tr>
+              <td colspan="2">
+                <h2>Geodatabase ETA</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a target="_blank" href={t("analisiAvanzate.link_dbeta")}>
                   <img
                     className={Styles.image}
                     src={require("../../wwwroot/images/water-Energy.png")}
@@ -104,13 +99,13 @@ function AnalisiAvanzate(props) {
                 </a>
               </td>
               <td valign="top">
-                <p align="justify">{t("analisiAvanzate.acqua_per_energia")}</p>
+                <p align="justify">{t("analisiAvanzate.dbeta_descrizione")}</p>
                 <a
                   target="_blank"
-                  href={t("analisiAvanzate.link_sankey")}
+                  href={t("analisiAvanzate.link_dbeta")}
                   className={Styles.link}
                 >
-                  WEN - Water Energy Nexus
+                  GeoDB ETA
                 </a>
               </td>
             </tr>

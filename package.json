@@ -115,7 +115,8 @@
     "fix_images" : "copy .\\_dasostituire\\defaultBaseMaps.ts .\\node_modules\\terriajs\\lib\\Models\\BaseMaps\\",
     "fix_currentTime": "copy .\\_dasostituire\\FeatureInfoSection.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\FeatureInfo\\ && copy .\\_dasostituire\\DateTimeSelectorSection.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\Workbench\\Controls\\",
     "fix_drop_down_it": "copy .\\_dasostituire\\DateTimePicker.tsx .\\node_modules\\terriajs\\lib\\ReactViews\\BottomDock\\Timeline\\",
-    "pre_gulp": "yarn replace_brand && yarn replace_tour && yarn replace_welcome && yarn replace_cookiesmsg && yarn replace_cql && yarn fix_images && yarn fix_currentTime && yarn fix_drop_down_it",
+    "add_OSM_it": "copy .\\_dasostituire\\terriajs\\lib\\Models\\SearchProviders\\OSMMapsSearchProvider.ts .\\node_modules\\terriajs\\lib\\Models\\SearchProviders\\",
+    "pre_gulp": "yarn replace_brand && yarn replace_tour && yarn replace_welcome && yarn replace_cookiesmsg && yarn replace_cql && yarn fix_images && yarn fix_currentTime && yarn fix_drop_down_it && yarn add_OSM_it",
     "post_gulp": "yarn replace_prev"
   },
   "husky": {

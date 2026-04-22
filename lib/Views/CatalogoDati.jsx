@@ -58,7 +58,7 @@ function AnalisiAvanzate(props) {
                 <a target="_blank" href="https://geoportale.rse-web.it/#/">
                   <img
                     className={Styles.image}
-                    src={require("../../wwwroot/images/geo_ET_TrGG.png")}
+                    src={require("../../wwwroot/images/geo_ET_TrGG_new.png")}
                     alt="geoportale"
                   />
                 </a>
@@ -107,6 +107,31 @@ function AnalisiAvanzate(props) {
                 >
                   GeoDB ETA
                 </a>
+              </td>
+            </tr>
+          </table>
+        </ul>
+      </div>
+      {/* collegamento API*/}
+      <div className={classNames(PanelStyles.section, Styles.section)}>
+        <ul>
+          <table>
+            <tr>
+              <td colspan="2">
+                <h2>API</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  className={Styles.image}
+                  src={require("../../wwwroot/images/api.png")}
+                  alt="WEN"
+                />
+              </td>
+              <td valign="top">
+                <p align="justify">{t(" ")}</p>
+                <p align="justify">{t("Work in Progress")}</p>
               </td>
             </tr>
           </table>

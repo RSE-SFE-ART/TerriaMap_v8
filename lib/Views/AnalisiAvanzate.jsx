@@ -98,7 +98,7 @@ function AnalisiAvanzate(props) {
                 <a target="_blank" href={t("analisiAvanzate.link_sankey")}>
                   <img
                     className={Styles.image}
-                    src={require("../../wwwroot/images/water-Energy.png")}
+                    src={require("../../wwwroot/images/water-Energy_new.png")}
                     alt="WEN"
                   />
                 </a>

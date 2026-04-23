@@ -1,0 +1,51 @@
+{
+  "homeCamera": {
+    "north": 48,
+    "east": 19,
+    "south": 35,
+    "west": 6
+  },
+  "catalog": [
+    {
+      "id": "idrogeo",
+      "type": "group",
+      "name": "dati idrogeologici",
+      "description": "Questa raccolta comprende informazioni idrogeologiche. \n\n",
+      "isOpen": true,
+      "members": [
+      {
+        "type": "wms",
+        "name": "Carta idrogeologica - tectonic lineaments",
+        "description": "Carta idrogeologica - tectonic lineaments",
+        "url": "https://sinacloud.isprambiente.it/arcgisadv/services/CII_500K_service/MapServer/WMSServer?request=GetCapabilities&sevice=WMS",
+        "layers": "6",
+        "id": "geo-tectonic_lineaments"
+      },
+      {
+        "type": "wms",
+        "name": "Carta idrogeologica - isopiezometric_lines",
+        "description": "Carta idrogeologica - isopiezometric_lines",
+        "url": "https://sinacloud.isprambiente.it/arcgisadv/services/CII_500K_service/MapServer/WMSServer?request=GetCapabilities&sevice=WMS",
+        "layers": "5",
+        "id": "geo_isopiezometric_lines"
+      },
+            {
+        "type": "wms",
+        "name": "Carta idrogeologica - groundwater_flowpaths",
+        "description": "Carta idrogeologica - groundwater_flowpaths",
+        "url": "https://sinacloud.isprambiente.it/arcgisadv/services/CII_500K_service/MapServer/WMSServer?request=GetCapabilities&sevice=WMS",
+        "layers": "4",
+        "id": "geo_groundwater_flowpaths"
+      },
+            {
+        "type": "wms",
+        "name": "Carta idrogeologica - hydrogeological_complexes",
+        "description": "Carta idrogeologica - hydrogeological_complexes",
+        "url": "https://sinacloud.isprambiente.it/arcgisadv/services/CII_500K_service/MapServer/WMSServer?request=GetCapabilities&sevice=WMS",
+        "layers": "1",
+        "id": "geo_hydrogeological_complexes"
+      }
+      ]
+    }
+  ]
+}

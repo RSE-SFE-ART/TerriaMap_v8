@@ -26,7 +26,7 @@
           //"styles":"new_atlante_integrato:obiettivi_2030",
           "layers": "new_atlante_integrato:v_obiettivi_2030_EN",
           "featureInfoTemplate": {
-                "template": "<p>The RES additional power target assigned to the region <b>{{Denomination}} is <b>{{Target_2030}} MW</p>"
+                "template": "<p>The RES additional power target assigned to the region <b>{{Denomination}} is <b>{{Target_2030_MW}} MW</p>"
               },
           "id": "obiettivo_reg"
         },

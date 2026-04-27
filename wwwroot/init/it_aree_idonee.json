@@ -30,7 +30,7 @@
           //"layers": "new_atlante_integrato:obiettivi_2030",
           "dateFormat":"yyyy-mm-dd",
           "featureInfoTemplate": {
-                "template": "<p>L'obiettivo di potenza aggiuntiva FER assegnato alla regione <b>{{Denominazione}} è pari a <b>{{Obiettivo_2030}} MW</p>"
+                "template": "<p>L'obiettivo di potenza aggiuntiva FER assegnato alla regione <b>{{Denominazione}} è pari a <b>{{Obiettivo_2030_MW}} MW</p>"
               },
           "id": "obiettivo_reg"
             },

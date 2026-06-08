@@ -159,7 +159,7 @@
   },
   "rosaDeiVenti": {
     "info": "Rosa dei venti ",
-    "avvertenza": "Dati calcolati sul periodo 2015-2024",
+    "avvertenza": "Dati calcolati sul periodo 2015-2019",
     "msgMostra": "cliccare sul grafico per mostrare la tabella delle frequenze",
     "msgNascondi": "cliccare sul grafico per nascondere la tabella delle frequenze",
     "titleTabella": "Tabella Frequenze in percentuale"

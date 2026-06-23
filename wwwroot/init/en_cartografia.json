@@ -21,7 +21,7 @@
             },
             "metadataUrls":[{
               "title":"metadata link",
-              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno=2021"
+              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno=2026"
             }],
             "layers": "new_atlante_integrato:v_regioni_terria",
             "id": "confreg"
@@ -37,7 +37,7 @@
             },
             "metadataUrls":[{
               "title":"metadata link",
-              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=109&anno=2021"
+              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=109&anno=2026"
             }],
             "layers": "new_atlante_integrato:v_province_terria"
           },
@@ -52,7 +52,7 @@
             },
             "metadataUrls":[{
               "title":"metadata link",
-              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno=2021"
+              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=110&anno=2026"
             }],
             "layers": "new_atlante_integrato:v_comuni_terria"
           },

@@ -40,7 +40,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=275&anno=2021"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=275&anno=2024"
           }],
           "layers": "new_atlante_integrato:v_regioni_t",
           "parameters": {
@@ -70,7 +70,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=99&anno=2021"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=99&anno=2024"
           }],
           "layers": "new_atlante_integrato:v_regioni_t",
           "parameters": {
@@ -91,7 +91,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=98&anno=2021"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=98&anno=2024"
           }],
           "layers": "new_atlante_integrato:v_regioni_t",
           "parameters": {
@@ -113,7 +113,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=100&anno=2021"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=100&anno=2024"
           }],
           "parameters": {
             "cql_filter": "var_id=100"
@@ -133,7 +133,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=101&anno=2021"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=101&anno=2024"
           }],
           "layers": "new_atlante_integrato:v_regioni_t",
           "parameters": {
@@ -183,7 +183,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=84&anno=2021"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=84&anno=2024"
           }],
           "layers": "new_atlante_integrato:v_province_t",
           "parameters": {
@@ -203,7 +203,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=80&anno=2021"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=80&anno=2024"
           }],
           "layers": "new_atlante_integrato:v_province_t",
           "parameters": {
@@ -231,7 +231,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=81&anno=2021"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=81&anno=2024"
           }],
           "layers": "new_atlante_integrato:v_province_t",
           "parameters": {
@@ -252,7 +252,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=82&anno=2021"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=82&anno=2024"
           }],
           "layers": "new_atlante_integrato:v_province_t",
           "parameters": {
@@ -273,7 +273,7 @@
           },
           "metadataUrls":[{
             "title":"link metadato",
-            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=83&anno=2021"
+            "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=83&anno=2024"
           }],
           "layers": "new_atlante_integrato:v_province_t",
           "parameters": {

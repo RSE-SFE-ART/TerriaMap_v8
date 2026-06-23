@@ -25,7 +25,7 @@
               },
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=88&anno=2020"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=88&anno=2025"
               }],
               "layers": "new_atlante_integrato:v_regioni_pop",
               //"parameters": {
@@ -52,7 +52,7 @@
               },
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=87&anno=2020"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=87&anno=2025"
               }],
               "layers": "new_atlante_integrato:v_province_pop",
              // "parameters": {
@@ -79,7 +79,7 @@
               },
               "metadataUrls":[{
                 "title":"link metadato",
-                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=65&anno=2020"
+                "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=65&anno=2025"
               }],
               "layers": "new_atlante_integrato:v_comuni_pop",
               //"parameters": {

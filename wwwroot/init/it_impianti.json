@@ -18,7 +18,7 @@
               "id": "eolo",
               "type": "group",
               "name": "Eolici",
-              "description": "Questa raccolta comprende dati relativi agli impianti eolici presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n  <a title=\"Juan Corral (Fotógrafo, Subdirección de Prensa y Contenidos Públicos del Municipio de Bahía Blanca), CC BY 2.5 AR &lt;https://creativecommons.org/licenses/by/2.5/ar/deed.en&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Parque_E%C3%B3lico_Molinos_Corti_(05).jpg\"><img width=\"640\" alt=\"Parque Eólico Molinos Corti (05)\" src=\"https://upload.wikimedia.org/wikipedia/commons/e/e6/Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg\"></a>", //<a href=\"https://creativecommons.org/licenses/by/2.5/ar/deed.en\" rel=\"license\">CC BY 2.5 AR</a>\n\n
+              "description": "Questa raccolta comprende dati relativi agli impianti eolici presenti sul territorio nazionale riferiti a differenti livelli di aggregazione spaziale in diversi anni.\n\n  <a title=\"Juan Corral (Fotógrafo, Subdirección de Prensa y Contenidos Públicos del Municipio de Bahía Blanca), CC BY 2.5 AR &lt;https://creativecommons.org/licenses/by/2.5/ar/deed.en&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Parque_E%C3%B3lico_Molinos_Corti_(05).jpg\"><img width=\"640\" alt=\"Parque Eólico Molinos Corti (05)\" src=\"https://upload.wikimedia.org/wikipedia/commons/e/e6/Parque_E%C3%B3lico_Molinos_Corti_%2805%29.jpg\"></a>", //<a href=\"https://creativecommons.org/licenses/by/2.5/ar/deed.en\" rel=\"license\">CC BY 2.5 AR</a>\n\n"
               "isOpen": false,
               "members": [
                 {
@@ -38,7 +38,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=89&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=89&anno=2024"
                   }]             
                 },
                 {
@@ -81,7 +81,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=179&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=179&anno=2024"
                   }],
                   "styles":"eo_num_impianti_reg",
                   "id": "179"              
@@ -99,7 +99,7 @@
                   "styles":"eo_imp_reg_produzione",
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=90&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=90&anno=2024"
                   }],
                   "parameters": {"cql_filter":"var_id=90"},
                   "id": "90"
@@ -119,7 +119,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=69&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=69&anno=2024"
                   }],
                   "id": "69",
                   "styles":"eo_imp_prov_potenza"              
@@ -191,7 +191,7 @@
                   "styles":"eo_imp_prov_produzione",
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=70&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=70&anno=2024"
                   }],
                   "parameters": {
                     "cql_filter": "var_id=70"
@@ -409,7 +409,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=276&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=276&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_regioni_t",
                       "styles":"new_atlante_integrato:id_imp_reg_pot_tot",
@@ -456,7 +456,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=277&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=277&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_province_t",
                       "styles":"new_atlante_integrato:id_imp_prov_potenza_installata",
@@ -566,7 +566,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=210&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=210&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_regioni_t",
                       "styles":"new_atlante_integrato:id_imp_reg_produzione",
@@ -586,7 +586,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=184&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=184&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_regioni_t",
                       "styles":"id_prod_reg_netto_pomp",
@@ -606,7 +606,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=188&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=188&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_regioni_t",
                       "styles":"id_prod_reg_pomp",
@@ -626,7 +626,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=187&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=187&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_regioni_t",
                       "styles":"id_prod_reg_serb_netto_pomp",
@@ -646,7 +646,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=185&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=185&anno=2024"
                       }],
                       "styles":"id_prod_reg_bac",
                       "layers": "new_atlante_integrato:v_regioni_t",
@@ -666,7 +666,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=186&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=186&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_regioni_t",
                       "styles":"id_prod_reg_acqua_fluente",
@@ -686,7 +686,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=278&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=278&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_province_t",
                       "styles":"id_prov_prod_lorda", // id_imp_prov_produzione",id_produzione_lorda_tot_prov_gwh
@@ -706,7 +706,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=77&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=77&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_province_t",
                       "styles":"id_imp_prov_produzione",
@@ -726,7 +726,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=279&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=279&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_province_t",
                       "styles":"id_prod_reg_pomp",
@@ -815,7 +815,7 @@
                       },
                       "metadataUrls":[{
                         "title":"link metadato",
-                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=183&anno=2021"
+                        "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=183&anno=2024"
                       }],
                       "layers": "new_atlante_integrato:v_regioni_t",
                       "styles":"id_num_imp_reg",
@@ -917,7 +917,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=91&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=91&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"so_imp_reg_potenza_installata",
@@ -937,7 +937,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=71&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=71&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"so_n_impianti_reg",
@@ -957,7 +957,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=92&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=92&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"so_imp_reg_produzione",
@@ -977,7 +977,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=72&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=72&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"so_imp_prov_potenza_installata",
@@ -997,7 +997,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=181&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=181&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"so_n_impianti_prov",
@@ -1017,7 +1017,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=73&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=73&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"so_imp_prov_produzione",
@@ -1100,7 +1100,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=93&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=93&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"ge_imp_reg_potenza_installata",
@@ -1120,7 +1120,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=177&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=177&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"ge_num_impianti_reg",
@@ -1140,7 +1140,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=94&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=94&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"ge_imp_reg_produzione",
@@ -1160,7 +1160,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=74&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=74&anno=2024"
                   }],
                   /* "initialMessage": {
                     "title": "Visualizzazione strato:",
@@ -1187,7 +1187,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=178&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=178&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"ge_num_impianti_prov",
@@ -1207,7 +1207,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=75&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=75&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"ge_imp_prov_produzione",
@@ -1305,7 +1305,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=78&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=78&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"bi_imp_reg_potenza_installata",
@@ -1332,7 +1332,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=201&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=201&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"bi_num_imp_reg",
@@ -1359,7 +1359,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=97&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=97&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"bi_imp_reg_produzione",
@@ -1507,7 +1507,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=79&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=79&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"bi_imp_prov_produzione",
@@ -1653,7 +1653,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=271&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=271&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"pot_termo_fossile_reg",
@@ -1673,7 +1673,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=272&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=272&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_regioni_t",
                   "styles":"prod_reg_termo_fossile",
@@ -1693,7 +1693,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=273&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=273&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"pot_termo_fossile_prov",
@@ -1713,7 +1713,7 @@
                   },
                   "metadataUrls":[{
                     "title":"link metadato",
-                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=274&anno=2021"
+                    "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=274&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:v_province_t",
                   "styles":"prod_prov_termo_fossile",

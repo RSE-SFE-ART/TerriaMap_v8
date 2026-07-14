@@ -1,11 +1,11 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": [
-    "en_cartografia",
-    "en_dati_territoriali",
-    "en_infrastrutture",
-    "en_risorsa",
-    "en_impianti",
+    //"en_cartografia",
+    //"en_dati_territoriali",
+    //"en_infrastrutture",
+    //"en_risorsa",
+    //"en_impianti",
     "en_consumi",
     "en_stime_energetiche",
     "en_aree_idonee",

@@ -1,13 +1,21 @@
 { "initializationUrls": [
+<<<<<<< Updated upstream
     //"it_cartografia",
     //"it_dati_territoriali",
     //"it_infrastrutture",
     //"it_risorsa",
     //"it_impianti",
     "it_consumi",
+=======
+    "it_cartografia",
+    "it_dati_territoriali",
+    //"it_infrastrutture","it_risorsa",
+    //"it_impianti",
+    //"it_consumi",
+>>>>>>> Stashed changes
     "it_stime_energetiche",
-    "it_aree_idonee",
-    "it_recupero_calore",
+    //"it_aree_idonee",
+    //"it_recupero_calore",
     //"it_cartografia_geo",
     // "it_dati_geologici",
     // "it_titoli_minerari",
@@ -29,7 +37,7 @@
     "url": ""},
     "appName": "Terria Map",
     "brandBarElements": ["<a target=\"_blank\" href=\"http://www.rse-web.it\"><img src=\"images/logo_rse_2022_WHITE.png\" style=\"display: block; margin-left: auto; margin-right: auto;  margin-top: 0px; width: 70%;\" /></a>",
-      "<p style=\"display: block; text-align: center; color: white; font-size: 20px; margin-top: 10px; margin-left: auto; margin-right: auto;\"><b>Atlante Integrato per il Sistema Energetico Nazionale e le Fonti Rinnovabili</b></p>",
+      "<p style=\"display: block; text-align: center; color: white; font-size: 20px; margin-top: 10px; margin-left: auto; margin-right: auto;\"><b>Atlante dei consumi CONSUMMIA</b></p>",
       ""],
     "supportEmail": "geoportale@rse-web.it",
     "proj4ServiceBaseUrl": "proj4def/",

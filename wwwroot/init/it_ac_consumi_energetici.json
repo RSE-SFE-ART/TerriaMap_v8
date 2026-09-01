@@ -1,0 +1,76 @@
+{
+   "catalog": [
+    {
+      "type": "group",
+      "name": "Consumi energetici",
+      "description": "Descrizione \n\n <a title=\"Waterloo1883, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons\" href=\"https://commons.wikimedia.org/wiki/File:Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png\"><img width=\"640\" alt=\"Mapa físico de localización Huánuco\" src=\"https://upload.wikimedia.org/wikipedia/commons/c/c9/Mapa_f%C3%ADsico_de_localizaci%C3%B3n_Hu%C3%A1nuco.png\"></a> ",
+      "isOpen": true,
+      "members": [
+          {
+            "type": "wms",
+            "name": "Consumo annuo di gas naturale nel settore residenziale",
+            "description": "Limiti amministrativi regionali selezionabili in differenti anni. Fonte dati ISTAT.",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_terria",
+            "dateFormat":"dd-mm-yyyy",
+            "featureInfoTemplate": {
+              "template": "<p>Regione <b>{{den_reg}}</b>, anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno={{anno}}\">link al metadato </a> </p>"
+            },
+            "metadataUrls":[{
+              "title":"link metadato",
+              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno=2026"
+            }],
+            "layers": "new_atlante_integrato:v_regioni_terria",
+            "id": "cons1"
+          },
+          {
+            "type": "wms",
+            "name": "Consumo annuo di energia elettrica nel settore residenziale",
+            "description": "Limiti amministrativi regionali selezionabili in differenti anni. Fonte dati ISTAT.",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_terria",
+            "dateFormat":"dd-mm-yyyy",
+            "featureInfoTemplate": {
+              "template": "<p>Regione <b>{{den_reg}}</b>, anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno={{anno}}\">link al metadato </a> </p>"
+            },
+            "metadataUrls":[{
+              "title":"link metadato",
+              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno=2026"
+            }],
+            "layers": "new_atlante_integrato:v_regioni_terria",
+            "id": "cons2"
+          },
+          {
+            "type": "wms",
+            "name": "Consumo annuo di gas naturale nel settore terziario",
+            "description": "Limiti amministrativi regionali selezionabili in differenti anni. Fonte dati ISTAT.",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_terria",
+            "dateFormat":"dd-mm-yyyy",
+            "featureInfoTemplate": {
+              "template": "<p>Regione <b>{{den_reg}}</b>, anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno={{anno}}\">link al metadato </a> </p>"
+            },
+            "metadataUrls":[{
+              "title":"link metadato",
+              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno=2026"
+            }],
+            "layers": "new_atlante_integrato:v_regioni_terria",
+            "id": "cons3"
+          }, 
+          {
+            "type": "wms",
+            "name": "Consumo annuo di energia elettrica nel settore terziario",
+            "description": "Limiti amministrativi regionali selezionabili in differenti anni. Fonte dati ISTAT.",
+            "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3v_regioni_terria",
+            "dateFormat":"dd-mm-yyyy",
+            "featureInfoTemplate": {
+              "template": "<p>Regione <b>{{den_reg}}</b>, anno {{anno}}</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno={{anno}}\">link al metadato </a> </p>"
+            },
+            "metadataUrls":[{
+              "title":"link metadato",
+              "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=108&anno=2026"
+            }],
+            "layers": "new_atlante_integrato:v_regioni_terria",
+            "id": "cons4"
+          }
+      ]
+    }
+  ]
+}

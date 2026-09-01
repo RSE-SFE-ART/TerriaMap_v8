@@ -1,18 +1,13 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": [
-    "en_cartografia",
-    "en_dati_territoriali",
-    "en_infrastrutture",
-    "en_risorsa",
-    "en_impianti",
-    "en_consumi",
-    "en_stime_energetiche",
-    "en_aree_idonee",
-    "en_recupero_calore",
-    //"it_story_eff",
-    "it"
-  ],
+    "en_ac_territorio",
+    "en_ac_demografia",
+    "en_ac_caratteristiche_edilizie",
+    "en_ac_impianti_energetici",
+    "en_ac_consumi_energetici",
+    "en_ac_scenari_futuri",
+    "en"],
   "parameters": {
     "tabbedCatalog": true,
     "useCesiumIonTerrain": false,
@@ -63,7 +58,7 @@
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "<a target=\"_blank\" href=\"http://www.rse-web.it\"><img src=\"images/logo_rse_2022_WHITE.png\" style=\"display: block; margin-left: auto; margin-right: auto;  margin-top: 0px; width: 70%;\" /></a>",
-      "<p style=\"display: block; text-align: center; color: white; font-size: 20px; margin-top: 10px; margin-left: auto; margin-right: auto;\"><b>Integrated Atlas for the National Energy System and Renewable Sources</b></p>",
+      "<p style=\"display: block; text-align: center; color: white; font-size: 20px; margin-top: 10px; margin-left: auto; margin-right: auto;\"><b>Atlas of energy consumptions</b></p>",
       ""
     ],
     // Shown when things go wrong.

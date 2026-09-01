@@ -1,9 +1,9 @@
 {
   "catalog": [
     {
-      "id": "available_areas",
+      "id": "energy_consuptions",
       "type": "group",
-      "name": "2030 RES targets",
+      "name": "Energy consumptions",
       "description": "<div style='text-align:justify;'><p>The achievement of the challenging goals for the development of renewable energy sources (RES) by 2030 as outlined in the PNIEC (National Integrated Energy and Climate Plan) and dictated by the REPowerEU program and the Fit for 55 package is mainly based on the contribution of solar and wind sources. The availability of areas suitable for hosting installations is a discriminating factor across different territorial realities and can highlight potential limitations to the development itself.</p><p> This section presents spatially based information that is framed within the energy territorial planning process and the monitoring of regional objectives assigned by the ministerial decree of June 21, 2024 (the so-called Suitable Areas Decree). <br> In addition to the <strong>goals</strong> and their <strong>degree of advancement</strong>, for each of the macro categories of plants considered in this section (photovoltaic, onshore wind, and offshore wind), the potential for territorial development is presented in terms of areas potentially available for new installations (<strong>estimate of eligible areas</strong>), as well as <strong>projects in the authorization phase</strong> (large plants).</p><p>It should be noted that the results of the eligible areas reported in the photovoltaic, onshore wind, and offshore wind sections are derived from RSE studies that are based on specific hypotheses and should be understood as purely indicative information regarding land availability.</div>\n\n <div><img src=\"/public/img/Energie Rinnovabili-iStock-586163548.jpg\" style=\"width:640px;height:427px;\"></br></br></div> </p>",
       "isOpen": false,
       "members": [

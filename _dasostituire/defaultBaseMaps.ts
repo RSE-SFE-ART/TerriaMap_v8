@@ -1,5 +1,6 @@
 import Terria from "../Terria";
 
+const CARTO_API_KEY = "cb1_2p5x_1_ca4348e415b441f4dcb7f77c";
 
 var userLang = navigator.language;
 //console.log("The language is: " + userLang);
@@ -113,11 +114,17 @@ export function defaultBaseMaps(terria: Terria): any[] {
       id: "basemap-positron",
       name: "Positron (Light)",
       type: "open-street-map",
-      url: "https://basemaps.cartocdn.com/light_all/",
+
+      url:
+        "https://basemaps.cartocdn.com/light_all/?key=" +
+        CARTO_API_KEY,
+
       attribution:
-      "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'> CARTO </a>, <a href= '" + path_cookies + "'>  |  RSE Cookies</a> , <a href='" + path_privacy + "'>  |  RSE Privacy</a>",
-        /*"© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'> CARTO </a>, <a href='https://www.rse-web.it/cookie/'>  |  RSE Cookies</a> , <a href='https://www.rse-web.it/privacy/'>  |  RSE Privacy</a>",
-         "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto/'>CARTO</a>", */
+        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, " +
+        "© <a href='https://carto.com/attributions'>CARTO</a>, " +
+        "<a href='" + path_cookies + "'> | RSE Cookies</a>, " +
+        "<a href='https://www.rse-web.it/privacy/'> | RSE Privacy</a>",
+
       subdomains: ["a", "b", "c", "d"],
       opacity: 1.0
     },
@@ -129,9 +136,17 @@ export function defaultBaseMaps(terria: Terria): any[] {
       id: "basemap-darkmatter",
       name: "Dark Matter",
       type: "open-street-map",
-      url: "https://basemaps.cartocdn.com/dark_all/",
+
+      url:
+        "https://basemaps.cartocdn.com/dark_all/?key=" +
+        CARTO_API_KEY,
+
       attribution:
-      "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto'> CARTO </a>, <a href= '" + path_cookies + "'>  |  RSE Cookies</a> , <a href='" + path_privacy + "'>  |  RSE Privacy</a>",
+        "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, " +
+        "© <a href='https://carto.com/attributions'>CARTO</a>, " +
+        "<a href='" + path_cookies + "'> | RSE Cookies</a>, " +
+        "<a href='https://www.rse-web.it/privacy/'> | RSE Privacy</a>",
+
       subdomains: ["a", "b", "c", "d"],
       opacity: 1.0
     },

@@ -122,10 +122,11 @@
     "replace_UI": "copy .\\_dasostituire\\lib\\Views\\AnalisiAvanzate.jsx .\\lib\\Views\\AnalisiAvanzate.jsx && copy .\\_dasostituire\\lib\\Views\\UserInterface.jsx .\\lib\\Views\\UserInterface.jsx && copy .\\_dasostituire\\wwwroot\\about-en.html .\\wwwroot\\about-en.html",
     "replace_FeatureInfoSction": "copy .\\_dasostituire\\node_modules_dasostituire\\terriajs\\lib\\ReactViews\\FeatureInfo\\FeatureInfoSection.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\FeatureInfo\\FeatureInfoSection.jsx && copy .\\_dasostituire\\node_modules_dasostituire\\terriajs\\lib\\ReactViews\\FeatureInfo\\FeatureInfoDownloadRosa.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\FeatureInfo\\FeatureInfoDownloadRosa.jsx",
     "replace_welcome": "copy .\\_dasostituire\\WelcomeMessage.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\WelcomeMessage\\",
+    "replace_help_panel": "copy .\\_dasostituire\\HelpPanel.jsx .\\node_modules\\terriajs\\lib\\ReactViews\\Map\\Panels\\HelpPanel\\",
     "replace_cookiesmsg": "copy .\\_dasostituire\\terriajs\\lib\\language\\en\\translation.json .\\node_modules\\terriajs\\lib\\language\\en\\ && copy .\\_dasostituire\\terriajs\\lib\\language\\it\\translation.json .\\node_modules\\terriajs\\lib\\language\\it\\ && copy .\\_dasostituire\\wwwroot\\languages\\it\\translation.json .\\wwwroot\\languages\\it\\",
     "fix_images" : "copy .\\_dasostituire\\defaultBaseMaps.ts .\\node_modules\\terriajs\\lib\\Models\\BaseMaps\\",
     "add_OSM_it": "copy .\\_dasostituire\\lib\\Models\\SearchProviders\\OSMMapsSearchProvider.ts .\\node_modules\\terriajs\\lib\\Models\\SearchProviders\\",
-    "pre_gulp": "yarn replace_brand && yarn replace_tour && yarn replace_UI && yarn replace_FeatureInfoSction && yarn replace_welcome && yarn replace_cookiesmsg && yarn fix_images && yarn add_OSM_it",
+    "pre_gulp": "yarn replace_brand && yarn replace_tour && yarn replace_UI && yarn replace_FeatureInfoSction && yarn replace_welcome && yarn replace_help_panel && yarn replace_cookiesmsg && yarn fix_images && yarn add_OSM_it",
     "post_gulp": "yarn replace_prev"
   },
   "husky": {

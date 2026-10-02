@@ -206,12 +206,12 @@
         "title": "Share & Story migration"
       },
       // For maps with satellite imagery, also see `showInAppGuides`
-       {
+      /* {
            "itemName": "satelliteimagery",
            "title": "Satellite Imagery",
            "paneMode": "slider",
            "icon": "satellite"
-       }
+       } */
     ],
     "helpContentTerms": [
       {

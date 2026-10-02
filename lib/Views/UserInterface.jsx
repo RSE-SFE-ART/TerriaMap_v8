@@ -12,6 +12,7 @@ import AnalisiAvanzate from "./AnalisiAvanzate";
 import CatalogoDati from "./CatalogoDati";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
+import { HELP_PANEL_ID } from "terriajs/lib/ReactViews/Map/Panels/HelpPanel/HelpPanel";
 import version from "../../version";
 import { useTranslation } from "react-i18next"; //GOF x traduzione didascalie
 import "./global.scss";
@@ -35,6 +36,10 @@ import AppModalHost from "./AppModalHost.jsx";
 
 export default function UserInterface(props) {
   const { t } = useTranslation(); //GOF x traduzione link about.html/about-en.html
+
+  React.useLayoutEffect(() => {
+    props.viewState?.terria?.mapNavigationModel?.remove(HELP_PANEL_ID);
+  }, [props.viewState]);
 
   return (
     <>

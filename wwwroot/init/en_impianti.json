@@ -947,7 +947,7 @@
                   "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3impianti_fv_perimetrazione_ai",
                   "dateFormat":"dd-mm-yyyy",
                   "featureInfoTemplate": {
-                    "template": "<p>Perimeter of the photovoltaic system installed on the ground in the municipality of <b>{{COMUNE}}</b> in the province of <b>{{DEN_UTS}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=328&anno=2021\">metadata link</a> </p>"
+                    "template": "<p>Delineation of Ground-Mounted PV Plant in the municipality of <b>{{COMUNE}}</b> in the province of <b>{{DEN_UTS}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=328&anno=2021\">metadata link</a> </p>"
                   },
                   "metadataUrls":[{
                     "title":"link metadato",

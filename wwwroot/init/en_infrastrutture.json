@@ -4,7 +4,7 @@
       "id": "rete",
       "type": "group",
       "name": "Network infrastructure",
-      "description": "<p align=\"justify\">This collection includes information on voltage flows and quality, and provides the mapping of high voltage power lines. This information is useful to support assessments of the energy system as a whole and to identify potential critical issues.\n\n <div><img src=\"/public/img/shutterstock_668568088.jpg\" style=\"width:640px;height:427px;\"></div></p>",
+      "description": "This collection includes information on voltage flows and quality, and provides the mapping of high voltage power lines. This information is useful to support assessments of the energy system as a whole and to identify potential critical issues.\n\n <div><img src=\"/public/img/shutterstock_668568088.jpg\" style=\"width:640px;height:427px;\"></div>",
       "isOpen": true,
       "members": [
         //{
@@ -39,7 +39,7 @@
           "description": "Track of high voltage power lines for the national territory provided by <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a>.",
           "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3OSM_power_line",
           "metadataUrls":[{
-            "title":"link metadato",
+            "title":"metadata link",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=216"
           }],
           "layers": "new_atlante_integrato:OSM_power_line",
@@ -51,7 +51,7 @@
           "description": "Map of conventional areas under primary cabins on the national territory.</br> Each conventional area is characterized by a reference code composed of 11 alphanumeric characters. </br> The map is managed by GSE. </br> For more information visit the page <a href=\"https://www.gse.it/servizi-per-te/autoconsumo/mappa-interattiva-delle-cabine-primarie/\">Interactive map of primary cabins</a>.",
           "url": "https://gis3.rse-web.it/geoserver/new_atlante_integrato/wms?service=WMS&version=1.3.0&request=GetMap&layers=new_atlante_integrato%3aree_sottese_cabine_primarie",
           "metadataUrls":[{
-            "title":"link metadato",
+            "title":"metadata link",
             "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=293"
           }],
           "layers": "new_atlante_integrato:aree_sottese_cabine_primarie",
@@ -61,27 +61,27 @@
           "id": "indicatori_cont",
           "type": "group",
           "name": "Distribution network continuity indicators",
-          "description": "This collection includes information on the continuity of the electricity distribution service, made available annually by the Italian Regulatory Authority for Energy, Networks and Environment (ARERA). The data are transmitted and uploaded to the portal by distribution system operators (DSOs), in accordance with the established procedures, and subsequently made available for publication, consultation and sharing purposes. The indicators are calculated by the Authority on the basis of the information provided by distribution companies.&lt;/br&gt;&lt;/br&gt;Source: &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+          "description": "This collection includes information on the continuity of the electricity distribution service, made available annually by the Italian Regulatory Authority for Energy, Networks and Environment (ARERA). The data are transmitted and uploaded to the portal by distribution system operators (DSOs), in accordance with the established procedures, and subsequently made available for publication, consultation and sharing purposes. The indicators are calculated by the Authority on the basis of the information provided by distribution companies.</br></br> Source: <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
           "isOpen": false,
           "members": [
             {
               "id": "num_ut_bassa_tensione",
               "type": "group",
               "name": "Number of low-voltage users",
-              "description": "This collection includes, for the period 2020-2024, the number of low-voltage users by region and province.&lt;/br&gt;&lt;/br&gt;Source: &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+              "description": "This collection includes, for the period 2020-2024, the number of low-voltage users by region and province.</br></br>Source: <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
                   "name": "Number of low-voltage users at regional level",
-                  "description": "Number of low-voltage users for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Number of low-voltage users for the period 2020-2024.</br></br>RSE processing based on data from <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                  "template": "&lt;p&gt;In &lt;b&gt;{{anno}}&lt;/b&gt;, there were &lt;b&gt;{{num_utenti}}&lt;/b&gt; low-voltage users in &lt;b&gt;{{Regione}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  "template": "<p>In <b>{{anno}}</b>, there were <b>{{num_utenti}}</b> low-voltage users in <b>{{Regione}}</b></p><p style='display: block; text-align: center;'>> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_regioni",
                   "styles":"interruzioni_regioni_num_utenti",
@@ -90,14 +90,14 @@
                 {
                   "type": "wms",
                   "name": "Number of low-voltage users at provincial level",
-                  "description": "Number of low-voltage users for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Number of low-voltage users for the period 2020-2024.</br></br>RSE processing based on data from <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                  "template": "&lt;p&gt;In &lt;b&gt;{{anno}}&lt;/b&gt;, there were &lt;b&gt;{{num_utenti}}&lt;/b&gt; low-voltage users in the province of &lt;b&gt;{{Provincia}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  "template": "<p>In <b>{{anno}}</b>, there were <b>{{num_utenti}}</b> low-voltage users in the province of <b>{{Provincia}}</b></p><p style='display: block; text-align: center;'>> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_province",
                   "styles":"interruzioni_province_num_utenti",
@@ -109,20 +109,20 @@
               "id": "durata_interr_lunghe_senza_preavviso",
               "type": "group",
               "name": "Duration of long unplanned interruptions",
-              "description": "This collection includes, for the period 2020-2024, the average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user.&lt;/br&gt;&lt;/br&gt;Source: &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+              "description": "This collection includes, for the period 2020-2024, the average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user.</br></br>Source: <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
                   "name": "Duration of long unplanned interruptions at regional level",
-                  "description": "Average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user, at regional level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user, at regional level, for the period 2020-2024.</br></br>RSE processing based on data from <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                  "template": "&lt;p&gt;Duration of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in &lt;b&gt;{{Regione}}&lt;/b&gt;: &lt;b&gt;{{durtot_spl}}&lt;/b&gt; minutes per LV user&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  "template": "<p>Duration of long unplanned interruptions in <b>{{anno}}</b> in <b>{{Regione}}</b>: <b>{{durtot_spl}}</b> minutes per LV user</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_regioni",
                   "styles":"interruzioni_regioni_dur_spl",
@@ -131,14 +131,14 @@
                 {
                   "type": "wms",
                   "name": "Duration of long unplanned interruptions at provincial level",
-                  "description": "Average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user, at provincial level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user, at provincial level, for the period 2020-2024.</br></br>RSE processing based on data from <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                   "template": "&lt;p&gt;Duration of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the province of &lt;b&gt;{{Provincia}}&lt;/b&gt;: &lt;b&gt;{{durtot_spl}}&lt;/b&gt; minutes per LV user&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                   "template": "<p>Duration of long unplanned interruptions in <b>{{anno}}</b> in the province of <b>{{Provincia}}</b>: <b>{{durtot_spl}}</b> minutes per LV user</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_province",
                   "styles":"interruzioni_province_dur_spl",
@@ -147,14 +147,14 @@
                 {
                   "type": "wms",
                   "name": "Duration of long unplanned interruptions at municipal level",
-                  "description": "Average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user, at municipal level, for the period 2020-2024.&lt;/br&gt;Municipal data are derived from provincial data published by ARERA and assigned to each municipality based on the number of inhabitants and the corresponding degree of concentration:&lt;/br&gt;&lt;ul&gt;&lt;li&gt;high concentration (1_AC): municipalities with a population exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;medium concentration (2_MC): municipalities with a population exceeding 5,000 inhabitants and not exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;low concentration (3_BC): municipalities with a population not exceeding 5,000 inhabitants according to the latest census.&lt;/li&gt;&lt;/ul&gt;In some specific cases, the degree of concentration of an individual municipality may differ from the classification described above, following requests submitted by the relevant distribution system operator pursuant to Article 4, paragraph 4.2, of Resolution No. 128/99 of 1 September 1999 and approved by the Authority.&lt;/br&gt;The municipal value should not be interpreted as specific to each individual municipality, but rather as an average value for all municipalities within the same province having the same degree of concentration.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user, at municipal level, for the period 2020-2024.</br>Municipal data are derived from provincial data published by ARERA and assigned to each municipality based on the number of inhabitants and the corresponding degree of concentration:</br><ul><li>high concentration (1_AC): municipalities with a population exceeding 50,000 inhabitants according to the latest census;</li><li>medium concentration (2_MC): municipalities with a population exceeding 5,000 inhabitants and not exceeding 50,000 inhabitants according to the latest census;</li><li>low concentration (3_BC): municipalities with a population not exceeding 5,000 inhabitants according to the latest census.</li></ul>In some specific cases, the degree of concentration of an individual municipality may differ from the classification described above, following requests submitted by the relevant distribution system operator pursuant to Article 4, paragraph 4.2, of Resolution No. 128/99 of 1 September 1999 and approved by the Authority.</br>The municipal value should not be interpreted as specific to each individual municipality, but rather as an average value for all municipalities within the same province having the same degree of concentration.</br></br>RSE processing based on data from <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                  "template": "&lt;p&gt;Duration of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the municipality of &lt;b&gt;{{Comune}}&lt;/b&gt;: &lt;b&gt;{{durtot_spl}}&lt;/b&gt; minutes per LV user.&lt;/br&gt;&lt;i&gt;The value is estimated based on data for the province of {{Provincia}} for the {{Grado di concentrazione}} degree of concentration.&lt;/i&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  "template": "<p>Duration of long unplanned interruptions in <b>{{anno}}</b> in the municipality of <b>{{Comune}}</b>: <b>{{durtot_spl}}</b> minutes per LV user.</br><i>The value is estimated based on data for the province of {{Provincia}} for the {{Grado di concentrazione}} degree of concentration.</i></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_comuni",
                   "styles":"interruzioni_comuni_dur_spl",
@@ -166,20 +166,20 @@
               "id": "numero_interr_lunghe_senza_preavviso",
               "type": "group",
               "name": "Number of long unplanned interruptions",
-              "description": "This collection includes, for the period 2020-2024, the annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user.&lt;/br&gt;&lt;/br&gt;Source: &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+              "description": "This collection includes, for the period 2020-2024, the annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user.</br></br>Source: <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
                   "name": "Number of long unplanned interruptions at regional level",
-                  "description": "Total annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at regional level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Total annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at regional level, for the period 2020-2024.</br></br>RSE processing based on data from <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                  "template": "&lt;p&gt;Number of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in &lt;b&gt;{{Regione}}&lt;/b&gt;: &lt;b&gt;{{numtot_spl}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  "template": "<p>Number of long unplanned interruptions in <b>{{anno}}</b> in <b>{{Regione}}</b>: <b>{{numtot_spl}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_regioni",
                   "styles":"interruzioni_regioni_num_spl",
@@ -188,14 +188,14 @@
                 {
                   "type": "wms",
                   "name": "Number of long unplanned interruptions at provincial level",
-                  "description": "Total annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at provincial level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Total annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at provincial level, for the period 2020-2024.</br></br>RSE processing based on data from <a href=\"\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                  "template": "&lt;p&gt;Number of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the province of &lt;b&gt;{{Provincia}}&lt;/b&gt;: &lt;b&gt;{{numtot_spl}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  "template": "<p>Number of long unplanned interruptions in <b>{{anno}}</b> in the province of <b>{{Provincia}}</b>: <b>{{numtot_spl}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_province",
                   "styles":"interruzioni_province_num_spl",
@@ -204,14 +204,14 @@
                 {
                   "type": "wms",
                   "name": "Number of long unplanned interruptions at municipal level",
-                  "description": "Total annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at municipal level, for the period 2020-2024.&lt;/br&gt;Municipal data are derived from provincial data published by ARERA and assigned to each municipality based on the number of inhabitants and the corresponding degree of concentration:&lt;/br&gt;&lt;ul&gt;&lt;li&gt;high concentration (1_AC): municipalities with a population exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;medium concentration (2_MC): municipalities with a population exceeding 5,000 inhabitants and not exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;low concentration (3_BC): municipalities with a population not exceeding 5,000 inhabitants according to the latest census.&lt;/li&gt;&lt;/ul&gt;In some specific cases, the degree of concentration of an individual municipality may differ from the classification described above, following requests submitted by the relevant distribution system operator pursuant to Article 4, paragraph 4.2, of Resolution No. 128/99 of 1 September 1999 and approved by the Authority.&lt;/br&gt;The municipal value should not be interpreted as specific to each individual municipality, but rather as an average value for all municipalities within the same province having the same degree of concentration.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Total annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at municipal level, for the period 2020-2024.</br>Municipal data are derived from provincial data published by ARERA and assigned to each municipality based on the number of inhabitants and the corresponding degree of concentration:</br><ul><li>high concentration (1_AC): municipalities with a population exceeding 50,000 inhabitants according to the latest census;</li><li>medium concentration (2_MC): municipalities with a population exceeding 5,000 inhabitants and not exceeding 50,000 inhabitants according to the latest census;</li><li>low concentration (3_BC): municipalities with a population not exceeding 5,000 inhabitants according to the latest census.</li></ul>In some specific cases, the degree of concentration of an individual municipality may differ from the classification described above, following requests submitted by the relevant distribution system operator pursuant to Article 4, paragraph 4.2, of Resolution No. 128/99 of 1 September 1999 and approved by the Authority.</br>The municipal value should not be interpreted as specific to each individual municipality, but rather as an average value for all municipalities within the same province having the same degree of concentration.</br></br>RSE processing based on data from <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                  "template": "&lt;p&gt;Number of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the municipality of &lt;b&gt;{{Comune}}&lt;/b&gt;: &lt;b&gt;{{numtot_spl}}&lt;/b&gt;.&lt;/br&gt;&lt;i&gt;The value is estimated based on data for the province of {{Provincia}} for the {{Grado di concentrazione}} degree of concentration.&lt;/i&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  "template": "<p>Number of long unplanned interruptions in <b>{{anno}}</b> in the municipality of <b>{{Comune}}</b>: <b>{{numtot_spl}}</b>.</br><i>The value is estimated based on data for the province of {{Provincia}} for the {{Grado di concentrazione}} degree of concentration.</i></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_comuni",
                   "styles":"interruzioni_comuni_num_spl",
@@ -223,20 +223,20 @@
               "id": "numero_interr_brevi_senza_preavviso",
               "type": "group",
               "name": "Number of short unplanned interruptions",
-              "description": "This collection includes, for the period 2020-2024, the average total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user.&lt;/br&gt;&lt;/br&gt;Source: &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+              "description": "This collection includes, for the period 2020-2024, the average total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user.</br></br>Source: <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
               "isOpen": false,
               "members": [
                 {
                   "type": "wms",
                   "name": "Number of short unplanned interruptions at regional level",
-                  "description": "Total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at regional level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at regional level, for the period 2020-2024.</br></br>RSE processing based on data from <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                  "template": "&lt;p&gt;Number of short unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in &lt;b&gt;{{Regione}}&lt;/b&gt;: &lt;b&gt;{{numtot_spb}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  "template": "<p>Number of short unplanned interruptions in <b>{{anno}}</b> in <b>{{Regione}}</b>: <b>{{numtot_spb}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_regioni",
                   "styles":"interruzioni_regioni_num_spb",
@@ -245,14 +245,14 @@
                 {
                   "type": "wms",
                   "name": "Number of short unplanned interruptions at provincial level",
-                  "description": "Total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at provincial level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at provincial level, for the period 2020-2024.</br></br>RSE processing based on data from <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                  "template": "&lt;p&gt;Number of short unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the province of &lt;b&gt;{{Provincia}}&lt;/b&gt;: &lt;b&gt;{{numtot_spb}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  "template": "<p>Number of short unplanned interruptions in <b>{{anno}}</b> in the province of <b>{{Provincia}}</b>: <b>{{numtot_spb}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_province",
                   "styles":"interruzioni_province_num_spb",
@@ -261,14 +261,14 @@
                 {
                   "type": "wms",
                   "name": "Number of short unplanned interruptions at municipal level",
-                  "description": "Total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at municipal level, for the period 2020-2024.&lt;/br&gt;Municipal data are derived from provincial data published by ARERA and assigned to each municipality based on the number of inhabitants and the corresponding degree of concentration:&lt;/br&gt;&lt;ul&gt;&lt;li&gt;high concentration (1_AC): municipalities with a population exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;medium concentration (2_MC): municipalities with a population exceeding 5,000 inhabitants and not exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;low concentration (3_BC): municipalities with a population not exceeding 5,000 inhabitants according to the latest census.&lt;/li&gt;&lt;/ul&gt;In some specific cases, the degree of concentration of an individual municipality may differ from the classification described above, following requests submitted by the relevant distribution system operator pursuant to Article 4, paragraph 4.2, of Resolution No. 128/99 of 1 September 1999 and approved by the Authority.&lt;/br&gt;The municipal value should not be interpreted as specific to each individual municipality, but rather as an average value for all municipalities within the same province having the same degree of concentration.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
-                  "url": "",
+                  "description": "Total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at municipal level, for the period 2020-2024.</br>Municipal data are derived from provincial data published by ARERA and assigned to each municipality based on the number of inhabitants and the corresponding degree of concentration:</br><ul><li>high concentration (1_AC): municipalities with a population exceeding 50,000 inhabitants according to the latest census;</li><li>medium concentration (2_MC): municipalities with a population exceeding 5,000 inhabitants and not exceeding 50,000 inhabitants according to the latest census;</li><li>low concentration (3_BC): municipalities with a population not exceeding 5,000 inhabitants according to the latest census.</li></ul>In some specific cases, the degree of concentration of an individual municipality may differ from the classification described above, following requests submitted by the relevant distribution system operator pursuant to Article 4, paragraph 4.2, of Resolution No. 128/99 of 1 September 1999 and approved by the Authority.</br>The municipal value should not be interpreted as specific to each individual municipality, but rather as an average value for all municipalities within the same province having the same degree of concentration.</br></br>RSE processing based on data from <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
                   "featureInfoTemplate": {
-                  "template": "&lt;p&gt;Number of short unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the municipality of &lt;b&gt;{{Comune}}&lt;/b&gt;: &lt;b&gt;{{numtot_spb}}&lt;/b&gt;.&lt;/br&gt;&lt;i&gt;The value is estimated based on data for the province of {{Provincia}} for the {{Grado di concentrazione}} degree of concentration.&lt;/i&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  "template": "<p>Number of short unplanned interruptions in <b>{{anno}}</b> in the municipality of <b>{{Comune}}</b>: <b>{{numtot_spb}}</b>.</br><i>The value is estimated based on data for the province of {{Provincia}} for the {{Grado di concentrazione}} degree of concentration.</i></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link to metadata </a> </p>"
                   },
                   "metadataUrls":[{
                   "title":"metadata link",
-                  "url":""
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
                   }],
                   "layers": "new_atlante_integrato:interruzioni_comuni",
                   "styles":"interruzioni_comuni_num_spb",

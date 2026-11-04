@@ -56,7 +56,229 @@
           }],
           "layers": "new_atlante_integrato:aree_sottese_cabine_primarie",
           "id": "aree_ac"
+        },
+        {
+          "id": "indicatori_cont",
+          "type": "group",
+          "name": "Indicatori di continuità della rete di distribuzione",
+          "description": "Questa raccolta comprende informazioni sulla continuità del servizio di distribuzione dell'energia elettrica, resi disponibili annualmente dall’Autorità di Regolazione per Energia Reti e Ambiente (ARERA). I dati sono trasmessi e caricati sul portale dai gestori dei sistemi di distribuzione (DSO), secondo le modalità previste, e successivamente resi disponibili per finalità di pubblicazione, consultazione e condivisione. Gli indicatori sono elaborati dall’Autorità a partire dalle informazioni comunicate dalle imprese distributrici.</br></br>Fonte: <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+          "isOpen": false,
+          "members": [
+            {
+              "id": "num_ut_bassa_tensione",
+              "type": "group",
+              "name": "Numero di utenti in bassa tensione",
+              "description": "Questa raccolta comprende, per il periodo 2020-2024, il numero di utenti in bassa tensione per regione e per provincia.</br></br>Fonte: <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Numero di utenti in bassa tensione a livello regionale",
+                  "description": "Numero di utenti in bassa tensione, per il periodo 2020-2024.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                  "template": "<p>Nel <b>{{anno}}</b> in <b>{{Regione}}</b> erano presenti <b>{{num_utenti}}</b> utenti in bassa tensione</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_regioni",
+                  "styles":"interruzioni_regioni_num_utenti",
+                  "id": "interr_bassa_tensione_reg"
+                },
+                {
+                  "type": "wms",
+                  "name": "Numero di utenti in bassa tensione a livello provinciale",
+                  "description": "Numero di utenti in bassa tensione, per il periodo 2020-2024.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                  "template": "<p>Nel <b>{{anno}}</b> nella provincia di <b>{{Provincia}}</b> erano presenti <b>{{num_utenti}}</b> utenti in bassa tensione</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_province",
+                  "styles":"interruzioni_province_num_utenti",
+                  "id": "interr_bassa_tensione_prov"
+                }
+              ]
+            },
+            {
+              "id": "durata_interr_lunghe_senza_preavviso",
+              "type": "group",
+              "name": "Durata interruzioni lunghe senza preavviso",
+              "description": "Questa raccolta comprende, per il periodo 2020-2024, la durata totale media per ciascun anno delle interruzioni senza preavviso lunghe (cioè con durata superiore a 3 minuti) per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in minuti/utente BT.</br></br>Fonte: <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Durata interruzioni lunghe senza preavviso a livello regionale",
+                  "description": "Durata totale media annua delle interruzioni senza preavviso lunghe (cioè con durata superiore a 3 minuti) per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in minuti/utente BT, a scala regionale, per il periodo 2020-2024.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                  "template": "<p>Durata interruzioni lunghe senza preavviso nel <b>{{anno}}</b> in <b>{{Regione}}</b>: <b>{{durtot_spl}}</b> minuti per utente BT</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_regioni",
+                  "styles":"interruzioni_regioni_dur_spl",
+                  "id": "durata_int_lunghe_senz_preavviso_reg"
+                },
+                {
+                  "type": "wms",
+                  "name": "Durata interruzioni lunghe senza preavviso a livello provinciale",
+                  "description": "Durata totale media annua delle interruzioni senza preavviso lunghe (cioè con durata superiore a 3 minuti) per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in minuti/utente BT, a scala provinciale, per il periodo 2020-2024.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                   "template": "<p>Durata interruzioni lunghe senza preavviso nel <b>{{anno}}</b> nella provincia di <b>{{Provincia}}</b>: <b>{{durtot_spl}}</b> minuti per utente BT</p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_province",
+                  "styles":"interruzioni_province_dur_spl",
+                  "id": "durata_int_lunghe_senz_preavviso_prov"
+                },
+                {
+                  "type": "wms",
+                  "name": "Durata interruzioni lunghe senza preavviso a livello comunale",
+                  "description": "Durata totale media annua delle interruzioni senza preavviso lunghe (cioè con durata superiore a 3 minuti) per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in minuti/utente BT, a scala comunale, per il periodo 2020-2024.</br>Il dato comunale è ricavato a partire dal dato provinciale pubblicato da ARERA e viene assegnato a ciascun comune sulla base del numero di abitanti del comune stesso e al relativo grado di concentrazione:</br><ul><li>alta concentrazione (1_AC): insieme dei comuni nei quali è stata rilevata nell’ultimo censimento una popolazione superiore a 50.000 abitanti;</li><li>media concentrazione (2_MC): insieme dei comuni nei quali è stata rilevata nell’ultimo censimento una popolazione superiore a 5.000 abitanti e non superiore a 50.000 abitanti;</li><li>bassa concentrazione (3_BC): insieme dei comuni nei quali è stata rilevata nell’ultimo censimento una popolazione non superiore a 5.000 abitanti.</li></ul>Per alcuni casi particolari, il grado di concentrazione del singolo comune potrebbe non corrispondere alla classificazione di cui sopra, a seguito di istanze presentate dal distributore di competenza ai sensi dell’articolo 4, comma 4.2, della deliberazione 1 settembre 1999, n. 128/99 e approvate dall’Autorità.</br>Il valore comunale non è da intendersi specifico per ciascun comune, ma va inteso come valore medio per tutti i comuni di una stessa provincia caratterizzati dallo stesso grado di concentrazione.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                  "template": "<p>Durata interruzioni lunghe senza preavviso nel <b>{{anno}}</b> nel comune di <b>{{Comune}}</b>: <b>{{durtot_spl}}</b> minuti per utente BT.</br><i>Il valore è stimato a partire dal dato della provincia di {{Provincia}} per il grado di concentrazione {{Grado di concentrazione}}.</i></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_comuni",
+                  "styles":"interruzioni_comuni_dur_spl",
+                  "id": "durata_int_lunghe_senz_preavviso_com"
+                }
+              ]
+            },
+            {
+              "id": "numero_interr_lunghe_senza_preavviso",
+              "type": "group",
+              "name": "Numero interruzioni lunghe senza preavviso",
+              "description": "Questa raccolta comprende, per il periodo 2020-2024, il numero annuale delle interruzioni lunghe (cioè con durata superiore a 3 minuti) senza preavviso per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in numero/utente BT.</br></br>Fonte: <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Numero interruzioni lunghe senza preavviso a livello regionale",
+                  "description": "Numero totale annuo delle interruzioni senza preavviso lunghe (cioè con durata superiore a 3 minuti) per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in minuti/utente BT, a scala regionale, per il periodo 2020-2024.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                  "template": "<p>Numero interruzioni lunghe senza preavviso nel <b>{{anno}}</b> in <b>{{Regione}}</b>: <b>{{numtot_spl}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_regioni",
+                  "styles":"interruzioni_regioni_num_spl",
+                  "id": "numero_interr_lunghe_senza_preavviso_reg"
+                },
+                {
+                  "type": "wms",
+                  "name": "Numero interruzioni lunghe senza preavviso a livello a livello provinciale",
+                  "description": "Numero totale annuo delle interruzioni senza preavviso lunghe (cioè con durata superiore a 3 minuti) per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in minuti/utente BT, a scala provinciale, per il periodo 2020-2024.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                  "template": "<p>Numero interruzioni lunghe senza preavviso nel <b>{{anno}}</b> nella provincia di <b>{{Provincia}}</b>: <b>{{numtot_spl}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_province",
+                  "styles":"interruzioni_province_num_spl",
+                  "id": "numero_interr_lunghe_senza_preavviso_prov"
+                },
+                {
+                  "type": "wms",
+                  "name": "Numero interruzioni lunghe senza preavviso a livello comunale",
+                  "description": "Numero totale annuo delle interruzioni senza preavviso lunghe (cioè con durata superiore a 3 minuti) per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in minuti/utente BT, a scala comunale, per il periodo 2020-2024.</br>Il dato comunale è ricavato a partire dal dato provinciale pubblicato da ARERA e viene assegnato a ciascun comune sulla base del numero di abitanti del comune stesso e al relativo grado di concentrazione:</br><ul><li>alta concentrazione (1_AC): insieme dei comuni nei quali è stata rilevata nell’ultimo censimento una popolazione superiore a 50.000 abitanti;</li><li>media concentrazione (2_MC): insieme dei comuni nei quali è stata rilevata nell’ultimo censimento una popolazione superiore a 5.000 abitanti e non superiore a 50.000 abitanti;</li><li>bassa concentrazione (3_BC): insieme dei comuni nei quali è stata rilevata nell’ultimo censimento una popolazione non superiore a 5.000 abitanti.</li></ul>Per alcuni casi particolari, il grado di concentrazione del singolo comune potrebbe non corrispondere alla classificazione di cui sopra, a seguito di istanze presentate dal distributore di competenza ai sensi dell’articolo 4, comma 4.2, della deliberazione 1 settembre 1999, n. 128/99 e approvate dall’Autorità.</br>Il valore comunale non è da intendersi specifico per ciascun comune, ma va inteso come valore medio per tutti i comuni di una stessa provincia caratterizzati dallo stesso grado di concentrazione.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                  "template": "<p>Numero interruzioni lunghe senza preavviso nel <b>{{anno}}</b> nel comune di <b>{{Comune}}</b>: <b>{{numtot_spl}}</b>.</br><i>Il valore è stimato a partire dal dato della provincia di {{Provincia}} per il grado di concentrazione {{Grado di concentrazione}}.</i></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_comuni",
+                  "styles":"interruzioni_comuni_num_spl",
+                  "id": "numero_interr_lunghe_senza_preavviso_com"
+                }
+              ]
+            },
+            {
+              "id": "numero_interr_brevi_senza_preavviso",
+              "type": "group",
+              "name": "Numero interruzioni brevi senza preavviso ",
+              "description": "Questa raccolta comprende, per il periodo 2020-2024, il numero totale medio annuale delle interruzioni brevi (cioè con durata superiore a 1 secondo e fino a 3 minuti) senza preavviso per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in numero/utente BT.</br></br>Fonte: <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Numero interruzioni brevi senza preavviso a livello regionale",
+                  "description": "Numero totale annuo delle interruzioni brevi (cioè con durata superiore a 1 secondo e fino a 3 minuti) senza preavviso per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in minuti/utente BT, a scala regionale, per il periodo 2020-2024.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                  "template": "<p>Numero interruzioni brevi senza preavviso nel <b>{{anno}}</b> in <b>{{Regione}}</b>: <b>{{numtot_spb}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=325&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_regioni",
+                  "styles":"interruzioni_regioni_num_spb",
+                  "id": "numero_interr_brevi_senza_preavviso_reg"
+                },
+                {
+                  "type": "wms",
+                  "name": "Numero interruzioni brevi senza preavviso a livello provinciale",
+                  "description": "Numero totale annuo delle interruzioni brevi (cioè con durata superiore a 1 secondo e fino a 3 minuti) senza preavviso per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in minuti/utente BT, a scala provinciale, per il periodo 2020-2024.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                  "template": "<p>Numero interruzioni brevi senza preavviso nel <b>{{anno}}</b> nella provincia di <b>{{Provincia}}</b>: <b>{{numtot_spb}}</b></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_province",
+                  "styles":"interruzioni_province_num_spb",
+                  "id": "numero_interr_brevi_senza_preavviso_prov"
+                },
+                {
+                  "type": "wms",
+                  "name": "Numero interruzioni brevi senza preavviso a livello comunale",
+                  "description": "Numero totale annuo delle interruzioni brevi (cioè con durata superiore a 1 secondo e fino a 3 minuti) senza preavviso per utente in bassa tensione (BT), al netto delle interruzioni con origine sistema elettrico, espressa in minuti/utente BT, a scala comunale, per il periodo 2020-2024.</br>Il dato comunale è ricavato a partire dal dato provinciale pubblicato da ARERA e viene assegnato a ciascun comune sulla base del numero di abitanti del comune stesso e al relativo grado di concentrazione:</br><ul><li>alta concentrazione (1_AC): insieme dei comuni nei quali è stata rilevata nell’ultimo censimento una popolazione superiore a 50.000 abitanti;</li><li>media concentrazione (2_MC): insieme dei comuni nei quali è stata rilevata nell’ultimo censimento una popolazione superiore a 5.000 abitanti e non superiore a 50.000 abitanti;</li><li>bassa concentrazione (3_BC): insieme dei comuni nei quali è stata rilevata nell’ultimo censimento una popolazione non superiore a 5.000 abitanti.</li></ul>Per alcuni casi particolari, il grado di concentrazione del singolo comune potrebbe non corrispondere alla classificazione di cui sopra, a seguito di istanze presentate dal distributore di competenza ai sensi dell’articolo 4, comma 4.2, della deliberazione 1 settembre 1999, n. 128/99 e approvate dall’Autorità.</br>Il valore comunale non è da intendersi specifico per ciascun comune, ma va inteso come valore medio per tutti i comuni di una stessa provincia caratterizzati dallo stesso grado di concentrazione.</br></br>Elaborazioni di RSE a partire da dati di <a href=\"https://www.arera.it/area-operatori/elequalita/\">ARERA</a>",
+                  "url": "https://gis3.rse-web.it/geoserver/wms",
+                  "featureInfoTemplate": {
+                  "template": "<p>Numero interruzioni brevi senza preavviso nel <b>{{anno}}</b> nel comune di <b>{{Comune}}</b>: <b>{{numtot_spb}}</b>.</br><i>Il valore è stimato a partire dal dato della provincia di {{Provincia}} per il grado di concentrazione {{Grado di concentrazione}}.</i></p><p style='display: block; text-align: center;'> <a href=\"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno={{anno}}\">link al metadato </a> </p>"
+                  },
+                  "metadataUrls":[{
+                  "title":"link metadato",
+                  "url":"http://dbeta.rse-web.it/atlante_integrato_metadati.php?var_id=326&anno=2024"
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_comuni",
+                  "styles":"interruzioni_comuni_num_spb",
+                  "id": "numero_interr_brevi_senza_preavviso_com"
+                }
+              ]
+            }            
+           ]
         }
+
       ]
     }
   ]

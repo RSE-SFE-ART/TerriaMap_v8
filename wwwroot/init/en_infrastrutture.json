@@ -56,7 +56,228 @@
           }],
           "layers": "new_atlante_integrato:aree_sottese_cabine_primarie",
           "id": "aree_ac"
-        }
+        },
+        {
+          "id": "indicatori_cont",
+          "type": "group",
+          "name": "Distribution network continuity indicators",
+          "description": "This collection includes information on the continuity of the electricity distribution service, made available annually by the Italian Regulatory Authority for Energy, Networks and Environment (ARERA). The data are transmitted and uploaded to the portal by distribution system operators (DSOs), in accordance with the established procedures, and subsequently made available for publication, consultation and sharing purposes. The indicators are calculated by the Authority on the basis of the information provided by distribution companies.&lt;/br&gt;&lt;/br&gt;Source: &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+          "isOpen": false,
+          "members": [
+            {
+              "id": "num_ut_bassa_tensione",
+              "type": "group",
+              "name": "Number of low-voltage users",
+              "description": "This collection includes, for the period 2020-2024, the number of low-voltage users by region and province.&lt;/br&gt;&lt;/br&gt;Source: &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Number of low-voltage users at regional level",
+                  "description": "Number of low-voltage users for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                  "template": "&lt;p&gt;In &lt;b&gt;{{anno}}&lt;/b&gt;, there were &lt;b&gt;{{num_utenti}}&lt;/b&gt; low-voltage users in &lt;b&gt;{{Regione}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_regioni",
+                  "styles":"interruzioni_regioni_num_utenti",
+                  "id": "interr_bassa_tensione_reg"
+                },
+                {
+                  "type": "wms",
+                  "name": "Number of low-voltage users at provincial level",
+                  "description": "Number of low-voltage users for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                  "template": "&lt;p&gt;In &lt;b&gt;{{anno}}&lt;/b&gt;, there were &lt;b&gt;{{num_utenti}}&lt;/b&gt; low-voltage users in the province of &lt;b&gt;{{Provincia}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_province",
+                  "styles":"interruzioni_province_num_utenti",
+                  "id": "interr_bassa_tensione_prov"
+                }
+              ]
+            },
+            {
+              "id": "durata_interr_lunghe_senza_preavviso",
+              "type": "group",
+              "name": "Duration of long unplanned interruptions",
+              "description": "This collection includes, for the period 2020-2024, the average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user.&lt;/br&gt;&lt;/br&gt;Source: &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Duration of long unplanned interruptions at regional level",
+                  "description": "Average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user, at regional level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                  "template": "&lt;p&gt;Duration of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in &lt;b&gt;{{Regione}}&lt;/b&gt;: &lt;b&gt;{{durtot_spl}}&lt;/b&gt; minutes per LV user&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_regioni",
+                  "styles":"interruzioni_regioni_dur_spl",
+                  "id": "durata_int_lunghe_senz_preavviso_reg"
+                },
+                {
+                  "type": "wms",
+                  "name": "Duration of long unplanned interruptions at provincial level",
+                  "description": "Average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user, at provincial level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                   "template": "&lt;p&gt;Duration of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the province of &lt;b&gt;{{Provincia}}&lt;/b&gt;: &lt;b&gt;{{durtot_spl}}&lt;/b&gt; minutes per LV user&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_province",
+                  "styles":"interruzioni_province_dur_spl",
+                  "id": "durata_int_lunghe_senz_preavviso_prov"
+                },
+                {
+                  "type": "wms",
+                  "name": "Duration of long unplanned interruptions at municipal level",
+                  "description": "Average total annual duration of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in minutes/LV user, at municipal level, for the period 2020-2024.&lt;/br&gt;Municipal data are derived from provincial data published by ARERA and assigned to each municipality based on the number of inhabitants and the corresponding degree of concentration:&lt;/br&gt;&lt;ul&gt;&lt;li&gt;high concentration (1_AC): municipalities with a population exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;medium concentration (2_MC): municipalities with a population exceeding 5,000 inhabitants and not exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;low concentration (3_BC): municipalities with a population not exceeding 5,000 inhabitants according to the latest census.&lt;/li&gt;&lt;/ul&gt;In some specific cases, the degree of concentration of an individual municipality may differ from the classification described above, following requests submitted by the relevant distribution system operator pursuant to Article 4, paragraph 4.2, of Resolution No. 128/99 of 1 September 1999 and approved by the Authority.&lt;/br&gt;The municipal value should not be interpreted as specific to each individual municipality, but rather as an average value for all municipalities within the same province having the same degree of concentration.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                  "template": "&lt;p&gt;Duration of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the municipality of &lt;b&gt;{{Comune}}&lt;/b&gt;: &lt;b&gt;{{durtot_spl}}&lt;/b&gt; minutes per LV user.&lt;/br&gt;&lt;i&gt;The value is estimated based on data for the province of {{Provincia}} for the {{Grado di concentrazione}} degree of concentration.&lt;/i&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_comuni",
+                  "styles":"interruzioni_comuni_dur_spl",
+                  "id": "durata_int_lunghe_senz_preavviso_com"
+                }
+              ]
+            },
+            {
+              "id": "numero_interr_lunghe_senza_preavviso",
+              "type": "group",
+              "name": "Number of long unplanned interruptions",
+              "description": "This collection includes, for the period 2020-2024, the annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user.&lt;/br&gt;&lt;/br&gt;Source: &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Number of long unplanned interruptions at regional level",
+                  "description": "Total annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at regional level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                  "template": "&lt;p&gt;Number of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in &lt;b&gt;{{Regione}}&lt;/b&gt;: &lt;b&gt;{{numtot_spl}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_regioni",
+                  "styles":"interruzioni_regioni_num_spl",
+                  "id": "numero_interr_lunghe_senza_preavviso_reg"
+                },
+                {
+                  "type": "wms",
+                  "name": "Number of long unplanned interruptions at provincial level",
+                  "description": "Total annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at provincial level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                  "template": "&lt;p&gt;Number of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the province of &lt;b&gt;{{Provincia}}&lt;/b&gt;: &lt;b&gt;{{numtot_spl}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_province",
+                  "styles":"interruzioni_province_num_spl",
+                  "id": "numero_interr_lunghe_senza_preavviso_prov"
+                },
+                {
+                  "type": "wms",
+                  "name": "Number of long unplanned interruptions at municipal level",
+                  "description": "Total annual number of long unplanned interruptions (i.e. lasting more than 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at municipal level, for the period 2020-2024.&lt;/br&gt;Municipal data are derived from provincial data published by ARERA and assigned to each municipality based on the number of inhabitants and the corresponding degree of concentration:&lt;/br&gt;&lt;ul&gt;&lt;li&gt;high concentration (1_AC): municipalities with a population exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;medium concentration (2_MC): municipalities with a population exceeding 5,000 inhabitants and not exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;low concentration (3_BC): municipalities with a population not exceeding 5,000 inhabitants according to the latest census.&lt;/li&gt;&lt;/ul&gt;In some specific cases, the degree of concentration of an individual municipality may differ from the classification described above, following requests submitted by the relevant distribution system operator pursuant to Article 4, paragraph 4.2, of Resolution No. 128/99 of 1 September 1999 and approved by the Authority.&lt;/br&gt;The municipal value should not be interpreted as specific to each individual municipality, but rather as an average value for all municipalities within the same province having the same degree of concentration.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                  "template": "&lt;p&gt;Number of long unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the municipality of &lt;b&gt;{{Comune}}&lt;/b&gt;: &lt;b&gt;{{numtot_spl}}&lt;/b&gt;.&lt;/br&gt;&lt;i&gt;The value is estimated based on data for the province of {{Provincia}} for the {{Grado di concentrazione}} degree of concentration.&lt;/i&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_comuni",
+                  "styles":"interruzioni_comuni_num_spl",
+                  "id": "numero_interr_lunghe_senza_preavviso_com"
+                }
+              ]
+            },
+            {
+              "id": "numero_interr_brevi_senza_preavviso",
+              "type": "group",
+              "name": "Number of short unplanned interruptions",
+              "description": "This collection includes, for the period 2020-2024, the average total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user.&lt;/br&gt;&lt;/br&gt;Source: &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+              "isOpen": false,
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Number of short unplanned interruptions at regional level",
+                  "description": "Total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at regional level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                  "template": "&lt;p&gt;Number of short unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in &lt;b&gt;{{Regione}}&lt;/b&gt;: &lt;b&gt;{{numtot_spb}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_regioni",
+                  "styles":"interruzioni_regioni_num_spb",
+                  "id": "numero_interr_brevi_senza_preavviso_reg"
+                },
+                {
+                  "type": "wms",
+                  "name": "Number of short unplanned interruptions at provincial level",
+                  "description": "Total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at provincial level, for the period 2020-2024.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                  "template": "&lt;p&gt;Number of short unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the province of &lt;b&gt;{{Provincia}}&lt;/b&gt;: &lt;b&gt;{{numtot_spb}}&lt;/b&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_province",
+                  "styles":"interruzioni_province_num_spb",
+                  "id": "numero_interr_brevi_senza_preavviso_prov"
+                },
+                {
+                  "type": "wms",
+                  "name": "Number of short unplanned interruptions at municipal level",
+                  "description": "Total annual number of short unplanned interruptions (i.e. lasting more than 1 second and up to 3 minutes) per low-voltage (LV) user, excluding interruptions originating from the power system, expressed in number/LV user, at municipal level, for the period 2020-2024.&lt;/br&gt;Municipal data are derived from provincial data published by ARERA and assigned to each municipality based on the number of inhabitants and the corresponding degree of concentration:&lt;/br&gt;&lt;ul&gt;&lt;li&gt;high concentration (1_AC): municipalities with a population exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;medium concentration (2_MC): municipalities with a population exceeding 5,000 inhabitants and not exceeding 50,000 inhabitants according to the latest census;&lt;/li&gt;&lt;li&gt;low concentration (3_BC): municipalities with a population not exceeding 5,000 inhabitants according to the latest census.&lt;/li&gt;&lt;/ul&gt;In some specific cases, the degree of concentration of an individual municipality may differ from the classification described above, following requests submitted by the relevant distribution system operator pursuant to Article 4, paragraph 4.2, of Resolution No. 128/99 of 1 September 1999 and approved by the Authority.&lt;/br&gt;The municipal value should not be interpreted as specific to each individual municipality, but rather as an average value for all municipalities within the same province having the same degree of concentration.&lt;/br&gt;&lt;/br&gt;RSE processing based on data from &lt;a href=\"\"&gt;ARERA&lt;/a&gt;",
+                  "url": "",
+                  "featureInfoTemplate": {
+                  "template": "&lt;p&gt;Number of short unplanned interruptions in &lt;b&gt;{{anno}}&lt;/b&gt; in the municipality of &lt;b&gt;{{Comune}}&lt;/b&gt;: &lt;b&gt;{{numtot_spb}}&lt;/b&gt;.&lt;/br&gt;&lt;i&gt;The value is estimated based on data for the province of {{Provincia}} for the {{Grado di concentrazione}} degree of concentration.&lt;/i&gt;&lt;/p&gt;&lt;p style='display: block; text-align: center;'&gt; &lt;a href=\"\"&gt;link to metadata &lt;/a&gt; &lt;/p&gt;"
+                  },
+                  "metadataUrls":[{
+                  "title":"metadata link",
+                  "url":""
+                  }],
+                  "layers": "new_atlante_integrato:interruzioni_comuni",
+                  "styles":"interruzioni_comuni_num_spb",
+                  "id": "numero_interr_brevi_senza_preavviso_com"
+                }
+              ]
+            }
+          ]
+        }  
       ]
     }
   ]

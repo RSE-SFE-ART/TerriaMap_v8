@@ -167,7 +167,7 @@ export const WelcomeMessagePure = props => {
           fullHeight
           centered
         >
-          <VideoGuide
+          {/* <VideoGuide
             viewState={viewState}
             videoLink={
               viewState.terria.configParameters.welcomeMessageVideo.videoUrl
@@ -177,7 +177,7 @@ export const WelcomeMessagePure = props => {
                 .placeholderImage
             }
             videoName={WELCOME_MESSAGE_VIDEO}
-          />
+          />*/}
           <SlideUpFadeIn isVisible={welcomeVisible}>
             <Box
               styledWidth={"667px"}
@@ -241,7 +241,7 @@ export const WelcomeMessagePure = props => {
                 </Text>
               </Box>
               <Spacing bottom={6} />
-              <If condition={!viewState.useSmallScreenInterface}>
+              {/*<If condition={!viewState.useSmallScreenInterface}>
                 <Text bold textLight extraLarge>
                   {
                     viewState.terria.configParameters.welcomeMessageVideo
@@ -250,8 +250,9 @@ export const WelcomeMessagePure = props => {
                 </Text>
                 <Spacing bottom={2} />
               </If>
+              */}
               <Box fullWidth styledMinHeight={"160px"}>
-                <If condition={!viewState.useSmallScreenInterface}>
+                {/*<If condition={!viewState.useSmallScreenInterface}>
                   <Box
                     col6
                     centered
@@ -279,8 +280,8 @@ export const WelcomeMessagePure = props => {
                     </RawButton>
                   </Box>
                   <Spacing right={5} />
-                </If>
-                <Box styledMargin={"0 auto"} displayInlineBlock>
+                </If>*/}
+                <Box styledMargin={"0"} displayInlineBlock>
                   <If condition={!viewState.useSmallScreenInterface}>
                     <WelcomeMessageButton
                       onClick={() => {
